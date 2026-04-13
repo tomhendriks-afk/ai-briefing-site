@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Anthropic hits $30B run rate — Daily Briefing · Ambient Advantage</title>
+<meta name="description" content="Anthropic overtakes OpenAI on annualized revenue while 54% of CEOs say AI adoption is tearing their company apart." />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://briefing.ambient-advantage.ai/2026-04-10.html" />
+<meta property="og:title" content="Anthropic hits $30B run rate — the revenue crown changes hands" />
+<meta property="og:description" content="Anthropic overtakes OpenAI on annualized revenue while 54% of CEOs say AI adoption is tearing their company apart." />
+<meta property="og:image" content="https://podcast.ambient-advantage.ai/og-image.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-0:#05070d;
+    --bg-1:#0a0f1c;
+    --bg-2:#0f1628;
+    --line:rgba(120,170,255,.14);
+    --text:#e8eefc;
+    --mute:#8a97b4;
+    --accent:#4ea8ff;
+    --accent-2:#7ad0ff;
+    --glow:0 0 40px rgba(78,168,255,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg-0);color:var(--text);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:1180px;margin:0 auto;padding:0 28px}
+
+  /* NAV */
+  nav.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(5,7,13,.6);border-bottom:1px solid var(--line)}
+  nav.top .row{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .logo{font-family:'Space Grotesk';font-weight:700;letter-spacing:.02em;font-size:18px;display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none}
+  .logo .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:var(--glow)}
+  .nav-links{display:flex;gap:32px;font-size:14px;color:var(--mute)}
+  .nav-links a{color:var(--mute);text-decoration:none}
+  .nav-links a:hover{color:var(--text);text-decoration:none}
+  .nav-links a.active{color:var(--text);border-bottom:2px solid var(--accent);padding-bottom:2px}
+  .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(78,168,255,.12),rgba(78,168,255,.02));text-decoration:none;transition:border-color .2s}
+  .nav-cta:hover{border-color:var(--accent);text-decoration:none}
+
+  /* ARTICLE HEADER */
+  .article-header{padding:80px 0 40px;position:relative}
+  .article-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(78,168,255,.1),transparent 60%);pointer-events:none}
+  .article-header .inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
+  .back-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-size:13px;color:var(--mute);letter-spacing:.05em;margin-bottom:28px;text-decoration:none;transition:color .2s}
+  .back-link:hover{color:var(--accent);text-decoration:none}
+  .article-meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--mute);font-family:'Space Grotesk';margin-bottom:18px;flex-wrap:wrap}
+  .article-meta .tag{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(78,168,255,.1);color:var(--accent-2);border:1px solid rgba(78,168,255,.2)}
+  .article-header h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(30px,4.5vw,48px);line-height:1.12;margin:0;letter-spacing:-.02em}
+
+  /* ARTICLE BODY */
+  .article-body{max-width:780px;margin:0 auto;padding:40px 0 80px}
+  .article-body p{font-size:17px;line-height:1.8;color:var(--text);margin:0 0 24px}
+  .article-body h2{font-family:'Space Grotesk';font-size:26px;margin:48px 0 16px;letter-spacing:-.01em;color:var(--text)}
+  .article-body h3{font-family:'Space Grotesk';font-size:20px;margin:36px 0 12px;color:var(--text)}
+  .article-body blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(78,168,255,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}
+  .article-body blockquote p{margin:0;font-size:16px}
+  .article-body ul,.article-body ol{padding-left:24px;margin:0 0 24px}
+  .article-body li{font-size:17px;line-height:1.8;margin-bottom:8px}
+  .article-body .highlight{background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:24px;margin:32px 0}
+  .article-body .highlight h3{margin-top:0}
+  .article-body hr{border:none;border-top:1px solid var(--line);margin:40px 0}
+
+  /* RELATED / NAVIGATION */
+  .article-nav{max-width:780px;margin:0 auto;padding:0 0 60px;display:flex;gap:18px}
+  .article-nav a{flex:1;display:block;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .2s,transform .2s;text-decoration:none}
+  .article-nav a:hover{border-color:rgba(78,168,255,.35);transform:translateY(-1px);text-decoration:none}
+  .article-nav .label{font-size:11px;color:var(--mute);font-family:'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+  .article-nav .title{font-family:'Space Grotesk';font-size:15px;color:var(--text);line-height:1.3}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:13px}
+  footer .frow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+
+  @media (max-width:800px){
+    .nav-links{display:none}
+    .article-header{padding:60px 0 30px}
+    .article-nav{flex-direction:column}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="container row">
+    <a href="https://ambient-advantage.ai" class="logo"><span class="dot"></span>Ambient Advantage</a>
+    <div class="nav-links">
+      <a href="https://podcast.ambient-advantage.ai">Podcast</a>
+      <a href="/" class="active">Daily Briefing</a>
+      <a href="https://podcast.ambient-advantage.ai#about">About</a>
+    </div>
+    <a class="nav-cta" href="/#subscribe">Subscribe</a>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <div class="inner">
+      <a href="/" class="back-link">← Back to all briefings</a>
+      <div class="article-meta">
+        <span class="tag">Daily Briefing</span>
+        <span>Friday · April 10, 2026</span>
+        <span>·</span>
+        <span>5 min read</span>
+      </div>
+      <h1>Anthropic hits $30B run rate — the revenue crown changes hands</h1>
+    </div>
+  </div>
+</header>
+
+<article class="container">
+  <div class="article-body">
+
+    <p>Good morning. Today's briefing covers the biggest shift in the AI business landscape this year: <strong>Anthropic has overtaken OpenAI on annualized revenue</strong>, hitting a $30 billion run rate. Meanwhile, a new enterprise survey paints a far messier picture of AI adoption than the headlines suggest.</p>
+
+    <h2>Anthropic pulls ahead on revenue</h2>
+
+    <p>According to sources familiar with the company's financials, Anthropic's annualized revenue has crossed $30 billion — surpassing OpenAI's most recently reported figures. The growth is driven primarily by enterprise API consumption, with Claude's adoption in regulated industries (finance, healthcare, legal) accelerating faster than any competing model.</p>
+
+    <blockquote><p>"This isn't about who has the best chatbot anymore. It's about who enterprises trust with their most sensitive workflows." — Industry analyst</p></blockquote>
+
+    <p>For business leaders, this signals something important: the AI market is no longer a one-horse race. Your vendor strategy needs to account for a genuinely competitive landscape where switching costs are real but so are the performance differences between providers.</p>
+
+    <h2>54% of CEOs say AI is "tearing their company apart"</h2>
+
+    <p>A new survey of 1,200 enterprise executives from Bain & Company reveals a stark disconnect. While 97% of organizations have deployed AI agents in some capacity, only 23% report measurable ROI. More striking: 54% of CEOs described the internal impact of AI adoption as "disruptive to the point of organizational stress."</p>
+
+    <p>The main friction points? Middle management resistance, unclear ownership of AI-driven processes, and a widening skills gap between teams that have embraced AI tools and those that haven't.</p>
+
+    <div class="highlight">
+      <h3>Three takeaways for your Monday morning</h3>
+      <ol>
+        <li><strong>Anthropic's rise is your leverage.</strong> If you're locked into a single AI vendor, now is the time to run a competitive evaluation. The market has never been more competitive on price, performance, and enterprise features.</li>
+        <li><strong>The ROI gap is a change management problem, not a technology problem.</strong> The 23% getting returns aren't using better models — they have clearer internal ownership and executive sponsorship for AI initiatives.</li>
+        <li><strong>The CEO stress signal matters.</strong> If leadership at half of enterprises feels AI is causing organizational strain, the consulting and advisory opportunity around AI transformation just got much bigger.</li>
+      </ol>
+    </div>
+
+    <hr />
+
+    <p><em>That's your briefing for today. If this was useful, consider sharing it with a colleague who's navigating the same questions. See you Monday morning.</em></p>
+
+    <p><em>— Chiel</em></p>
+
+  </div>
+</article>
+
+<!-- Prev / Next navigation -->
+<div class="container">
+  <div class="article-nav">
+    <a href="/2026-04-09.html">
+      <div class="label">← Previous briefing</div>
+      <div class="title">Three rivals quietly form an alliance against Chinese AI distillation</div>
+    </a>
+    <div style="flex:1"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="container frow">
+    <div>© 2026 Ambient Advantage · Curated by Chiel Hendriks</div>
+    <div><a href="https://ambient-advantage.ai" style="color:var(--accent);text-decoration:none">ambient-advantage.ai</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

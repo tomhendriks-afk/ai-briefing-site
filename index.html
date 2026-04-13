@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Daily Briefing — Ambient Advantage</title>
+<meta name="description" content="A daily AI newsletter for business leaders. The most important developments in agentic and generative AI, distilled into what matters for your strategy." />
+<link rel="icon" type="image/png" href="https://podcast.ambient-advantage.ai/podcast-cover.png" />
+<link rel="apple-touch-icon" href="https://podcast.ambient-advantage.ai/podcast-cover.png" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://briefing.ambient-advantage.ai" />
+<meta property="og:title" content="The Daily Briefing — Ambient Advantage" />
+<meta property="og:description" content="Every weekday morning: the most important AI developments distilled for business leaders. No fluff, just signal." />
+<meta property="og:image" content="https://podcast.ambient-advantage.ai/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Daily Briefing — Ambient Advantage" />
+<meta name="twitter:description" content="Every weekday morning: the most important AI developments distilled for business leaders." />
+<meta name="twitter:image" content="https://podcast.ambient-advantage.ai/og-image.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-0:#05070d;
+    --bg-1:#0a0f1c;
+    --bg-2:#0f1628;
+    --line:rgba(120,170,255,.14);
+    --text:#e8eefc;
+    --mute:#8a97b4;
+    --accent:#4ea8ff;
+    --accent-2:#7ad0ff;
+    --glow:0 0 40px rgba(78,168,255,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg-0);color:var(--text);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .container{max-width:1180px;margin:0 auto;padding:0 28px}
+
+  /* NAV */
+  nav.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(5,7,13,.6);border-bottom:1px solid var(--line)}
+  nav.top .row{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .logo{font-family:'Space Grotesk';font-weight:700;letter-spacing:.02em;font-size:18px;display:flex;align-items:center;gap:10px}
+  .logo .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:var(--glow)}
+  .nav-links{display:flex;gap:32px;font-size:14px;color:var(--mute)}
+  .nav-links a:hover{color:var(--text)}
+  .nav-links a.active{color:var(--text);border-bottom:2px solid var(--accent);padding-bottom:2px}
+  .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(78,168,255,.12),rgba(78,168,255,.02));transition:border-color .2s}
+  .nav-cta:hover{border-color:var(--accent)}
+
+  /* PAGE HEADER */
+  .page-header{padding:80px 0 50px;text-align:center;position:relative}
+  .page-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 20%,rgba(78,168,255,.12),transparent 60%);pointer-events:none}
+  .page-header .inner{position:relative;z-index:2}
+  .eyebrow{display:inline-block;font-family:'Space Grotesk';font-size:12px;letter-spacing:.3em;color:var(--accent-2);text-transform:uppercase;padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:rgba(78,168,255,.06)}
+  .page-header h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(36px,5vw,56px);line-height:1.08;margin:22px 0 14px;letter-spacing:-.02em}
+  .page-header h1 .grad{background:linear-gradient(120deg,#ffffff 0%,#a8ccff 40%,#4ea8ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .page-header .sub{color:var(--mute);font-size:17px;line-height:1.6;max-width:580px;margin:0 auto}
+
+  /* SECTION */
+  section{padding:60px 0 90px;position:relative}
+  .section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:40px;gap:20px;flex-wrap:wrap}
+  .section-head h2{font-family:'Space Grotesk';font-size:36px;margin:0;letter-spacing:-.01em}
+  .section-head p{color:var(--mute);margin:0;max-width:420px}
+
+  /* FEATURED BRIEFING */
+  .featured-briefing{background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:24px;padding:44px;position:relative;overflow:hidden;margin-bottom:28px}
+  .featured-briefing::before{content:"";position:absolute;inset:-1px;border-radius:24px;background:linear-gradient(135deg,rgba(78,168,255,.3),transparent 50%);pointer-events:none}
+  .featured-briefing::after{content:"";position:absolute;top:-1px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent)}
+  .featured-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start}
+  .featured-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-family:'Space Grotesk';background:linear-gradient(135deg,rgba(78,168,255,.2),rgba(78,168,255,.08));color:var(--accent-2);border:1px solid rgba(78,168,255,.3);margin-bottom:16px}
+  .featured-tag .pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(78,168,255,.5)}50%{opacity:.8;box-shadow:0 0 0 6px rgba(78,168,255,0)}}
+  .featured-briefing h3{font-family:'Space Grotesk';font-size:clamp(26px,3vw,34px);margin:0 0 14px;line-height:1.2;letter-spacing:-.01em}
+  .featured-briefing h3 a{color:var(--text);text-decoration:none;transition:color .2s}
+  .featured-briefing h3 a:hover{color:var(--accent)}
+  .featured-briefing .snippet{color:var(--mute);font-size:16px;line-height:1.7;margin:0 0 22px;max-width:640px}
+  .featured-briefing .meta-row{display:flex;align-items:center;gap:20px;font-size:13px;color:var(--mute);font-family:'Space Grotesk';margin-bottom:22px}
+  .featured-briefing .read-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-size:14px;font-weight:600;background:linear-gradient(180deg,#4ea8ff,#2f7fd6);color:#031226;border:none;box-shadow:var(--glow);transition:transform .15s;cursor:pointer;text-decoration:none;font-family:'Space Grotesk'}
+  .featured-briefing .read-btn:hover{transform:translateY(-1px)}
+  .featured-date-badge{background:rgba(78,168,255,.08);border:1px solid var(--line);border-radius:16px;padding:18px 22px;text-align:center;font-family:'Space Grotesk';min-width:90px;height:fit-content}
+  .featured-date-badge .day{display:block;font-size:36px;font-weight:700;line-height:1;color:var(--text)}
+  .featured-date-badge .month{display:block;font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--mute);margin-top:4px}
+
+  /* COMPACT OLDER BRIEFINGS */
+  .older-briefings{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .nl-compact{background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:24px;transition:border-color .2s,transform .2s;position:relative;overflow:hidden}
+  .nl-compact:hover{border-color:rgba(78,168,255,.35);transform:translateY(-1px)}
+  .nl-compact::before{content:"";position:absolute;inset:-1px;border-radius:16px;background:linear-gradient(135deg,rgba(78,168,255,.2),transparent 40%);opacity:0;transition:opacity .2s;pointer-events:none}
+  .nl-compact:hover::before{opacity:1}
+  .nl-compact .nl-date{font-size:11px;color:var(--mute);font-family:'Space Grotesk';letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+  .nl-compact h3{font-family:'Space Grotesk';font-size:18px;margin:0 0 8px;line-height:1.3}
+  .nl-compact h3 a{color:var(--text);text-decoration:none;transition:color .2s}
+  .nl-compact h3 a:hover{color:var(--accent)}
+  .nl-compact .snippet{color:var(--mute);font-size:13px;line-height:1.6;margin:0 0 14px}
+  .nl-compact .read-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-size:12px;color:var(--accent);letter-spacing:.05em;font-weight:500;transition:gap .2s}
+  .nl-compact:hover .read-link{gap:10px}
+
+  /* SUBSCRIBE CTA */
+  .subscribe-cta{text-align:center;max-width:620px;margin:0 auto;padding:0 0 40px}
+  .subscribe-cta h2{font-family:'Space Grotesk';font-size:32px;margin:0 0 12px}
+  .subscribe-cta p{color:var(--mute);margin:0 0 24px}
+  .subscribe-cta form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+  .subscribe-cta input{flex:1;min-width:260px;padding:14px 18px;border-radius:999px;border:1px solid var(--line);background:var(--bg-1);color:var(--text);font:inherit}
+  .subscribe-cta input::placeholder{color:var(--mute)}
+  .subscribe-cta input:focus{outline:none;border-color:var(--accent)}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:13px}
+  footer .row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+
+  @media (max-width:800px){
+    .nav-links{display:none}
+    section{padding:40px 0 60px}
+    .page-header{padding:60px 0 30px}
+    .featured-inner{grid-template-columns:1fr}
+    .featured-date-badge{display:none}
+    .featured-briefing{padding:28px}
+    .older-briefings{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="container row">
+    <a href="https://ambient-advantage.ai" class="logo"><span class="dot"></span>Ambient Advantage</a>
+    <div class="nav-links">
+      <a href="https://podcast.ambient-advantage.ai">Podcast</a>
+      <a href="/" class="active">Daily Briefing</a>
+      <a href="https://podcast.ambient-advantage.ai#about">About</a>
+    </div>
+    <a class="nav-cta" href="#subscribe">Subscribe</a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container inner">
+    <span class="eyebrow">Daily AI Newsletter</span>
+    <h1>The <span class="grad">Daily Briefing</span></h1>
+    <p class="sub">Every weekday morning, the most important AI developments distilled into what matters for business leaders. No fluff, just signal.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div><h2>Recent Briefings</h2></div>
+      <p>Three most recent editions. Each one is a 5-minute read built for your morning coffee.</p>
+    </div>
+
+    <!-- Featured / latest briefing -->
+    <article class="featured-briefing">
+      <div class="featured-inner">
+        <div>
+          <span class="featured-tag"><span class="pulse"></span> Latest Briefing</span>
+          <h3><a href="/2026-04-10.html">Anthropic hits $30B run rate — the revenue crown changes hands</a></h3>
+          <p class="snippet">Anthropic overtakes OpenAI on annualized revenue while a new survey shows 54% of CEOs say AI adoption is "tearing their company apart." Plus: what the enterprise ROI gap means for your 2026 strategy.</p>
+          <div class="meta-row">
+            <span>Friday · April 10, 2026</span>
+            <span>·</span>
+            <span>5 min read</span>
+          </div>
+          <a href="/2026-04-10.html" class="read-btn">Read the briefing →</a>
+        </div>
+        <div class="featured-date-badge">
+          <span class="day">10</span>
+          <span class="month">Apr</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Older briefings -->
+    <div class="older-briefings">
+      <article class="nl-compact">
+        <div class="nl-date">Thu · Apr 9, 2026</div>
+        <h3><a href="/2026-04-09.html">Three rivals quietly form an alliance against Chinese AI distillation</a></h3>
+        <p class="snippet">OpenAI, Anthropic and Google begin sharing intelligence on adversarial distillation attacks. Meanwhile, Anthropic signs a 3.5-gigawatt compute deal and Q1 venture funding shatters every record.</p>
+        <a href="/2026-04-09.html" class="read-link">Read briefing →</a>
+      </article>
+
+      <article class="nl-compact">
+        <div class="nl-date">Wed · Apr 8, 2026</div>
+        <h3><a href="/2026-04-08.html">Anthropic's $400M biotech acquisition signals the next frontier</a></h3>
+        <p class="snippet">The Coefficient Bio deal shows frontier labs are moving beyond chat into specialized scientific domains. Plus: Google drops Veo 3.1 Lite at 5¢/second, rewriting the economics of AI video overnight.</p>
+        <a href="/2026-04-08.html" class="read-link">Read briefing →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="subscribe">
+  <div class="container subscribe-cta">
+    <h2>Get every briefing in your inbox.</h2>
+    <p>Delivered weekday mornings — three takeaways, zero fluff.</p>
+    <form onsubmit="event.preventDefault();alert('Thanks! You\'ll get the next briefing.')">
+      <input type="email" required placeholder="you@company.com" />
+      <button class="read-btn" type="submit" style="font-family:'Space Grotesk';font-size:14px;font-weight:600;padding:14px 22px;border-radius:999px;background:linear-gradient(180deg,#4ea8ff,#2f7fd6);color:#031226;border:none;box-shadow:var(--glow);cursor:pointer">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container row">
+    <div>© 2026 Ambient Advantage · Curated by Chiel Hendriks</div>
+    <div><a href="https://ambient-advantage.ai" style="color:var(--accent)">ambient-advantage.ai</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
