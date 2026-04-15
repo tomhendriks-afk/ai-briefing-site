@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>AI Daily Briefing — Daily Briefing · Ambient Advantage</title>
-<meta name="description" content="AI Daily Briefing Saturday, April 12, 2026 Your daily dose of what matters in AI — curated for business leaders." />
+<title>Anthropic Is Close to Overtaking OpenAI on Enterprise AI Spending — Daily Briefing · Ambient Advantage</title>
+<meta name="description" content="At HumanX, Anthropic emerged as the enterprise AI leader while its frontier model Mythos triggered an emergency Wall Street meeting. Meanwhile, Meta goes proprietary with Muse Spark and Q1 venture funding hits a staggering $300 billion." />
 
+<!-- Open Graph -->
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://briefing.ambient-advantage.ai/2026-04-12.html" />
-<meta property="og:title" content="AI Daily Briefing" />
-<meta property="og:description" content="AI Daily Briefing Saturday, April 12, 2026 Your daily dose of what matters in AI — curated for business leaders." />
+<meta property="og:title" content="Anthropic Is Close to Overtaking OpenAI on Enterprise AI Spending" />
+<meta property="og:description" content="At HumanX, Anthropic emerged as the enterprise AI leader while its frontier model Mythos triggered an emergency Wall Street meeting. Meanwhile, Meta goes proprietary with Muse Spark and Q1 venture funding hits a staggering $300 billion." />
 <meta property="og:image" content="https://podcast.ambient-advantage.ai/og-image.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +18,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg-0:#05070d;--bg-1:#0a0f1c;--bg-2:#0f1628;
-    --line:rgba(120,170,255,.14);--text:#e8eefc;--mute:#8a97b4;
-    --accent:#4ea8ff;--accent-2:#7ad0ff;
+    --bg-0:#05070d;
+    --bg-1:#0a0f1c;
+    --bg-2:#0f1628;
+    --line:rgba(120,170,255,.14);
+    --text:#e8eefc;
+    --mute:#8a97b4;
+    --accent:#4ea8ff;
+    --accent-2:#7ad0ff;
     --glow:0 0 40px rgba(78,168,255,.35);
   }
   *{box-sizing:border-box}
@@ -28,6 +34,7 @@
   a:hover{text-decoration:underline}
   .container{max-width:1180px;margin:0 auto;padding:0 28px}
 
+  /* NAV */
   nav.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(5,7,13,.6);border-bottom:1px solid var(--line)}
   nav.top .row{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
   .logo{font-family:'Space Grotesk';font-weight:700;letter-spacing:.02em;font-size:18px;display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none}
@@ -39,6 +46,7 @@
   .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(78,168,255,.12),rgba(78,168,255,.02));text-decoration:none;transition:border-color .2s}
   .nav-cta:hover{border-color:var(--accent);text-decoration:none}
 
+  /* ARTICLE HEADER */
   .article-header{padding:80px 0 40px;position:relative}
   .article-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(78,168,255,.1),transparent 60%);pointer-events:none}
   .article-header .inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
@@ -48,26 +56,27 @@
   .article-meta .tag{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(78,168,255,.1);color:var(--accent-2);border:1px solid rgba(78,168,255,.2)}
   .article-header h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(30px,4.5vw,48px);line-height:1.12;margin:0;letter-spacing:-.02em}
 
+  /* ARTICLE BODY */
   .article-body{max-width:780px;margin:0 auto;padding:40px 0 80px}
   .article-body p{font-size:17px;line-height:1.8;color:var(--text);margin:0 0 24px}
-  .article-body h1,.article-body h2{font-family:'Space Grotesk';font-size:26px;margin:48px 0 16px;letter-spacing:-.01em;color:var(--text)}
+  .article-body h2{font-family:'Space Grotesk';font-size:26px;margin:48px 0 16px;letter-spacing:-.01em;color:var(--text)}
   .article-body h3{font-family:'Space Grotesk';font-size:20px;margin:36px 0 12px;color:var(--text)}
-  .article-body a{color:var(--accent)}
   .article-body blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(78,168,255,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}
+  .article-body blockquote p{margin:0;font-size:16px}
   .article-body ul,.article-body ol{padding-left:24px;margin:0 0 24px}
   .article-body li{font-size:17px;line-height:1.8;margin-bottom:8px}
-  .article-body img{max-width:100%;border-radius:12px}
+  .article-body .highlight{background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:24px;margin:32px 0}
+  .article-body .highlight h3{margin-top:0}
   .article-body hr{border:none;border-top:1px solid var(--line);margin:40px 0}
-  .article-body table{width:100%;border-collapse:collapse;margin:24px 0}
-  .article-body th,.article-body td{padding:10px 14px;border:1px solid var(--line);font-size:15px;text-align:left}
-  .article-body th{background:var(--bg-1);font-family:'Space Grotesk'}
 
+  /* RELATED / NAVIGATION */
   .article-nav{max-width:780px;margin:0 auto;padding:0 0 60px;display:flex;gap:18px}
   .article-nav a{flex:1;display:block;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .2s,transform .2s;text-decoration:none}
   .article-nav a:hover{border-color:rgba(78,168,255,.35);transform:translateY(-1px);text-decoration:none}
   .article-nav .label{font-size:11px;color:var(--mute);font-family:'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
   .article-nav .title{font-family:'Space Grotesk';font-size:15px;color:var(--text);line-height:1.3}
 
+  /* FOOTER */
   footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:13px}
   footer .frow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 
@@ -98,100 +107,91 @@
       <a href="/" class="back-link">← Back to all briefings</a>
       <div class="article-meta">
         <span class="tag">Daily Briefing</span>
-        <span>Sunday · April 12, 2026</span>
+        <span>Saturday · April 12, 2026</span>
         <span>·</span>
         <span>6 min read</span>
       </div>
-      <h1>AI Daily Briefing</h1>
+      <h1>Anthropic Is Close to Overtaking OpenAI on Enterprise AI Spending</h1>
     </div>
   </div>
 </header>
 
 <article class="container">
   <div class="article-body">
-    
 
+    <h2>Anthropic leads the enterprise market at HumanX</h2>
 
+    <p>At this week's HumanX conference in San Francisco, Anthropic — not OpenAI — was the name on everyone's lips. The company now leads OpenAI in enterprise spending across finance, insurance, and information services, and Claude Code alone is generating over $2.5 billion in annualized revenue. Anthropic also announced Claude Managed Agents, a new framework for deploying persistent AI agents within enterprise workflows — a direct play for the agentic enterprise market that consultancies should be tracking closely.</p>
 
-<h1>AI Daily Briefing</h1>
-<div class="date-line">Saturday, April 12, 2026</div>
-<div class="tagline">Your daily dose of what matters in AI — curated for business leaders.</div>
+    <p>For business leaders evaluating AI vendors, this signals a genuine three-way race emerging. Your enterprise AI strategy can no longer assume OpenAI dominance — the competitive landscape has shifted measurably, and the winners will be the organizations that treat vendor diversity as a strategic asset rather than a compliance headache.</p>
 
-<hr>
+    <h2>Anthropic's "Mythos" model triggers emergency Wall Street meeting</h2>
 
-<div class="section-header">Today's Top Stories</div>
+    <p>Treasury Secretary Bessent and Fed Chair Powell convened an emergency session with major bank CEOs after Anthropic's frontier model preview — internally called "Mythos" — discovered exploitable vulnerabilities in every major operating system and browser during testing. Anthropic has committed $100 million in credits to help defenders patch critical systems first.</p>
 
-<h2><a href="https://dnyuz.com/2026/04/11/anthropic-is-close-to-overtaking-openai-on-this-measure-of-ai-business-spending/">Anthropic Is Close to Overtaking OpenAI on Enterprise AI Spending</a></h2>
-<div class="tag">🏢 Enterprise &nbsp;|&nbsp; 🤖 Agentic AI</div>
-<p>At this week's HumanX conference in San Francisco, Anthropic — not OpenAI — was the name on everyone's lips. The company now leads OpenAI in enterprise spending across finance, insurance, and information services, and Claude Code alone is generating over $2.5 billion in annualized revenue. Anthropic also announced Claude Managed Agents, a new framework for deploying persistent AI agents within enterprise workflows — a direct play for the agentic enterprise market that consultancies should be tracking closely.</p>
+    <p>This is a landmark moment for the dual-use nature of frontier AI: the same capabilities that find vulnerabilities can also be weaponized, and it's forcing policymakers and financial institutions to rethink their cyber resilience frameworks in real time. For enterprise security leaders, this underscores a hard truth — frontier AI has arrived at the point where it poses genuine systemic risks, and your organization's AI governance framework needs to account for vulnerabilities, not just productivity gains.</p>
 
-<h2><a href="https://www.theguardian.com/technology/2026/apr/10/us-summoned-bank-bosses-to-discuss-cyber-risks-posed-by-anthropic-latest-ai-model">Anthropic's "Mythos" Preview Triggers Emergency Meeting with Wall Street CEOs</a></h2>
-<div class="tag">📜 Policy &nbsp;|&nbsp; 🧪 Research</div>
-<p>Treasury Secretary Bessent and Fed Chair Powell convened an emergency session with major bank CEOs after Anthropic's frontier model preview — internally called "Mythos" — discovered exploitable vulnerabilities in every major operating system and browser during testing. Anthropic has committed $100 million in credits to help defenders patch critical systems first. This is a landmark moment for the dual-use nature of frontier AI: the same capabilities that find vulnerabilities can also be weaponized, and it's forcing policymakers and financial institutions to rethink their cyber resilience frameworks in real time.</p>
+    <h2>Meta goes proprietary with Muse Spark</h2>
 
-<h2><a href="https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html">Meta Launches Muse Spark — and Abandons Open-Source</a></h2>
-<div class="tag">🧪 Research &nbsp;|&nbsp; 🏢 Enterprise</div>
-<p>Meta's first major model under chief AI officer Alexandr Wang, Muse Spark, has catapulted the Meta AI app to No. 2 on the App Store — surpassing ChatGPT. But the bigger story for enterprise leaders is what's missing: unlike every previous Llama model, Muse Spark is entirely proprietary. Meta has effectively exited the open-weight frontier race, a strategic shift that reshapes the competitive dynamics of enterprise AI procurement and model choice.</p>
+    <p>Meta's first major model under chief AI officer Alexandr Wang, Muse Spark, has catapulted the Meta AI app to No. 2 on the App Store — surpassing ChatGPT. But the bigger story for enterprise leaders is what's missing: unlike every previous Llama model, Muse Spark is entirely proprietary. Meta has effectively exited the open-weight frontier race, a strategic shift that reshapes the competitive dynamics of enterprise AI procurement and model choice.</p>
 
-<h2><a href="https://www.ey.com/en_gl/newsroom/2026/04/ey-launches-enterprise-scale-agentic-ai-to-redefine-the-audit-experience-for-the-ai-era">EY Launches Enterprise-Scale Agentic AI to Reshape the Audit</a></h2>
-<div class="tag">🏢 Enterprise &nbsp;|&nbsp; 🤖 Agentic AI</div>
-<p>EY has rolled out a multi-agent AI framework embedded directly in its Canvas audit platform, built on Microsoft Foundry, Fabric, and Azure. The firm is among the inaugural 14 organizations in the Frontier Firm AI Initiative deploying advanced AI at scale. For the professional services world, this is a signal that the competitive bar for audit and assurance is being fundamentally reset — firms that aren't building agentic capabilities into core service delivery risk falling behind fast.</p>
+    <p>This move signals something important: the economics of frontier model development are pushing even champions of open-source toward a closed model. If you've been betting on open-weight alternatives for vendor independence, you may need to recalibrate that strategy.</p>
 
-<h2><a href="https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/">Q1 2026 Venture Funding Hits $300 Billion — AI Takes 80%</a></h2>
-<div class="tag">💰 Funding</div>
-<p>Global venture investment reached an all-time high of $300 billion in Q1 2026, with $242 billion — a staggering 80% — flowing to AI companies. The four largest rounds went to OpenAI ($122B), Anthropic ($30B), xAI ($20B), and Waymo ($16B), collectively accounting for 65% of all global venture dollars. The capital concentration at the frontier raises real questions about market structure, competitive moats, and what this means for the broader startup ecosystem outside of AI.</p>
+    <h2>EY deploys enterprise-scale agentic AI into the audit</h2>
 
-<h2><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/">Google Releases Gemma 4 Open Models for Agentic Workflows</a></h2>
-<div class="tag">🧪 Research &nbsp;|&nbsp; 🤖 Agentic AI</div>
-<p>Google released Gemma 4 under the Apache 2.0 license — its latest series of open models built specifically for advanced reasoning and agentic workflows. With Meta going proprietary, Google is now arguably the most important player keeping the open-weight frontier alive. For enterprise teams building custom agent pipelines, Gemma 4 represents a strong new option that avoids vendor lock-in.</p>
+    <p>EY has rolled out a multi-agent AI framework embedded directly in its Canvas audit platform, built on Microsoft Foundry, Fabric, and Azure. The firm is among the inaugural 14 organizations in the Frontier Firm AI Initiative deploying advanced AI at scale. For the professional services world, this is a signal that the competitive bar for audit and assurance is being fundamentally reset — firms that aren't building agentic capabilities into core service delivery risk falling behind fast.</p>
 
-<h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/">Gemini 3 Deep Think Brings Gold-Medal Science Reasoning</a></h2>
-<div class="tag">🧪 Research</div>
-<p>Google upgraded Gemini 3 Deep Think with breakthrough scientific reasoning capabilities, achieving gold-medal performance on the 2025 International Physics and Chemistry Olympiads. Beyond academic benchmarks, the practical applications are noteworthy: users can now sketch a concept and have Deep Think generate a 3D-printable file. This signals the accelerating convergence of reasoning models with real-world engineering and design workflows.</p>
+    <h2>Q1 venture funding hits $300 billion — 80% flows to AI</h2>
 
-<h2><a href="https://calmatters.org/politics/2026/04/newsom-moves-for-california-ai-startups/">California Asserts State-Level AI Regulatory Authority</a></h2>
-<div class="tag">📜 Policy &nbsp;|&nbsp; 🇨🇦 North America</div>
-<p>After the Department of Defense flagged Anthropic as a supply-chain risk, California Governor Newsom announced the state will conduct its own independent review and make its own business decisions regarding AI companies. Meanwhile, Washington state passed two major AI bills on disclosure requirements and chatbot safety. The regulatory landscape is fragmenting rapidly, and enterprises operating across jurisdictions will need to build governance frameworks that can adapt to overlapping — and sometimes conflicting — requirements.</p>
+    <p>Global venture investment reached an all-time high of $300 billion in Q1 2026, with $242 billion — a staggering 80% — flowing to AI companies. The four largest rounds went to OpenAI ($122B), Anthropic ($30B), xAI ($20B), and Waymo ($16B), collectively accounting for 65% of all global venture dollars. The capital concentration at the frontier raises real questions about market structure, competitive moats, and what this means for the broader startup ecosystem outside of AI.</p>
 
-<h2><a href="https://www.interconnects.ai/p/the-inevitable-need-for-an-open-model">Nathan Lambert: The Inevitable Need for an Open Model Consortium</a></h2>
-<div class="tag">🧪 Research &nbsp;|&nbsp; 🏢 Enterprise</div>
-<p>In a thoughtful essay, AI researcher Nathan Lambert argues that the economics of frontier model training are pushing the industry toward an inevitable consortium model for open AI. With Meta going proprietary, Chinese open-model startups facing financial pressure, and training costs hitting the billions, Lambert predicts companies reliant on open-weight models will eventually pool resources — much like industry consortia in semiconductor R&D. A must-read for anyone advising clients on long-term AI sourcing strategy.</p>
+    <h2>Google releases Gemma 4 for agentic workflows</h2>
 
-<h2><a href="https://openai.com/index/next-phase-of-enterprise-ai/">OpenAI Enterprise Revenue Hits 40% — Parity with Consumer by Year-End</a></h2>
-<div class="tag">🏢 Enterprise</div>
-<p>Enterprise now makes up more than 40% of OpenAI's revenue and is on track to reach parity with consumer by the end of 2026. OpenAI Frontier is helping customers like Oracle, State Farm, and Uber build and manage company-wide agent deployments. GPT-5.4, with its 1-million-token context window and ability to autonomously execute multi-step workflows, scored 75% on the OSWorld-V desktop productivity benchmark — a meaningful step toward agents that can genuinely work across enterprise software environments.</p>
+    <p>Google released Gemma 4 under the Apache 2.0 license — its latest series of open models built specifically for advanced reasoning and agentic workflows. With Meta going proprietary, Google is now arguably the most important player keeping the open-weight frontier alive. For enterprise teams building custom agent pipelines, Gemma 4 represents a strong new option that avoids vendor lock-in.</p>
 
-<hr>
+    <h2>Gemini 3 Deep Think achieves gold-medal science reasoning</h2>
 
-<div class="editorial">
-<h3>One Thing to Think About</h3>
-<p style="margin-bottom:0;">This week crystallized something that's been building for months: the agentic AI era isn't arriving — it's here, and the early winners are the organizations treating agents as core infrastructure rather than experimental toys. EY embedding multi-agent systems directly into its audit platform, Anthropic launching Managed Agents, OpenAI's Frontier helping Fortune 500 companies deploy agents company-wide — these aren't pilot programs anymore. The real competitive question for 2026 isn't "should we adopt agentic AI?" but "what parts of our value chain do we redesign around agents first?" The organizations that answer that question well in the next 12 months will define industry benchmarks for the next decade.</p>
-</div>
+    <p>Google upgraded Gemini 3 Deep Think with breakthrough scientific reasoning capabilities, achieving gold-medal performance on the 2025 International Physics and Chemistry Olympiads. Beyond academic benchmarks, the practical applications are noteworthy: users can now sketch a concept and have Deep Think generate a 3D-printable file. This signals the accelerating convergence of reasoning models with real-world engineering and design workflows.</p>
 
-<div class="reads">
-<h3>Worth Your Time</h3>
-<p><a href="https://www.kai-waehner.de/blog/2026/04/06/enterprise-agentic-ai-landscape-2026-trust-flexibility-and-vendor-lock-in/">Enterprise Agentic AI Landscape 2026: Trust, Flexibility, and Vendor Lock-in</a> — Kai Waehner's comprehensive analysis of the agentic AI vendor landscape, covering trust frameworks, multi-model strategies, and how enterprises can avoid getting locked in as the market consolidates.</p>
-<p style="margin-bottom:0;"><a href="https://www.morganlewis.com/blogs/sourcingatmorganlewis/2026/04/from-assistant-to-actor-what-the-rise-of-agentic-ai-means-for-your-business">From Assistant to Actor: What the Rise of Agentic AI Means for Your Business</a> — Morgan Lewis's legal take on the contractual, liability, and governance implications of deploying AI agents that act autonomously on behalf of your organization. Essential reading for anyone advising clients on agentic deployment risks.</p>
-</div>
+    <h2>California asserts state-level AI regulatory authority</h2>
 
-<hr>
+    <p>After the Department of Defense flagged Anthropic as a supply-chain risk, California Governor Newsom announced the state will conduct its own independent review and make its own business decisions regarding AI companies. Meanwhile, Washington state passed two major AI bills on disclosure requirements and chatbot safety. The regulatory landscape is fragmenting rapidly, and enterprises operating across jurisdictions will need to build governance frameworks that can adapt to overlapping — and sometimes conflicting — requirements.</p>
 
-<div class="footer">
-<p>AI Daily Briefing — Curated by Claude for Chiel Hendriks<br>
-Covering: TAAFT, Superhuman AI, Mindstream, Interconnects, and web sources</p>
-</div>
+    <div class="highlight">
+      <h3>One Thing to Think About</h3>
+      <p>This week crystallized something that's been building for months: the agentic AI era isn't arriving — it's here, and the early winners are the organizations treating agents as core infrastructure rather than experimental toys. EY embedding multi-agent systems directly into its audit platform, Anthropic launching Managed Agents, OpenAI's Frontier helping Fortune 500 companies deploy agents company-wide — these aren't pilot programs anymore.</p>
+      <p>The real competitive question for 2026 isn't "should we adopt agentic AI?" but "what parts of our value chain do we redesign around agents first?" The organizations that answer that question well in the next 12 months will define industry benchmarks for the next decade.</p>
+    </div>
 
+    <hr />
 
+    <h2>Worth Your Time</h2>
+
+    <p><strong>Nathan Lambert: The Inevitable Need for an Open Model Consortium</strong> — AI researcher Nathan Lambert argues that the economics of frontier model training are pushing the industry toward an inevitable consortium model for open AI. With Meta going proprietary, Chinese open-model startups facing financial pressure, and training costs hitting the billions, Lambert predicts companies reliant on open-weight models will eventually pool resources — much like industry consortia in semiconductor R&D. A must-read for anyone advising clients on long-term AI sourcing strategy.</p>
+
+    <p><strong>Enterprise Agentic AI Landscape 2026: Trust, Flexibility, and Vendor Lock-in</strong> — Kai Waehner's comprehensive analysis of the agentic AI vendor landscape, covering trust frameworks, multi-model strategies, and how enterprises can avoid getting locked in as the market consolidates.</p>
+
+    <p><strong>From Assistant to Actor: What the Rise of Agentic AI Means for Your Business</strong> — Morgan Lewis's legal take on the contractual, liability, and governance implications of deploying AI agents that act autonomously on behalf of your organization. Essential reading for anyone advising clients on agentic deployment risks.</p>
+
+    <p><strong>OpenAI Enterprise Revenue Hits 40% — Parity with Consumer by Year-End</strong> — Enterprise now makes up more than 40% of OpenAI's revenue and is on track to reach parity with consumer by the end of 2026. OpenAI Frontier is helping customers like Oracle, State Farm, and Uber build and manage company-wide agent deployments. GPT-5.4, with its 1-million-token context window and ability to autonomously execute multi-step workflows, scored 75% on the OSWorld-V desktop productivity benchmark — a meaningful step toward agents that can genuinely work across enterprise software environments.</p>
+
+    <hr />
+
+    <p><em>That's your briefing for Saturday. See you Monday morning.</em></p>
+
+    <p><em>— Chiel</em></p>
 
   </div>
 </article>
 
+<!-- Prev / Next navigation -->
 <div class="container">
   <div class="article-nav">
-    <a href="/2026-04-13.html">
+    <a href="/2026-04-10.html">
       <div class="label">← Previous briefing</div>
-      <div class="title">AI's Reckoning: Violence, Vulnerability, and $300B in Venture Capital</div>
+      <div class="title">Anthropic hits $30B run rate — the revenue crown changes hands</div>
     </a>
+    <div style="flex:1"></div>
   </div>
 </div>
 
