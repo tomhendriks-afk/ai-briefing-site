@@ -198,8 +198,11 @@
   <div class="container subscribe-cta">
     <h2>Get every briefing in your inbox.</h2>
     <p>Delivered weekday mornings — three takeaways, zero fluff.</p>
-    <form onsubmit="event.preventDefault();alert('Thanks! You\'ll get the next briefing.')">
-      <input type="email" required placeholder="you@company.com" />
+    <form action="https://buttondown.com/api/emails/embed-subscribe/ambientadvantage"
+          method="post" target="_blank">
+      <input type="email" name="email" required placeholder="you@company.com" />
+      <input type="hidden" name="embed" value="1" />
+      <input type="hidden" name="tag" value="daily-briefing" />
       <button class="read-btn" type="submit" style="font-family:'Space Grotesk';font-size:14px;font-weight:600;padding:14px 22px;border-radius:999px;background:linear-gradient(180deg,#4ea8ff,#2f7fd6);color:#031226;border:none;box-shadow:var(--glow);cursor:pointer">Subscribe</button>
     </form>
   </div>
