@@ -111,6 +111,25 @@
   .subscribe-cta input::placeholder{color:var(--mute)}
   .subscribe-cta input:focus{outline:none;border-color:var(--accent)}
 
+  /* ARCHIVE */
+  .archive{padding:60px 0 80px;border-top:1px solid var(--line)}
+  .archive h2{font-family:'Space Grotesk';font-size:32px;margin:0 0 8px;letter-spacing:-.01em}
+  .archive .archive-sub{color:var(--mute);font-size:15px;margin:0 0 40px}
+  .archive-month{margin-bottom:32px}
+  .archive-month h3{font-family:'Space Grotesk';font-size:14px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .archive-list{list-style:none;margin:0;padding:0}
+  .archive-list li{padding:12px 0;border-bottom:1px solid rgba(120,170,255,.06)}
+  .archive-list li:last-child{border-bottom:none}
+  .archive-list a{display:flex;align-items:baseline;gap:16px;text-decoration:none;transition:color .2s}
+  .archive-list a:hover{color:var(--accent)}
+  .archive-list .a-date{font-family:'Space Grotesk';font-size:13px;color:var(--mute);white-space:nowrap;min-width:110px}
+  .archive-list .a-title{font-family:'Space Grotesk';font-size:15px;font-weight:500;color:var(--text);transition:color .2s}
+  .archive-list a:hover .a-title{color:var(--accent)}
+  @media (max-width:800px){
+    .archive-list a{flex-direction:column;gap:4px}
+    .archive-list .a-date{min-width:auto}
+  }
+
   /* FOOTER */
   footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:13px}
   footer .row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
@@ -174,7 +193,7 @@
 
 <header class="page-header">
   <div class="container inner">
-    <span class="eyebrow">Daily AI Newsletter</span>
+    <span class="eyebrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:4px;opacity:.85"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Daily AI Newsletter</span>
     <h1>The <span class="grad">Daily Briefing</span></h1>
     <p class="sub">Every weekday morning, the most important AI developments distilled into what matters for business leaders. No fluff, just signal.</p>
   </div>
@@ -251,6 +270,27 @@
         <p class="snippet">Anthropic overtakes OpenAI on annualized revenue while 54% of CEOs say AI adoption is tearing their company apart.</p>
         <a href="/2026-04-10.html" class="read-link">Read briefing →</a>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ARCHIVE -->
+<section class="archive">
+  <div class="container">
+    <h2>Archive</h2>
+    <p class="archive-sub">Every edition, from day one.</p>
+
+    <div class="archive-month">
+      <h3>April 2026</h3>
+      <ul class="archive-list">
+        <li><a href="/2026-04-17.html"><span class="a-date">Thu, Apr 17</span><span class="a-title">Claude&rsquo;s Opus 4.6 Launch, Google&rsquo;s Gemini 2.5 Pro, and OpenAI&rsquo;s Enterprise Push</span></a></li>
+        <li><a href="/2026-04-16.html"><span class="a-date">Wed, Apr 16</span><span class="a-title">Anthropic&rsquo;s AI Agents Outperform Its Own Researchers, Opus 4.7 Incoming, and Snap&rsquo;s AI Layoffs</span></a></li>
+        <li><a href="/2026-04-15.html"><span class="a-date">Tue, Apr 15</span><span class="a-title">OpenAI&rsquo;s Leaked Strategy Memo, Stanford&rsquo;s 2026 AI Index, and Meta&rsquo;s Zuckerberg Clone</span></a></li>
+        <li><a href="/2026-04-14.html"><span class="a-date">Mon, Apr 14</span><span class="a-title">Anti-AI Anger, Anthropic&rsquo;s Mythos Bombshell, and $300B in Venture Capital</span></a></li>
+        <li><a href="/2026-04-13.html"><span class="a-date">Sun, Apr 13</span><span class="a-title">AI&rsquo;s Reckoning: Violence, Vulnerability, and $300B in Venture Capital</span></a></li>
+        <li><a href="/2026-04-12.html"><span class="a-date">Sat, Apr 12</span><span class="a-title">Anthropic Is Close to Overtaking OpenAI on Enterprise AI Spending</span></a></li>
+        <li><a href="/2026-04-10.html"><span class="a-date">Thu, Apr 10</span><span class="a-title">Anthropic Hits $30B Run Rate &mdash; The Revenue Crown Changes Hands</span></a></li>
+      </ul>
     </div>
   </div>
 </section>
