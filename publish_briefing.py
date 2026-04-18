@@ -21,6 +21,7 @@ Environment variables required:
 from __future__ import annotations
 
 import base64
+import html as html_module
 import json
 import logging
 import os
@@ -189,6 +190,12 @@ def extract_headline_and_snippet(html: str, subject: str) -> tuple[str, str]:
         headline_html = heading_match.group(1)
         # Strip any nested tags
         headline = re.sub(r'<[^>]+>', '', headline_html).strip()
+        # Decode HTML entities to avoid double-encoding later
+        headline = html_module.unescape(headline)
+        # Remove arrow characters and clean up
+        headline = headline.replace('\u2192', '').strip()
+        headline = re.sub(r',\s*$', '', headline)  # trailing comma
+        headline = re.sub(r'\s+', ' ', headline).strip()
     else:
         # Fall back to subject line, strip emoji prefix
         headline = re.sub(r'^[^\w]*', '', subject).strip()
@@ -197,6 +204,12 @@ def extract_headline_and_snippet(html: str, subject: str) -> tuple[str, str]:
             if headline.startswith(prefix):
                 headline = headline[len(prefix):].strip()
                 break
+        # Decode HTML entities to avoid double-encoding later
+        headline = html_module.unescape(headline)
+        # Remove arrow characters and clean up
+        headline = headline.replace('\u2192', '').strip()
+        headline = re.sub(r',\s*$', '', headline)  # trailing comma
+        headline = re.sub(r'\s+', ' ', headline).strip()
 
     # Extract body text for snippet
     extractor = TextExtractor()
@@ -210,6 +223,8 @@ def extract_headline_and_snippet(html: str, subject: str) -> tuple[str, str]:
     else:
         snippet_text = all_text
 
+    # Decode HTML entities in snippet
+    snippet_text = html_module.unescape(snippet_text)
     # Clean up and truncate
     snippet_text = re.sub(r'\s+', ' ', snippet_text).strip()
     # Try to cut at a sentence boundary around 200 chars
