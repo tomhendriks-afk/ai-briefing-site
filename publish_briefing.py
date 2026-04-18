@@ -581,14 +581,39 @@ def main():
         log.info("Article %s already exists — skipping", article_path.name)
         sys.exit(0)
 
-    # 4. Extract headline and snippet
+    # 4. Extract headline and snippet.
+    #    The sent email now uses a branded HTML template, so we derive the
+    #    website article content from the plain-text body (raw markdown)
+    #    converted to simple HTML.  This keeps the site formatting
+    #    unchanged while the email gets the branded design.
     headline, snippet = extract_headline_and_snippet(
         newsletter.html_body, newsletter.subject
     )
     log.info("Headline: %s", headline)
     log.info("Snippet: %s", snippet[:100])
 
-    read_time = _estimate_read_time(newsletter.html_body)
+    # Use the plain (markdown) body for the website when available,
+    # falling back to html_body for older emails sent before the
+    # branded template was introduced.
+    if newsletter.plain_body and newsletter.plain_body.strip():
+        try:
+            import markdown as _md
+            _site_html = _md.markdown(
+                newsletter.plain_body,
+                extensions=["extra", "sane_lists"],
+            )
+            site_content_html = (
+                '<div style="font-family:inherit;line-height:inherit;color:inherit;">'
+                f'{_site_html}'
+                '</div>'
+            )
+        except ImportError:
+            log.warning("markdown package not installed — falling back to html_body")
+            site_content_html = newsletter.html_body
+    else:
+        site_content_html = newsletter.html_body
+
+    read_time = _estimate_read_time(newsletter.plain_body or newsletter.html_body)
 
     # 5. Find previous article for nav links
     existing = sorted(repo_path.glob("20??-??-??.html"), reverse=True)
@@ -606,7 +631,7 @@ def main():
         date_key=newsletter.date,
         headline=headline,
         snippet=snippet,
-        newsletter_html=newsletter.html_body,
+        newsletter_html=site_content_html,
         prev_date=prev_date,
         prev_headline=prev_headline,
     )
