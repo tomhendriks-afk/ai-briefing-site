@@ -341,16 +341,6 @@ def generate_article_page(
   .article-meta .tag{{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(78,168,255,.1);color:var(--accent-2);border:1px solid rgba(78,168,255,.2)}}
   .article-header h1{{font-family:'Space Grotesk';font-weight:700;font-size:clamp(28px,4vw,42px);line-height:1.15;margin:0;letter-spacing:-.02em;color:var(--text)}}
 
-<<<<<<< Updated upstream
-  .article-body{{max-width:780px;margin:0 auto;padding:40px 0 80px}}
-  .article-body p{{font-size:17px;line-height:1.8;color:var(--text);margin:0 0 24px}}
-  .article-body h1,.article-body h2{{font-family:'Space Grotesk';font-size:26px;margin:48px 0 16px;letter-spacing:-.01em;color:var(--text)}}
-  .article-body h3{{font-family:'Space Grotesk';font-size:20px;margin:36px 0 12px;color:var(--text)}}
-  .article-body a{{color:var(--accent)}}
-  .article-body blockquote{{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(78,168,255,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}}
-  .article-body ul,.article-body ol{{padding-left:0;margin:36px 0 24px;list-style:none}}
-  .article-body li{{font-size:17px;line-height:1.8;margin-bottom:36px}}
-=======
   .article-body{{max-width:720px;margin:0 auto;padding:48px 0 80px}}
   .article-body p{{font-size:17px;line-height:1.85;color:#2d2d3a;margin:0 0 24px}}
   .article-body h1,.article-body h2{{font-family:'Space Grotesk';font-size:22px;margin:48px 0 16px;letter-spacing:.08em;text-transform:uppercase;color:#2b7de9;font-weight:700}}
@@ -359,7 +349,6 @@ def generate_article_page(
   .article-body blockquote{{border-left:3px solid #2b7de9;margin:28px 0;padding:16px 24px;background:#ffffff;border-radius:0 12px 12px 0;font-style:italic;color:#5a5a6e;box-shadow:0 1px 4px rgba(0,0,0,.05)}}
   .article-body ul,.article-body ol{{padding-left:0;margin:32px 0 24px;list-style:none}}
   .article-body li{{font-size:17px;line-height:1.85;margin-bottom:20px;color:#2d2d3a;background:#ffffff;padding:24px 28px;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.06);border:1px solid #eae7e1}}
->>>>>>> Stashed changes
   .article-body img{{max-width:100%;border-radius:12px}}
   .article-body hr{{border:none;border-top:1px solid #ddd8d0;margin:44px 0}}
   .article-body table{{width:100%;border-collapse:collapse;margin:24px 0}}
