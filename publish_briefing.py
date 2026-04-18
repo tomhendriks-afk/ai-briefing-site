@@ -348,7 +348,7 @@ def generate_article_page(
   .article-body a{{color:var(--accent)}}
   .article-body blockquote{{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(78,168,255,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}}
   .article-body ul,.article-body ol{{padding-left:0;margin:36px 0 24px;list-style:none}}
-  .article-body li{{font-size:17px;line-height:1.8;margin-bottom:8px}}
+  .article-body li{{font-size:17px;line-height:1.8;margin-bottom:36px}}
   .article-body img{{max-width:100%;border-radius:12px}}
   .article-body hr{{border:none;border-top:1px solid var(--line);margin:40px 0}}
   .article-body table{{width:100%;border-collapse:collapse;margin:24px 0}}
