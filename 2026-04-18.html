@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Anthropic's Official Claude Opus 4.7 Release Notes, Enterprise Agentic AI Landscape 2026, and OutSystems 2026 State of AI Development Report — Daily Briefing · Ambient Advantage</title>
-<meta name="description" content="Two model drops in 48 hours. One $300B funding quarter. And the quiet realization that &quot;safety-gating&quot; is becoming a product strategy, not just a PR talking point." />
+<title>Anthropic&amp;#x27;s Official Claude Opus 4.7 Release Notes &amp;rarr;, Enterprise Agentic AI Landscape 2026: Trust, Flexibility, and Vendor Lock-in (Kai Waehner) &amp;rarr;, and OutSystems 2026 State of AI Development Report &amp;rarr; — Daily Briefing · Ambient Advantage</title>
+<meta name="description" content="Two model drops in 48 hours. One $300B funding quarter. And the quiet realization that &quot;safety-gating&quot; is becoming a product strategy, not just a PR t ‌ ‌ ‌ ‌ ‌" />
 
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://briefing.ambient-advantage.ai/2026-04-18.html" />
-<meta property="og:title" content="Anthropic's Official Claude Opus 4.7 Release Notes, Enterprise Agentic AI Landscape 2026, and OutSystems 2026 State of AI Development Report" />
-<meta property="og:description" content="Two model drops in 48 hours. One $300B funding quarter. And the quiet realization that &quot;safety-gating&quot; is becoming a product strategy, not just a PR talking point." />
+<meta property="og:title" content="Anthropic&amp;#x27;s Official Claude Opus 4.7 Release Notes &amp;rarr;, Enterprise Agentic AI Landscape 2026: Trust, Flexibility, and Vendor Lock-in (Kai Waehner) &amp;rarr;, and OutSystems 2026 State of AI Development Report &amp;rarr;" />
+<meta property="og:description" content="Two model drops in 48 hours. One $300B funding quarter. And the quiet realization that &quot;safety-gating&quot; is becoming a product strategy, not just a PR t ‌ ‌ ‌ ‌ ‌" />
 <meta property="og:image" content="https://podcast.ambient-advantage.ai/og-image.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,17 +18,17 @@
 <style>
   :root{
     --bg-0:#05070d;--bg-1:#0a0f1c;--bg-2:#0f1628;
-    --line:rgba(120,170,255,.14);--text:#e8eefc;--mute:#b8c4db;
+    --line:rgba(120,170,255,.14);--text:#e8eefc;--mute:#8a97b4;
     --accent:#4ea8ff;--accent-2:#7ad0ff;
     --glow:0 0 40px rgba(78,168,255,.35);
   }
   *{box-sizing:border-box}
-  html,body{margin:0;padding:0;background:#f8f6f2;color:#2d2d3a;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-  a{color:#2b7de9;text-decoration:none}
+  html,body{margin:0;padding:0;background:var(--bg-0);color:var(--text);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
   a:hover{text-decoration:underline}
   .container{max-width:1180px;margin:0 auto;padding:0 28px}
 
-  nav.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(5,7,13,.95);border-bottom:1px solid var(--line)}
+  nav.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(5,7,13,.6);border-bottom:1px solid var(--line)}
   nav.top .row{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
   .logo{font-family:'Space Grotesk';font-weight:700;letter-spacing:.02em;font-size:18px;display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none}
   .logo .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:var(--glow)}
@@ -39,37 +39,36 @@
   .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(78,168,255,.12),rgba(78,168,255,.02));text-decoration:none;transition:border-color .2s}
   .nav-cta:hover{border-color:var(--accent);text-decoration:none}
 
-  .article-header{padding:80px 0 40px;position:relative;background:var(--bg-0)}
+  .article-header{padding:80px 0 40px;position:relative}
   .article-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(78,168,255,.1),transparent 60%);pointer-events:none}
-  .article-header .inner{position:relative;z-index:2;max-width:720px;margin:0 auto}
+  .article-header .inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
   .back-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-size:13px;color:var(--mute);letter-spacing:.05em;margin-bottom:28px;text-decoration:none;transition:color .2s}
   .back-link:hover{color:var(--accent);text-decoration:none}
   .article-meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--mute);font-family:'Space Grotesk';margin-bottom:18px;flex-wrap:wrap}
   .article-meta .tag{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(78,168,255,.1);color:var(--accent-2);border:1px solid rgba(78,168,255,.2)}
-  .article-header h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(28px,4vw,42px);line-height:1.15;margin:0;letter-spacing:-.02em;color:var(--text)}
+  .article-header h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(30px,4.5vw,48px);line-height:1.12;margin:0;letter-spacing:-.02em}
 
-  .article-body{max-width:720px;margin:0 auto;padding:48px 0 80px}
-  .article-body p{font-size:17px;line-height:1.85;color:#2d2d3a;margin:0 0 24px}
-  .article-body h1,.article-body h2{font-family:'Space Grotesk';font-size:22px;margin:48px 0 16px;letter-spacing:.08em;text-transform:uppercase;color:#2b7de9;font-weight:700}
-  .article-body h3{font-family:'Space Grotesk';font-size:20px;margin:36px 0 12px;color:#1a1a2e}
-  .article-body a{color:#2b7de9;font-weight:600}
-  .article-body blockquote{border-left:3px solid #2b7de9;margin:28px 0;padding:16px 24px;background:#ffffff;border-radius:0 12px 12px 0;font-style:italic;color:#5a5a6e;box-shadow:0 1px 4px rgba(0,0,0,.05)}
-  .article-body ul,.article-body ol{padding-left:0;margin:32px 0 24px;list-style:none}
-  .article-body li{font-size:17px;line-height:1.85;margin-bottom:20px;color:#2d2d3a;background:#ffffff;padding:24px 28px;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.06);border:1px solid #eae7e1}
+  .article-body{max-width:780px;margin:0 auto;padding:40px 0 80px}
+  .article-body p{font-size:17px;line-height:1.8;color:var(--text);margin:0 0 24px}
+  .article-body h1,.article-body h2{font-family:'Space Grotesk';font-size:26px;margin:48px 0 16px;letter-spacing:-.01em;color:var(--text)}
+  .article-body h3{font-family:'Space Grotesk';font-size:20px;margin:36px 0 12px;color:var(--text)}
+  .article-body a{color:var(--accent)}
+  .article-body blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(78,168,255,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}
+  .article-body ul,.article-body ol{padding-left:24px;margin:0 0 24px}
+  .article-body li{font-size:17px;line-height:1.8;margin-bottom:8px}
   .article-body img{max-width:100%;border-radius:12px}
-  .article-body hr{border:none;border-top:1px solid #ddd8d0;margin:44px 0}
+  .article-body hr{border:none;border-top:1px solid var(--line);margin:40px 0}
   .article-body table{width:100%;border-collapse:collapse;margin:24px 0}
-  .article-body th,.article-body td{padding:10px 14px;border:1px solid #ddd8d0;font-size:15px;text-align:left}
-  .article-body th{background:#ffffff;font-family:'Space Grotesk'}
-  .article-body strong{color:#1a1a2e}
+  .article-body th,.article-body td{padding:10px 14px;border:1px solid var(--line);font-size:15px;text-align:left}
+  .article-body th{background:var(--bg-1);font-family:'Space Grotesk'}
 
-  .article-nav{max-width:720px;margin:0 auto;padding:0 0 60px;display:flex;gap:18px}
-  .article-nav a{flex:1;display:block;background:#ffffff;border:1px solid #eae7e1;border-radius:12px;padding:20px;transition:border-color .2s,transform .15s;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.05)}
-  .article-nav a:hover{border-color:#2b7de9;transform:translateY(-1px);text-decoration:none}
-  .article-nav .label{font-size:11px;color:#8a97b4;font-family:'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
-  .article-nav .title{font-family:'Space Grotesk';font-size:15px;color:#1a1a2e;line-height:1.3}
+  .article-nav{max-width:780px;margin:0 auto;padding:0 0 60px;display:flex;gap:18px}
+  .article-nav a{flex:1;display:block;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .2s,transform .2s;text-decoration:none}
+  .article-nav a:hover{border-color:rgba(78,168,255,.35);transform:translateY(-1px);text-decoration:none}
+  .article-nav .label{font-size:11px;color:var(--mute);font-family:'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+  .article-nav .title{font-family:'Space Grotesk';font-size:15px;color:var(--text);line-height:1.3}
 
-  footer{background:var(--bg-0);border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:13px}
+  footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:13px}
   footer .frow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 
   @media (max-width:800px){
@@ -96,70 +95,187 @@
 <header class="article-header">
   <div class="container">
     <div class="inner">
-      <a href="/" class="back-link">&#8592; Back to all briefings</a>
+      <a href="/" class="back-link">← Back to all briefings</a>
       <div class="article-meta">
         <span class="tag">Daily Briefing</span>
-        <span>Saturday &middot; April 18, 2026</span>
-        <span>&middot;</span>
-        <span>8 min read</span>
+        <span>Saturday · April 18, 2026</span>
+        <span>·</span>
+        <span>2 min read</span>
       </div>
-      <h1>Anthropic's Official Claude Opus 4.7 Release Notes, Enterprise Agentic AI Landscape 2026, and OutSystems 2026 State of AI Development Report</h1>
+      <h1>Anthropic&amp;#x27;s Official Claude Opus 4.7 Release Notes &amp;rarr;, Enterprise Agentic AI Landscape 2026: Trust, Flexibility, and Vendor Lock-in (Kai Waehner) &amp;rarr;, and OutSystems 2026 State of AI Development Report &amp;rarr;</h1>
     </div>
   </div>
 </header>
 
 <article class="container">
   <div class="article-body">
-    <p><strong>Saturday, April 18, 2026. Your daily dose of what matters in AI, curated for business leaders.</strong></p>
+    
 
-    <p>Two model drops in 48 hours. One $300B funding quarter. And the quiet realization that "safety-gating" is becoming a product strategy, not just a PR talking point.</p>
 
-    <p>This week ended with the AI landscape more bifurcated than ever: the top labs are racing on raw capability while simultaneously inventing new reasons <em>not</em> to release their best work. For enterprise buyers and advisors, that means your model-selection conversation now has a new variable — not just performance, but access architecture. Here's everything you need to walk into Monday informed.</p>
 
-    <hr>
+  <!-- Preheader (hidden) -->
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">
+    Two model drops in 48 hours. One $300B funding quarter. And the quiet realization that &quot;safety-gating&quot; is becoming a product strategy, not just a PR t
+    &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+  </div>
 
-    <h2>Today's Stories</h2>
+  <!-- Outer wrapper -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f0f2f5">
+    <tr><td align="center" style="padding:20px 10px;">
 
-    <h3>The Big Picture</h3>
+      <!-- Email container -->
+      <table role="presentation" class="email-container" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width:600px;margin:0 auto;">
 
-    <p>Both Anthropic (with Mythos) and OpenAI (with GPT-Rosalind) are now practicing deliberate capability tiering — releasing strong-but-not-their-best models publicly while restricting frontier capabilities to vetted enterprise partners. This is a genuinely new playbook in the AI industry, and it has real procurement implications. When your client asks "what's the most powerful AI we can access?" the honest answer is increasingly "it depends on your governance posture, industry classification, and willingness to undergo a formal access review."</p>
+        <!-- Accent bar -->
+        <tr><td bgcolor="#4ea8ff" style="height:4px;font-size:1px;line-height:1px;">&nbsp;</td></tr>
 
-    <p>Safety-gating is becoming an enterprise sales motion. As an advisor, that's your cue to help clients build the internal governance frameworks that <em>qualify them</em> for tier-one access — because the models that move the needle on complex professional tasks may soon only be available to organizations that can demonstrate they're ready to use them responsibly.</p>
+        <!-- Header -->
+        <tr><td bgcolor="#ffffff" style="padding:28px 40px 20px 40px;text-align:center;">
+          <span style="font-size:22px;font-weight:bold;color:#0a0f1c;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <span style="color:#4ea8ff;">&bull;</span> Ambient Advantage
+          </span>
+          <br/>
+          <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin:14px auto 10px auto;"><tr><td style="width:60px;height:1px;background:#e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+          <span style="font-size:11px;color:#4ea8ff;letter-spacing:2.5px;text-transform:uppercase;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE DAILY BRIEFING</span>
+          <br/>
+          <span style="font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Saturday, April 18, 2026 &middot; 8 min read</span>
+        </td></tr>
 
-    <hr>
+        <!-- Header bottom border -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
 
-    <h2>Worth Bookmarking</h2>
+        <!-- Lead section -->
+        <tr><td bgcolor="#ffffff" style="padding:30px 40px 10px 40px;">
+          <!-- Pull quote -->
+          <p style="margin:0 0 20px 0;font-size:20px;font-style:italic;color:#0a0f1c;text-align:center;line-height:1.5;font-family:Georgia,'Times New Roman',Times,serif;">
+            &ldquo;**Saturday, April 18, 2026 · Your daily dose of what matters in AI, curated for business leaders.**&rdquo;
+          </p>
+          <!-- Intro paragraphs -->
+          <p style="margin:0 0 14px 0;font-size:15px;color:#1a1a2e;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Two model drops in 48 hours. One $300B funding quarter. And the quiet realization that &quot;safety-gating&quot; is becoming a product strategy, not just a PR talking point.</p><p style="margin:0 0 14px 0;font-size:15px;color:#1a1a2e;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">This week ended with the AI landscape more bifurcated than ever: the top labs are racing on raw capability while simultaneously inventing new reasons *not* to release their best work. For enterprise buyers and advisors, that means your model-selection conversation now has a new variable — not just performance, but access architecture. Here&#x27;s everything you need to walk into Monday informed.</p><p style="margin:0 0 14px 0;font-size:15px;color:#1a1a2e;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">---</p>
+        </td></tr>
 
-    <ul>
-      <li><strong><a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank">Anthropic's Official Claude Opus 4.7 Release Notes</a></strong> — Worth reading directly, not just through the newsletter lens; the section on "task budgets" and the new <code>/ultrareview</code> command in Claude Code are underappreciated enterprise-grade features buried in the announcement.</li>
+        <!-- Divider -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
 
-      <li><strong><a href="https://www.kai-waehner.de/blog/2026/04/06/enterprise-agentic-ai-landscape-2026-trust-flexibility-and-vendor-lock-in/" target="_blank">Enterprise Agentic AI Landscape 2026: Trust, Flexibility, and Vendor Lock-in (Kai Waehner)</a></strong> — An independent practitioner's vendor map covering 15+ providers on trust vs. flexibility axes. Exactly the kind of analysis to bring into a client's AI strategy session before they over-commit to one platform.</li>
+        <!-- Stories section -->
+        <tr><td bgcolor="#ffffff" style="padding:10px 40px 10px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:30px 0 0 0;">
+  <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">TODAY&#x27;S STORIES</span>
+  <br/>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#4ea8ff;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+</td></tr>
+            
+          </table>
+        </td></tr>
 
-      <li><strong><a href="https://www.prnewswire.com/apac/news-releases/agentic-ai-goes-mainstream-in-the-enterprise-but-94-raise-concern-about-sprawl-outsystems-research-finds-302739251.html" target="_blank">OutSystems 2026 State of AI Development Report</a></strong> — Survey of 1,900 global IT leaders on agentic AI maturity, governance, and the sprawl problem. Full of credible data points for any executive-level AI strategy deck.</li>
-    </ul>
+        <!-- Big Picture card -->
+        <tr><td bgcolor="#ffffff" style="padding:10px 40px 24px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td width="4" bgcolor="#4ea8ff" style="width:4px;font-size:1px;">&nbsp;</td>
+              <td bgcolor="#f0f7ff" style="padding:20px 24px;">
+                <span style="font-size:11px;font-weight:bold;color:#4ea8ff;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE BIG PICTURE</span>
+                <br/><br/>
+                <p style="margin:0 0 10px 0;font-size:15px;color:#0a0f1c;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Both Anthropic (with Mythos) and OpenAI (with GPT-Rosalind) are now practicing deliberate capability tiering — releasing strong-but-not-their-best models publicly while restricting frontier capabilities to vetted enterprise partners. This is a genuinely new playbook in the AI industry, and it has real procurement implications. When your client asks &quot;what&#x27;s the most powerful AI we can access?&quot; the honest answer is increasingly &quot;it depends on your governance posture, industry classification, and willingness to undergo a formal access review.&quot; Safety-gating is becoming an enterprise sales motion. As an advisor, that&#x27;s your cue to help clients build the internal governance frameworks that *qualify them* for tier-one access — because the models that move the needle on complex professional tasks may soon only be available to organizations that can demonstrate they&#x27;re ready to use them responsibly.</p><p style="margin:0 0 10px 0;font-size:15px;color:#0a0f1c;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">---</p>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
 
-    <hr>
+        <!-- Resources section -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px 24px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:30px 0 0 0;">
+  <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">WORTH BOOKMARKING</span>
+  <br/>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#4ea8ff;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+</td></tr>
+            <tr><td style="height:12px;font-size:1px;">&nbsp;</td></tr>
+            <tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://www.anthropic.com/news/claude-opus-4-7" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">Anthropic&#x27;s Official Claude Opus 4.7 Release Notes &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">Worth reading directly, not just through the newsletter lens; the section on &quot;task budgets&quot; and the new `/ultrareview` command in Claude Code are underappreciated enterprise-grade features buried in the announcement.</span>
+    </td>
+  </tr></table>
+</td></tr><tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://www.kai-waehner.de/blog/2026/04/06/enterprise-agentic-ai-landscape-2026-trust-flexibility-and-vendor-lock-in/" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">Enterprise Agentic AI Landscape 2026: Trust, Flexibility, and Vendor Lock-in (Kai Waehner) &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">An independent practitioner&#x27;s vendor map covering 15+ providers on trust vs. flexibility axes. Exactly the kind of analysis to bring into a client&#x27;s AI strategy session before they over-commit to one platform.</span>
+    </td>
+  </tr></table>
+</td></tr><tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://www.prnewswire.com/apac/news-releases/agentic-ai-goes-mainstream-in-the-enterprise-but-94-raise-concern-about-sprawl-outsystems-research-finds-302739251.html" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">OutSystems 2026 State of AI Development Report &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">Survey of 1,900 global IT leaders on agentic AI maturity, governance, and the sprawl problem. Full of credible data points for any executive-level AI strategy deck.</span>
+    </td>
+  </tr></table>
+</td></tr>
+          </table>
+        </td></tr>
 
-    <p><em>Prefer to listen? Today's briefing is also a podcast.</em> <a href="https://podcast.ambient-advantage.ai">Listen to Today's Episode</a></p>
+        <!-- Divider -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
 
-    <hr>
+        <!-- Podcast CTA -->
+        <tr><td bgcolor="#ffffff" style="padding:24px 40px 30px 40px;text-align:center;">
+          <p style="margin:0 0 16px 0;font-size:14px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            Prefer to listen? Today&#8217;s briefing is also a podcast.
+          </p>
+          <table cellpadding="0" cellspacing="0" border="0" align="center">
+            <tr>
+              <td align="center" bgcolor="#4ea8ff" style="border-radius:6px;">
+                <a href="https://podcast.ambient-advantage.ai" target="_blank" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:bold;color:#ffffff;text-decoration:none;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Listen to Today&#8217;s Episode &rarr;</a>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
 
-    <p><em>Curated by Chiel Hendriks &middot; PwC Canada</em></p>
+        <!-- Footer -->
+        <tr><td bgcolor="#f0f2f5" style="padding:24px 40px 30px 40px;text-align:center;">
+          <p style="margin:0 0 6px 0;font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            Curated by Chiel Hendriks &middot; PwC Canada
+          </p>
+          <p style="margin:0 0 6px 0;font-size:13px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <a href="https://ambient-advantage.ai" style="color:#4ea8ff;text-decoration:none;">ambient-advantage.ai</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://www.linkedin.com/in/chielhendriks/" style="color:#4ea8ff;text-decoration:none;">LinkedIn</a>
+          </p>
+          <p style="margin:10px 0 0 0;font-size:12px;color:#9ca3af;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <a href="#" style="color:#9ca3af;text-decoration:underline;">Unsubscribe</a>
+            &nbsp;&middot;&nbsp;
+            <a href="#" style="color:#9ca3af;text-decoration:underline;">View in browser</a>
+          </p>
+          <p style="margin:10px 0 0 0;font-size:12px;color:#9ca3af;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            &copy; 2026 Ambient Advantage
+          </p>
+        </td></tr>
+
+      </table>
+      <!-- /Email container -->
+
+    </td></tr>
+  </table>
+  <!-- /Outer wrapper -->
+
+
   </div>
 </article>
 
 <div class="container">
   <div class="article-nav">
-    <a href="/2026-04-17.html">
-      <div class="label">&#8592; Previous briefing</div>
-      <div class="title">April 17, 2026</div>
-    </a>
   </div>
 </div>
 
 <footer>
   <div class="container frow">
-    <div>&copy; 2026 Ambient Advantage &middot; Curated by Chiel Hendriks</div>
+    <div>© 2026 Ambient Advantage · Curated by Chiel Hendriks</div>
     <div><a href="https://ambient-advantage.ai" style="color:var(--accent);text-decoration:none">ambient-advantage.ai</a></div>
   </div>
 </footer>
