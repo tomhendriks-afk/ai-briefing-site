@@ -1,0 +1,50 @@
+[
+  {
+    "date": "2026-04-18",
+    "headline": "Anthropic&rsquo;s Official Claude Opus 4.7 Release Notes, Enterprise Agentic AI Landscape 2026: Trust, Flexibility, and Vendor Lock-in (Kai Waehner), and OutSystems 2026 State of AI Development Report",
+    "snippet": "Two model drops in 48 hours. One $300B funding quarter. And the quiet realization that &ldquo;safety-gating&rdquo; is becoming a product strategy, not just a PR talking point.",
+    "read_time": 8
+  },
+  {
+    "date": "2026-04-17",
+    "headline": "Claude Opus 4.6, Google Gemini 2.5 Pro, and OpenAI&rsquo;s Enterprise Push",
+    "snippet": "Three of the world&rsquo;s most-watched AI products dropped major updates within 48 hours &mdash; and none of them were trying to be subtle about it.",
+    "read_time": 8
+  },
+  {
+    "date": "2026-04-16",
+    "headline": "Anthropic&rsquo;s AI Agents Outperform Its Own Researchers, Opus 4.7 Incoming, and Snap&rsquo;s AI Layoffs",
+    "snippet": "A sneaker company pivoted to GPU rentals and gained 600% in a day. Meanwhile, Anthropic&rsquo;s AI agents are outperforming its own alignment researchers.",
+    "read_time": 7
+  },
+  {
+    "date": "2026-04-15",
+    "headline": "OpenAI&rsquo;s Leaked Strategy Memo, Stanford&rsquo;s 2026 AI Index, and Meta&rsquo;s Zuckerberg Clone",
+    "snippet": "The AI industry is in an unusually candid mood &mdash; spilling internal strategy memos, leaking source code, and publishing landmark research.",
+    "read_time": 7
+  },
+  {
+    "date": "2026-04-14",
+    "headline": "Anti-AI Anger, Anthropic&rsquo;s Mythos Bombshell, and $300B in Venture Capital",
+    "snippet": "As anti-AI anger reaches Sam Altman&rsquo;s front door and Anthropic withholds its most powerful model over cybersecurity fears, the industry is being forced to reckon with the consequences of breakneck deployment.",
+    "read_time": 8
+  },
+  {
+    "date": "2026-04-13",
+    "headline": "AI&rsquo;s Reckoning: Violence, Vulnerability, and $300B in Venture Capital",
+    "snippet": "As anti-AI anger reaches Sam Altman&rsquo;s front door and Anthropic withholds its most powerful model over cybersecurity fears, the industry is being forced to reckon with the consequences of breakneck deployment.",
+    "read_time": 7
+  },
+  {
+    "date": "2026-04-12",
+    "headline": "Anthropic Is Close to Overtaking OpenAI on Enterprise AI Spending",
+    "snippet": "At HumanX, Anthropic emerged as the enterprise AI leader while its frontier model Mythos triggered an emergency Wall Street meeting.",
+    "read_time": 6
+  },
+  {
+    "date": "2026-04-10",
+    "headline": "Anthropic Hits $30B Run Rate &mdash; The Revenue Crown Changes Hands",
+    "snippet": "Anthropic has officially passed OpenAI in annualized revenue, hitting a $30B run rate while spending roughly four times less on training.",
+    "read_time": 7
+  }
+]
