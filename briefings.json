@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-04-24",
+    "headline": "GPT-5.5 Launches as Agent Runtime, Anthropic Hits $1T, and DeepSeek V4 Undercuts Everyone",
+    "snippet": "The throughline today: the agentic enterprise is no longer a slide deck concept — it's shipping in production, repricing in real time, and creating security exposures that most governance frameworks aren't built to handle.",
+    "read_time": 7
+  },
+  {
     "date": "2026-04-23",
     "headline": "Anthropic's Claude Mythos Breached via Third-Party Vendor — The Dual-Use Nightmare Begins, Google Cloud Next '26: The Agentic Enterprise Is Now an Official Product Category, and Google Commits $750M to Partner Ecosystem for Agentic AI — PwC Named",
     "snippet": "This edition covers thirteen stories spanning security, agentic infrastructure, enterprise strategy, and research breakthroughs.",
