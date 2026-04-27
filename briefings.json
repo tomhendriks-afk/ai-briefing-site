@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-04-27",
+    "headline": "Meta's AI Restructuring, Google's $40B Anthropic Bet, and the Multi-Model Enterprise Era",
+    "snippet": "This edition covers thirteen stories across enterprise restructuring, funding, agentic platforms, policy, and research.",
+    "read_time": 8
+  },
+  {
     "date": "2026-04-24",
     "headline": "GPT-5.5 Launches as Agent Runtime, Anthropic Hits $1T, and DeepSeek V4 Undercuts Everyone",
     "snippet": "The throughline today: the agentic enterprise is no longer a slide deck concept — it's shipping in production, repricing in real time, and creating security exposures that most governance frameworks aren't built to handle.",
