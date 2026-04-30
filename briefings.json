@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-04-30",
+    "headline": "Meta's 8,000-Person AI Restructuring, OpenAI Lands on AWS, and a Rogue Agent Wipes a Database",
+    "snippet": "This edition covers ten stories across enterprise, infrastructure, agentic AI, funding, policy, security, and research.",
+    "read_time": 6
+  },
+  {
     "date": "2026-04-29",
     "headline": "OpenAI Ends Azure Exclusivity, Misses Revenue Targets, and Google Signs Classified Pentagon AI Deal",
     "snippet": "This edition covers twelve stories spanning the OpenAI-Microsoft restructuring, AWS moving fast to host OpenAI models, a defining ethics fault-line at the Pentagon, the EU AI Act's compliance deadline chaos, and a research finding that should stop...",
