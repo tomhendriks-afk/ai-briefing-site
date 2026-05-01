@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-05-01",
+    "headline": "OpenAI Breaks Azure Exclusivity, Google Sells TPUs Off-Cloud, and Agents Hit 77% Task Success",
+    "snippet": "This edition covers thirteen stories across enterprise, infrastructure, agentic, research, and policy.",
+    "read_time": 8
+  },
+  {
     "date": "2026-04-30",
     "headline": "Meta's 8,000-Person AI Restructuring, OpenAI Lands on AWS, and a Rogue Agent Wipes a Database",
     "snippet": "This edition covers ten stories across enterprise, infrastructure, agentic AI, funding, policy, security, and research.",
