@@ -396,7 +396,8 @@ def generate_article_page(
       <a href="https://podcast.ambient-advantage.ai">Podcast</a>
       <a href="/" class="active">Daily Briefing</a>
       <a href="https://take.ambient-advantage.ai">Chiel's Take</a>
-      <a href="https://podcast.ambient-advantage.ai#about">About</a>
+      <a href="https://build.ambient-advantage.ai">Build Log</a>
+      <a href="https://ambient-advantage.ai/about">About</a>
     </div>
     <a class="nav-cta" href="/#subscribe">Subscribe</a>
   </div>
