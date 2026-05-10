@@ -1,0 +1,23 @@
+# The Daily Briefing — Ambient Advantage
+
+> A five-minute written intelligence brief on the AI stories shaping boardroom conversations. Published every weekday morning (ET), curated by Chiel Hendriks (Managing Director, PwC Canada; ex-Google, 16 years). Each edition covers roughly 8–13 stories across enterprise strategy, agentic AI, infrastructure, policy, security, and research, framed for the strategic implications rather than the engineering details. Audience: C-suite executives, consulting practice leaders, and digital transformation owners.
+
+## Data feeds
+- [briefings.json](https://briefing.ambient-advantage.ai/briefings.json): Machine-readable index of every published briefing — date, headline, snippet, read time. Sorted newest-first.
+- [articles.json](https://take.ambient-advantage.ai/articles.json): Companion index for the Chiel's Take opinion column on the sister site — slug, title, date, read time, excerpt.
+
+## Latest briefings
+- [May 8, 2026](https://briefing.ambient-advantage.ai/2026-05-08.html): OpenAI's Real-Time Voice Agents, Anthropic Reads Claude's Mind, and the Agentic ROI Gap Widens
+- [May 7, 2026](https://briefing.ambient-advantage.ai/2026-05-07.html): Anthropic's Prebuilt Finance Agents, GPT-5.5's Hallucination Fix, and Cerebras Eyes a $27B IPO
+- [May 6, 2026](https://briefing.ambient-advantage.ai/2026-05-06.html): Anthropic and OpenAI Launch Billion-Dollar Services Ventures, GPT-5.5 Hits AWS, and Canada's AI Regulation Vacuum
+- [May 5, 2026](https://briefing.ambient-advantage.ai/2026-05-05.html): Anthropic's $900B Valuation, OpenAI's PE Deployment Play, and the Enterprise AI Show-vs-Substance Gap
+- [May 4, 2026](https://briefing.ambient-advantage.ai/2026-05-04.html): Pentagon's Classified AI Contracts, Musk v. Altman Bombshells, and the Hyperscaler CapEx Surge
+- [May 1, 2026](https://briefing.ambient-advantage.ai/2026-05-01.html): OpenAI Breaks Azure Exclusivity, Google Sells TPUs Off-Cloud, and Agents Hit 77% Task Success
+- [April 30, 2026](https://briefing.ambient-advantage.ai/2026-04-30.html): Meta's 8,000-Person AI Restructuring, OpenAI Lands on AWS, and a Rogue Agent Wipes a Database
+
+## Related sites
+- [Ambient Advantage home](https://ambient-advantage.ai)
+- [The Podcast](https://podcast.ambient-advantage.ai): Audio version of each day's briefing.
+- [Chiel's Take](https://take.ambient-advantage.ai): Opinion column.
+- [Build Log](https://build.ambient-advantage.ai): How this pipeline is built.
+- [Newsletter (free)](https://buttondown.com/ambient-advantage): Get each briefing in your inbox.
