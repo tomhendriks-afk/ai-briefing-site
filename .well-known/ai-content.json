@@ -1,0 +1,42 @@
+{
+  "name": "The Daily Briefing — Ambient Advantage",
+  "description": "A five-minute written intelligence brief on the AI stories shaping boardroom conversations. Published every weekday morning (ET). Curated by Chiel Hendriks (Managing Director, PwC Canada).",
+  "owner": {
+    "name": "Chiel Hendriks",
+    "url": "https://www.linkedin.com/in/chielhendriks/"
+  },
+  "llms_txt": "https://briefing.ambient-advantage.ai/llms.txt",
+  "endpoints": [
+    {
+      "name": "Briefings index (JSON)",
+      "url": "https://briefing.ambient-advantage.ai/briefings.json",
+      "type": "application/json",
+      "description": "Every published briefing — date, headline, snippet, read time. Sorted newest-first."
+    },
+    {
+      "name": "Markdown homepage",
+      "url": "https://briefing.ambient-advantage.ai/index.md",
+      "type": "text/markdown",
+      "description": "Bulleted markdown index of every briefing (pipeline-generated)."
+    },
+    {
+      "name": "Per-day briefing markdown",
+      "url": "https://briefing.ambient-advantage.ai/{YYYY-MM-DD}.md",
+      "type": "text/markdown",
+      "description": "Markdown twin for any briefing — substitute the ISO date. Pipeline-emitted alongside each day's HTML article."
+    },
+    {
+      "name": "LLM/agent guide",
+      "url": "https://briefing.ambient-advantage.ai/llms.txt",
+      "type": "text/plain",
+      "description": "Site overview, latest briefings, and pointers."
+    }
+  ],
+  "related_sites": [
+    "https://ambient-advantage.ai",
+    "https://briefing.ambient-advantage.ai",
+    "https://take.ambient-advantage.ai",
+    "https://podcast.ambient-advantage.ai",
+    "https://build.ambient-advantage.ai"
+  ]
+}
