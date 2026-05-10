@@ -19,8 +19,8 @@
   :root{
     --bg-0:#05070d;--bg-1:#0a0f1c;--bg-2:#0f1628;
     --line:rgba(120,170,255,.14);--text:#e8eefc;--mute:#8a97b4;
-    --accent:#4ea8ff;--accent-2:#7ad0ff;
-    --glow:0 0 40px rgba(78,168,255,.35);
+    --accent:#3ddc97;--accent-2:#7af0bd;
+    --glow:0 0 40px rgba(61,220,151,.35);
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0;background:var(--bg-0);color:var(--text);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
@@ -36,16 +36,16 @@
   .nav-links a{color:var(--mute);text-decoration:none}
   .nav-links a:hover{color:var(--text);text-decoration:none}
   .nav-links a.active{color:var(--text);border-bottom:2px solid var(--accent);padding-bottom:2px}
-  .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(78,168,255,.12),rgba(78,168,255,.02));text-decoration:none;transition:border-color .2s}
+  .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(61,220,151,.12),rgba(61,220,151,.02));text-decoration:none;transition:border-color .2s}
   .nav-cta:hover{border-color:var(--accent);text-decoration:none}
 
   .article-header{padding:80px 0 40px;position:relative}
-  .article-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(78,168,255,.1),transparent 60%);pointer-events:none}
+  .article-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(61,220,151,.1),transparent 60%);pointer-events:none}
   .article-header .inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
   .back-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-size:13px;color:var(--mute);letter-spacing:.05em;margin-bottom:28px;text-decoration:none;transition:color .2s}
   .back-link:hover{color:var(--accent);text-decoration:none}
   .article-meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--mute);font-family:'Space Grotesk';margin-bottom:18px;flex-wrap:wrap}
-  .article-meta .tag{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(78,168,255,.1);color:var(--accent-2);border:1px solid rgba(78,168,255,.2)}
+  .article-meta .tag{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(61,220,151,.1);color:var(--accent-2);border:1px solid rgba(61,220,151,.2)}
   .article-header h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(30px,4.5vw,48px);line-height:1.12;margin:0;letter-spacing:-.02em}
 
   .article-body{max-width:780px;margin:0 auto;padding:40px 0 80px}
@@ -53,7 +53,7 @@
   .article-body h1,.article-body h2{font-family:'Space Grotesk';font-size:26px;margin:48px 0 16px;letter-spacing:-.01em;color:var(--text)}
   .article-body h3{font-family:'Space Grotesk';font-size:20px;margin:36px 0 12px;color:var(--text)}
   .article-body a{color:var(--accent)}
-  .article-body blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(78,168,255,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}
+  .article-body blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(61,220,151,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}
   .article-body ul,.article-body ol{padding-left:24px;margin:0 0 24px}
   .article-body li{font-size:17px;line-height:1.8;margin-bottom:8px}
   .article-body img{max-width:100%;border-radius:12px}
@@ -64,7 +64,7 @@
 
   .article-nav{max-width:780px;margin:0 auto;padding:0 0 60px;display:flex;gap:18px}
   .article-nav a{flex:1;display:block;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .2s,transform .2s;text-decoration:none}
-  .article-nav a:hover{border-color:rgba(78,168,255,.35);transform:translateY(-1px);text-decoration:none}
+  .article-nav a:hover{border-color:rgba(61,220,151,.35);transform:translateY(-1px);text-decoration:none}
   .article-nav .label{font-size:11px;color:var(--mute);font-family:'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
   .article-nav .title{font-family:'Space Grotesk';font-size:15px;color:var(--text);line-height:1.3}
 
@@ -159,16 +159,16 @@
       <table role="presentation" class="email-container" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width:600px;margin:0 auto;">
 
         <!-- Accent bar -->
-        <tr><td bgcolor="#4ea8ff" style="height:4px;font-size:1px;line-height:1px;">&nbsp;</td></tr>
+        <tr><td bgcolor="#3ddc97" style="height:4px;font-size:1px;line-height:1px;">&nbsp;</td></tr>
 
         <!-- Header -->
         <tr><td bgcolor="#ffffff" style="padding:28px 40px 20px 40px;text-align:center;">
           <span style="font-size:22px;font-weight:bold;color:#0a0f1c;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
-            <span style="color:#4ea8ff;">&bull;</span> Ambient Advantage
+            <span style="color:#3ddc97;">&bull;</span> Ambient Advantage
           </span>
           <br/>
           <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin:14px auto 10px auto;"><tr><td style="width:60px;height:1px;background:#e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
-          <span style="font-size:11px;color:#4ea8ff;letter-spacing:2.5px;text-transform:uppercase;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE DAILY BRIEFING</span>
+          <span style="font-size:11px;color:#3ddc97;letter-spacing:2.5px;text-transform:uppercase;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE DAILY BRIEFING</span>
           <br/>
           <span style="font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Monday, April 27, 2026 &middot; 8 min read</span>
         </td></tr>
@@ -195,7 +195,7 @@
             <tr><td style="padding:30px 0 0 0;">
   <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">TODAY&#x27;S STORIES</span>
   <br/>
-  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#4ea8ff;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#3ddc97;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
 </td></tr>
             <tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
   <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
@@ -301,9 +301,9 @@
         <tr><td bgcolor="#ffffff" style="padding:10px 40px 24px 40px;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
             <tr>
-              <td width="4" bgcolor="#4ea8ff" style="width:4px;font-size:1px;">&nbsp;</td>
+              <td width="4" bgcolor="#3ddc97" style="width:4px;font-size:1px;">&nbsp;</td>
               <td bgcolor="#f0f7ff" style="padding:20px 24px;">
-                <span style="font-size:11px;font-weight:bold;color:#4ea8ff;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE BIG PICTURE</span>
+                <span style="font-size:11px;font-weight:bold;color:#3ddc97;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE BIG PICTURE</span>
                 <br/><br/>
                 <p style="margin:0 0 10px 0;font-size:15px;color:#0a0f1c;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Meta&#x27;s restructuring is getting all the headlines, but the real story this week is the convergence of three forces that should change how you advise clients. Microsoft is routing tasks across models without telling users which one is doing the work. Google is absorbing everything into a single agentic platform. DeepSeek is making frontier performance available at a fraction of the cost. Together, these mean the model layer is becoming a commodity faster than anyone&#x27;s org chart can keep up. Yet Deloitte&#x27;s data shows only 20% of enterprises have mature governance for the agentic systems that sit on top of those models. The strategic question for every enterprise leader in Q3 2026 isn&#x27;t &quot;which model do we pick?&quot; — it&#x27;s &quot;do we have the organizational architecture, approval chains, and governance muscle to safely deploy agents that pick their own models?&quot; If you&#x27;re still running a model bake-off, you&#x27;re solving last year&#x27;s problem.</p>
               </td>
@@ -317,7 +317,7 @@
             <tr><td style="padding:30px 0 0 0;">
   <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">WORTH BOOKMARKING</span>
   <br/>
-  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#4ea8ff;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#3ddc97;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
 </td></tr>
             <tr><td style="height:12px;font-size:1px;">&nbsp;</td></tr>
             <tr><td style="padding:6px 0;">
@@ -358,7 +358,7 @@
           </p>
           <table cellpadding="0" cellspacing="0" border="0" align="center">
             <tr>
-              <td align="center" bgcolor="#4ea8ff" style="border-radius:6px;">
+              <td align="center" bgcolor="#3ddc97" style="border-radius:6px;">
                 <a href="https://podcast.ambient-advantage.ai" target="_blank" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:bold;color:#ffffff;text-decoration:none;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Listen to Today&#8217;s Episode &rarr;</a>
               </td>
             </tr>
@@ -371,9 +371,9 @@
             Curated by Chiel Hendriks &middot; PwC Canada
           </p>
           <p style="margin:0 0 6px 0;font-size:13px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
-            <a href="https://ambient-advantage.ai" style="color:#4ea8ff;text-decoration:none;">ambient-advantage.ai</a>
+            <a href="https://ambient-advantage.ai" style="color:#3ddc97;text-decoration:none;">ambient-advantage.ai</a>
             &nbsp;&middot;&nbsp;
-            <a href="https://www.linkedin.com/in/chielhendriks/" style="color:#4ea8ff;text-decoration:none;">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/chielhendriks/" style="color:#3ddc97;text-decoration:none;">LinkedIn</a>
           </p>
           <p style="margin:10px 0 0 0;font-size:12px;color:#9ca3af;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
             <a href="#" style="color:#9ca3af;text-decoration:underline;">Unsubscribe</a>

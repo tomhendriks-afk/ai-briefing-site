@@ -19,8 +19,8 @@
   :root{
     --bg-0:#05070d;--bg-1:#0a0f1c;--bg-2:#0f1628;
     --line:rgba(120,170,255,.14);--text:#e8eefc;--mute:#8a97b4;
-    --accent:#4ea8ff;--accent-2:#7ad0ff;
-    --glow:0 0 40px rgba(78,168,255,.35);
+    --accent:#3ddc97;--accent-2:#7af0bd;
+    --glow:0 0 40px rgba(61,220,151,.35);
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0;background:var(--bg-0);color:var(--text);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
@@ -36,16 +36,16 @@
   .nav-links a{color:var(--mute);text-decoration:none}
   .nav-links a:hover{color:var(--text);text-decoration:none}
   .nav-links a.active{color:var(--text);border-bottom:2px solid var(--accent);padding-bottom:2px}
-  .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(78,168,255,.12),rgba(78,168,255,.02));text-decoration:none;transition:border-color .2s}
+  .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(61,220,151,.12),rgba(61,220,151,.02));text-decoration:none;transition:border-color .2s}
   .nav-cta:hover{border-color:var(--accent);text-decoration:none}
 
   .article-header{padding:80px 0 40px;position:relative}
-  .article-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(78,168,255,.1),transparent 60%);pointer-events:none}
+  .article-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(61,220,151,.1),transparent 60%);pointer-events:none}
   .article-header .inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
   .back-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-size:13px;color:var(--mute);letter-spacing:.05em;margin-bottom:28px;text-decoration:none;transition:color .2s}
   .back-link:hover{color:var(--accent);text-decoration:none}
   .article-meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--mute);font-family:'Space Grotesk';margin-bottom:18px;flex-wrap:wrap}
-  .article-meta .tag{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(78,168,255,.1);color:var(--accent-2);border:1px solid rgba(78,168,255,.2)}
+  .article-meta .tag{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(61,220,151,.1);color:var(--accent-2);border:1px solid rgba(61,220,151,.2)}
   .article-header h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(30px,4.5vw,48px);line-height:1.12;margin:0;letter-spacing:-.02em}
 
   .article-body{max-width:780px;margin:0 auto;padding:40px 0 80px}
@@ -53,7 +53,7 @@
   .article-body h1,.article-body h2{font-family:'Space Grotesk';font-size:26px;margin:48px 0 16px;letter-spacing:-.01em;color:var(--text)}
   .article-body h3{font-family:'Space Grotesk';font-size:20px;margin:36px 0 12px;color:var(--text)}
   .article-body a{color:var(--accent)}
-  .article-body blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(78,168,255,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}
+  .article-body blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(61,220,151,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}
   .article-body ul,.article-body ol{padding-left:24px;margin:0 0 24px}
   .article-body li{font-size:17px;line-height:1.8;margin-bottom:8px}
   .article-body img{max-width:100%;border-radius:12px}
@@ -64,7 +64,7 @@
 
   .article-nav{max-width:780px;margin:0 auto;padding:0 0 60px;display:flex;gap:18px}
   .article-nav a{flex:1;display:block;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .2s,transform .2s;text-decoration:none}
-  .article-nav a:hover{border-color:rgba(78,168,255,.35);transform:translateY(-1px);text-decoration:none}
+  .article-nav a:hover{border-color:rgba(61,220,151,.35);transform:translateY(-1px);text-decoration:none}
   .article-nav .label{font-size:11px;color:var(--mute);font-family:'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
   .article-nav .title{font-family:'Space Grotesk';font-size:15px;color:var(--text);line-height:1.3}
 
