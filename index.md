@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Anthropic Eyes $900B Valuation, EU AI Act Omnibus Deal, and Enterprise AI's ROI Gap Widens](https://briefing.ambient-advantage.ai/2026-05-12.html) — Tuesday · May 12, 2026 · This edition covers thirteen stories spanning funding, policy, security, and the widening gap between AI ambition and AI impact.
 - [EU AI Act Fines Hit €250M, Anthropic Eyes $900B Valuation, and the Single-Model Era Ends](https://briefing.ambient-advantage.ai/2026-05-11.html) — Monday · May 11, 2026 · This edition covers twelve stories across policy, funding, enterprise strategy, and infrastructure. The throughline: the era of picking a single AI horse is over.
 - [OpenAI's Real-Time Voice Agents, Anthropic Reads Claude's Mind, and the Agentic ROI Gap Widens](https://briefing.ambient-advantage.ai/2026-05-08.html) — Friday · May 8, 2026 · This edition covers twelve stories across agentic infrastructure, interpretability research, policy, cybersecurity, and the enterprise adoption reality check.
 - [Anthropic's Prebuilt Finance Agents, GPT-5.5's Hallucination Fix, and Cerebras Eyes a $27B IPO](https://briefing.ambient-advantage.ai/2026-05-07.html) — Thursday · May 7, 2026 · This edition covers twelve stories spanning agentic infrastructure, enterprise deployment shifts, frontier model releases, hardware bets, and a policy fight that's already reshaping where AI gets built.
