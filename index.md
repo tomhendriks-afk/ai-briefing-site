@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Google's Android Intelligence System, OpenAI Trial Verdict Looms, and Cerebras' Record IPO](https://briefing.ambient-advantage.ai/2026-05-14.html) — Thursday · May 14, 2026 · This edition covers seven stories across agentic infrastructure, policy, funding, and enterprise tooling.
 - [Thinking Machines Lab Ships First Model, Cerebras Prices Its Blockbuster IPO, and Gemini Omni Leaks Ahead of I/O](https://briefing.ambient-advantage.ai/2026-05-13.html) — Wednesday · May 13, 2026 · This edition covers eight stories across research, enterprise, funding, and infrastructure. The throughline: the race is shifting from raw intelligence to real-time presence — and the companies that win will be the ones who match the right compute...
 - [Anthropic Eyes $900B Valuation, EU AI Act Omnibus Deal, and Enterprise AI's ROI Gap Widens](https://briefing.ambient-advantage.ai/2026-05-12.html) — Tuesday · May 12, 2026 · This edition covers thirteen stories spanning funding, policy, security, and the widening gap between AI ambition and AI impact.
 - [EU AI Act Fines Hit €250M, Anthropic Eyes $900B Valuation, and the Single-Model Era Ends](https://briefing.ambient-advantage.ai/2026-05-11.html) — Monday · May 11, 2026 · This edition covers twelve stories across policy, funding, enterprise strategy, and infrastructure. The throughline: the era of picking a single AI horse is over.
