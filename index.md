@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Cerebras IPO Pops 68%, Claude Overtakes ChatGPT in Enterprise, and a Supply Chain Worm Breaks SLSA](https://briefing.ambient-advantage.ai/2026-05-15.html) — Friday · May 15, 2026 · This edition covers twelve stories across infrastructure, enterprise, security, and agentic AI. Let's get into it.
 - [Google's Android Intelligence System, OpenAI Trial Verdict Looms, and Cerebras' Record IPO](https://briefing.ambient-advantage.ai/2026-05-14.html) — Thursday · May 14, 2026 · This edition covers seven stories across agentic infrastructure, policy, funding, and enterprise tooling.
 - [Thinking Machines Lab Ships First Model, Cerebras Prices Its Blockbuster IPO, and Gemini Omni Leaks Ahead of I/O](https://briefing.ambient-advantage.ai/2026-05-13.html) — Wednesday · May 13, 2026 · This edition covers eight stories across research, enterprise, funding, and infrastructure. The throughline: the race is shifting from raw intelligence to real-time presence — and the companies that win will be the ones who match the right compute...
 - [Anthropic Eyes $900B Valuation, EU AI Act Omnibus Deal, and Enterprise AI's ROI Gap Widens](https://briefing.ambient-advantage.ai/2026-05-12.html) — Tuesday · May 12, 2026 · This edition covers thirteen stories spanning funding, policy, security, and the widening gap between AI ambition and AI impact.
