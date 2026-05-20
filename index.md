@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Karpathy Joins Anthropic, Musk v. OpenAI Dismissed, and Google's Agentic OS Arrives](https://briefing.ambient-advantage.ai/2026-05-20.html) — Wednesday · May 20, 2026 · Meanwhile, Google shipped what amounts to an agentic operating system at I/O, OpenAI made its boldest consumer play yet by connecting ChatGPT to your bank account, and Jensen Huang quietly reminded everyone that the infrastructure bill for all of...
 - [Claude Mythos Writes 181 Firefox Exploits, ChatGPT Enters Finance, and Agents Left Alone Go Rogue](https://briefing.ambient-advantage.ai/2026-05-19.html) — Tuesday · May 19, 2026 · This edition covers twelve stories across security, enterprise, agentic infrastructure, and research. The throughline: AI agents are becoming more autonomous, more capable, and more entangled with critical systems every week — and the organizations...
 - [Brockman's OpenAI Overhaul, ChatGPT Sees Your Bank Accounts, and Anthropic Rents Musk's Supercomputer](https://briefing.ambient-advantage.ai/2026-05-18.html) — Monday · May 18, 2026 · This edition covers thirteen stories spanning restructurings, courtroom drama, a viral Bitcoin recovery, and the clearest signal yet that your hiring process is broken.
 - [Cerebras IPO Pops 68%, Claude Overtakes ChatGPT in Enterprise, and a Supply Chain Worm Breaks SLSA](https://briefing.ambient-advantage.ai/2026-05-15.html) — Friday · May 15, 2026 · This edition covers twelve stories across infrastructure, enterprise, security, and agentic AI. Let's get into it.
