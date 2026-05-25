@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Anthropic's First Profit, Cursor's $3B Ramp, and Trump's 90-Day AI Review Order](https://briefing.ambient-advantage.ai/2026-05-25.html) — Monday · May 25, 2026 · This edition covers thirteen stories across funding, policy, agentic infrastructure, security, and enterprise deployment.
 - [OpenAI's IPO Filing, Karpathy Joins Anthropic, and Google's Agentic Search Overhaul](https://briefing.ambient-advantage.ai/2026-05-22.html) — Friday · May 22, 2026 · The throughline: we've crossed from "AI is promising" to "AI is restructuring capital markets, talent flows, creative industries, and the labour force simultaneously." The companies moving fastest are the ones treating AI not as a tool but as...
 - [Karpathy Joins Anthropic, Google's Agentic I/O Blitz, and OpenAI Files for IPO](https://briefing.ambient-advantage.ai/2026-05-21.html) — Thursday · May 21, 2026 · This edition covers twelve stories across research, enterprise, funding, agentic infrastructure, and security.
 - [Karpathy Joins Anthropic, Musk v. OpenAI Dismissed, and Google's Agentic OS Arrives](https://briefing.ambient-advantage.ai/2026-05-20.html) — Wednesday · May 20, 2026 · Meanwhile, Google shipped what amounts to an agentic operating system at I/O, OpenAI made its boldest consumer play yet by connecting ChatGPT to your bank account, and Jensen Huang quietly reminded everyone that the infrastructure bill for all of...
