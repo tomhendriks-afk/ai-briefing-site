@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Claude Mythos Finds 10,000 Vulnerabilities, Karpathy Joins Anthropic, and MCP Goes Stateless](https://briefing.ambient-advantage.ai/2026-05-26.html) — Tuesday · May 26, 2026 · This edition covers twelve stories across security, research, enterprise, agentic infrastructure, and policy.
 - [Anthropic's First Profit, Cursor's $3B Ramp, and Trump's 90-Day AI Review Order](https://briefing.ambient-advantage.ai/2026-05-25.html) — Monday · May 25, 2026 · This edition covers thirteen stories across funding, policy, agentic infrastructure, security, and enterprise deployment.
 - [OpenAI's IPO Filing, Karpathy Joins Anthropic, and Google's Agentic Search Overhaul](https://briefing.ambient-advantage.ai/2026-05-22.html) — Friday · May 22, 2026 · The throughline: we've crossed from "AI is promising" to "AI is restructuring capital markets, talent flows, creative industries, and the labour force simultaneously." The companies moving fastest are the ones treating AI not as a tool but as...
 - [Karpathy Joins Anthropic, Google's Agentic I/O Blitz, and OpenAI Files for IPO](https://briefing.ambient-advantage.ai/2026-05-21.html) — Thursday · May 21, 2026 · This edition covers twelve stories across research, enterprise, funding, agentic infrastructure, and security.

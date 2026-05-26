@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Claude Mythos Finds 10,000 Vulnerabilities, Karpathy Joins Anthropic, and MCP Goes Stateless — Daily Briefing · Ambient Advantage</title>
+<meta name="description" content="This edition covers twelve stories across security, research, enterprise, agentic infrastructure, and policy." />
+<link rel="alternate" type="text/markdown" href="2026-05-26.md" />
+<link rel="alternate" type="application/json" href="/briefings.json" title="Daily briefings (JSON)" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://ambient-advantage.ai/#chiel",
+      "name": "Chiel Hendriks",
+      "jobTitle": "Managing Director, Cloud, Data & AI",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "PwC Canada"
+      },
+      "url": "https://ambient-advantage.ai",
+      "sameAs": [
+        "https://www.linkedin.com/in/chielhendriks/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ambient-advantage.ai/#org",
+      "name": "Ambient Advantage",
+      "url": "https://ambient-advantage.ai",
+      "founder": {
+        "@id": "https://ambient-advantage.ai/#chiel"
+      },
+      "description": "Daily AI news briefing, podcast, and opinion column from Chiel Hendriks."
+    },
+    {
+      "@type": "NewsArticle",
+      "headline": "Claude Mythos Finds 10,000 Vulnerabilities, Karpathy Joins Anthropic, and MCP Goes Stateless",
+      "datePublished": "2026-05-26",
+      "dateModified": "2026-05-26",
+      "author": {
+        "@id": "https://ambient-advantage.ai/#chiel"
+      },
+      "publisher": {
+        "@id": "https://ambient-advantage.ai/#org"
+      },
+      "mainEntityOfPage": "https://briefing.ambient-advantage.ai/2026-05-26.html",
+      "description": "This edition covers twelve stories across security, research, enterprise, agentic infrastructure, and policy."
+    }
+  ]
+}
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://briefing.ambient-advantage.ai/2026-05-26.html" />
+<meta property="og:title" content="Claude Mythos Finds 10,000 Vulnerabilities, Karpathy Joins Anthropic, and MCP Goes Stateless" />
+<meta property="og:description" content="This edition covers twelve stories across security, research, enterprise, agentic infrastructure, and policy." />
+<meta property="og:image" content="https://podcast.ambient-advantage.ai/og-image.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-0:#05070d;--bg-1:#0a0f1c;--bg-2:#0f1628;
+    --line:rgba(120,170,255,.14);--text:#e8eefc;--mute:#8a97b4;
+    --accent:#3ddc97;--accent-2:#7af0bd;
+    --glow:0 0 40px rgba(61,220,151,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg-0);color:var(--text);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:1180px;margin:0 auto;padding:0 28px}
+
+  nav.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(5,7,13,.6);border-bottom:1px solid var(--line)}
+  nav.top .row{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .logo{font-family:'Space Grotesk';font-weight:700;letter-spacing:.02em;font-size:18px;display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none}
+  .logo .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:var(--glow)}
+  .nav-links{display:flex;gap:32px;font-size:14px;color:var(--mute)}
+  .nav-links a{color:var(--mute);text-decoration:none}
+  .nav-links a:hover{color:var(--text);text-decoration:none}
+  .nav-links a.active{color:var(--text);border-bottom:2px solid var(--accent);padding-bottom:2px}
+  .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(61,220,151,.12),rgba(61,220,151,.02));text-decoration:none;transition:border-color .2s}
+  .nav-cta:hover{border-color:var(--accent);text-decoration:none}
+
+  .article-header{padding:80px 0 40px;position:relative}
+  .article-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(61,220,151,.1),transparent 60%);pointer-events:none}
+  .article-header .inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
+  .back-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-size:13px;color:var(--mute);letter-spacing:.05em;margin-bottom:28px;text-decoration:none;transition:color .2s}
+  .back-link:hover{color:var(--accent);text-decoration:none}
+  .article-meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--mute);font-family:'Space Grotesk';margin-bottom:18px;flex-wrap:wrap}
+  .article-meta .tag{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(61,220,151,.1);color:var(--accent-2);border:1px solid rgba(61,220,151,.2)}
+  .article-header h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(30px,4.5vw,48px);line-height:1.12;margin:0;letter-spacing:-.02em}
+
+  .article-body{max-width:780px;margin:0 auto;padding:40px 0 80px}
+  .article-body p{font-size:17px;line-height:1.8;color:var(--text);margin:0 0 24px}
+  .article-body h1,.article-body h2{font-family:'Space Grotesk';font-size:26px;margin:48px 0 16px;letter-spacing:-.01em;color:var(--text)}
+  .article-body h3{font-family:'Space Grotesk';font-size:20px;margin:36px 0 12px;color:var(--text)}
+  .article-body a{color:var(--accent)}
+  .article-body blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(61,220,151,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}
+  .article-body ul,.article-body ol{padding-left:24px;margin:0 0 24px}
+  .article-body li{font-size:17px;line-height:1.8;margin-bottom:8px}
+  .article-body img{max-width:100%;border-radius:12px}
+  .article-body hr{border:none;border-top:1px solid var(--line);margin:40px 0}
+  .article-body table{width:100%;border-collapse:collapse;margin:24px 0}
+  .article-body th,.article-body td{padding:10px 14px;border:1px solid var(--line);font-size:15px;text-align:left}
+  .article-body th{background:var(--bg-1);font-family:'Space Grotesk'}
+
+  .article-nav{max-width:780px;margin:0 auto;padding:0 0 60px;display:flex;gap:18px}
+  .article-nav a{flex:1;display:block;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .2s,transform .2s;text-decoration:none}
+  .article-nav a:hover{border-color:rgba(61,220,151,.35);transform:translateY(-1px);text-decoration:none}
+  .article-nav .label{font-size:11px;color:var(--mute);font-family:'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+  .article-nav .title{font-family:'Space Grotesk';font-size:15px;color:var(--text);line-height:1.3}
+
+  footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:13px}
+  footer .frow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+
+  .mobile-nav{display:none}
+
+  @media (max-width:800px){
+    .nav-links{display:none}
+    .nav-cta{display:none}
+    .article-header{padding:60px 0 30px}
+    .article-nav{flex-direction:column}
+    body{padding-bottom:72px}
+    .mobile-nav{
+      display:flex;
+      position:fixed;bottom:0;left:0;right:0;z-index:50;
+      justify-content:space-around;align-items:center;
+      padding:10px 0 max(10px,env(safe-area-inset-bottom));
+      background:rgba(5,7,13,.92);
+      backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+      border-top:1px solid var(--line);
+    }
+    .mobile-nav a{
+      display:flex;flex-direction:column;align-items:center;gap:4px;
+      text-decoration:none;padding:4px 10px;
+      -webkit-tap-highlight-color:transparent;
+    }
+    .mobile-nav a svg{
+      width:24px;height:24px;stroke-width:1.5;
+      stroke:var(--mute);fill:none;
+      transition:stroke .2s;
+    }
+    .mobile-nav a span{
+      font-size:11px;font-family:'Space Grotesk',system-ui;
+      letter-spacing:.03em;color:var(--mute);
+      transition:color .2s;
+    }
+    .mobile-nav a.active svg{stroke:var(--accent);stroke-width:2}
+    .mobile-nav a.active span{color:var(--accent);font-weight:600}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="container row">
+    <a href="https://ambient-advantage.ai" class="logo"><span class="dot"></span>Ambient Advantage</a>
+    <div class="nav-links">
+      <a href="https://podcast.ambient-advantage.ai">Podcast</a>
+      <a href="/" class="active">Daily Briefing</a>
+      <a href="https://take.ambient-advantage.ai">Chiel's Take</a>
+      <a href="https://build.ambient-advantage.ai">Build Log</a>
+      <a href="https://ambient-advantage.ai/about">About</a>
+    </div>
+    <a class="nav-cta" href="/#subscribe">Subscribe</a>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <div class="inner">
+      <a href="/" class="back-link">← Back to all briefings</a>
+      <div class="article-meta">
+        <span class="tag">Daily Briefing</span>
+        <span>Tuesday · May 26, 2026</span>
+        <span>·</span>
+        <span>9 min read</span>
+      </div>
+      <h1>Claude Mythos Finds 10,000 Vulnerabilities, Karpathy Joins Anthropic, and MCP Goes Stateless</h1>
+    </div>
+  </div>
+</header>
+
+<article class="container">
+  <div class="article-body">
+    
+
+
+
+  <!-- Preheader (hidden) -->
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">
+    This edition covers twelve stories across security, research, enterprise, agentic infrastructure, and policy. The throughline: the bottleneck has deci
+    &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+  </div>
+
+  <!-- Outer wrapper -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f0f2f5">
+    <tr><td align="center" style="padding:20px 10px;">
+
+      <!-- Email container -->
+      <table role="presentation" class="email-container" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width:600px;margin:0 auto;">
+
+        <!-- Accent bar -->
+        <tr><td bgcolor="#3ddc97" style="height:4px;font-size:1px;line-height:1px;">&nbsp;</td></tr>
+
+        <!-- Header -->
+        <tr><td bgcolor="#ffffff" style="padding:28px 40px 20px 40px;text-align:center;">
+          <span style="font-size:22px;font-weight:bold;color:#0a0f1c;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <span style="color:#3ddc97;">&bull;</span> Ambient Advantage
+          </span>
+          <br/>
+          <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin:14px auto 10px auto;"><tr><td style="width:60px;height:1px;background:#e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+          <span style="font-size:11px;color:#3ddc97;letter-spacing:2.5px;text-transform:uppercase;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE DAILY BRIEFING</span>
+          <br/>
+          <span style="font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Tuesday, May 26, 2026 &middot; 8 min read</span>
+        </td></tr>
+
+        <!-- Header bottom border -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Lead section -->
+        <tr><td bgcolor="#ffffff" style="padding:30px 40px 10px 40px;">
+          <!-- Pull quote -->
+          <p style="margin:0 0 20px 0;font-size:20px;font-style:italic;color:#0a0f1c;text-align:center;line-height:1.5;font-family:Georgia,'Times New Roman',Times,serif;">
+            &ldquo;AI stopped being a productivity story this week. It became an infrastructure-of-trust story — and the trust layer isn&#x27;t keeping up. Anthropic&#x27;s Claude Mythos found over 10,000 critical vulnerabilities in a single month, Google solved math problems that stumped humans for half a century at commodity cost, and a zero-employee startup let AI agents run its own fundraise. In every case, the AI succeeded faster than the humans responsible for reviewing, governing, and absorbing the output could follow.&rdquo;
+          </p>
+          <!-- Intro paragraphs -->
+          <p style="margin:0 0 14px 0;font-size:15px;color:#1a1a2e;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">This edition covers twelve stories across security, research, enterprise, agentic infrastructure, and policy. The throughline: the bottleneck has decisively shifted from AI capability to human capacity — for patching, for auditing, for governance, for judgment. The organizations that invest in closing that gap now will be the ones still standing when the music stops. Let&#x27;s get into it.</p>
+        </td></tr>
+
+        <!-- Divider -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Stories section -->
+        <tr><td bgcolor="#ffffff" style="padding:10px 40px 10px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:30px 0 0 0;">
+  <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">TODAY&#x27;S STORIES</span>
+  <br/>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#3ddc97;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+</td></tr>
+            <tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#be185d;background:#fce7f3;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Security</span>
+  <br/>
+  <a href="https://www.anthropic.com/research/glasswing-initial-update" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Anthropic&#x27;s Project Glasswing: Claude Mythos Finds 10,000+ Critical Vulnerabilities in One Month</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Anthropic published the first results from Project Glasswing, revealing that Claude Mythos Preview and ~50 partners (AWS, Cisco, Microsoft, Cloudflare, Apple, Google, JPMorgan, and more) discovered over 10,000 high- or critical-severity vulnerabilities in just one month — a 10x increase in bug-finding rate over previous models. Cloudflare alone found 2,000 bugs, and Mozilla found 271 Firefox vulnerabilities, ten times more than with older models. The enterprise imperative is immediate: the bottleneck in vulnerability management has shifted from *finding* bugs to *patching* them at machine speed — and most security teams are still operating on quarterly patch cycles that are now dangerously slow.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">anthropic.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#6d28d9;background:#ede9fe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Research</span>
+  <br/>
+  <a href="https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Andrej Karpathy Joins Anthropic to Use Claude to Accelerate Claude&#x27;s Own Pre-Training</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Andrej Karpathy — OpenAI co-founder, former Tesla Autopilot AI director, and arguably AI&#x27;s most influential public educator — has joined Anthropic&#x27;s pre-training team to build a group focused on using Claude to accelerate pre-training research itself: a direct bet on recursive self-improvement. He&#x27;s the sixth major senior executive this year to leave a top role for an individual contributor research position at Anthropic, joining former CTOs from Workday, Instagram, Box, and others. For enterprise buyers evaluating long-term AI vendor bets, the talent gravity has shifted — and where the talent flows, the frontier follows.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">axios.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#6d28d9;background:#ede9fe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Research</span>
+  <br/>
+  <a href="https://www.therundown.ai/p/google-tops-openai-math-breakthrough-9-to-1" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Google&#x27;s AlphaProof Nexus Solves Nine Open Erdős Math Problems, Topping OpenAI&#x27;s Single Breakthrough</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">One day after OpenAI announced its AI disproved an 80-year-old Erdős geometry conjecture, Google DeepMind&#x27;s AlphaProof Nexus autonomously solved nine open Erdős problems — including two unsolved for 56 years — at a cost of just a few hundred dollars per problem using Lean formal verification. Both results are being submitted to peer-reviewed journals, and neither team claims full &quot;Major Advance&quot; status yet. For executives in pharma, materials science, or logistics optimization, this is a concrete preview of AI as a scientific collaborator — your R&amp;D team&#x27;s longest-standing algorithmic bottlenecks may soon be solvable at commodity compute cost.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">therundown.ai</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://www.cnbc.com/2026/05/20/meta-layoffs-zuckerberg-says-success-isnt-a-given-in-memo.html" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Meta Cuts 8,000 Jobs in AI-Driven Restructuring — More Rounds Planned</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Meta began notifying roughly 8,000 employees of layoffs (10% of its workforce) while simultaneously moving 7,000 employees into new AI-focused roles including &quot;Agent Transformation Accelerator&quot; and &quot;Applied AI Engineering&quot; teams — all while posting $56.3B in Q1 revenue (up 33% YoY) and planning $115–135B in 2026 AI capex. Zuckerberg&#x27;s memo stated bluntly that &quot;success isn&#x27;t a given&quot; in the AI race, with additional restructuring rounds anticipated in Q3 and Q4. This is the defining corporate AI playbook of 2026: record profits, massive infrastructure bets, and aggressive workforce reshaping toward AI-adjacent roles. Every enterprise HR and strategy leader should be studying which role categories Meta is eliminating versus retaining — it&#x27;s a leading indicator for workforce planning across industries.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">cnbc.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#4338ca;background:#e0e7ff;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Product</span>
+  <br/>
+  <a href="https://aiweekly.co/alerts/polsia-solo-founder-raises-30m-at-250m-valuation" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Polsia: One Founder, Zero Employees, $30M Raised at $250M Valuation Using AI Agents to Run 7,600 Businesses</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Polsia, an autonomous AI agent platform run by a single founder with zero employees, closed a $30M Series A at a $250M valuation. Its nine specialized agents handle coding, research, ads, customer support, and sales for 7,600 businesses at $49/month plus 20% revenue share, claiming ~$10M ARR in five months — and the AI reportedly ran the fundraise itself. Before you get too excited: the platform carries a 2.1/5 Trustpilot rating (70% one-star reviews) and the company&#x27;s name is &quot;AI Slop&quot; spelled backwards. For business leaders, the question isn&#x27;t whether to dismiss it — it&#x27;s whether your own operations contain workflows that a Polsia-style agent stack could already replace, and whether the quality bar for agentic execution has risen enough to trust it.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">aiweekly.co</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#4338ca;background:#e0e7ff;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Product</span>
+  <br/>
+  <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">MCP Goes Stateless: Biggest Spec Revision Since Launch Enables Enterprise-Scale Agentic Deployments</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">The Model Context Protocol published a release candidate for its largest spec revision since launching in November 2024, with the headline change being that MCP is now stateless at the protocol layer — eliminating the sticky sessions and distributed state stores that made enterprise horizontal scaling painful. The spec also adds MCP Apps (server-rendered UIs inside agents), a formal deprecation policy, and improved OAuth/OpenID Connect alignment, with the final spec shipping July 28. With 97 million monthly SDK downloads and 3,000+ published servers, this is the moment MCP graduates from developer experiment to production infrastructure standard — if your engineering teams are building agentic systems, the stateless architecture unlocks the cloud-native deployments that weren&#x27;t reliably possible before.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">blog.modelcontextprotocol.io</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://techcrunch.com/2026/05/21/spotify-and-universal-music-strike-deal-allowing-fan-made-ai-covers-and-remixes/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Spotify + Universal Music Group Strike Landmark Licensed AI Remix Deal — Stock Jumps 13%</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Spotify announced a licensing deal with Universal Music Group enabling Premium subscribers to create AI-generated covers and remixes of UMG artists&#x27; tracks via a paid add-on, with consent, credit, and revenue share baked in — the first major licensed AI music creation product to thread the needle between consumer demand and rights-holder control. Spotify&#x27;s stock jumped 13% on the news, and the company revealed 2030 guidance targeting 1 billion subscribers and $100B in revenue. For any business that licenses content or builds creator tools, the consent-credit-compensation framework established here is the new baseline for negotiation across entertainment verticals.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">techcrunch.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#b45309;background:#fef3c7;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Policy</span>
+  <br/>
+  <a href="https://simonwillison.net/2026/May/25/encyclical-on-ai/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Pope Leo XIV Releases First Papal Encyclical on AI</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Pope Leo XIV released &quot;Magnifica Humanitas,&quot; the first papal encyclical specifically addressing AI and its implications for human dignity, with practitioner Simon Willison publishing same-day commentary noting he &quot;hadn&#x27;t expected to spend a Sunday getting familiar with Catholic theology.&quot; When the Vatican issues formal doctrine on AI, the governance conversation has officially left the tech sector. For multinational enterprises with operations in Europe, Latin America, or the Philippines — regions where Catholic social teaching shapes labor law and political discourse — expect this document to influence policy debates, union negotiations, and public trust frameworks around AI deployment over the next 12–18 months.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">simonwillison.net</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#475569;background:#e2e8f0;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Infrastructure</span>
+  <br/>
+  <a href="https://www.superhuman.ai/p/the-one-man-250m-startup" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Nvidia Hits $5 Trillion Market Cap — First Company Ever — on $500B Order Backlog</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Nvidia became the first company in history to cross a $5 trillion market capitalization, now accounting for ~8% of the S&amp;P 500, with a disclosed order backlog of ~$500B through 2026 and hyperscalers having effectively pre-ordered chips 18 months out. This was achieved without access to the Chinese market. For enterprise buyers building on-prem or negotiating cloud GPU capacity, a sold-out 18-month supply chain means constrained availability and premium pricing persist well into 2027 — factor this into your AI roadmap timelines and vendor negotiations now.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">superhuman.ai</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#be185d;background:#fce7f3;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Security</span>
+  <br/>
+  <a href="https://tldrnewsletter.com/tldr-infosec" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">LiteSpeed cPanel Plugin 0-Day (CVSS 10.0) Under Active Exploitation</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">CVE-2026-48172, a CVSS 10.0 logic flaw in the LiteSpeed cPanel plugin, allows any authenticated cPanel user to escalate to full root access with a single malformed API call — no race condition required. The flaw is under active exploitation and is particularly devastating on shared hosting environments; cPanel forced a fleet-wide emergency uninstall five hours ahead of schedule. If your organization or any of your SaaS vendors host anything on shared cPanel infrastructure, this needs immediate escalation to your security team today.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">tldrnewsletter.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://taaft.co" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">ElevenLabs Ships Speech Engine — Cognitive and Physical Automation Converge</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">ElevenLabs launched its Speech Engine, a platform-level product for generating and deploying AI voices at scale, arriving the same week Figure AI&#x27;s humanoid robot nearly matched a human intern in an 8-hour package-sorting marathon (12,732 vs. 12,924 packages). For any enterprise with media, customer service, e-learning, or brand content functions, Speech Engine dramatically reduces the time and cost of localized audio — and Figure&#x27;s demo underscored that AI-driven displacement is no longer a white-collar-only story.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">taaft.co</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://taaft.co" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Freelancing Splits in Two: AI Is Bifurcating the Gig Economy</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Analysis flagged this week shows AI hasn&#x27;t simply reduced freelancing demand — it has split it. Routine, deliverable-based freelance work (writing, data entry, basic design) is collapsing in volume and price, while high-judgment, relationship-dependent specialized work is seeing increased demand as companies deploy AI for the commodity layer. For enterprise leaders managing external talent and vendor relationships, every contract and statement-of-work should now be evaluated through the lens of &quot;could an agent stack handle 80% of this?&quot; — procurement teams and CPOs should have this conversation before the next renewal cycle, not after.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">taaft.co</span>
+</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Big Picture card -->
+        <tr><td bgcolor="#ffffff" style="padding:10px 40px 24px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td width="4" bgcolor="#3ddc97" style="width:4px;font-size:1px;">&nbsp;</td>
+              <td bgcolor="#f0f7ff" style="padding:20px 24px;">
+                <span style="font-size:11px;font-weight:bold;color:#3ddc97;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE BIG PICTURE</span>
+                <br/><br/>
+                <p style="margin:0 0 10px 0;font-size:15px;color:#0a0f1c;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">This week&#x27;s stories converge on an uncomfortable truth: AI is automating the infrastructure of trust itself — and the trust layer can&#x27;t keep up. Claude Mythos found 10,000 vulnerabilities faster than any human team can patch them. Google solved 56-year-old math problems for the price of a nice dinner. Polsia let AI agents run a $30M fundraise. MCP went stateless so agents can scale without human-managed sessions. In every case, the human role has shifted from operator to auditor — but nobody is investing in the audit function at anything close to the rate they&#x27;re investing in the systems generating the output. The critical enterprise risk of 2026 is not that AI will fail. It&#x27;s that AI will succeed faster than your governance, patch cycles, disclosure pipelines, and liability frameworks can absorb what it produces. The leaders who look prescient in 2028 will be the ones who in 2026 invested as heavily in human review capacity as they did in the AI systems doing the work.</p>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Resources section -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px 24px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:30px 0 0 0;">
+  <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">WORTH BOOKMARKING</span>
+  <br/>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#3ddc97;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+</td></tr>
+            <tr><td style="height:12px;font-size:1px;">&nbsp;</td></tr>
+            <tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://labs.cloudsecurityalliance.org/research/ai-vuln-discovery-containment-claude-mythos-v1-0-csa-styled/" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">Claude Mythos: AI Vulnerability Discovery and Containment Failures (CSA Whitepaper) &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">The Cloud Security Alliance&#x27;s structured technical analysis of Project Glasswing using the MAESTRO threat framework — the most rigorous independent assessment of what Mythos&#x27;s capabilities actually mean for enterprise security programs.</span>
+    </td>
+  </tr></table>
+</td></tr><tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://www.thealgorithmicbridge.com/p/andrej-karpathy-joins-anthropic-what" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">Andrej Karpathy Joins Anthropic: What Happens Next (The Algorithmic Bridge) &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">Alberto Romero&#x27;s rapid-turnaround analysis of why Karpathy&#x27;s hire signals the recursive self-improvement bet is no longer theoretical, and why it&#x27;s the most consequential talent move in AI this year.</span>
+    </td>
+  </tr></table>
+</td></tr><tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://blog.cloudflare.com/cyber-frontier-models/" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">Project Glasswing: What Mythos Showed Us (Cloudflare Blog) &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">Cloudflare&#x27;s practitioner-level debrief on pointing Mythos at 50+ of their own repositories, including the model&#x27;s inconsistent guardrails and triage challenges. Essential reading for any security architect.</span>
+    </td>
+  </tr></table>
+</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Divider -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Podcast CTA -->
+        <tr><td bgcolor="#ffffff" style="padding:24px 40px 30px 40px;text-align:center;">
+          <p style="margin:0 0 16px 0;font-size:14px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            Prefer to listen? Today&#8217;s briefing is also a podcast.
+          </p>
+          <table cellpadding="0" cellspacing="0" border="0" align="center">
+            <tr>
+              <td align="center" bgcolor="#3ddc97" style="border-radius:6px;">
+                <a href="https://podcast.ambient-advantage.ai" target="_blank" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:bold;color:#ffffff;text-decoration:none;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Listen to Today&#8217;s Episode &rarr;</a>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Footer -->
+        <tr><td bgcolor="#f0f2f5" style="padding:24px 40px 30px 40px;text-align:center;">
+          <p style="margin:0 0 6px 0;font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            Curated by Chiel Hendriks &middot; PwC Canada
+          </p>
+          <p style="margin:0 0 6px 0;font-size:13px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <a href="https://ambient-advantage.ai" style="color:#3ddc97;text-decoration:none;">ambient-advantage.ai</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://www.linkedin.com/in/chielhendriks/" style="color:#3ddc97;text-decoration:none;">LinkedIn</a>
+          </p>
+          
+          <p style="margin:10px 0 0 0;font-size:12px;color:#9ca3af;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            &copy; 2026 Ambient Advantage
+          </p>
+        </td></tr>
+
+      </table>
+      <!-- /Email container -->
+
+    </td></tr>
+  </table>
+  <!-- /Outer wrapper -->
+
+
+  </div>
+</article>
+
+<div class="container">
+  <div class="article-nav">
+    <a href="/2026-05-25.html">
+      <div class="label">← Previous briefing</div>
+      <div class="title">Anthropic's First Profit, Cursor's $3B Ramp, and Trump's 90-Day AI Review Order</div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="container frow">
+    <div>© 2026 Ambient Advantage · Curated by Chiel Hendriks</div>
+    <div><a href="https://ambient-advantage.ai" style="color:var(--accent);text-decoration:none">ambient-advantage.ai</a></div>
+  </div>
+</footer>
+
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="https://podcast.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5z"/></svg>
+    <span>Podcast</span>
+  </a>
+  <a href="/" class="active">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+    <span>Briefing</span>
+  </a>
+  <a href="https://take.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+    <span>Take</span>
+  </a>
+  <a href="https://build.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+    <span>Build</span>
+  </a>
+  <a href="https://ambient-advantage.ai/about">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>About</span>
+  </a>
+</nav>
+
+</body>
+</html>
