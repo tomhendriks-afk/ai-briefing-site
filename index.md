@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Biohub's Protein World Model, Pope Leo XIV's AI Encyclical, and DeepSWE Breaks the Coding Leaderboard](https://briefing.ambient-advantage.ai/2026-05-28.html) — Thursday · May 28, 2026 · This edition covers fifteen stories across research, enterprise, policy, and security. The throughline: capability is outrunning every governance structure designed to contain it — regulatory, spiritual, competitive, and technical.
 - [Pope Leo's AI Encyclical, ClickUp's 3,000 AI Agents, and Altman's Jobs U-Turn](https://briefing.ambient-advantage.ai/2026-05-27.html) — Wednesday · May 27, 2026 · This edition covers fifteen stories across policy, enterprise, security, agentic infrastructure, and research.
 - [Claude Mythos Finds 10,000 Vulnerabilities, Karpathy Joins Anthropic, and MCP Goes Stateless](https://briefing.ambient-advantage.ai/2026-05-26.html) — Tuesday · May 26, 2026 · This edition covers twelve stories across security, research, enterprise, agentic infrastructure, and policy.
 - [Anthropic's First Profit, Cursor's $3B Ramp, and Trump's 90-Day AI Review Order](https://briefing.ambient-advantage.ai/2026-05-25.html) — Monday · May 25, 2026 · This edition covers thirteen stories across funding, policy, agentic infrastructure, security, and enterprise deployment.
