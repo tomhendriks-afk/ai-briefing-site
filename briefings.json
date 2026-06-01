@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-06-01",
+    "headline": "Amazon Kills Its AI Leaderboard, Karpathy Joins Anthropic, and the Tokenmaxxing Crisis Hits Enterprise",
+    "snippet": "This edition covers twelve stories across enterprise, research, infrastructure, and security. The throughline: the capability race is accelerating, but the measurement problem is the real bottleneck.",
+    "read_time": 7
+  },
+  {
     "date": "2026-05-29",
     "headline": "Robinhood's Agentic Trading, Devin's $26B Raise, and Claude Opus 4.8 Tops GPT-5.5",
     "snippet": "The throughline is unmistakable: agents are no longer prototypes waiting for a pilot budget. They are principals — holding credentials, moving money, and committing code at scale.",

@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Amazon Kills Its AI Leaderboard, Karpathy Joins Anthropic, and the Tokenmaxxing Crisis Hits Enterprise](https://briefing.ambient-advantage.ai/2026-06-01.html) — Monday · June 1, 2026 · This edition covers twelve stories across enterprise, research, infrastructure, and security. The throughline: the capability race is accelerating, but the measurement problem is the real bottleneck.
 - [Robinhood's Agentic Trading, Devin's $26B Raise, and Claude Opus 4.8 Tops GPT-5.5](https://briefing.ambient-advantage.ai/2026-05-29.html) — Friday · May 29, 2026 · The throughline is unmistakable: agents are no longer prototypes waiting for a pilot budget. They are principals — holding credentials, moving money, and committing code at scale.
 - [Biohub's Protein World Model, Pope Leo XIV's AI Encyclical, and DeepSWE Breaks the Coding Leaderboard](https://briefing.ambient-advantage.ai/2026-05-28.html) — Thursday · May 28, 2026 · This edition covers fifteen stories across research, enterprise, policy, and security. The throughline: capability is outrunning every governance structure designed to contain it — regulatory, spiritual, competitive, and technical.
 - [Pope Leo's AI Encyclical, ClickUp's 3,000 AI Agents, and Altman's Jobs U-Turn](https://briefing.ambient-advantage.ai/2026-05-27.html) — Wednesday · May 27, 2026 · This edition covers fifteen stories across policy, enterprise, security, agentic infrastructure, and research.

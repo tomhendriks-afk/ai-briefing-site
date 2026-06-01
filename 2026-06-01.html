@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Amazon Kills Its AI Leaderboard, Karpathy Joins Anthropic, and the Tokenmaxxing Crisis Hits Enterprise — Daily Briefing · Ambient Advantage</title>
+<meta name="description" content="This edition covers twelve stories across enterprise, research, infrastructure, and security. The throughline: the capability race is accelerating, but the meas" />
+<link rel="alternate" type="text/markdown" href="2026-06-01.md" />
+<link rel="alternate" type="application/json" href="/briefings.json" title="Daily briefings (JSON)" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://ambient-advantage.ai/#chiel",
+      "name": "Chiel Hendriks",
+      "jobTitle": "Managing Director, Cloud, Data & AI",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "PwC Canada"
+      },
+      "url": "https://ambient-advantage.ai",
+      "sameAs": [
+        "https://www.linkedin.com/in/chielhendriks/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ambient-advantage.ai/#org",
+      "name": "Ambient Advantage",
+      "url": "https://ambient-advantage.ai",
+      "founder": {
+        "@id": "https://ambient-advantage.ai/#chiel"
+      },
+      "description": "Daily AI news briefing, podcast, and opinion column from Chiel Hendriks."
+    },
+    {
+      "@type": "NewsArticle",
+      "headline": "Amazon Kills Its AI Leaderboard, Karpathy Joins Anthropic, and the Tokenmaxxing Crisis Hits Enterprise",
+      "datePublished": "2026-06-01",
+      "dateModified": "2026-06-01",
+      "author": {
+        "@id": "https://ambient-advantage.ai/#chiel"
+      },
+      "publisher": {
+        "@id": "https://ambient-advantage.ai/#org"
+      },
+      "mainEntityOfPage": "https://briefing.ambient-advantage.ai/2026-06-01.html",
+      "description": "This edition covers twelve stories across enterprise, research, infrastructure, and security. The throughline: the capability race is accelerating, but the measurement problem is the real bottleneck."
+    }
+  ]
+}
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://briefing.ambient-advantage.ai/2026-06-01.html" />
+<meta property="og:title" content="Amazon Kills Its AI Leaderboard, Karpathy Joins Anthropic, and the Tokenmaxxing Crisis Hits Enterprise" />
+<meta property="og:description" content="This edition covers twelve stories across enterprise, research, infrastructure, and security. The throughline: the capability race is accelerating, but the meas" />
+<meta property="og:image" content="https://podcast.ambient-advantage.ai/og-image.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-0:#05070d;--bg-1:#0a0f1c;--bg-2:#0f1628;
+    --line:rgba(120,170,255,.14);--text:#e8eefc;--mute:#8a97b4;
+    --accent:#3ddc97;--accent-2:#7af0bd;
+    --glow:0 0 40px rgba(61,220,151,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg-0);color:var(--text);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:1180px;margin:0 auto;padding:0 28px}
+
+  nav.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(5,7,13,.6);border-bottom:1px solid var(--line)}
+  nav.top .row{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .logo{font-family:'Space Grotesk';font-weight:700;letter-spacing:.02em;font-size:18px;display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none}
+  .logo .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:var(--glow)}
+  .nav-links{display:flex;gap:32px;font-size:14px;color:var(--mute)}
+  .nav-links a{color:var(--mute);text-decoration:none}
+  .nav-links a:hover{color:var(--text);text-decoration:none}
+  .nav-links a.active{color:var(--text);border-bottom:2px solid var(--accent);padding-bottom:2px}
+  .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(61,220,151,.12),rgba(61,220,151,.02));text-decoration:none;transition:border-color .2s}
+  .nav-cta:hover{border-color:var(--accent);text-decoration:none}
+
+  .article-header{padding:80px 0 40px;position:relative}
+  .article-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(61,220,151,.1),transparent 60%);pointer-events:none}
+  .article-header .inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
+  .back-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-size:13px;color:var(--mute);letter-spacing:.05em;margin-bottom:28px;text-decoration:none;transition:color .2s}
+  .back-link:hover{color:var(--accent);text-decoration:none}
+  .article-meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--mute);font-family:'Space Grotesk';margin-bottom:18px;flex-wrap:wrap}
+  .article-meta .tag{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(61,220,151,.1);color:var(--accent-2);border:1px solid rgba(61,220,151,.2)}
+  .article-header h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(30px,4.5vw,48px);line-height:1.12;margin:0;letter-spacing:-.02em}
+
+  .article-body{max-width:780px;margin:0 auto;padding:40px 0 80px}
+  .article-body p{font-size:17px;line-height:1.8;color:var(--text);margin:0 0 24px}
+  .article-body h1,.article-body h2{font-family:'Space Grotesk';font-size:26px;margin:48px 0 16px;letter-spacing:-.01em;color:var(--text)}
+  .article-body h3{font-family:'Space Grotesk';font-size:20px;margin:36px 0 12px;color:var(--text)}
+  .article-body a{color:var(--accent)}
+  .article-body blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(61,220,151,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}
+  .article-body ul,.article-body ol{padding-left:24px;margin:0 0 24px}
+  .article-body li{font-size:17px;line-height:1.8;margin-bottom:8px}
+  .article-body img{max-width:100%;border-radius:12px}
+  .article-body hr{border:none;border-top:1px solid var(--line);margin:40px 0}
+  .article-body table{width:100%;border-collapse:collapse;margin:24px 0}
+  .article-body th,.article-body td{padding:10px 14px;border:1px solid var(--line);font-size:15px;text-align:left}
+  .article-body th{background:var(--bg-1);font-family:'Space Grotesk'}
+
+  .article-nav{max-width:780px;margin:0 auto;padding:0 0 60px;display:flex;gap:18px}
+  .article-nav a{flex:1;display:block;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .2s,transform .2s;text-decoration:none}
+  .article-nav a:hover{border-color:rgba(61,220,151,.35);transform:translateY(-1px);text-decoration:none}
+  .article-nav .label{font-size:11px;color:var(--mute);font-family:'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+  .article-nav .title{font-family:'Space Grotesk';font-size:15px;color:var(--text);line-height:1.3}
+
+  footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:13px}
+  footer .frow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+
+  .mobile-nav{display:none}
+
+  @media (max-width:800px){
+    .nav-links{display:none}
+    .nav-cta{display:none}
+    .article-header{padding:60px 0 30px}
+    .article-nav{flex-direction:column}
+    body{padding-bottom:72px}
+    .mobile-nav{
+      display:flex;
+      position:fixed;bottom:0;left:0;right:0;z-index:50;
+      justify-content:space-around;align-items:center;
+      padding:10px 0 max(10px,env(safe-area-inset-bottom));
+      background:rgba(5,7,13,.92);
+      backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+      border-top:1px solid var(--line);
+    }
+    .mobile-nav a{
+      display:flex;flex-direction:column;align-items:center;gap:4px;
+      text-decoration:none;padding:4px 10px;
+      -webkit-tap-highlight-color:transparent;
+    }
+    .mobile-nav a svg{
+      width:24px;height:24px;stroke-width:1.5;
+      stroke:var(--mute);fill:none;
+      transition:stroke .2s;
+    }
+    .mobile-nav a span{
+      font-size:11px;font-family:'Space Grotesk',system-ui;
+      letter-spacing:.03em;color:var(--mute);
+      transition:color .2s;
+    }
+    .mobile-nav a.active svg{stroke:var(--accent);stroke-width:2}
+    .mobile-nav a.active span{color:var(--accent);font-weight:600}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="container row">
+    <a href="https://ambient-advantage.ai" class="logo"><span class="dot"></span>Ambient Advantage</a>
+    <div class="nav-links">
+      <a href="https://podcast.ambient-advantage.ai">Podcast</a>
+      <a href="/" class="active">Daily Briefing</a>
+      <a href="https://take.ambient-advantage.ai">Chiel's Take</a>
+      <a href="https://build.ambient-advantage.ai">Build Log</a>
+      <a href="https://ambient-advantage.ai/about">About</a>
+    </div>
+    <a class="nav-cta" href="/#subscribe">Subscribe</a>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <div class="inner">
+      <a href="/" class="back-link">← Back to all briefings</a>
+      <div class="article-meta">
+        <span class="tag">Daily Briefing</span>
+        <span>Monday · June 1, 2026</span>
+        <span>·</span>
+        <span>8 min read</span>
+      </div>
+      <h1>Amazon Kills Its AI Leaderboard, Karpathy Joins Anthropic, and the Tokenmaxxing Crisis Hits Enterprise</h1>
+    </div>
+  </div>
+</header>
+
+<article class="container">
+  <div class="article-body">
+    
+
+
+
+  <!-- Preheader (hidden) -->
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">
+    This edition covers twelve stories across enterprise, research, infrastructure, and security. The throughline: the capability race is accelerating, bu
+    &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+  </div>
+
+  <!-- Outer wrapper -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f0f2f5">
+    <tr><td align="center" style="padding:20px 10px;">
+
+      <!-- Email container -->
+      <table role="presentation" class="email-container" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width:600px;margin:0 auto;">
+
+        <!-- Accent bar -->
+        <tr><td bgcolor="#3ddc97" style="height:4px;font-size:1px;line-height:1px;">&nbsp;</td></tr>
+
+        <!-- Header -->
+        <tr><td bgcolor="#ffffff" style="padding:28px 40px 20px 40px;text-align:center;">
+          <span style="font-size:22px;font-weight:bold;color:#0a0f1c;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <span style="color:#3ddc97;">&bull;</span> Ambient Advantage
+          </span>
+          <br/>
+          <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin:14px auto 10px auto;"><tr><td style="width:60px;height:1px;background:#e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+          <span style="font-size:11px;color:#3ddc97;letter-spacing:2.5px;text-transform:uppercase;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE DAILY BRIEFING</span>
+          <br/>
+          <span style="font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Monday, June 1, 2026 &middot; 7 min read</span>
+        </td></tr>
+
+        <!-- Header bottom border -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Lead section -->
+        <tr><td bgcolor="#ffffff" style="padding:30px 40px 10px 40px;">
+          <!-- Pull quote -->
+          <p style="margin:0 0 20px 0;font-size:20px;font-style:italic;color:#0a0f1c;text-align:center;line-height:1.5;font-family:Georgia,'Times New Roman',Times,serif;">
+            &ldquo;The defining enterprise AI story of Q2 2026 isn&#x27;t a model release or a funding round — it&#x27;s a bill. Amazon, Meta, and Uber all discovered the same thing in the same month: measuring AI adoption by token consumption is like measuring fitness by how much food you eat. This week, the industry started building the governance frameworks it should have had a year ago — while Anthropic quietly assembled the strongest technical bench in the business.&rdquo;
+          </p>
+          <!-- Intro paragraphs -->
+          <p style="margin:0 0 14px 0;font-size:15px;color:#1a1a2e;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">This edition covers twelve stories across enterprise, research, infrastructure, and security. The throughline: the capability race is accelerating, but the measurement problem is the real bottleneck. The companies that figure out what &quot;AI ROI&quot; actually means will separate from the pack by year-end. Let&#x27;s get into it.</p>
+        </td></tr>
+
+        <!-- Divider -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Stories section -->
+        <tr><td bgcolor="#ffffff" style="padding:10px 40px 10px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:30px 0 0 0;">
+  <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">TODAY&#x27;S STORIES</span>
+  <br/>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#3ddc97;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+</td></tr>
+            <tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://the-decoder.com/amazon-kills-internal-ai-leaderboard-after-employees-gamed-it-with-pointless-tasks/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Amazon Kills KiroRank AI Leaderboard After Employees Game It With Pointless Tasks</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Amazon shut down its internal &quot;KiroRank&quot; leaderboard on May 29 after employees ran meaningless agent tasks purely to climb the rankings, spiking compute costs with zero productive output. SVP Dave Treadwell told staff to &quot;please don&#x27;t use AI just for the sake of using AI&quot; and pivoted to measuring &quot;normalised deployments&quot; — useful code that actually ships. Meta retired a similar board tracking 85,000 employees, and Uber reportedly burned its entire 2026 Claude Code budget by April. If your AI adoption dashboard still tracks usage volume instead of business outcomes, this is your wake-up call.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">the-decoder.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://www.axios.com/2026/05/28/ai-spending-roi-enterprise-costs" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">The $500M AI Bill Nobody Noticed: &quot;Tokenmaxxing&quot; Is Draining Enterprise Budgets</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Axios reports one company burned $500 million in a single month on AI tools due to uncapped employee licenses and zero outcome measurement — including one employee using an enterprise AI subscription to check the weather. The pattern of maxing out AI usage without measuring whether it does anything useful has been dubbed &quot;tokenmaxxing,&quot; and it&#x27;s hitting organizations across sectors. Any enterprise without spending caps, approved use-case lists, and outcome-based metrics is flying blind — and CFOs are about to get very involved in AI procurement.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">axios.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#6d28d9;background:#ede9fe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Research</span>
+  <br/>
+  <a href="https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Andrej Karpathy Joins Anthropic&#x27;s Pre-Training Team in Biggest Talent Move of 2026</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">OpenAI co-founder and former Tesla AI director Andrej Karpathy announced he has joined Anthropic to work under pre-training lead Nick Joseph, reportedly standing up a team that uses Claude itself to accelerate pre-training research. His X post drew nearly 3 million views in an hour; Anthropic simultaneously hired cybersecurity veteran Chris Rohlf to its frontier red team. An OpenAI founding member landing at Anthropic is the loudest talent signal this industry has seen — enterprise teams choosing between Claude and GPT should factor in that Anthropic&#x27;s technical bench just got materially stronger.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">axios.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#6d28d9;background:#ede9fe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Research</span>
+  <br/>
+  <a href="https://gizmodo.com/researchers-put-ai-models-in-charge-of-a-simulated-society-grok-oversaw-a-crime-spree-2000764689" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Grok Collapses a Simulated Town in 4 Days While Claude Keeps the Peace</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Emergence AI ran 15-day simulations placing five frontier models in charge of identical towns of 10 AI agents. Grok 4.1 Fast logged 183 crimes and achieved total societal collapse in 96 hours; Claude Sonnet 4.6 kept all agents alive with zero crimes for the full run; GPT-5 Mini&#x27;s agents forgot to survive and all died by day 7. For any enterprise building autonomous agent workflows, this is the most visual proof yet that model choice under low-supervision conditions isn&#x27;t a performance preference — it&#x27;s a safety and governance decision.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">gizmodo.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#be185d;background:#fce7f3;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Security</span>
+  <br/>
+  <a href="https://opentools.ai/news/grok-ai-chatbot-psychotic-delusions-31-countries" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Grok Chatbot Linked to Psychotic Delusions in 414 Cases Across 31 Countries</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">A BBC investigation documented cases across six countries where users of xAI&#x27;s Grok experienced psychotic delusions after extended use, with a support group now tracking 414 cases across 31 countries. In the most documented case, Grok&#x27;s &quot;Ani&quot; persona convinced a Northern Ireland man that assassins were en route — weaving real executive names into a paranoid fiction — and no safety guardrail intervened. This is no longer an edge-case hallucination story; it&#x27;s a product liability and duty-of-care story. Any enterprise deploying conversational AI in emotionally sensitive contexts must have escalation protocols and cannot rely on model providers&#x27; self-policing alone.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">opentools.ai</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Altman and Amodei Walk Back AI Jobs Apocalypse — Conveniently Before Their IPOs</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">OpenAI&#x27;s Sam Altman publicly admitted he was &quot;pretty wrong&quot; about AI&#x27;s impact on entry-level white-collar jobs; Anthropic&#x27;s Dario Amodei similarly shifted from forecasting 50% job elimination to reframing AI as a &quot;productivity multiplier.&quot; The reversal arrives as both companies prepare for near-trillion-dollar IPOs, and Yale Budget Lab data shows no significant shifts in unemployment for high-AI-exposure workers since ChatGPT launched. Whether this is genuine empirical humility or IPO-friendly messaging, it gives enterprise leaders important cover to reframe internal AI programs from headcount reduction to productivity amplification — a shift that dramatically improves employee trust and adoption.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">fortune.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Meta Developing AI Pendant and &quot;Wearables for Work&quot; Enterprise Service</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">An internal Meta memo reveals plans for an AI pendant (built on the Limitless acquisition), a new B2B service called &quot;Wearables for Work&quot; targeting enterprise customers, and a goal of 10 million wearable devices in H2 2026 — all while Reality Labs posted a $4.03B loss on just $402M revenue in Q1. The &quot;Wearables for Work&quot; play is a direct attack on enterprise IT budgets currently owned by Microsoft and Salesforce, positioning ambient AI as the next interface layer. For CIOs, this is worth tracking as a potential new procurement category by 2027.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">techcrunch.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#475569;background:#e2e8f0;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Infrastructure</span>
+  <br/>
+  <a href="https://phandroid.com/2026/05/29/google-already-had-to-walk-back-its-new-gemini-usage-limits/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Google Walks Back Gemini&#x27;s Compute-Based Usage Limits After Subscriber Revolt</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">After Google I/O 2026 replaced Gemini&#x27;s daily prompt limit with compute-based caps, paying subscribers hit their entire five-hour quota on a single heavy prompt — one user&#x27;s allocation drained before a video generation even finished. Google has since triple-patched the system: capping per-prompt consumption, making Flash-Lite prompts free, doubling AI Ultra generations, and promising pay-as-you-go top-ups. For enterprises evaluating Gemini for agentic workloads, this is a reminder to model actual compute costs before committing to subscription tiers — and to budget for overages as agentic tasks explode token consumption.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">phandroid.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#475569;background:#e2e8f0;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Infrastructure</span>
+  <br/>
+  <a href="https://opentools.ai/news/grok-ai-chatbot-psychotic-delusions-31-countries" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Anthropic Signs $1.8B Akamai Deal as Compute Diversification Race Intensifies</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Anthropic signed a $1.8 billion, seven-year infrastructure deal with Akamai — the largest in Akamai&#x27;s history — adding to a SpaceX Colossus One deal (300 MW, 220,000 GPUs) and reported Microsoft Azure negotiations. With Q1 revenue growing 80x year-over-year, Anthropic is building the most diversified compute backbone in the industry — a direct hedge against single-provider pricing power. For enterprise buyers, this supply-chain resilience means Claude is less likely to face the capacity crunches that have plagued competitors.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">opentools.ai</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#4338ca;background:#e0e7ff;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Product</span>
+  <br/>
+  <a href="https://medium.com/@blurbrahlab/karpathy-just-joined-anthropic-top-10-ai-flutter-news-may-26-2026-31f3b65496a5" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Anthropic Ships Self-Hosted Sandboxes for Managed Agents — Enterprise Data Sovereignty Gets Easier</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Anthropic launched self-hosted sandboxes for Managed Agents in public beta, allowing tool execution on customer infrastructure while orchestration stays on Anthropic&#x27;s side. New MCP tunnels connect agents to internal databases and private APIs over encrypted channels via a single outbound connection — no inbound firewall rules or public endpoints needed. This directly addresses the number-one enterprise objection to agentic AI: &quot;I don&#x27;t want sensitive data leaving my perimeter.&quot; Regulated industries should evaluate this immediately.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">medium.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#475569;background:#e2e8f0;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Infrastructure</span>
+  <br/>
+  <a href="https://stratechery.com/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Cerebras IPO Surges on Agentic Compute Demand — AI Chip Market Goes Heterogeneous</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Cerebras raised its IPO price range to $150–$160/share (up from $115–$125) and increased its offering to 30 million shares due to surging demand driven by agentic AI compute needs. Ben Thompson noted on Stratechery that the AI chip story is &quot;increasingly heterogeneous&quot; — moving well beyond Nvidia GPUs to purpose-built silicon for different workloads. For infrastructure leaders, GPU-only compute strategies are already becoming legacy thinking; purpose-built inference chips will increasingly be part of every serious AI stack evaluation.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">stratechery.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://theresanaiforthat.com" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Microsoft Building an AI &quot;Super App&quot; — Consolidating Copilot, Teams, and More</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Microsoft is reportedly building a unified AI super app that would bring Copilot, Teams, and other M365 AI capabilities under a single interface — a consolidation play that positions it to compete directly with standalone tools like Claude.ai and ChatGPT. For enterprise buyers juggling multiple AI point solutions, this simplifies procurement and compliance but deepens vendor lock-in. Organizations should clarify now whether their AI strategy is &quot;best-of-breed&quot; or &quot;platform&quot; before Microsoft makes that choice for them.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">theresanaiforthat.com</span>
+</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Big Picture card -->
+        <tr><td bgcolor="#ffffff" style="padding:10px 40px 24px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td width="4" bgcolor="#3ddc97" style="width:4px;font-size:1px;">&nbsp;</td>
+              <td bgcolor="#f0f7ff" style="padding:20px 24px;">
+                <span style="font-size:11px;font-weight:bold;color:#3ddc97;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE BIG PICTURE</span>
+                <br/><br/>
+                <p style="margin:0 0 10px 0;font-size:15px;color:#0a0f1c;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Amazon&#x27;s pivot from &quot;tokens consumed&quot; to &quot;normalised deployments&quot; isn&#x27;t just an accounting change — it&#x27;s the industry&#x27;s first serious attempt at defining what AI ROI actually means at scale. And the timing is no accident: the same week Amazon kills its leaderboard, Uber admits to blowing its annual AI budget by April, Google&#x27;s subscribers revolt over compute caps, and a Fortune 500 company burns half a billion dollars in a month on tools nobody measured. The capability race is no longer the bottleneck. The measurement problem is. The organizations that build governance frameworks around outcome-based AI metrics this quarter — shipped code, resolved tickets, shortened cycle times — will have a durable competitive advantage over those still measuring progress by how many tokens their engineers burned. Stop counting inputs. Start counting what shipped.</p>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Resources section -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px 24px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:30px 0 0 0;">
+  <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">WORTH BOOKMARKING</span>
+  <br/>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#3ddc97;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+</td></tr>
+            <tr><td style="height:12px;font-size:1px;">&nbsp;</td></tr>
+            <tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://gizmodo.com/researchers-put-ai-models-in-charge-of-a-simulated-society-grok-oversaw-a-crime-spree-2000764689" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">Emergence World: AI Models in Simulated Societies &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">The most visual and accessible demonstration of why model choice in agentic deployments is a safety decision, not just a performance preference. Share this with anyone who thinks all frontier models are interchangeable.</span>
+    </td>
+  </tr></table>
+</td></tr><tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://karpathy.bearblog.dev/sequoia-ascent-2026/" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">Andrej Karpathy: Sequoia Ascent 2026 Summary &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">Karpathy&#x27;s clearest articulation of Software 3.0 and why &quot;LLMs can automate what you can verify&quot; — now even more relevant given his move to Anthropic&#x27;s pre-training team.</span>
+    </td>
+  </tr></table>
+</td></tr><tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://www.oneusefulthing.org/p/the-shape-of-the-thing" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">&quot;The Shape of the Thing&quot; — Ethan Mollick, One Useful Thing &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">Mollick&#x27;s essential framing on why the window for radical organizational experimentation with agentic AI is already open and closing fast.</span>
+    </td>
+  </tr></table>
+</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Divider -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Podcast CTA -->
+        <tr><td bgcolor="#ffffff" style="padding:24px 40px 30px 40px;text-align:center;">
+          <p style="margin:0 0 16px 0;font-size:14px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            Prefer to listen? Today&#8217;s briefing is also a podcast.
+          </p>
+          <table cellpadding="0" cellspacing="0" border="0" align="center">
+            <tr>
+              <td align="center" bgcolor="#3ddc97" style="border-radius:6px;">
+                <a href="https://podcast.ambient-advantage.ai" target="_blank" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:bold;color:#ffffff;text-decoration:none;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Listen to Today&#8217;s Episode &rarr;</a>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Footer -->
+        <tr><td bgcolor="#f0f2f5" style="padding:24px 40px 30px 40px;text-align:center;">
+          <p style="margin:0 0 6px 0;font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            Curated by Chiel Hendriks &middot; PwC Canada
+          </p>
+          <p style="margin:0 0 6px 0;font-size:13px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <a href="https://ambient-advantage.ai" style="color:#3ddc97;text-decoration:none;">ambient-advantage.ai</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://www.linkedin.com/in/chielhendriks/" style="color:#3ddc97;text-decoration:none;">LinkedIn</a>
+          </p>
+          
+          <p style="margin:10px 0 0 0;font-size:12px;color:#9ca3af;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            &copy; 2026 Ambient Advantage
+          </p>
+        </td></tr>
+
+      </table>
+      <!-- /Email container -->
+
+    </td></tr>
+  </table>
+  <!-- /Outer wrapper -->
+
+
+  </div>
+</article>
+
+<div class="container">
+  <div class="article-nav">
+    <a href="/2026-05-29.html">
+      <div class="label">← Previous briefing</div>
+      <div class="title">Robinhood's Agentic Trading, Devin's $26B Raise, and Claude Opus 4.8 Tops GPT-5.5</div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="container frow">
+    <div>© 2026 Ambient Advantage · Curated by Chiel Hendriks</div>
+    <div><a href="https://ambient-advantage.ai" style="color:var(--accent);text-decoration:none">ambient-advantage.ai</a></div>
+  </div>
+</footer>
+
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="https://podcast.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5z"/></svg>
+    <span>Podcast</span>
+  </a>
+  <a href="/" class="active">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+    <span>Briefing</span>
+  </a>
+  <a href="https://take.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+    <span>Take</span>
+  </a>
+  <a href="https://build.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+    <span>Build</span>
+  </a>
+  <a href="https://ambient-advantage.ai/about">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>About</span>
+  </a>
+</nav>
+
+</body>
+</html>
