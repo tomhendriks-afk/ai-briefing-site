@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-06-03",
+    "headline": "Anthropic's IPO Filing, Meta's AI Chatbot Hack, and NVIDIA's Agentic Laptop Chip",
+    "snippet": "This edition covers twelve stories across security, funding, infrastructure, policy, and enterprise. The throughline: the capability layer is screaming ahead, but the governance layer — identity verification, usage limits, acceptable use policies —...",
+    "read_time": 8
+  },
+  {
     "date": "2026-06-01",
     "headline": "Amazon Kills Its AI Leaderboard, Karpathy Joins Anthropic, and the Tokenmaxxing Crisis Hits Enterprise",
     "snippet": "This edition covers twelve stories across enterprise, research, infrastructure, and security. The throughline: the capability race is accelerating, but the measurement problem is the real bottleneck.",
