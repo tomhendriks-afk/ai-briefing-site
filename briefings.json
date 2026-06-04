@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-06-04",
+    "headline": "Anthropic's S-1 Filing, Microsoft Build's Agentic Stack, and Nvidia's Agent-Ready PC",
+    "snippet": "This edition covers twelve stories across enterprise, infrastructure, funding, policy, and security. The throughline: the question is no longer &quot;which model wins?&quot; — it's who controls the orchestration layer between your data and the model.",
+    "read_time": 7
+  },
+  {
     "date": "2026-06-03",
     "headline": "Anthropic's IPO Filing, Meta's AI Chatbot Hack, and NVIDIA's Agentic Laptop Chip",
     "snippet": "This edition covers twelve stories across security, funding, infrastructure, policy, and enterprise. The throughline: the capability layer is screaming ahead, but the governance layer — identity verification, usage limits, acceptable use policies —...",
