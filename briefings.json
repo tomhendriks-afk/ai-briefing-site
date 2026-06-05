@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-06-05",
+    "headline": "Gemini Hijacked via WhatsApp, DeepSeek's $7.4B Round, and Anthropic Files for IPO",
+    "snippet": "Meanwhile, the funding landscape is shifting fast. DeepSeek broke its no-VC vow with a $7.4 billion round backed by Beijing, Anthropic confidentially filed its IPO paperwork, and Microsoft unveiled its own MAI models to reduce its dependence on...",
+    "read_time": 9
+  },
+  {
     "date": "2026-06-04",
     "headline": "Anthropic's S-1 Filing, Microsoft Build's Agentic Stack, and Nvidia's Agent-Ready PC",
     "snippet": "This edition covers twelve stories across enterprise, infrastructure, funding, policy, and security. The throughline: the question is no longer &quot;which model wins?&quot; — it's who controls the orchestration layer between your data and the model.",
