@@ -14,6 +14,18 @@
       "description": "Every published briefing — date, headline, snippet, read time. Sorted newest-first."
     },
     {
+      "name": "Story-level feed (JSON)",
+      "url": "https://briefing.ambient-advantage.ai/stories.json",
+      "type": "application/json",
+      "description": "Every individual story across all briefings — date, category, title, source URL, snippet, company tags, theme tags. Sorted newest-first."
+    },
+    {
+      "name": "Tag index (JSON)",
+      "url": "https://briefing.ambient-advantage.ai/tags.json",
+      "type": "application/json",
+      "description": "Aggregated company and theme tags with story counts and last-seen dates."
+    },
+    {
       "name": "Markdown homepage",
       "url": "https://briefing.ambient-advantage.ai/index.md",
       "type": "text/markdown",

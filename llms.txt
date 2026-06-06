@@ -4,6 +4,8 @@
 
 ## Data feeds
 - [briefings.json](https://briefing.ambient-advantage.ai/briefings.json): Machine-readable index of every published briefing — date, headline, snippet, read time. Sorted newest-first.
+- [stories.json](https://briefing.ambient-advantage.ai/stories.json): Story-level feed — every individual story across all briefings with date, category, title, source URL, snippet, and tags (companies + themes). Sorted newest-first. Powers the homepage story filter.
+- [tags.json](https://briefing.ambient-advantage.ai/tags.json): Aggregated tag index — every company and theme tag with story counts and last-seen dates. Regenerated on each publish.
 - [articles.json](https://take.ambient-advantage.ai/articles.json): Companion index for the Chiel's Take opinion column on the sister site — slug, title, date, read time, excerpt.
 
 ## Latest briefings
