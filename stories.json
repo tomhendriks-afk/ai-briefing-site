@@ -1,5 +1,215 @@
 [
  {
+  "date": "2026-06-08",
+  "category": "Policy",
+  "title": "Anthropic Calls for Coordinated Global AI Development Pause, Citing Self-Improvement Risk",
+  "url": "https://fortune.com/2026/06/05/anthropic-ai-pause-development-recursive-self-improvement/",
+  "snippet": "Anthropic's research institute warned that AI systems are approaching \"recursive self-improvement\" — autonomously designing and training their own successors — and disclosed that over 80% of code merged into its codebase is now written by Claude, with engineers shipping 8x as much code per quarter as pre-2025. The company is calling for a globally coordinated, verifiable pause in frontier development — while simultaneously preparing for a ~$1 trillion IPO. Any enterprise buyer should note: if a pause gains traction, it freezes the competitive landscape in Anthropic's favor; if it doesn't, the 80% stat alone has immediate workforce-planning implications.",
+  "source": "fortune.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Policy",
+   "Safety",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-06-08",
+  "category": "Infrastructure",
+  "title": "Google Signs $920M/Month Deal to Rent SpaceX/xAI Compute — 110,000 Nvidia GPUs",
+  "url": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
+  "snippet": "A SpaceX regulatory filing reveals Google will pay $920 million per month from October 2026 through June 2029 for access to 110,000 Nvidia GPUs housed in SpaceX's Colossus data centers, acquired through the xAI merger. Google — owner of one of the world's most sophisticated computing estates — is renting capacity from a competitor because AI demand is outpacing even hyperscaler build rates. For enterprise buyers, this is a structural signal: AI compute scarcity is multi-year, not a blip, and long-term capacity commitments should be negotiated now.",
+  "source": "cnbc.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Governance",
+   "Infrastructure & Compute",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-06-08",
+  "category": "Security",
+  "title": "University of Toronto Demonstrates AI Worm That Adapts Its Own Attack Strategy",
+  "url": "https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device",
+  "snippet": "Researchers at Toronto's CleverHans Lab built a proof-of-concept adaptive AI worm powered by a free, open-weight LLM running on a single GPU that compromised 73.8% of machines in a simulated 33-machine corporate network within 7 days — reasoning about each target's unique vulnerabilities and generating tailored exploit code on the fly. It also successfully exploited vulnerabilities disclosed after its training cutoff by ingesting public advisories in real time. Traditional patch-based defense doesn't stop a worm that changes strategy per target; the fact that it runs on a free model means adaptive malware is now within reach of moderately-skilled threat actors, not just nation-states.",
+  "source": "utoronto.ca",
+  "companies": [
+   "University of Toronto"
+  ],
+  "themes": [
+   "Canada",
+   "Research",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-08",
+  "category": "Enterprise",
+  "title": "ChatGPT Launches \"Dreaming\" — Self-Updating Memory That No Longer Requires User Commands",
+  "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+  "snippet": "OpenAI began rolling out \"Dreaming\" to Plus and Pro users: a background memory synthesis system that automatically updates context from conversation history over time — rewriting \"going to Singapore in July\" to \"went to Singapore in July 2026\" after the trip ends. Plus and Pro users get double memory capacity; Free and Go tiers follow in weeks. Memory is the quietly massive moat — the more context ChatGPT accumulates, the harder switching becomes. Enterprise teams should review their memory governance policy now: what should ChatGPT \"learn\" about your employees, clients, and workflows, and who controls that data?",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Data",
+   "Enterprise Adoption",
+   "Governance"
+  ]
+ },
+ {
+  "date": "2026-06-08",
+  "category": "Infrastructure",
+  "title": "Bots Now Generate 57%+ of Web Traffic — Cloudflare CEO Says Crossover Arrived 18 Months Early",
+  "url": "https://droids.substack.com/p/bots-outnumber-humans",
+  "snippet": "Cloudflare CEO Matthew Prince announced bots now account for 57.5% of all HTTP requests to HTML content on Cloudflare's network — a milestone he'd forecast wouldn't arrive until 2027. AI agent traffic surged 7,851% year-over-year according to HUMAN Security, with account-takeover attacks up 70% and 44% of advanced attacks now hitting APIs directly. The internet was built on the assumption a human was on the other end; that assumption is now operationally false, with immediate consequences for your web analytics, ad spend, and API security posture.",
+  "source": "droids.substack.com",
+  "companies": [
+   "Cloudflare"
+  ],
+  "themes": [
+   "Data",
+   "Infrastructure & Compute",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-08",
+  "category": "Research",
+  "title": "AI-Designed Universal Coronavirus Vaccine Clears First Human Trial",
+  "url": "https://www.sciencedaily.com/releases/2026/06/260605023357.htm",
+  "snippet": "Cambridge University and DIOSynVax completed a Phase I trial of pEVAC-PS, the first AI-designed vaccine ever tested in human subjects — safe, well-tolerated, and generating immune responses against multiple coronaviruses including SARS-CoV-2, SARS, and bat viruses with pandemic potential, delivered needle-free. AI moved from drug discovery assist to primary designer of a clinically validated vaccine candidate. For life sciences executives, this validates AI-native R&D pipelines at a pace that makes traditional discovery timelines look obsolete — the question is whether your organization treats AI as a scientific co-creator or just a search tool.",
+  "source": "sciencedaily.com",
+  "companies": [
+   "DIOSynVax",
+   "University of Cambridge"
+  ],
+  "themes": [
+   "Healthcare",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-06-08",
+  "category": "Policy",
+  "title": "Top AI CEOs Unite to Urge Congress to Mandate Synthetic DNA Screening Against AI-Enabled Bioweapons",
+  "url": "https://fortune.com/2026/06/05/openai-anthropic-microsoft-ceos-congress-bioweapon-safeguards/",
+  "snippet": "The CEOs of OpenAI, Anthropic, Microsoft AI, and Google DeepMind co-signed a letter calling for mandatory screening of synthetic DNA and RNA orders, with companion legislation introduced by Senators Cotton and Klobuchar. When competing labs set aside rivalry to co-sign legislation, something genuinely alarming has been identified. For enterprise leaders in life sciences, defense, or government contracting, voluntary industry compliance frameworks are coming whether or not the bill passes — get ahead of them.",
+  "source": "fortune.com",
+  "companies": [
+   "Anthropic",
+   "Google",
+   "Microsoft",
+   "OpenAI"
+  ],
+  "themes": [
+   "Policy",
+   "Regulation",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-06-08",
+  "category": "Research",
+  "title": "Andrej Karpathy Joins Anthropic's Pre-Training Team to Use Claude to Accelerate Claude",
+  "url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+  "snippet": "OpenAI co-founder and former Tesla Autopilot head Andrej Karpathy joined Anthropic in May to lead a team specifically focused on using Claude to accelerate pre-training research — directly applying the recursive self-improvement thesis from Anthropic's pause blog in practice. Karpathy is one of the few people bridging frontier LLM theory and large-scale training; his move is a significant talent consolidation. For enterprise teams choosing foundation model providers, this kind of researcher-quality signal matters more than benchmark leaderboards.",
+  "source": "techcrunch.com",
+  "companies": [
+   "Anthropic",
+   "OpenAI"
+  ],
+  "themes": [
+   "Models & Releases",
+   "Research",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-06-08",
+  "category": "Enterprise",
+  "title": "ChatGPT Adds Live Job Search and Lockdown Mode for Enterprise Security",
+  "url": "https://releasebot.io/updates/openai/chatgpt",
+  "snippet": "OpenAI's latest ChatGPT update adds live job search and resume formatting directly in-chat — turning ChatGPT into a competitor to LinkedIn and Indeed for top-of-funnel talent discovery. Equally important: the new \"Lockdown Mode\" lets workspace admins limit web and external service access to reduce prompt injection and data exfiltration risks, configurable at the role level. This is the kind of granular enterprise security control that previously required blocking features entirely — exactly what governance teams have been asking for.",
+  "source": "releasebot.io",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Security",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-06-08",
+  "category": "Agentic",
+  "title": "Adobe's Head of Agentic AI Outlines Agent-Native Creative Workflows",
+  "url": "https://mindstream.news",
+  "snippet": "Adobe is publicly re-architecting its creative platform around multi-step, agent-driven workflows rather than single-prompt interactions, with leadership framing it as a core product direction, not an experiment. Adobe serves hundreds of thousands of enterprise creative and marketing teams; when the platform's own AI leadership is articulating an agentic architecture, the creative and content production stack your teams rely on is about to change shape. Procurement and workflow standardization conversations should begin now, not after the features ship.",
+  "source": "mindstream.news",
+  "companies": [
+   "Adobe"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption"
+  ]
+ },
+ {
+  "date": "2026-06-08",
+  "category": "Policy",
+  "title": "Altman and Amodei Walk Back AI Jobs Apocalypse — Both Now Say AI Is a Productivity Multiplier",
+  "url": "https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/",
+  "snippet": "Sam Altman admitted he was \"pretty wrong\" about AI job displacement, and Dario Amodei — who once predicted 50% of white-collar jobs would be eliminated in five years — now frames automation as expanding remaining human work, not replacing it. A Yale Budget Lab study found no meaningful change in unemployment rates for AI-exposed workers since 2022. Both reversals arrive conveniently ahead of ~$1 trillion IPOs, but the underlying data point is the most useful fact for enterprise leaders right now: plan for productivity amplification, not headcount reduction.",
+  "source": "fortune.com",
+  "companies": [
+   "Anthropic",
+   "OpenAI"
+  ],
+  "themes": [
+   "Funding & Valuations",
+   "Policy",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-06-08",
+  "category": "Resources",
+  "title": "Anthropic Institute Blog Post: \"The Case for a Coordinated Pause\"",
+  "url": "https://siliconangle.com/2026/06/04/anthropic-calls-global-pause-ai-development-humans-lose-control/",
+  "snippet": "Read the raw argument, the internal productivity data, and the recursive self-improvement framing before forming an opinion. The numbers are more important than the headline.",
+  "source": "siliconangle.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Policy",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-06-08",
+  "category": "Resources",
+  "title": "Ethan Mollick's One Useful Thing — \"The Shape of the Thing\"",
+  "url": "https://www.oneusefulthing.org/p/the-shape-of-the-thing",
+  "snippet": "Mollick's analysis of what exponentially improving agentic AI actually looks like inside a real company — the most grounded practitioner view of where enterprise AI is heading this year.",
+  "source": "oneusefulthing.org",
+  "companies": [],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption"
+  ]
+ },
+ {
   "date": "2026-06-05",
   "category": "Security",
   "title": "Gemini Hijacked via WhatsApp Notifications — A Masterclass in Prompt Injection at Scale",

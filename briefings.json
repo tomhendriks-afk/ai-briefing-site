@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-06-08",
+    "headline": "Anthropic's Global AI Pause Call, Google's $920M SpaceX Compute Deal, and the AI Worm Threat",
+    "snippet": "This edition covers twelve stories across policy, security, infrastructure, enterprise, and research. The throughline: AI is no longer a tool waiting for human instruction — it's an autonomous participant in its own development, its own...",
+    "read_time": 8
+  },
+  {
     "date": "2026-06-05",
     "headline": "Gemini Hijacked via WhatsApp, DeepSeek's $7.4B Round, and Anthropic Files for IPO",
     "snippet": "Meanwhile, the funding landscape is shifting fast. DeepSeek broke its no-VC vow with a $7.4 billion round backed by Beijing, Anthropic confidentially filed its IPO paperwork, and Microsoft unveiled its own MAI models to reduce its dependence on...",
