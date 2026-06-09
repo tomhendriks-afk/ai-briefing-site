@@ -1,25 +1,25 @@
 {
- "generated": "2026-06-08",
+ "generated": "2026-06-09",
  "companies": [
   {
    "tag": "OpenAI",
-   "count": 173,
-   "last_seen": "2026-06-08"
+   "count": 180,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Anthropic",
-   "count": 166,
-   "last_seen": "2026-06-08"
+   "count": 170,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Google",
-   "count": 94,
-   "last_seen": "2026-06-08"
+   "count": 95,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Microsoft",
-   "count": 71,
-   "last_seen": "2026-06-08"
+   "count": 73,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Amazon",
@@ -63,8 +63,8 @@
   },
   {
    "tag": "Apple",
-   "count": 8,
-   "last_seen": "2026-05-26"
+   "count": 9,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "McKinsey",
@@ -172,6 +172,11 @@
    "last_seen": "2026-04-24"
   },
   {
+   "tag": "ClickUp",
+   "count": 1,
+   "last_seen": "2026-06-09"
+  },
+  {
    "tag": "Cloudflare",
    "count": 1,
    "last_seen": "2026-06-08"
@@ -202,6 +207,11 @@
    "last_seen": "2026-05-07"
   },
   {
+   "tag": "Uber",
+   "count": 1,
+   "last_seen": "2026-06-09"
+  },
+  {
    "tag": "University of Cambridge",
    "count": 1,
    "last_seen": "2026-06-08"
@@ -215,63 +225,63 @@
  "themes": [
   {
    "tag": "Enterprise Adoption",
-   "count": 367,
-   "last_seen": "2026-06-08"
+   "count": 374,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Agentic AI",
-   "count": 209,
-   "last_seen": "2026-06-08"
+   "count": 213,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Research",
-   "count": 122,
-   "last_seen": "2026-06-08"
+   "count": 124,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Coding & Dev Tools",
-   "count": 114,
-   "last_seen": "2026-06-08"
+   "count": 116,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Funding & Valuations",
-   "count": 108,
-   "last_seen": "2026-06-08"
+   "count": 110,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Infrastructure & Compute",
-   "count": 106,
-   "last_seen": "2026-06-08"
+   "count": 108,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Data",
-   "count": 82,
-   "last_seen": "2026-06-08"
+   "count": 84,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Governance",
-   "count": 76,
-   "last_seen": "2026-06-08"
+   "count": 78,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Policy",
-   "count": 74,
-   "last_seen": "2026-06-08"
+   "count": 77,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Security",
-   "count": 68,
-   "last_seen": "2026-06-08"
-  },
-  {
-   "tag": "Talent & Workforce",
-   "count": 68,
-   "last_seen": "2026-06-08"
+   "count": 70,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Regulation",
-   "count": 67,
-   "last_seen": "2026-06-08"
+   "count": 69,
+   "last_seen": "2026-06-09"
+  },
+  {
+   "tag": "Talent & Workforce",
+   "count": 69,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Financial Services",
@@ -280,8 +290,8 @@
   },
   {
    "tag": "Models & Releases",
-   "count": 52,
-   "last_seen": "2026-06-08"
+   "count": 53,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Compliance",
@@ -290,8 +300,8 @@
   },
   {
    "tag": "Safety",
-   "count": 34,
-   "last_seen": "2026-06-08"
+   "count": 35,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Voice & Multimodal",
@@ -305,8 +315,8 @@
   },
   {
    "tag": "Open Source",
-   "count": 24,
-   "last_seen": "2026-06-05"
+   "count": 25,
+   "last_seen": "2026-06-09"
   },
   {
    "tag": "Canada",

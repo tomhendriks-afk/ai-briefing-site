@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [OpenAI Files for IPO, Apple Bets on Gemini for Siri AI, and Enterprise AI Budgets Hit the Wall](https://briefing.ambient-advantage.ai/2026-06-09.html) — Tuesday · June 9, 2026 · This edition covers fifteen stories across funding, enterprise, policy, agentic infrastructure, and security.
 - [Anthropic's Global AI Pause Call, Google's $920M SpaceX Compute Deal, and the AI Worm Threat](https://briefing.ambient-advantage.ai/2026-06-08.html) — Monday · June 8, 2026 · This edition covers twelve stories across policy, security, infrastructure, enterprise, and research. The throughline: AI is no longer a tool waiting for human instruction — it's an autonomous participant in its own development, its own...
 - [Gemini Hijacked via WhatsApp, DeepSeek's $7.4B Round, and Anthropic Files for IPO](https://briefing.ambient-advantage.ai/2026-06-05.html) — Friday · June 5, 2026 · Meanwhile, the funding landscape is shifting fast. DeepSeek broke its no-VC vow with a $7.4 billion round backed by Beijing, Anthropic confidentially filed its IPO paperwork, and Microsoft unveiled its own MAI models to reduce its dependence on...
 - [Anthropic's S-1 Filing, Microsoft Build's Agentic Stack, and Nvidia's Agent-Ready PC](https://briefing.ambient-advantage.ai/2026-06-04.html) — Thursday · June 4, 2026 · This edition covers twelve stories across enterprise, infrastructure, funding, policy, and security. The throughline: the question is no longer "which model wins?" — it's who controls the orchestration layer between your data and the model.
