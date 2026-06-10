@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Claude Fable 5 Launches, OpenAI Files Its S-1, and the Miasma Worm Hits AI Dev Tools](https://briefing.ambient-advantage.ai/2026-06-10.html) — Wednesday · June 10, 2026 · This edition covers fifteen stories across model launches, security, enterprise economics, and the emerging architecture of agentic systems.
 - [OpenAI Files for IPO, Apple Bets on Gemini for Siri AI, and Enterprise AI Budgets Hit the Wall](https://briefing.ambient-advantage.ai/2026-06-09.html) — Tuesday · June 9, 2026 · This edition covers fifteen stories across funding, enterprise, policy, agentic infrastructure, and security.
 - [Anthropic's Global AI Pause Call, Google's $920M SpaceX Compute Deal, and the AI Worm Threat](https://briefing.ambient-advantage.ai/2026-06-08.html) — Monday · June 8, 2026 · This edition covers twelve stories across policy, security, infrastructure, enterprise, and research. The throughline: AI is no longer a tool waiting for human instruction — it's an autonomous participant in its own development, its own...
 - [Gemini Hijacked via WhatsApp, DeepSeek's $7.4B Round, and Anthropic Files for IPO](https://briefing.ambient-advantage.ai/2026-06-05.html) — Friday · June 5, 2026 · Meanwhile, the funding landscape is shifting fast. DeepSeek broke its no-VC vow with a $7.4 billion round backed by Beijing, Anthropic confidentially filed its IPO paperwork, and Microsoft unveiled its own MAI models to reduce its dependence on...
