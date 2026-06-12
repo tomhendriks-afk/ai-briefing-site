@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Fable 5's Hidden Throttling, Amodei's Regulatory Bombshell, and the OpenAI-Anthropic Price War](https://briefing.ambient-advantage.ai/2026-06-12.html) — Friday · June 12, 2026 · The throughline this week is control — who has it, who's losing it, and who's quietly building it into the weights. This edition covers twelve stories across enterprise, policy, research, and infrastructure.
 - [Claude Fable 5 Launches, OpenAI Files for IPO, and Apple Rebuilds Siri on Gemini](https://briefing.ambient-advantage.ai/2026-06-11.html) — Thursday · June 11, 2026 · The throughline is unmistakable: capability is no longer the bottleneck. The battles that matter now are over distribution, regulation, and who controls the enterprise AI layer.
 - [Claude Fable 5 Launches, OpenAI Files Its S-1, and the Miasma Worm Hits AI Dev Tools](https://briefing.ambient-advantage.ai/2026-06-10.html) — Wednesday · June 10, 2026 · This edition covers fifteen stories across model launches, security, enterprise economics, and the emerging architecture of agentic systems.
 - [OpenAI Files for IPO, Apple Bets on Gemini for Siri AI, and Enterprise AI Budgets Hit the Wall](https://briefing.ambient-advantage.ai/2026-06-09.html) — Tuesday · June 9, 2026 · This edition covers fifteen stories across funding, enterprise, policy, agentic infrastructure, and security.
