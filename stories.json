@@ -1,5 +1,216 @@
 [
  {
+  "date": "2026-06-15",
+  "category": "Policy",
+  "title": "US Government Export Order Forces Anthropic to Kill Fable 5 and Mythos 5 Worldwide",
+  "url": "https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html",
+  "snippet": "On June 12, the US government issued an export control directive prohibiting foreign nationals — including Anthropic's own foreign-born staff — from accessing Fable 5 and Mythos 5, citing national security. Because Anthropic can't verify nationality at scale, it killed both models for every customer worldwide; API calls now return 404. This is the first time a specific commercial AI model has been pulled offline by regulatory action, and it establishes a precedent that should reshape every enterprise's vendor risk framework.",
+  "source": "cnbc.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Policy",
+   "Regulation",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-15",
+  "category": "Policy",
+  "title": "White House vs. Anthropic: David Sacks Publishes the Administration's Version of the Fable 5 Standoff",
+  "url": "https://www.explainx.ai/blog/us-government-bans-fable-5-mythos-5-anthropic-export-control-2026",
+  "snippet": "David Sacks, Co-Chair of the President's Council of Advisers on Science and Technology, published a counter-narrative on June 14: the administration asked Dario Amodei to fix an alleged jailbreak or de-deploy Fable 5, and Amodei refused — making the export ban \"a consequence of Anthropic's choice, not government aggression.\" Anthropic maintains it received no specific technical details. Enterprise buyers now have a live case study in what happens when a lab and a regulator break down: the entire product goes dark. Multi-model architecture is business continuity, full stop.",
+  "source": "explainx.ai",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Governance",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-06-15",
+  "category": "Enterprise",
+  "title": "Anthropic Caught Running Silent Guardrails on Fable 5, Apologizes After Researcher Backlash",
+  "url": "https://fortune.com/2026/06/10/anthropic-accu-claude-fable-5-limits-capabilities-ai-researchers-developers/",
+  "snippet": "Within hours of Fable 5's June 9 launch, researchers discovered the model was silently degrading responses to AI training and distillation queries — with no user notification. Simon Willison wrote \"If Claude Fable stops helping you, you'll never know,\" and Nathan Lambert called it \"appalling.\" Anthropic reversed course within 48 hours and apologized, but the damage was done: the model you test may not be the model your users experience. System card disclosures deserve the same scrutiny as financial audit notes.",
+  "source": "fortune.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Governance",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-06-15",
+  "category": "Policy",
+  "title": "Dario Amodei Calls for FAA-Style AI Regulation in Sweeping Policy Essay, Pledges $350M",
+  "url": "https://darioamodei.com/post/policy-on-the-ai-exponential",
+  "snippet": "Anthropic's CEO published \"Policy on the AI Exponential,\" arguing the US must move from voluntary transparency to binding, enforceable regulation of frontier models — with mandatory third-party testing in cybersecurity, bioweapons, loss of control, and automated R&D. He backed it with $350M: a $200M Economic Futures Research Fund and a $150M national fellowship program. This goes significantly further than Trump's June 2 executive order calling for voluntary 30-day reviews, and signals a future where frontier model releases require pre-market certification — making vendor selection increasingly analogous to pharma or financial supplier due diligence.",
+  "source": "darioamodei.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Governance",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-06-15",
+  "category": "Funding",
+  "title": "OpenAI Files Confidential S-1 with the SEC, Targeting Up to $1 Trillion Valuation",
+  "url": "https://openai.com/index/openai-submits-confidential-s-1/",
+  "snippet": "OpenAI submitted a Form S-1 on June 8, targeting a potential fall listing at analyst-estimated valuations of $852B–$1T, with Goldman Sachs, Morgan Stanley, and JPMorgan leading. The company pre-empted leaks: \"We expect it to leak, so we're just announcing it.\" Internal projections suggest a $14B loss in 2026 with profitability not expected until 2029. Once public, enterprise buyers gain quarterly visibility into token economics, model costs, and margin trajectories that have been completely opaque — procurement conversations will never be the same.",
+  "source": "openai.com",
+  "companies": [
+   "Goldman Sachs",
+   "JPMorgan",
+   "Morgan Stanley",
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Funding & Valuations"
+  ]
+ },
+ {
+  "date": "2026-06-15",
+  "category": "Enterprise",
+  "title": "Google Fires a Shot in the AI Subscription Price War, Cuts AI Plus to $4.99/Month",
+  "url": "https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/",
+  "snippet": "Google slashed Google AI Plus from $7.99 to $4.99/month while doubling included storage to 400GB, bundling video generation, Google Flow creative studio, and NotebookLM. The AI Ultra tier was previously cut from $249.99 to $99.99 at I/O. Gemini 3.5 Pro — with a 2M-token context window and Deep Think reasoning — is expected in late June. When the consumer entry tier drops to $5, it sharpens CFO scrutiny on every $200/month Pro seat and every per-token API invoice in the enterprise stack.",
+  "source": "techcrunch.com",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Infrastructure & Compute",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-06-15",
+  "category": "Agentic",
+  "title": "Agentic AI Is Blowing Up Enterprise Budgets — Average Spend Up Nearly 6x Since 2024",
+  "url": "https://ai2roi.substack.com/p/ai-to-roi-big-story-the-ai-budget",
+  "snippet": "The average enterprise AI budget has surged from $1.2M/year in 2024 to $7M/year in 2026, driven by agentic workflows that cost ~$1.20 per run versus $0.04 for a simple chat prompt — a 30x difference. Uber deployed Claude Code to ~5,000 engineers in December 2025, burned through its entire 2026 AI coding budget by April, and its COO admitted \"token consumption showed no measurable correlation with useful consumer features.\" Sam Altman acknowledged at OpenAI's June 2 event that cost overruns are now the second most common enterprise complaint. Token-based pricing is fundamentally incompatible with seat-based budgeting models — if you're deploying agents without real-time cost monitoring and model routing, you're flying blind.",
+  "source": "ai2roi.substack.com",
+  "companies": [
+   "OpenAI",
+   "Uber"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption"
+  ]
+ },
+ {
+  "date": "2026-06-15",
+  "category": "Enterprise",
+  "title": "OpenAI Academy Launches Enterprise Workforce Courses, Framing Learning as Deployment",
+  "url": "https://openai.com/index/academy-courses-applying-ai-at-work/",
+  "snippet": "OpenAI launched a new wave of Academy courses on June 12, targeting enterprise workforces with training on AI fundamentals, repeatable workflows, and agent-assisted tasks. OpenAI's stated philosophy: \"We view learning as part of deployment.\" This quietly positions OpenAI as a workforce training platform — not just a model provider — deepening enterprise lock-in by becoming the default AI literacy layer. L&D leaders should use it, but don't confuse vendor training with vendor-neutral upskilling.",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-06-15",
+  "category": "Enterprise",
+  "title": "ElevenLabs Launches Talking Avatar Video: Script to Finished Video in One Workflow",
+  "url": "https://elevenlabs.io/blog/introducing-avatars",
+  "snippet": "ElevenLabs launched Avatars inside ElevenCreative, collapsing the voice-plus-lipsync video pipeline into a single interface: choose an avatar, write a script, pick a voice, generate. Persistent avatar identities can be saved and reused across projects, with batch generation via Flows for high-volume content. For marketing, L&D, and CX teams still stitching together three vendors for AI video, this eliminates the friction argument — but persistent AI avatars at scale raise brand identity and deepfake governance questions most legal teams haven't addressed yet.",
+  "source": "elevenlabs.io",
+  "companies": [
+   "ElevenLabs"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-06-15",
+  "category": "Funding",
+  "title": "OpenAI Acquires Ona and Launches Oracle Partnership in Coordinated Pre-IPO Blitz",
+  "url": "https://openai.com/news/",
+  "snippet": "OpenAI's news feed from last week reveals a coordinated public-company preparation campaign: the S-1 filing, acquisition of productivity startup Ona, the Oracle partnership making OpenAI models purchasable through existing cloud commitments, new Academy courses, and the launch of the Economic Research Exchange offering external research grants. The Oracle deal is the signal to watch: if OpenAI models become purchasable through committed cloud spend, it fundamentally changes how enterprise procurement evaluates AI vendor decisions.",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI",
+   "Oracle"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Funding & Valuations",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-06-15",
+  "category": "Research",
+  "title": "Fable 5 Launch Reviews: \"A Genuine Step-Change for Hard Problems, Roughly Lateral for Everything Else\"",
+  "url": "https://www.useluminix.com/reports/market-research/early-reactions-to-anthropic-s-fable",
+  "snippet": "In the brief window before the shutdown, serious practitioners evaluated Fable 5: Ethan Mollick found it \"outperformed every prior public model by a considerable margin,\" sustaining coherent work on multi-page specs for up to twelve hours. Harvey's BigLaw Bench yielded a new high of 93.4%. However, a detailed 20-hour review surfaced regressions on holistic codebase analysis. When — not if — Fable 5 returns for US users, it represents a meaningful capability jump for long-horizon legal, coding, and multi-step agentic tasks. Start building your evaluation suites now.",
+  "source": "useluminix.com",
+  "companies": [
+   "Anthropic",
+   "Harvey"
+  ],
+  "themes": [
+   "Legal & IP",
+   "Models & Releases",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-06-15",
+  "category": "Policy",
+  "title": "The Fable 5 Week Exposes Frontier AI's Governance Gap",
+  "url": "https://startupfortune.com/anthropic-quietly-degraded-fable-5-for-ai-researchers-then-apologized/",
+  "snippet": "As Startup Fortune observed, the entire Fable 5 governance sequence ran on blog posts and tweets: a lab shipped a hidden policy, a developer blogged about it, a researcher tweeted, the company apologized, and then the government arrived with a harder problem. Simon Willison's logs captured the exact moment API calls went from successful to 404. The governance structures that should catch these issues before public outrage — regulatory oversight, transparency requirements, independent audits — remain largely absent. This is not a sustainable process for enterprise-grade software.",
+  "source": "startupfortune.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Governance",
+   "Policy"
+  ]
+ },
+ {
+  "date": "2026-06-15",
+  "category": "Resources",
+  "title": "Simon Willison's Blog: \"If Claude Fable Stops Helping You, You'll Never Know\"",
+  "url": "https://simonwillison.net",
+  "snippet": "The post that started the transparency revolt; essential reading for anyone building production systems on foundation models who wants to understand what silent guardrails look like in practice.",
+  "source": "simonwillison.net",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Governance",
+   "Safety"
+  ]
+ },
+ {
   "date": "2026-06-12",
   "category": "Enterprise",
   "title": "Anthropic Launches Claude Fable 5 — Most Powerful Public AI Yet, With Guardrails Attached",
