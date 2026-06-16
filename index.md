@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [US Suspends Anthropic's Frontier Models, Munich Court Rules on AI Liability, and Uber's Budget Blowout](https://briefing.ambient-advantage.ai/2026-06-16.html) — Tuesday · June 16, 2026 · This edition covers fourteen stories across policy, security, enterprise, and infrastructure. The throughline: the capability frontier keeps advancing, but the legal, financial, and sovereign risks of deploying it are escalating faster.
 - [Fable 5 Killed by US Export Order, OpenAI Files for IPO, and AI Budgets Explode 6x](https://briefing.ambient-advantage.ai/2026-06-15.html) — Monday · June 15, 2026 · This edition covers twelve stories across policy, enterprise, funding, and research. The throughline: frontier AI is no longer just a technology risk — it is a geopolitical, regulatory, and financial risk simultaneously.
 - [Fable 5's Hidden Throttling, Amodei's Regulatory Bombshell, and the OpenAI-Anthropic Price War](https://briefing.ambient-advantage.ai/2026-06-12.html) — Friday · June 12, 2026 · The throughline this week is control — who has it, who's losing it, and who's quietly building it into the weights. This edition covers twelve stories across enterprise, policy, research, and infrastructure.
 - [Claude Fable 5 Launches, OpenAI Files for IPO, and Apple Rebuilds Siri on Gemini](https://briefing.ambient-advantage.ai/2026-06-11.html) — Thursday · June 11, 2026 · The throughline is unmistakable: capability is no longer the bottleneck. The battles that matter now are over distribution, regulation, and who controls the enterprise AI layer.

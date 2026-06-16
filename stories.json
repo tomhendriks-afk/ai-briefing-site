@@ -1,5 +1,210 @@
 [
  {
+  "date": "2026-06-16",
+  "category": "Policy",
+  "title": "US Government Kills Anthropic's Fable 5 & Mythos 5 — Days After Launch",
+  "url": "https://www.anthropic.com/news/fable-mythos-access",
+  "snippet": "Commerce Secretary Howard Lutnick sent Anthropic a directive on June 12 ordering immediate suspension of all foreign-national access to its two most capable models, Fable 5 and Mythos 5, with no explanation of the underlying national security rationale. Anthropic itself warns that if this standard were applied industry-wide, it \"would essentially halt all new model deployments for all frontier model providers.\" Any enterprise that has built critical workflows on a specific frontier model now faces a new category of sovereign risk — your vendor's model can be pulled overnight by government fiat, and you have no recourse.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-06-16",
+  "category": "Infrastructure",
+  "title": "OpenRouter Fusion: Multi-Model Ensembles Beat Frontier Performance at Half the Cost",
+  "url": "https://openrouter.ai/blog/announcements/fusion-beats-frontier/",
+  "snippet": "OpenRouter's new Fusion tool synthesizes outputs from multiple models through a judge-model architecture, and a panel of Fable 5 + GPT-5.5 judged by Claude Opus 4.8 scored 69.0% on the DRACO benchmark — outperforming Fable 5's solo 65.3%. Even a budget panel of Gemini 3 Flash, Kimi K2.6, and DeepSeek V4 Pro hit 64.7%. For enterprise AI buyers, this is the strongest evidence yet that vendor lock-in to any single model provider is a strategic choice, not a technical necessity — ensemble routing may be the smarter architecture.",
+  "source": "openrouter.ai",
+  "companies": [
+   "OpenRouter"
+  ],
+  "themes": [
+   "Infrastructure & Compute",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-06-16",
+  "category": "Policy",
+  "title": "Munich Court Declares Google Liable for AI Overview Hallucinations — A Legal First",
+  "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+  "snippet": "The Regional Court of Munich ruled that Google's AI Overviews are Google's own statements — not protected third-party content — and issued an injunction after the AI falsely linked two publishers to scams that appeared in none of the cited sources. This appears to be the first time any court has held an AI firm liable for AI-generated speech, and the court said its reasoning could have international reach. Every enterprise running an AI answer layer — customer-facing chatbot, AI search, internal knowledge base — now has a concrete legal precedent to account for. The \"AI can make mistakes\" disclaimer is legally insufficient in at least one major jurisdiction.",
+  "source": "the-decoder.com",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Governance",
+   "Legal & IP",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-06-16",
+  "category": "Policy",
+  "title": "42 US State AGs Subpoena OpenAI — Days After Its Confidential IPO Filing",
+  "url": "https://thenextweb.com/news/openai-state-attorneys-general-investigation-ipo",
+  "snippet": "A coalition of 42 state attorneys general opened a formal investigation into OpenAI on June 12, with New York AG Letitia James serving a sweeping subpoena demanding records on model sycophancy, child safety, health data, advertising, and user retention. The probe lands days after OpenAI filed confidentially for an IPO at an $852 billion valuation, injecting material legal risk into one of the largest public listings in history. \"Sycophancy\" — whether a chatbot tells users what they want to hear rather than what's true — is emerging as a potential regulatory flashpoint for anyone deploying these models in consumer-facing or health-adjacent workflows.",
+  "source": "thenextweb.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Compliance",
+   "Funding & Valuations",
+   "Policy",
+   "Regulation",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-06-16",
+  "category": "Enterprise",
+  "title": "Uber Caps Agentic Coding Tools at $1,500/Month After Burning Its 2026 AI Budget in Four Months",
+  "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
+  "snippet": "Uber exhausted its entire 2026 budget for AI coding tools — including Claude Code and Cursor — by April, forcing a $1,500 monthly per-engineer cap. CEO Dara Khosrowshahi revealed 10% of Uber's code is now written by AI agents and 95% of engineers use AI tools monthly, but the COO admitted token spend does not yet map to shipped features. If a company with 5,000 engineers and a dedicated AI strategy blew its budget in four months, every organization setting 2026–2027 AI infrastructure budgets is likely underestimating consumption. Token governance is now a CFO-level conversation.",
+  "source": "simonwillison.net",
+  "companies": [
+   "Anthropic",
+   "Uber"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Enterprise Adoption",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-06-16",
+  "category": "Security",
+  "title": "LangGraph RCE Vulnerability Chain Puts Agentic AI Infrastructure at Critical Risk",
+  "url": "https://cyberpress.org/critical-langgraph-vulnerability/",
+  "snippet": "A critical vulnerability chain in LangGraph — an open-source agent framework with ~46.5 million monthly downloads — allows attackers to achieve full remote code execution on self-hosted deployments via unsafe msgpack deserialization (CVE-2026-28277). Exploitation gives attackers access to LLM API keys, customer data, conversation histories, and connected credentials, and can serve as a pivot point for lateral movement. Any team running self-hosted LangGraph should patch immediately and audit every credential their agents hold — this is a full server takeover chain, not a theoretical risk.",
+  "source": "cyberpress.org",
+  "companies": [
+   "LangChain"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-16",
+  "category": "Security",
+  "title": "Splunk Pre-Auth RCE Flaw (CVSS 9.8) Exposes Enterprise Security Infrastructure",
+  "url": "https://www.splunk.com/en_us/blog/security/splunk-enterprise-security-advisory-june-2026.html",
+  "snippet": "CVE-2026-20253 allows unauthenticated attackers to exploit Splunk Enterprise's PostgreSQL Sidecar Service via connection string injection, ultimately achieving arbitrary file writes and full server takeover — aided by a plaintext credential file at a predictable path. Splunk is the telemetry backbone of the majority of enterprise SOC environments, making this an extraordinarily high-severity exposure. If your organization runs self-hosted Splunk Enterprise, this is a patch-now situation, not a patch-next-cycle one.",
+  "source": "splunk.com",
+  "companies": [
+   "Splunk"
+  ],
+  "themes": [
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-16",
+  "category": "Research",
+  "title": "Sequent Research Launches: Safety Scientists Warn \"Alignment Is Not On Track\"",
+  "url": "https://importai.substack.com/p/import-ai-461-alignment-is-not-on",
+  "snippet": "Geoffrey Irving, former Chief Scientist of UK AISI, has launched Sequent Research — a new nonprofit alignment organization bringing together researchers from the UK AISI Alignment Team and Timaeus — on the founding thesis that ASI may arrive within years and alignment research is not keeping pace. When the people who ran government AI safety evaluations quit to form an independent nonprofit because current approaches are insufficient, that is a signal worth noting. For enterprise governance teams, this widens the gap between \"model is commercially deployed\" and \"model is verified safe\" — a gap regulators and procurement standards will increasingly scrutinize.",
+  "source": "importai.substack.com",
+  "companies": [
+   "Sequent Research"
+  ],
+  "themes": [
+   "Governance",
+   "Research",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-06-16",
+  "category": "Security",
+  "title": "13 Words Are Enough to Poison AI Search — Prompt Injection via Adversarial Text",
+  "url": "https://theresanaiforthat.com",
+  "snippet": "New research demonstrates that as few as 13 strategically chosen words embedded in a web document can manipulate AI-powered search outputs — requiring no special access, just the ability to publish a webpage that gets indexed. Combined with the Munich liability ruling, this creates a double bind: your AI system can hallucinate liability-generating falsehoods on its own, and external actors can actively poison its outputs with minimal effort. Any RAG pipeline, AI search layer, or agentic browsing workflow touching untrusted web content needs adversarial input testing built into its evaluation framework — yesterday.",
+  "source": "theresanaiforthat.com",
+  "companies": [],
+  "themes": [
+   "Agentic AI",
+   "Data",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-16",
+  "category": "Enterprise",
+  "title": "Facebook Bakes AI Mode Into the Feed — Answers Questions from Groups and Reels",
+  "url": "https://about.fb.com/news/2026/06/new-ai-tools-to-help-you-make-things-happen-on-facebook/",
+  "snippet": "Meta launched an AI Mode for Facebook that answers user questions by drawing on real content from Groups and Reels, turning its proprietary social content graph into a retrieval layer for a search competitor. For brands and retailers that rely on Facebook Groups and community content for organic reach, this reshapes what \"being discoverable\" means on the platform. AI-optimized community content strategy is no longer optional — Meta is becoming a search engine powered by your audience's own content.",
+  "source": "about.fb.com",
+  "companies": [
+   "Meta"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-06-16",
+  "category": "Policy",
+  "title": "SPUR Coalition Expands to 36 Publishers, Drafts Content Telemetry Standard",
+  "url": "https://www.spurcoalition.org/",
+  "snippet": "The SPUR Coalition grew from 6 to 36 members — including CBC/Radio-Canada, The Globe and Mail, and France's CMA Media — and published a draft Content Telemetry standard open for public comment through July 10. This is evolving from a declaration of intent into a technical standards body: the Content Telemetry spec is the mechanism that will eventually power AI licensing negotiations at scale. Expect this standard to inform regulatory frameworks on both sides of the Atlantic within 12–18 months.",
+  "source": "spurcoalition.org",
+  "companies": [
+   "SPUR Coalition"
+  ],
+  "themes": [
+   "Data",
+   "Legal & IP",
+   "Policy"
+  ]
+ },
+ {
+  "date": "2026-06-16",
+  "category": "Research",
+  "title": "GLM-5.2 Launches Across All Coding Variants as International Alternative Gains Urgency",
+  "url": "https://www.marktechpost.com/2026/06/13/anthropic-disables-claude-fable-5-and-mythos-5-after-us-government-order/",
+  "snippet": "Zhipu AI launched GLM-5.2 on June 13 across every coding variant, positioning it as a strong open-weight competitor to closed frontier models on coding and reasoning benchmarks. The timing — simultaneous with the Fable 5 suspension — means developers scrambling for alternatives now have a credible international option. The geopolitics of AI model access is no longer hypothetical; for non-US organizations, diversifying model supply chains is becoming a procurement imperative.",
+  "source": "marktechpost.com",
+  "companies": [
+   "Zhipu AI"
+  ],
+  "themes": [
+   "Models & Releases",
+   "Open Source",
+   "Policy",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-06-16",
+  "category": "Research",
+  "title": "Ethan Mollick: Working with Mythos Signals a \"Drastic\" Shift in the Human-AI Relationship",
+  "url": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
+  "snippet": "Wharton's Ethan Mollick, who had early access to Fable 5 before the suspension, concluded it represents \"a very real leap over every model I have used before\" and, more importantly, suggests the human-AI relationship is changing in drastic ways. His post — now a historical artifact given the ban — attracted 1,861 reactions and tested the model on real work tasks, not synthetic benchmarks. Mollick's core insight is the one executives should internalize: this is not a productivity tool upgrade, it is a renegotiation of how knowledge work gets allocated between human and machine.",
+  "source": "oneusefulthing.org",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Research"
+  ]
+ },
+ {
   "date": "2026-06-15",
   "category": "Policy",
   "title": "US Government Export Order Forces Anthropic to Kill Fable 5 and Mythos 5 Worldwide",

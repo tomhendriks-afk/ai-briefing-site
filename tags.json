@@ -1,20 +1,20 @@
 {
- "generated": "2026-06-15",
+ "generated": "2026-06-16",
  "companies": [
   {
    "tag": "Anthropic",
-   "count": 199,
-   "last_seen": "2026-06-15"
+   "count": 202,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "OpenAI",
-   "count": 192,
-   "last_seen": "2026-06-15"
+   "count": 193,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Google",
-   "count": 104,
-   "last_seen": "2026-06-15"
+   "count": 105,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Microsoft",
@@ -28,8 +28,8 @@
   },
   {
    "tag": "Meta",
-   "count": 38,
-   "last_seen": "2026-06-12"
+   "count": 39,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Nvidia",
@@ -107,6 +107,11 @@
    "last_seen": "2026-06-01"
   },
   {
+   "tag": "Uber",
+   "count": 5,
+   "last_seen": "2026-06-16"
+  },
+  {
    "tag": "AMD",
    "count": 4,
    "last_seen": "2026-06-04"
@@ -120,11 +125,6 @@
    "tag": "ServiceNow",
    "count": 4,
    "last_seen": "2026-05-20"
-  },
-  {
-   "tag": "Uber",
-   "count": 4,
-   "last_seen": "2026-06-15"
   },
   {
    "tag": "Perplexity",
@@ -247,9 +247,34 @@
    "last_seen": "2026-06-04"
   },
   {
+   "tag": "LangChain",
+   "count": 1,
+   "last_seen": "2026-06-16"
+  },
+  {
+   "tag": "OpenRouter",
+   "count": 1,
+   "last_seen": "2026-06-16"
+  },
+  {
+   "tag": "SPUR Coalition",
+   "count": 1,
+   "last_seen": "2026-06-16"
+  },
+  {
+   "tag": "Sequent Research",
+   "count": 1,
+   "last_seen": "2026-06-16"
+  },
+  {
    "tag": "SpaceX",
    "count": 1,
    "last_seen": "2026-06-12"
+  },
+  {
+   "tag": "Splunk",
+   "count": 1,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Stripe",
@@ -270,63 +295,68 @@
    "tag": "University of Toronto",
    "count": 1,
    "last_seen": "2026-06-08"
+  },
+  {
+   "tag": "Zhipu AI",
+   "count": 1,
+   "last_seen": "2026-06-16"
   }
  ],
  "themes": [
   {
    "tag": "Enterprise Adoption",
-   "count": 410,
-   "last_seen": "2026-06-15"
+   "count": 414,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Agentic AI",
-   "count": 222,
-   "last_seen": "2026-06-15"
+   "count": 224,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Research",
-   "count": 131,
-   "last_seen": "2026-06-15"
+   "count": 134,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Coding & Dev Tools",
-   "count": 126,
-   "last_seen": "2026-06-12"
-  },
-  {
-   "tag": "Funding & Valuations",
-   "count": 116,
-   "last_seen": "2026-06-15"
+   "count": 127,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Infrastructure & Compute",
-   "count": 116,
-   "last_seen": "2026-06-15"
+   "count": 118,
+   "last_seen": "2026-06-16"
+  },
+  {
+   "tag": "Funding & Valuations",
+   "count": 117,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Governance",
-   "count": 90,
-   "last_seen": "2026-06-15"
+   "count": 92,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Policy",
-   "count": 85,
-   "last_seen": "2026-06-15"
+   "count": 90,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Data",
-   "count": 84,
-   "last_seen": "2026-06-09"
+   "count": 86,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Regulation",
-   "count": 77,
-   "last_seen": "2026-06-15"
+   "count": 80,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Security",
-   "count": 75,
-   "last_seen": "2026-06-15"
+   "count": 78,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Talent & Workforce",
@@ -335,8 +365,8 @@
   },
   {
    "tag": "Models & Releases",
-   "count": 64,
-   "last_seen": "2026-06-15"
+   "count": 66,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Financial Services",
@@ -345,28 +375,28 @@
   },
   {
    "tag": "Safety",
-   "count": 43,
-   "last_seen": "2026-06-15"
+   "count": 45,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Compliance",
-   "count": 39,
-   "last_seen": "2026-06-11"
+   "count": 40,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Voice & Multimodal",
-   "count": 39,
-   "last_seen": "2026-06-15"
+   "count": 40,
+   "last_seen": "2026-06-16"
+  },
+  {
+   "tag": "Open Source",
+   "count": 30,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Healthcare",
    "count": 29,
    "last_seen": "2026-06-08"
-  },
-  {
-   "tag": "Open Source",
-   "count": 29,
-   "last_seen": "2026-06-12"
   },
   {
    "tag": "Canada",
@@ -375,8 +405,8 @@
   },
   {
    "tag": "Legal & IP",
-   "count": 10,
-   "last_seen": "2026-06-15"
+   "count": 12,
+   "last_seen": "2026-06-16"
   },
   {
    "tag": "Robotics",
