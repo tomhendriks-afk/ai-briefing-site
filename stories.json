@@ -1,5 +1,223 @@
 [
  {
+  "date": "2026-06-17",
+  "category": "Policy",
+  "title": "Anthropic's Claude Fable 5 Pulled Globally After US Government Invokes Export Controls",
+  "url": "https://www.bensbites.com/p/bye-bye-fable",
+  "snippet": "The US government cited a jailbreak in Anthropic's Fable 5 model and invoked export controls restricting access for all foreign nationals; Anthropic responded by suspending the model globally, unable to cleanly enforce a nationality-based restriction. Over 100 security experts — including Luta Security's Katie Moussouris — have published technical critiques arguing the cited \"jailbreak\" is a routine defensive cybersecurity prompt that GPT-5.5, Gemini 2.5 Pro, and Claude 4.5 Opus can each execute in default configuration. This is the first time a US export-control action has taken down a frontier model for all users globally — any enterprise that assumed AI model access was stable infrastructure just got a very expensive lesson in geopolitical risk.",
+  "source": "bensbites.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Governance",
+   "Policy",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "category": "Funding",
+  "title": "SpaceX Acquires Cursor in ~$60B All-Stock Deal",
+  "url": "https://x.com/SpaceX/status/2066873915717136548",
+  "snippet": "SpaceX used its post-IPO momentum to acquire Cursor, the AI-first code editor with 40M+ developers, in an all-stock deal valued at approximately $60B. A jointly trained model will ship inside both Cursor and Grok Build, handing Elon Musk a dominant position in developer tooling overnight. Any enterprise standardized on Cursor should immediately review vendor concentration risk — the competitive dynamics of agentic coding just changed dramatically, and your roadmap alignment assumptions may no longer hold.",
+  "source": "x.com",
+  "companies": [
+   "Cursor",
+   "SpaceX",
+   "xAI"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Enterprise Adoption",
+   "Funding & Valuations"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "category": "Agentic",
+  "title": "Microsoft Copilot Cowork Hits Global GA — Half the Fortune 500 Already Used It",
+  "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
+  "snippet": "Microsoft's Copilot Cowork is now generally available worldwide, moving beyond preview to offer agentic workflows that execute multi-day tasks across Outlook, Teams, Word, Excel, and calendars — with full action visibility for users. More than half the Fortune 500 used Cowork during preview, including Accenture, Capital Group, Koch, and Zurich Insurance; at launch it supports Anthropic's Opus 4.8 and Sonnet 4.6, with GPT-5.5 for Frontier customers. Usage-based pricing kicks in on top of existing M365 Copilot licenses — admins must configure billing before July 1 or Frontier users lose access.",
+  "source": "microsoft.com",
+  "companies": [
+   "Anthropic",
+   "Microsoft"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "category": "Funding",
+  "title": "DeepSeek Closes $7.4B Round — China's State AI Fund Gets the Only Voting Rights",
+  "url": "https://www.techtimes.com/articles/318483/20260616/deepseek-closes-74-billion-round-state-fund-gets-votes-other-investors-get-none.htm",
+  "snippet": "DeepSeek raised more than $7.4B in its first-ever external funding round, valuing the company at over $50B, but every commercial investor — including Tencent and CATL — accepted a five-year lock-up and surrendered all voting rights to China's National AI Industry Investment Fund. The deal makes explicit what was previously implied: DeepSeek's governance is formally controlled by the Chinese state. Any procurement or data-sharing decision involving DeepSeek models must now be assessed as a state-affiliated vendor relationship, not a commercial one.",
+  "source": "techtimes.com",
+  "companies": [
+   "DeepSeek",
+   "Tencent"
+  ],
+  "themes": [
+   "Funding & Valuations",
+   "Governance",
+   "Policy"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "category": "Policy",
+  "title": "AI CEOs Altman, Amodei & Hassabis Attend G7 — Call for US-Led Global AI Coalition",
+  "url": "https://www.cnbc.com/2026/06/17/anthropic-amodei-google-hassabis-us-ai-coalition-g7.html",
+  "snippet": "Anthropic's Dario Amodei and Google DeepMind's Demis Hassabis called for a US-led AI coalition at a closed-door G7 working lunch, joined by OpenAI's Sam Altman and roughly a dozen tech executives alongside heads of state. Discussion centered on structured access to frontier models, chip trade frameworks that exclude China, and a potential US-helmed international body for advanced model standards. If this coalition takes shape, it will directly determine which enterprise customers in which geographies can legally access which frontier models — a supply-chain and compliance issue, not just a geopolitical headline.",
+  "source": "cnbc.com",
+  "companies": [
+   "Anthropic",
+   "Google",
+   "OpenAI"
+  ],
+  "themes": [
+   "Infrastructure & Compute",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "category": "Enterprise",
+  "title": "OpenAI Launches $150M Partner Network — Targets 300,000 Certified Consultants by Year-End",
+  "url": "https://openai.com/index/introducing-openai-partner-network/",
+  "snippet": "OpenAI launched its Partner Network with Accenture, Bain, BCG, McKinsey, and PwC as founding members, backed by $150M and a goal of 300,000 certified consultants by end of 2026. Anthropic launched its own Claude Partner Network in March with $100M and has already certified over 10,000 consultants. This partner arms race is the enterprise AI story of 2026 — it will determine which consulting and SI firms become the dominant implementation players, and which get squeezed out. If you run an AI practice, your certification strategy matters now.",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "category": "Agentic",
+  "title": "Databricks Launches \"Data-Smart\" AI Coworker — A Direct Shot at Microsoft",
+  "url": "https://www.databricks.com",
+  "snippet": "Databricks launched its own AI coworker product on the same day as Copilot Cowork's GA — no coincidence — positioned around company-specific data pulled directly from a customer's existing data lakehouse rather than requiring data migration to a separate AI platform. For enterprises already on Databricks for their data stack, this creates a genuinely compelling alternative that keeps AI close to the data rather than the other way around. The enterprise agentic market just became a three-way fight between Microsoft, Anthropic, and Databricks.",
+  "source": "databricks.com",
+  "companies": [
+   "Databricks",
+   "Microsoft"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Data",
+   "Enterprise Adoption"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "category": "Agentic",
+  "title": "Android Gets Native MCP Support — Every App Can Now Be an Agent Tool",
+  "url": "https://android-developers.googleblog.com/2026/05/android-ai-intelligence-system.html",
+  "snippet": "Google's Android now supports the Model Context Protocol natively via AppFunctions, allowing any app to act as an on-device MCP server that shares tools, services, and data with AI agents like Gemini. This means 3 billion Android devices are becoming a potential tool surface for agentic workflows. For enterprise mobility teams and app developers, this is the moment to redesign app architectures with agent-accessibility as a first-class concern, not an afterthought.",
+  "source": "android-developers.googleblog.com",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "category": "Enterprise",
+  "title": "Apple Secretly Built an AI-Swap Feature in iOS 27 — OpenAI Is Exploring Legal Options",
+  "url": "https://thenextweb.com/news/apple-siri-extensions-third-party-ai-missing-wwdc",
+  "snippet": "Apple quietly embedded a feature in the iOS 27 developer beta that would let users swap Siri's AI brain for ChatGPT, Claude, or Gemini directly from Settings — never announced at WWDC, discovered dormant. OpenAI reportedly found out and is exploring breach-of-contract options over their existing Siri integration deal. If Apple ships this, iOS becomes the world's largest AI model distribution channel and commoditizes every AI partnership Apple has signed — enterprise IT teams managing Apple fleets should start modeling which AI backends their employees will actually use.",
+  "source": "thenextweb.com",
+  "companies": [
+   "Anthropic",
+   "Apple",
+   "Google",
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Legal & IP"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "category": "Policy",
+  "title": "OpenAI Faces Subpoena From 42 State Attorneys General",
+  "url": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/",
+  "snippet": "A coalition of 42 US state attorneys general issued a subpoena to OpenAI, marking one of the largest coordinated state-level enforcement actions in AI history, with concerns reportedly spanning consumer protection, data privacy, and AI-generated content's impact on minors. OpenAI is simultaneously preparing a confidential IPO S-1, making the legal exposure particularly sensitive. A 42-state coalition signals broad political will to impose domestic AI guardrails regardless of federal action — enterprise procurement teams should factor regulatory longevity risk into any deep OpenAI dependency.",
+  "source": "techcrunch.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Compliance",
+   "Governance",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "category": "Research",
+  "title": "Z.ai Launches GLM-5.2 With 1M-Token Context and Long-Horizon Coding",
+  "url": "https://tldr.tech/ai/2026-06-17",
+  "snippet": "Z.ai (formerly Zhipu AI) shipped GLM-5.2 featuring a 1 million-token context window, new reasoning controls, and support for long-horizon agentic coding tasks spanning many steps. Chinese labs are shipping competitive frontier models that match or rival Western counterparts on key dimensions — and doing so faster. For enterprise AI teams evaluating coding infrastructure, GLM-5.2 is worth benchmarking, particularly for long-running agentic dev tasks where context length is currently a hard constraint.",
+  "source": "tldr.tech",
+  "companies": [
+   "Z.ai"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Models & Releases",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "category": "Security",
+  "title": "iRhythm Cardiac Patient Data Stolen and Held for Ransom",
+  "url": "https://tldr.tech/infosec/2026-06-17",
+  "snippet": "A criminal contacted cardiac monitoring firm iRhythm on June 9 claiming to have stolen proprietary data and patient health information from its wearable cardiac monitors, initiating a ransomware-style extortion. Healthcare AI deployments are expanding faster than healthcare security postures, and attackers increasingly target firms whose reputational and HIPAA exposure makes them likely payers. Any enterprise deploying AI on patient data — including remote monitoring — must treat data exfiltration as a near-certain threat scenario, not a tail risk.",
+  "source": "tldr.tech",
+  "companies": [
+   "iRhythm"
+  ],
+  "themes": [
+   "Data",
+   "Healthcare",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "category": "Resources",
+  "title": "Fable 5 And Its Guardrails, What Anthropic Has in Common With Apple — Stratechery",
+  "url": "https://stratechery.com",
+  "snippet": "Ben Thompson's sharpest structural take yet: why Anthropic's safety positioning is simultaneously its brand moat and its political liability. Essential context for anyone evaluating Anthropic as a strategic partner.",
+  "source": "stratechery.com",
+  "companies": [
+   "Anthropic",
+   "Apple"
+  ],
+  "themes": [
+   "Governance",
+   "Policy",
+   "Safety"
+  ]
+ },
+ {
   "date": "2026-06-16",
   "category": "Policy",
   "title": "US Government Kills Anthropic's Fable 5 & Mythos 5 — Days After Launch",

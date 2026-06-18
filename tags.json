@@ -1,25 +1,25 @@
 {
- "generated": "2026-06-16",
+ "generated": "2026-06-17",
  "companies": [
   {
    "tag": "Anthropic",
-   "count": 202,
-   "last_seen": "2026-06-16"
+   "count": 207,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "OpenAI",
-   "count": 193,
-   "last_seen": "2026-06-16"
+   "count": 197,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Google",
-   "count": 105,
-   "last_seen": "2026-06-16"
+   "count": 108,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Microsoft",
-   "count": 79,
-   "last_seen": "2026-06-11"
+   "count": 81,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Amazon",
@@ -38,18 +38,18 @@
   },
   {
    "tag": "xAI",
-   "count": 17,
-   "last_seen": "2026-06-03"
+   "count": 18,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Apple",
-   "count": 14,
-   "last_seen": "2026-06-12"
+   "count": 16,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Cursor",
-   "count": 13,
-   "last_seen": "2026-05-28"
+   "count": 14,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "X",
@@ -67,13 +67,13 @@
    "last_seen": "2026-05-12"
   },
   {
-   "tag": "McKinsey",
+   "tag": "DeepSeek",
    "count": 8,
-   "last_seen": "2026-06-05"
+   "last_seen": "2026-06-17"
   },
   {
-   "tag": "DeepSeek",
-   "count": 7,
+   "tag": "McKinsey",
+   "count": 8,
    "last_seen": "2026-06-05"
   },
   {
@@ -192,6 +192,11 @@
    "last_seen": "2026-05-18"
   },
   {
+   "tag": "SpaceX",
+   "count": 2,
+   "last_seen": "2026-06-17"
+  },
+  {
    "tag": "Adobe",
    "count": 1,
    "last_seen": "2026-06-08"
@@ -215,6 +220,11 @@
    "tag": "DIOSynVax",
    "count": 1,
    "last_seen": "2026-06-08"
+  },
+  {
+   "tag": "Databricks",
+   "count": 1,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "ElevenLabs",
@@ -267,11 +277,6 @@
    "last_seen": "2026-06-16"
   },
   {
-   "tag": "SpaceX",
-   "count": 1,
-   "last_seen": "2026-06-12"
-  },
-  {
    "tag": "Splunk",
    "count": 1,
    "last_seen": "2026-06-16"
@@ -287,6 +292,11 @@
    "last_seen": "2026-05-07"
   },
   {
+   "tag": "Tencent",
+   "count": 1,
+   "last_seen": "2026-06-17"
+  },
+  {
    "tag": "University of Cambridge",
    "count": 1,
    "last_seen": "2026-06-08"
@@ -297,76 +307,86 @@
    "last_seen": "2026-06-08"
   },
   {
+   "tag": "Z.ai",
+   "count": 1,
+   "last_seen": "2026-06-17"
+  },
+  {
    "tag": "Zhipu AI",
    "count": 1,
    "last_seen": "2026-06-16"
+  },
+  {
+   "tag": "iRhythm",
+   "count": 1,
+   "last_seen": "2026-06-17"
   }
  ],
  "themes": [
   {
    "tag": "Enterprise Adoption",
-   "count": 414,
-   "last_seen": "2026-06-16"
+   "count": 420,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Agentic AI",
-   "count": 224,
-   "last_seen": "2026-06-16"
+   "count": 227,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Research",
-   "count": 134,
-   "last_seen": "2026-06-16"
+   "count": 135,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Coding & Dev Tools",
-   "count": 127,
-   "last_seen": "2026-06-16"
+   "count": 129,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Infrastructure & Compute",
-   "count": 118,
-   "last_seen": "2026-06-16"
+   "count": 121,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Funding & Valuations",
-   "count": 117,
-   "last_seen": "2026-06-16"
+   "count": 119,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Governance",
-   "count": 92,
-   "last_seen": "2026-06-16"
+   "count": 96,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Policy",
-   "count": 90,
-   "last_seen": "2026-06-16"
+   "count": 95,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Data",
-   "count": 86,
-   "last_seen": "2026-06-16"
+   "count": 88,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Regulation",
-   "count": 80,
-   "last_seen": "2026-06-16"
+   "count": 82,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Security",
-   "count": 78,
-   "last_seen": "2026-06-16"
+   "count": 80,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Talent & Workforce",
-   "count": 72,
-   "last_seen": "2026-06-15"
+   "count": 73,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Models & Releases",
-   "count": 66,
-   "last_seen": "2026-06-16"
+   "count": 67,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Financial Services",
@@ -375,13 +395,13 @@
   },
   {
    "tag": "Safety",
-   "count": 45,
-   "last_seen": "2026-06-16"
+   "count": 46,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Compliance",
-   "count": 40,
-   "last_seen": "2026-06-16"
+   "count": 41,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Voice & Multimodal",
@@ -389,14 +409,14 @@
    "last_seen": "2026-06-16"
   },
   {
+   "tag": "Healthcare",
+   "count": 30,
+   "last_seen": "2026-06-17"
+  },
+  {
    "tag": "Open Source",
    "count": 30,
    "last_seen": "2026-06-16"
-  },
-  {
-   "tag": "Healthcare",
-   "count": 29,
-   "last_seen": "2026-06-08"
   },
   {
    "tag": "Canada",
@@ -405,8 +425,8 @@
   },
   {
    "tag": "Legal & IP",
-   "count": 12,
-   "last_seen": "2026-06-16"
+   "count": 13,
+   "last_seen": "2026-06-17"
   },
   {
    "tag": "Robotics",
