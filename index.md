@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [DeepMind's Insider Threat Roadmap, Builder.ai's $1.5B Collapse, and Agents That Learn Overnight](https://briefing.ambient-advantage.ai/2026-06-22.html) — Monday · June 22, 2026 · This edition covers twelve stories across agentic infrastructure, security, enterprise tooling, funding, and research.
 - [Grok's Combat Debut, SpaceX's $60B Cursor Deal, and Shazeer Jumps to OpenAI](https://briefing.ambient-advantage.ai/2026-06-19.html) — Friday · June 19, 2026 · This edition covers fifteen stories across policy, funding, research, enterprise, and agentic infrastructure.
 - [SpaceX's $60B Cursor Acquisition, Copilot Cowork Goes Live, and Claude Fable 5 Gets Pulled](https://briefing.ambient-advantage.ai/2026-06-18.html) — Thursday · June 18, 2026 · This edition covers thirteen stories across funding, agentic infrastructure, policy, enterprise strategy, and research.
 - [Anthropic's Fable 5 Export Ban, SpaceX Acquires Cursor, and Copilot Cowork Goes GA](https://briefing.ambient-advantage.ai/2026-06-17.html) — Wednesday · June 17, 2026 · This edition covers twelve stories across policy, funding, agentic infrastructure, enterprise strategy, and security.

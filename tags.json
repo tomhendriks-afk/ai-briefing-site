@@ -1,30 +1,30 @@
 {
- "generated": "2026-06-19",
+ "generated": "2026-06-22",
  "companies": [
   {
    "tag": "Anthropic",
-   "count": 218,
-   "last_seen": "2026-06-19"
+   "count": 221,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "OpenAI",
-   "count": 204,
-   "last_seen": "2026-06-19"
+   "count": 207,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Google",
-   "count": 114,
-   "last_seen": "2026-06-19"
+   "count": 116,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Microsoft",
-   "count": 84,
-   "last_seen": "2026-06-19"
+   "count": 85,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Amazon",
-   "count": 45,
-   "last_seen": "2026-06-11"
+   "count": 46,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Meta",
@@ -132,14 +132,14 @@
    "last_seen": "2026-05-12"
   },
   {
+   "tag": "Perplexity",
+   "count": 4,
+   "last_seen": "2026-06-22"
+  },
+  {
    "tag": "ServiceNow",
    "count": 4,
    "last_seen": "2026-05-20"
-  },
-  {
-   "tag": "Perplexity",
-   "count": 3,
-   "last_seen": "2026-06-03"
   },
   {
    "tag": "Scale AI",
@@ -155,6 +155,11 @@
    "tag": "ClickUp",
    "count": 2,
    "last_seen": "2026-06-10"
+  },
+  {
+   "tag": "Cloudflare",
+   "count": 2,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Cohere",
@@ -217,6 +222,11 @@
    "last_seen": "2026-05-18"
   },
   {
+   "tag": "Stripe",
+   "count": 2,
+   "last_seen": "2026-06-22"
+  },
+  {
    "tag": "Tencent",
    "count": 2,
    "last_seen": "2026-06-18"
@@ -237,6 +247,11 @@
    "last_seen": "2026-06-19"
   },
   {
+   "tag": "Builder.ai",
+   "count": 1,
+   "last_seen": "2026-06-22"
+  },
+  {
    "tag": "CATL",
    "count": 1,
    "last_seen": "2026-06-18"
@@ -247,9 +262,9 @@
    "last_seen": "2026-06-10"
   },
   {
-   "tag": "Cloudflare",
+   "tag": "Cornell Tech",
    "count": 1,
-   "last_seen": "2026-06-08"
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "DIOSynVax",
@@ -307,6 +322,11 @@
    "last_seen": "2026-06-16"
   },
   {
+   "tag": "Sensor Tower",
+   "count": 1,
+   "last_seen": "2026-06-22"
+  },
+  {
    "tag": "Sequent Research",
    "count": 1,
    "last_seen": "2026-06-16"
@@ -315,11 +335,6 @@
    "tag": "Splunk",
    "count": 1,
    "last_seen": "2026-06-16"
-  },
-  {
-   "tag": "Stripe",
-   "count": 1,
-   "last_seen": "2026-06-10"
   },
   {
    "tag": "TSMC",
@@ -360,43 +375,43 @@
  "themes": [
   {
    "tag": "Enterprise Adoption",
-   "count": 434,
-   "last_seen": "2026-06-19"
+   "count": 439,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Agentic AI",
-   "count": 235,
-   "last_seen": "2026-06-19"
+   "count": 240,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Research",
-   "count": 140,
-   "last_seen": "2026-06-19"
+   "count": 145,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Coding & Dev Tools",
-   "count": 137,
-   "last_seen": "2026-06-19"
+   "count": 140,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Funding & Valuations",
-   "count": 127,
-   "last_seen": "2026-06-19"
+   "count": 129,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Infrastructure & Compute",
-   "count": 125,
-   "last_seen": "2026-06-19"
+   "count": 126,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Governance",
-   "count": 100,
-   "last_seen": "2026-06-19"
+   "count": 103,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Policy",
-   "count": 99,
-   "last_seen": "2026-06-19"
+   "count": 100,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Data",
@@ -404,14 +419,14 @@
    "last_seen": "2026-06-18"
   },
   {
-   "tag": "Regulation",
-   "count": 83,
-   "last_seen": "2026-06-18"
+   "tag": "Security",
+   "count": 86,
+   "last_seen": "2026-06-22"
   },
   {
-   "tag": "Security",
-   "count": 82,
-   "last_seen": "2026-06-18"
+   "tag": "Regulation",
+   "count": 84,
+   "last_seen": "2026-06-22"
   },
   {
    "tag": "Talent & Workforce",

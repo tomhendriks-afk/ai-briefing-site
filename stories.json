@@ -1,5 +1,183 @@
 [
  {
+  "date": "2026-06-22",
+  "category": "Agentic",
+  "title": "Google DeepMind Publishes AI Control Roadmap — Treats Its Own Agents as Insider Threats",
+  "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+  "snippet": "DeepMind released a 35-page framework on June 18 that treats advanced AI agents the way a security team treats privileged employees: monitored, constrained, and killable. The TRAIT&R taxonomy (modeled on MITRE ATT&CK) maps three threat categories — loss of control, work sabotage, and direct harm — and analysis of one million internal coding tasks found most flagged issues came from \"overzealous agents, not malicious intent.\" Any enterprise deploying agentic AI should be demanding equivalent runtime monitoring, cryptographic audit trails, and hard-stop mechanisms from every vendor — not alignment promises on a slide deck.",
+  "source": "deepmind.google",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Governance",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-22",
+  "category": "Agentic",
+  "title": "Cloudflare Gives AI Agents Temporary Self-Destructing Accounts — No Human Sign-Up Required",
+  "url": "https://blog.cloudflare.com/temporary-accounts/",
+  "snippet": "Cloudflare launched Temporary Accounts for Agents on June 19, letting coding agents deploy websites, APIs, and Workers via a `wrangler deploy --temporary` flag — no OAuth flow, no dashboard, no MFA. Deployments auto-expire after 60 minutes unless a human claims them, part of a broader push (alongside a Stripe partnership) to redesign infrastructure provisioning for machine users. IT and security teams need identity governance policies for autonomous machine users before these deployments proliferate outside their visibility.",
+  "source": "blog.cloudflare.com",
+  "companies": [
+   "Cloudflare",
+   "Stripe"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Infrastructure & Compute",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-22",
+  "category": "Agentic",
+  "title": "Perplexity's \"Brain\" Teaches Itself Overnight — Self-Improving Agent Memory Goes Live",
+  "url": "https://www.perplexity.ai/hub/blog/self-improving-memory-for-agents",
+  "snippet": "Perplexity launched a Brain module that reviews each agent session overnight, identifies what worked and what failed, and applies those learnings to the next day's tasks — effectively a closed-loop feedback architecture that compounds performance over time. This is the most cited limitation of enterprise AI agents solved in production: agents that actually get smarter with use rather than flatlining after deployment. Vendor evaluations now need a new dimension: not just \"what can it do today?\" but \"how fast does it improve?\"",
+  "source": "perplexity.ai",
+  "companies": [
+   "Perplexity"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-06-22",
+  "category": "Funding",
+  "title": "Builder.ai's $1.5B Collapse: AI-Washing, Revenue Fraud, and 700 Hidden Engineers",
+  "url": "https://mindstream.news",
+  "snippet": "Builder.ai — backed by Microsoft and valued at $1.5 billion — collapsed into insolvency after revelations it allegedly inflated revenues by up to 300% through circular invoicing and that its flagship \"AI\" was largely powered by an estimated 700 human engineers writing code manually. The company reportedly owes $85M to Amazon and $30M to Microsoft, with a U.S. federal probe and SEC investigation underway via SDNY subpoenas. The definitive AI-washing cautionary tale: if a vendor can't show you the model, the training data, or the inference infrastructure, treat it as a services business, not an AI business.",
+  "source": "mindstream.news",
+  "companies": [
+   "Amazon",
+   "Builder.ai",
+   "Microsoft"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Funding & Valuations",
+   "Governance"
+  ]
+ },
+ {
+  "date": "2026-06-22",
+  "category": "Enterprise",
+  "title": "Claude Code Ships Live Artifacts — Sessions Now Publish Themselves as Shareable Pages",
+  "url": "https://claude.com/blog/artifacts-in-claude-code",
+  "snippet": "Anthropic shipped live artifacts in Claude Code, letting coding sessions automatically publish their outputs as shareable, interactive pages — compressing the gap between development and stakeholder-ready demonstration to a single step. Simon Willison noted independently that the pattern of \"agent builds → instantly shareable result\" is becoming the norm in agentic workflows. For enterprise teams already using Claude Code, this makes the tool significantly stickier; for competitors, it raises the bar on what a coding assistant must deliver out of the box.",
+  "source": "claude.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Enterprise Adoption"
+  ]
+ },
+ {
+  "date": "2026-06-22",
+  "category": "Security",
+  "title": "Cornell Research: 13 Words Are Enough to Poison AI Search Agents",
+  "url": "https://windowsforum.com/threads/ai-search-poisoning-how-13-words-can-mislead-deep-research-agents.426600/",
+  "snippet": "Cornell Tech researchers demonstrated that deep-research AI agents can be steered by poisoned passages in user-generated web content — including Reddit-style comments as short as ~13 words — using fictional restaurants, dating apps, and cryptocurrencies that required no sophisticated exploits. The attack works because AI search recreates an old web-security problem: the model is only as trustworthy as the pages it retrieves. Any enterprise using AI agents for research, competitive intelligence, or procurement cannot treat AI search outputs as verified facts without additional source validation layers.",
+  "source": "windowsforum.com",
+  "companies": [
+   "Cornell Tech"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Research",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-22",
+  "category": "Research",
+  "title": "Karpathy's \"Software 3.0\" Thesis: LLMs Are a New Programming Paradigm",
+  "url": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+  "snippet": "Andrej Karpathy published his Sequoia Ascent 2026 talk summary, framing \"Software 3.0\" as programming through prompting where the LLM is the interpreter: Software 1.0 automates what you can specify as rules, 2.0 automates what you can describe with data, and 3.0 automates anything you can verify. Karpathy — who coined \"vibe coding\" — said he has \"never felt more behind as a programmer,\" calling December 2025 a clear inflection point after deep-diving into Claude Code and Codex. The strategic question for every engineering org is no longer \"should we adopt AI coding tools?\" but \"have we restructured engineering practice around the new programming model?\"",
+  "source": "karpathy.bearblog.dev",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-06-22",
+  "category": "Policy",
+  "title": "Anthropic's Fable 5 Export Control Saga: The Technical Case Against the Ban",
+  "url": "https://stateofsurveillance.org/news/anthropic-fable-5-mythos-5-day-5-stratechery-safety-superpower-2026/",
+  "snippet": "Zvi Mowshowitz published a 6,400-word analysis arguing the U.S. government's export-control directive against Anthropic's Fable 5 model fails on three grounds: the cited capability is defensive, it's non-unique across GPT-5.5, Gemini 2.5 Pro, and Claude 4.5 Opus, and the \"jailbreak\" is — per security researchers including Katie Moussouris — a routine code-review prompt. Ben Thompson at Stratechery argued separately that Anthropic's safety-first brand is precisely what gives it standing to push back. Procurement teams should start stress-testing which AI vendors could be export-controlled or service-disrupted overnight — this class of risk is now real.",
+  "source": "stateofsurveillance.org",
+  "companies": [
+   "Anthropic",
+   "Google",
+   "OpenAI"
+  ],
+  "themes": [
+   "Policy",
+   "Regulation",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-22",
+  "category": "Research",
+  "title": "John Jumper Leaves DeepMind for Anthropic — AlphaFold Nobel Laureate Joins the Safety Lab",
+  "url": "https://taaft.co",
+  "snippet": "John Jumper, who led AlphaFold and shared the 2024 Nobel Prize in Chemistry, has left Google DeepMind for Anthropic — following Karpathy's hire in May 2026. Two landmark research hires in rapid succession signal Anthropic is building serious depth beyond safety positioning. For enterprise buyers choosing a foundation model partner, talent concentration at the pre-training layer has long-term implications for model capability and reliability.",
+  "source": "taaft.co",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Coding & Dev Tools",
+   "Enterprise Adoption",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-06-22",
+  "category": "Funding",
+  "title": "OpenAI Files Draft S-1 Confidentially — IPO Process Officially Begins",
+  "url": "https://openai.com/index/ten-years/",
+  "snippet": "OpenAI submitted a confidential draft S-1 to the SEC on June 8, officially starting its IPO process, alongside a strategic post co-authored by Sam Altman and chief scientist Jakub Pachocki claiming that by March 2028 a significant fraction of research may be conducted by AI systems. The IPO will force unprecedented disclosure on financials, governance, safety practices, and competitive moat. Enterprise buyers should watch the S-1 closely for revenue concentration by customer — and expect a distraction risk as management attention pivots to investor relations.",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Funding & Valuations",
+   "Governance"
+  ]
+ },
+ {
+  "date": "2026-06-22",
+  "category": "Research",
+  "title": "AI Companions Beat Dating Apps 2.5:1 in Time Spent — Sensor Tower's State of AI 2026",
+  "url": "https://sensortower.com/report/state-of-ai-2026",
+  "snippet": "Sensor Tower reports U.S. users spent ~705 million hours on AI companion apps (Character.AI, Talkie) in Q1 2026, versus ~280 million hours on dating apps — a 2.5:1 ratio, up from 1.75:1 a year earlier, while ChatGPT became the fastest app in history to cross one billion monthly active users. This isn't a curiosity stat: it signals that AI adoption is being normalised in deeply personal contexts, permanently raising the bar for trust, engagement design, and ethical guardrails in any user-facing AI product. If your company builds customer-facing AI, the expectations your users bring are now shaped by companion apps, not enterprise software.",
+  "source": "sensortower.com",
+  "companies": [
+   "Sensor Tower"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Research"
+  ]
+ },
+ {
   "date": "2026-06-19",
   "category": "Policy",
   "title": "Grok Ran Targeting for 2,000 Iran Strikes — Pentagon Confirms in Court Filing",
