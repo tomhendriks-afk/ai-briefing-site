@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Five Eyes Warns AI Cyberattacks Are Months Away, OpenAI's Daybreak Expands, and GLM-5.2 Shakes Up Open Weights](https://briefing.ambient-advantage.ai/2026-06-23.html) — Tuesday · June 23, 2026 · This edition covers twelve stories across security, research, agentic AI, and enterprise. The throughline: the attack surface, the defense stack, and the persuasion layer of modern business are all being rewritten simultaneously — and the...
 - [DeepMind's Insider Threat Roadmap, Builder.ai's $1.5B Collapse, and Agents That Learn Overnight](https://briefing.ambient-advantage.ai/2026-06-22.html) — Monday · June 22, 2026 · This edition covers twelve stories across agentic infrastructure, security, enterprise tooling, funding, and research.
 - [Grok's Combat Debut, SpaceX's $60B Cursor Deal, and Shazeer Jumps to OpenAI](https://briefing.ambient-advantage.ai/2026-06-19.html) — Friday · June 19, 2026 · This edition covers fifteen stories across policy, funding, research, enterprise, and agentic infrastructure.
 - [SpaceX's $60B Cursor Acquisition, Copilot Cowork Goes Live, and Claude Fable 5 Gets Pulled](https://briefing.ambient-advantage.ai/2026-06-18.html) — Thursday · June 18, 2026 · This edition covers thirteen stories across funding, agentic infrastructure, policy, enterprise strategy, and research.
