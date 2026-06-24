@@ -1,5 +1,205 @@
 [
  {
+  "date": "2026-06-24",
+  "category": "Policy",
+  "title": "Anthropic's Fable 5 & Mythos 5 Remain Offline After U.S. Government-Forced Takedown",
+  "url": "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/",
+  "snippet": "The U.S. Commerce Department used national security export controls to bar Anthropic from distributing its newest models to any foreign national — including non-citizen employees inside the U.S. — forcing a full public shutdown that remains in effect. This is the first government-forced takedown of a publicly deployed frontier model. Any enterprise that had Fable 5 or Mythos 5 in production discovered overnight that a single government letter can zero out a critical dependency; the compliance checklist for AI API integrations just got a lot longer.",
+  "source": "fortune.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Compliance",
+   "Enterprise Adoption",
+   "Models & Releases",
+   "Policy"
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "category": "Security",
+  "title": "Five Eyes Intelligence Alliance Warns AI Cyberattacks Are \"Months Away, Not Years\"",
+  "url": "https://www.cnn.com/2026/06/23/world/ai-five-eyes-warning-cyber-threat-intl-hnk",
+  "snippet": "The heads of six major intelligence and cyber agencies across the U.S., UK, Canada, Australia, and New Zealand issued a joint statement warning that frontier AI models will dramatically escalate offensive cyber capabilities within months, building on May 2026 guidance cataloguing 23+ risk categories tied to autonomous agentic AI. Small and mid-sized businesses, which have chronically under-invested in cybersecurity, were singled out as especially vulnerable. This is the most authoritative collective warning yet — and it should be a board-level conversation this quarter, not next year.",
+  "source": "cnn.com",
+  "companies": [],
+  "themes": [
+   "Agentic AI",
+   "Policy",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "category": "Agentic",
+  "title": "Sakana AI Launches \"Fugu\" — A Multi-Agent Orchestration Model Built to Route Around Single-Vendor Lock-In",
+  "url": "https://sakana.ai/fugu/",
+  "snippet": "Tokyo-based Sakana AI released Fugu, a multi-agent orchestration system delivered as a single OpenAI-compatible API endpoint, where the model itself handles selection, delegation, verification, and synthesis across a pool of other LLMs. Fugu Ultra scores 73.7 on SWE-Bench Pro, ahead of Opus 4.8 (69.2) and GPT-5.5 (58.6), and Sakana explicitly cites the Fable 5 export ban as motivation. For any enterprise that felt the jolt of the Anthropic outage, this is worth a serious pilot — with the caveat that benchmarks are vendor-reported and independent testing has shown gaps versus real-world use.",
+  "source": "sakana.ai",
+  "companies": [
+   "Sakana AI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "category": "Infrastructure",
+  "title": "SpaceX Colossus Inks $6.3B Compute Deal with Reflection AI — Committed Revenue Now Exceeds $80B",
+  "url": "https://www.cnbc.com/2026/06/22/spacex-ai-colossus-data-center-reflection.html",
+  "snippet": "Open-source AI startup Reflection AI will pay $150 million per month starting July 1 for access to Nvidia GB300 chips at Musk's Colossus 2 data center, joining recent clients Anthropic, Google, and Cursor. SpaceX has now secured more than $80 billion in committed compute revenue, transforming Colossus into one of the most commercially significant AI infrastructure assets in the world. For enterprise buyers, this signals that compute scarcity is a multi-year structural reality — access to GPU capacity is now a strategic moat, not just a procurement line item.",
+  "source": "cnbc.com",
+  "companies": [
+   "Cursor",
+   "SpaceX"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Infrastructure & Compute",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "category": "Security",
+  "title": "OpenAI Launches \"Daybreak\" Cyber Program — GPT-5.5-Cyber Patches Vulnerabilities at Machine Speed",
+  "url": "https://openai.com/index/introducing-gpt-5-5/",
+  "snippet": "OpenAI released Daybreak, a suite of cyber-defense tools including the full GPT-5.5-Cyber model for trusted defenders, designed to move from vulnerability discovery to automated patching across browsers, network infrastructure, and operating systems. GPT-5.5-Cyber hit 85.6% on the CyberGym benchmark — the highest single-model score OpenAI has measured. With Five Eyes warning of AI-powered attacks within months, the access program for verified defenders is live now; the window to apply before these tools are widely circulated is short.",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Models & Releases",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "category": "Agentic",
+  "title": "Anthropic Launches @Claude for Slack — Delegate Tasks Like a Colleague",
+  "url": "https://www.anthropic.com/news/introducing-claude-tag",
+  "snippet": "Anthropic introduced @Claude tagging in Slack, allowing users to drop Claude into channels where it breaks work into stages, retains context over time, and runs jobs in the background — a direct move to embed agentic AI into the collaboration layer where knowledge workers already live. This is a significant distribution play: the adoption barrier for enterprise agentic deployments drops dramatically when the agent lives inside tools people already use every day.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic",
+   "Slack"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption"
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "category": "Research",
+  "title": "AI Out-Persuades Expert Humans — Including World Champion Debaters — in Landmark 18,978-Conversation Study",
+  "url": "https://arxiv.org/abs/2606.16475",
+  "snippet": "Across four preregistered experiments covering 18,978 conversations, researchers found that AI systems were reliably more persuasive than expert humans — including professional canvassers and world championship debaters — even when experts chose their own topics, researched in advance, and were incentivized with £1,000 bonuses. In a final study, AI was nearly 3x more effective than professional canvassers at raising real-money donations. Every negotiation, sales conversation, and policy debate now has a well-resourced AI on the other side of the table; it's time to ask hard questions about AI-assisted influence in your own operations.",
+  "source": "arxiv.org",
+  "companies": [],
+  "themes": [
+   "Enterprise Adoption",
+   "Research",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "category": "Agentic",
+  "title": "Cursor Launches GitHub Rival Built Natively for Agents",
+  "url": "https://tldrnewsletter.com",
+  "snippet": "Cursor shipped a version control and workspace product designed from the ground up for agentic workflows rather than human-centric git operations, while OpenAI's Codex is evolving into a persistent workspace with GitHub integration and multi-session context across terminal, IDE, and iOS. Source control and developer collaboration tooling are being redesigned around the assumption that agents commit code, not just humans — CTO and engineering leaders should be actively evaluating how their CI/CD pipelines need to evolve before vendors make those decisions for them.",
+  "source": "tldrnewsletter.com",
+  "companies": [
+   "Cursor",
+   "OpenAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Coding & Dev Tools"
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "category": "Enterprise",
+  "title": "ElevenLabs Ads Engine Auto-Translates Campaigns Across 50+ Languages",
+  "url": "https://elevenlabs.io/ads-engine",
+  "snippet": "ElevenLabs launched its Ads Engine, a platform that takes a single ad campaign and automatically dubs audio, reworks images, video, and text across 50+ languages, then tracks results and refreshes creative before performance degrades. For any brand operating across multiple markets, this collapses what used to be a multi-week, multi-vendor localization workflow into a single API call. The CMO who doesn't test this against their existing localization spend by Q3 is leaving real money on the table.",
+  "source": "elevenlabs.io",
+  "companies": [
+   "ElevenLabs"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "category": "Research",
+  "title": "GPT-5 Solved a 3-Year Immunology Mystery — GPT-5.6 Rumoured for June 25 with 2M-Token Context",
+  "url": "https://theneurondaily.com",
+  "snippet": "GPT-5 cracked a three-year-old immunology mystery, adding to a growing list of AI-first scientific breakthroughs, while unusually specific leaks point to GPT-5.6 launching as early as tomorrow with a 2M-token context window, cheaper pricing, and stronger agentic coding. Whether or not it ships Thursday, the pattern is clear: the release cadence for frontier models has compressed to weeks. Enterprise AI roadmaps built on 12-month planning cycles are already obsolete — strategy needs to be evaluated on a rolling 90-day basis.",
+  "source": "theneurondaily.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Models & Releases",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "category": "Enterprise",
+  "title": "Lloyd's of London Hiring AI Specialists Ahead of Its Own Org Chart",
+  "url": "https://www.bloomberg.com/news/articles/2026-06-22/nvidia-seeks-to-make-humanoid-ai-robots-safer-around-humans",
+  "snippet": "Lloyd's of London is aggressively hiring AI experts in a deliberate ahead-of-the-curve move, building capability before formal organizational structures are in place to accommodate it. When the benchmark institution for risk-aversion decides AI talent acquisition can't wait for the org chart, it's a clear signal that the \"wait and see\" window in regulated industries is closing. HR and talent strategy for AI roles should be on every CFO's agenda for H2 2026.",
+  "source": "bloomberg.com",
+  "companies": [
+   "Lloyd's of London"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Financial Services",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "category": "Resources",
+  "title": "Import AI #462: Superpersuasion, Self-Sustaining AI, Paths to ASI",
+  "url": "https://importai.substack.com/p/import-ai-462-superpersuasion-self",
+  "snippet": "Jack Clark's analysis of the Oxford/Stanford persuasion study and \"self-sustaining AI\" research is essential reading for anyone thinking seriously about where AI risk actually sits in 2026 — not where we assumed it would be.",
+  "source": "importai.substack.com",
+  "companies": [],
+  "themes": [
+   "Research",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "category": "Resources",
+  "title": "TechCrunch: The US Government's Anthropic Models Ban Was Never About an AI Jailbreak",
+  "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
+  "snippet": "The clearest analysis of why the Fable 5 takedown sets a dangerous precedent for every AI deployment in a regulated enterprise — and what to do about it.",
+  "source": "techcrunch.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
   "date": "2026-06-23",
   "category": "Security",
   "title": "Five Eyes Intelligence Chiefs Issue Urgent Warning: AI-Powered Cyberattacks Are \"Months Away\"",

@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Fable 5 Ban Fallout, Five Eyes Cyber Warning, and Sakana's Multi-Model Hedge](https://briefing.ambient-advantage.ai/2026-06-24.html) — Wednesday · June 24, 2026 · The throughline today is resilience — or the lack of it. The organisations that treated AI as a single API call from a single vendor are scrambling; the ones building for optionality are pulling ahead. Here's what matters.
 - [Five Eyes Warns AI Cyberattacks Are Months Away, OpenAI's Daybreak Expands, and GLM-5.2 Shakes Up Open Weights](https://briefing.ambient-advantage.ai/2026-06-23.html) — Tuesday · June 23, 2026 · This edition covers twelve stories across security, research, agentic AI, and enterprise. The throughline: the attack surface, the defense stack, and the persuasion layer of modern business are all being rewritten simultaneously — and the...
 - [DeepMind's Insider Threat Roadmap, Builder.ai's $1.5B Collapse, and Agents That Learn Overnight](https://briefing.ambient-advantage.ai/2026-06-22.html) — Monday · June 22, 2026 · This edition covers twelve stories across agentic infrastructure, security, enterprise tooling, funding, and research.
 - [Grok's Combat Debut, SpaceX's $60B Cursor Deal, and Shazeer Jumps to OpenAI](https://briefing.ambient-advantage.ai/2026-06-19.html) — Friday · June 19, 2026 · This edition covers fifteen stories across policy, funding, research, enterprise, and agentic infrastructure.
