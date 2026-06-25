@@ -1,5 +1,211 @@
 [
  {
+  "date": "2026-06-25",
+  "category": "Infrastructure",
+  "title": "OpenAI & Broadcom Unveil \"Jalapeño\" — First Custom Inference Chip Built in Nine Months",
+  "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+  "snippet": "OpenAI and Broadcom unveiled Jalapeño, OpenAI's first custom inference ASIC, co-developed from concept to tape-out in nine months — potentially the fastest high-performance ASIC development cycle on record. Engineering samples are already running GPT-5.3 workloads, with deployment targeted for late 2026 via gigawatt-scale data centers co-built with Microsoft and Celestica. For enterprise buyers, custom inference silicon historically translates to cheaper API calls and faster latency — watch for pricing changes in H1 2027 as OpenAI closes the cost-structure gap with Google's TPUs and Amazon's Trainium.",
+  "source": "openai.com",
+  "companies": [
+   "Broadcom",
+   "OpenAI"
+  ],
+  "themes": [
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "category": "Research",
+  "title": "Jalapeño Was Partially Designed by OpenAI's Own Models — The \"AI-Designs-AI\" Loop Is Real",
+  "url": "https://venturebeat.com/infrastructure/openai-unveils-first-custom-ai-inference-chip-jalapeno-with-broadcom-and-its-development-was-sped-up-with-openais-own-models",
+  "snippet": "OpenAI confirmed it used its own AI models to accelerate parts of Jalapeño's chip design and optimization, calling it a \"larval version of recursive self-improvement.\" The nine-month tape-out cycle — typically 2-3 years for comparable chips — is the headline number. For enterprise technology leaders, this suggests AI-accelerated R&D cycles across every hardware category are coming faster than traditional analyst forecasts assume.",
+  "source": "venturebeat.com",
+  "companies": [
+   "Broadcom",
+   "OpenAI"
+  ],
+  "themes": [
+   "Infrastructure & Compute",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "category": "Agentic",
+  "title": "Claude Joins Slack as a Tagged Coworker — Anthropic Launches \"Claude Tag\"",
+  "url": "https://www.anthropic.com/news/introducing-claude-tag",
+  "snippet": "Anthropic launched Claude Tag, a Slack-native workflow that lets teams @-mention Claude directly in any channel. Claude reads conversation context, breaks work into stages, retains memory across channels, connects to tools and codebases, and runs background jobs — functioning more like an asynchronous colleague than a chatbot. This lowers the agentic AI adoption bar to near-zero for teams already on Slack, but also kills a category of \"AI for Slack\" point-solutions overnight; if you're evaluating one of those vendors, pause.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption"
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "category": "Security",
+  "title": "OpenAI Expands Daybreak — GPT-5.5-Cyber, \"Patch the Planet,\" and 28 Security Partners",
+  "url": "https://openai.com/index/daybreak-securing-the-world/",
+  "snippet": "OpenAI expanded its Daybreak cybersecurity platform with GPT-5.5-Cyber for verified defenders, a partner program integrating 28 firms including CrowdStrike, Palo Alto Networks, and Wiz, and \"Patch the Planet\" — an initiative with Trail of Bits targeting 30+ open-source projects including cURL, Go, and Python. The expansion landed the same day Five Eyes intelligence agencies warned AI-assisted offensive attacks are \"months, not years\" away. If your security stack includes any of those 28 partners, expect AI-accelerated patch workflows embedded in your existing tools within months.",
+  "source": "openai.com",
+  "companies": [
+   "CrowdStrike",
+   "OpenAI",
+   "Palo Alto Networks",
+   "Wiz"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Open Source",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "category": "Agentic",
+  "title": "Cursor Launches \"Origin\" — An Agent-Native GitHub Rival Built for the Agentic Era",
+  "url": "https://cursor.com/origin",
+  "snippet": "Cursor unveiled Origin at its Compile keynote — a git hosting platform built from scratch for AI agents, not human developers, handling ~22 commits/second per repo and 296,000 clones/hour. GitHub processed roughly 275 million AI agent commits per week in May 2026 and experienced 9 outages, falling below its 99.9% enterprise SLA. The SpaceX acquisition of Cursor for $60B raises a model-neutrality question enterprise devs should scrutinize carefully before migrating repos.",
+  "source": "cursor.com",
+  "companies": [
+   "Cursor",
+   "Microsoft",
+   "SpaceX"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Coding & Dev Tools",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "category": "Research",
+  "title": "ByteDance Drops Four Models in One Keynote — Including 30-Second Native AI Video",
+  "url": "https://pandaily.com/bytedance-doubao-2-1-seedance-2-5-jun2026",
+  "snippet": "ByteDance launched Seedance 2.5 at its Volcano Engine conference — a video model generating full 30-second native clips in a single pass, doubling the typical 10-15 second ceiling of current tools, alongside new language, image, and audio models. Four frontier models in one keynote signals ByteDance is competing at full-stack AI, not just TikTok. For marketing and media teams, 30-second native AI video changes production workflows; for AI strategists, ByteDance's output rate is a useful benchmark for how fast Chinese labs are shipping.",
+  "source": "pandaily.com",
+  "companies": [
+   "ByteDance"
+  ],
+  "themes": [
+   "Models & Releases",
+   "Research",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "category": "Security",
+  "title": "Meta Pauses Keystroke-Tracking AI Program After Internal Data Leak",
+  "url": "https://www.tldrnewsletter.com/tldr-infosec",
+  "snippet": "Meta paused its \"Model Capability Initiative\" — a mandatory internal AI training program that tracked employee keystrokes — after discovering sensitive employee data was accessible company-wide due to a misconfiguration. That this happened at Meta, a company with significant ML security expertise, should raise eyebrows. Any enterprise deploying AI tools that collect employee interaction data should treat this as a red-flag audit prompt and review access controls immediately.",
+  "source": "tldrnewsletter.com",
+  "companies": [
+   "Apple",
+   "Tata Electronics",
+   "Tesla"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "category": "Agentic",
+  "title": "Gemini 3.5 Flash Gets Computer-Use Capability — Google Brings Agents to the Desktop",
+  "url": "https://taaft.co",
+  "snippet": "Google updated Gemini 3.5 Flash with the ability to control computers directly — browsing, clicking, and operating applications autonomously, matching capabilities from Anthropic's Computer Use and OpenAI's Operator. The critical detail: this landed in Flash, Google's fastest and cheapest Gemini tier, not a flagship model. Enterprises evaluating RPA vendors should now run direct cost-per-task comparisons against Gemini Flash — the economics may have just shifted dramatically.",
+  "source": "taaft.co",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption"
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "category": "Enterprise",
+  "title": "ElevenLabs Launches \"Ads Engine\" — Auto-Translates Top Ads Into 50+ Languages",
+  "url": "https://x.com/ElevenLabs/status/2069111326987673761",
+  "snippet": "ElevenLabs launched its Ads Engine, which automatically translates high-performing video ads into 50+ languages while preserving voice, tone, and lip-sync fidelity — targeting Google and Meta ad workflows directly. Global ad localization typically costs tens of thousands per campaign and takes weeks. CMOs should be pressure-testing this against their current localization vendor costs immediately; this is a direct budget line item on the chopping block.",
+  "source": "x.com",
+  "companies": [
+   "ElevenLabs"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "category": "Enterprise",
+  "title": "AI Lawyer Wins Its First Court Case — But Humans Still Had to Wear the Wig",
+  "url": "https://mindstream.news",
+  "snippet": "An AI law firm won its first real courtroom trial, with the AI system handling case preparation, argumentation strategy, and document work — while human lawyers remained present to fulfill jurisdictional requirements. This \"human in the wig\" model is exactly how regulated AI deployments will scale across professional services: AI does the cognitive work, a licensed human provides the accountability interface. Legal departments take note — the cost curve for outside counsel just started moving in a new direction.",
+  "source": "mindstream.news",
+  "companies": [],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Legal & IP"
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "category": "Policy",
+  "title": "Five Eyes Alliance Warns: AI-Assisted Cyberattacks Are \"Months Away, Not Years\"",
+  "url": "https://www.techtimes.com/articles/318900/20260624/openai-daybreak-expands-patch-pipeline-five-eyes-warns-ai-attacks-are-months-away.htm",
+  "snippet": "The Five Eyes intelligence alliance issued a joint statement warning that frontier AI models will transform offensive cyber capabilities within \"months, not years,\" urging organizations to accelerate patch cycles, limit unnecessary system access, and strengthen identity controls. The Canadian Centre for Cyber Security separately warned that \"AI-driven exploitation may significantly outpace vendors' capacity to publish corrective measures.\" When all five major Western intelligence agencies issue a joint warning on the same timeline, CISOs should treat it as a regulatory pre-signal — compliance frameworks will follow.",
+  "source": "techtimes.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Policy",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "category": "Resources",
+  "title": "Tom's Hardware Deep Dive: Jalapeño ASIC Architecture",
+  "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/broadcom-and-openai-unveil-custom-built-jalapeno-inference-processor",
+  "snippet": "The most technically detailed public breakdown of what Jalapeño actually is and isn't — essential reading for anyone briefing their infrastructure team.",
+  "source": "tomshardware.com",
+  "companies": [
+   "Broadcom",
+   "OpenAI"
+  ],
+  "themes": [
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "category": "Resources",
+  "title": "Cursor's Compile Keynote (Full Video)",
+  "url": "https://www.youtube.com/watch?v=VojDzHaciKQ",
+  "snippet": "Watch the full arc of Cursor's vertical integration strategy — editor, agents, frontier model, git hosting — laid out in one sitting; particularly useful for CTOs evaluating the Cursor-vs-GitHub decision.",
+  "source": "youtube.com",
+  "companies": [
+   "Cursor",
+   "SpaceX"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Coding & Dev Tools"
+  ]
+ },
+ {
   "date": "2026-06-24",
   "category": "Policy",
   "title": "Anthropic's Fable 5 & Mythos 5 Remain Offline After U.S. Government-Forced Takedown",

@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-06-25",
+    "headline": "OpenAI's Jalapeño Chip, Anthropic's Claude Tag for Slack, and Cursor's Agent-Native Git Platform",
+    "snippet": "This edition covers twelve stories across infrastructure, agentic AI, security, research, and enterprise. The throughline: owning the model is table stakes now. Owning the workflow is the real game. Let's get into it.",
+    "read_time": 7
+  },
+  {
     "date": "2026-06-24",
     "headline": "Fable 5 Ban Fallout, Five Eyes Cyber Warning, and Sakana's Multi-Model Hedge",
     "snippet": "The throughline today is resilience — or the lack of it. The organisations that treated AI as a single API call from a single vendor are scrambling; the ones building for optionality are pulling ahead. Here's what matters.",

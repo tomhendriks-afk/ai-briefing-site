@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>OpenAI's Jalapeño Chip, Anthropic's Claude Tag for Slack, and Cursor's Agent-Native Git Platform — Daily Briefing · Ambient Advantage</title>
+<meta name="description" content="This edition covers twelve stories across infrastructure, agentic AI, security, research, and enterprise. The throughline: owning the model is table stakes now." />
+<link rel="alternate" type="text/markdown" href="2026-06-25.md" />
+<link rel="alternate" type="application/json" href="/briefings.json" title="Daily briefings (JSON)" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://ambient-advantage.ai/#chiel",
+      "name": "Chiel Hendriks",
+      "jobTitle": "Managing Director, Cloud, Data & AI",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "PwC Canada"
+      },
+      "url": "https://ambient-advantage.ai",
+      "sameAs": [
+        "https://www.linkedin.com/in/chielhendriks/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ambient-advantage.ai/#org",
+      "name": "Ambient Advantage",
+      "url": "https://ambient-advantage.ai",
+      "founder": {
+        "@id": "https://ambient-advantage.ai/#chiel"
+      },
+      "description": "Daily AI news briefing, podcast, and opinion column from Chiel Hendriks."
+    },
+    {
+      "@type": "NewsArticle",
+      "headline": "OpenAI's Jalapeño Chip, Anthropic's Claude Tag for Slack, and Cursor's Agent-Native Git Platform",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "author": {
+        "@id": "https://ambient-advantage.ai/#chiel"
+      },
+      "publisher": {
+        "@id": "https://ambient-advantage.ai/#org"
+      },
+      "mainEntityOfPage": "https://briefing.ambient-advantage.ai/2026-06-25.html",
+      "description": "This edition covers twelve stories across infrastructure, agentic AI, security, research, and enterprise. The throughline: owning the model is table stakes now. Owning the workflow is the real game. Let's get into it."
+    }
+  ]
+}
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://briefing.ambient-advantage.ai/2026-06-25.html" />
+<meta property="og:title" content="OpenAI's Jalapeño Chip, Anthropic's Claude Tag for Slack, and Cursor's Agent-Native Git Platform" />
+<meta property="og:description" content="This edition covers twelve stories across infrastructure, agentic AI, security, research, and enterprise. The throughline: owning the model is table stakes now." />
+<meta property="og:image" content="https://podcast.ambient-advantage.ai/og-image.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-0:#05070d;--bg-1:#0a0f1c;--bg-2:#0f1628;
+    --line:rgba(120,170,255,.14);--text:#e8eefc;--mute:#8a97b4;
+    --accent:#3ddc97;--accent-2:#7af0bd;
+    --glow:0 0 40px rgba(61,220,151,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg-0);color:var(--text);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:1180px;margin:0 auto;padding:0 28px}
+
+  nav.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(5,7,13,.6);border-bottom:1px solid var(--line)}
+  nav.top .row{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .logo{font-family:'Space Grotesk';font-weight:700;letter-spacing:.02em;font-size:18px;display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none}
+  .logo .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:var(--glow)}
+  .nav-links{display:flex;gap:32px;font-size:14px;color:var(--mute)}
+  .nav-links a{color:var(--mute);text-decoration:none}
+  .nav-links a:hover{color:var(--text);text-decoration:none}
+  .nav-links a.active{color:var(--text);border-bottom:2px solid var(--accent);padding-bottom:2px}
+  .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(61,220,151,.12),rgba(61,220,151,.02));text-decoration:none;transition:border-color .2s}
+  .nav-cta:hover{border-color:var(--accent);text-decoration:none}
+
+  .article-header{padding:80px 0 40px;position:relative}
+  .article-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(61,220,151,.1),transparent 60%);pointer-events:none}
+  .article-header .inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
+  .back-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-size:13px;color:var(--mute);letter-spacing:.05em;margin-bottom:28px;text-decoration:none;transition:color .2s}
+  .back-link:hover{color:var(--accent);text-decoration:none}
+  .article-meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--mute);font-family:'Space Grotesk';margin-bottom:18px;flex-wrap:wrap}
+  .article-meta .tag{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(61,220,151,.1);color:var(--accent-2);border:1px solid rgba(61,220,151,.2)}
+  .article-header h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(30px,4.5vw,48px);line-height:1.12;margin:0;letter-spacing:-.02em}
+
+  .article-body{max-width:780px;margin:0 auto;padding:40px 0 80px}
+  .article-body p{font-size:17px;line-height:1.8;color:var(--text);margin:0 0 24px}
+  .article-body h1,.article-body h2{font-family:'Space Grotesk';font-size:26px;margin:48px 0 16px;letter-spacing:-.01em;color:var(--text)}
+  .article-body h3{font-family:'Space Grotesk';font-size:20px;margin:36px 0 12px;color:var(--text)}
+  .article-body a{color:var(--accent)}
+  .article-body blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(61,220,151,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}
+  .article-body ul,.article-body ol{padding-left:24px;margin:0 0 24px}
+  .article-body li{font-size:17px;line-height:1.8;margin-bottom:8px}
+  .article-body img{max-width:100%;border-radius:12px}
+  .article-body hr{border:none;border-top:1px solid var(--line);margin:40px 0}
+  .article-body table{width:100%;border-collapse:collapse;margin:24px 0}
+  .article-body th,.article-body td{padding:10px 14px;border:1px solid var(--line);font-size:15px;text-align:left}
+  .article-body th{background:var(--bg-1);font-family:'Space Grotesk'}
+
+  .article-nav{max-width:780px;margin:0 auto;padding:0 0 60px;display:flex;gap:18px}
+  .article-nav a{flex:1;display:block;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .2s,transform .2s;text-decoration:none}
+  .article-nav a:hover{border-color:rgba(61,220,151,.35);transform:translateY(-1px);text-decoration:none}
+  .article-nav .label{font-size:11px;color:var(--mute);font-family:'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+  .article-nav .title{font-family:'Space Grotesk';font-size:15px;color:var(--text);line-height:1.3}
+
+  footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:13px}
+  footer .frow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+
+  .mobile-nav{display:none}
+
+  @media (max-width:800px){
+    .nav-links{display:none}
+    .nav-cta{display:none}
+    .article-header{padding:60px 0 30px}
+    .article-nav{flex-direction:column}
+    body{padding-bottom:72px}
+    .mobile-nav{
+      display:flex;
+      position:fixed;bottom:0;left:0;right:0;z-index:50;
+      justify-content:space-around;align-items:center;
+      padding:10px 0 max(10px,env(safe-area-inset-bottom));
+      background:rgba(5,7,13,.92);
+      backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+      border-top:1px solid var(--line);
+    }
+    .mobile-nav a{
+      display:flex;flex-direction:column;align-items:center;gap:4px;
+      text-decoration:none;padding:4px 10px;
+      -webkit-tap-highlight-color:transparent;
+    }
+    .mobile-nav a svg{
+      width:24px;height:24px;stroke-width:1.5;
+      stroke:var(--mute);fill:none;
+      transition:stroke .2s;
+    }
+    .mobile-nav a span{
+      font-size:11px;font-family:'Space Grotesk',system-ui;
+      letter-spacing:.03em;color:var(--mute);
+      transition:color .2s;
+    }
+    .mobile-nav a.active svg{stroke:var(--accent);stroke-width:2}
+    .mobile-nav a.active span{color:var(--accent);font-weight:600}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="container row">
+    <a href="https://ambient-advantage.ai" class="logo"><span class="dot"></span>Ambient Advantage</a>
+    <div class="nav-links">
+      <a href="https://podcast.ambient-advantage.ai">Podcast</a>
+      <a href="/" class="active">Daily Briefing</a>
+      <a href="https://take.ambient-advantage.ai">Chiel's Take</a>
+      <a href="https://build.ambient-advantage.ai">Build Log</a>
+      <a href="https://ambient-advantage.ai/about">About</a>
+    </div>
+    <a class="nav-cta" href="/#subscribe">Subscribe</a>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <div class="inner">
+      <a href="/" class="back-link">← Back to all briefings</a>
+      <div class="article-meta">
+        <span class="tag">Daily Briefing</span>
+        <span>Thursday · June 25, 2026</span>
+        <span>·</span>
+        <span>7 min read</span>
+      </div>
+      <h1>OpenAI's Jalapeño Chip, Anthropic's Claude Tag for Slack, and Cursor's Agent-Native Git Platform</h1>
+    </div>
+  </div>
+</header>
+
+<article class="container">
+  <div class="article-body">
+    
+
+
+
+  <!-- Preheader (hidden) -->
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">
+    This edition covers twelve stories across infrastructure, agentic AI, security, research, and enterprise. The throughline: owning the model is table s
+    &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+  </div>
+
+  <!-- Outer wrapper -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f0f2f5">
+    <tr><td align="center" style="padding:20px 10px;">
+
+      <!-- Email container -->
+      <table role="presentation" class="email-container" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width:600px;margin:0 auto;">
+
+        <!-- Accent bar -->
+        <tr><td bgcolor="#3ddc97" style="height:4px;font-size:1px;line-height:1px;">&nbsp;</td></tr>
+
+        <!-- Header -->
+        <tr><td bgcolor="#ffffff" style="padding:28px 40px 20px 40px;text-align:center;">
+          <span style="font-size:22px;font-weight:bold;color:#0a0f1c;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <span style="color:#3ddc97;">&bull;</span> Ambient Advantage
+          </span>
+          <br/>
+          <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin:14px auto 10px auto;"><tr><td style="width:60px;height:1px;background:#e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+          <span style="font-size:11px;color:#3ddc97;letter-spacing:2.5px;text-transform:uppercase;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE DAILY BRIEFING</span>
+          <br/>
+          <span style="font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Thursday, June 25, 2026 &middot; 7 min read</span>
+        </td></tr>
+
+        <!-- Header bottom border -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Lead section -->
+        <tr><td bgcolor="#ffffff" style="padding:30px 40px 10px 40px;">
+          <!-- Pull quote -->
+          <p style="margin:0 0 20px 0;font-size:20px;font-style:italic;color:#0a0f1c;text-align:center;line-height:1.5;font-family:Georgia,'Times New Roman',Times,serif;">
+            &ldquo;The frontier AI companies are done being software vendors. In the last 48 hours, OpenAI unveiled its own custom silicon, Anthropic embedded itself directly into your Slack workspace, and Cursor launched a git platform built for a world where AI agents ship more code than humans do. The vertical integration race is accelerating across every layer of the stack — and the companies winning it aren&#x27;t just building better models, they&#x27;re burrowing deeper into the plumbing enterprises can&#x27;t easily rip out.&rdquo;
+          </p>
+          <!-- Intro paragraphs -->
+          <p style="margin:0 0 14px 0;font-size:15px;color:#1a1a2e;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">This edition covers twelve stories across infrastructure, agentic AI, security, research, and enterprise. The throughline: owning the model is table stakes now. Owning the *workflow* is the real game. Let&#x27;s get into it.</p>
+        </td></tr>
+
+        <!-- Divider -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Stories section -->
+        <tr><td bgcolor="#ffffff" style="padding:10px 40px 10px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:30px 0 0 0;">
+  <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">TODAY&#x27;S STORIES</span>
+  <br/>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#3ddc97;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+</td></tr>
+            <tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#475569;background:#e2e8f0;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Infrastructure</span>
+  <br/>
+  <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">OpenAI &amp; Broadcom Unveil &quot;Jalapeño&quot; — First Custom Inference Chip Built in Nine Months</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">OpenAI and Broadcom unveiled Jalapeño, OpenAI&#x27;s first custom inference ASIC, co-developed from concept to tape-out in nine months — potentially the fastest high-performance ASIC development cycle on record. Engineering samples are already running GPT-5.3 workloads, with deployment targeted for late 2026 via gigawatt-scale data centers co-built with Microsoft and Celestica. For enterprise buyers, custom inference silicon historically translates to cheaper API calls and faster latency — watch for pricing changes in H1 2027 as OpenAI closes the cost-structure gap with Google&#x27;s TPUs and Amazon&#x27;s Trainium.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">openai.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#6d28d9;background:#ede9fe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Research</span>
+  <br/>
+  <a href="https://venturebeat.com/infrastructure/openai-unveils-first-custom-ai-inference-chip-jalapeno-with-broadcom-and-its-development-was-sped-up-with-openais-own-models" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Jalapeño Was Partially Designed by OpenAI&#x27;s Own Models — The &quot;AI-Designs-AI&quot; Loop Is Real</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">OpenAI confirmed it used its own AI models to accelerate parts of Jalapeño&#x27;s chip design and optimization, calling it a &quot;larval version of recursive self-improvement.&quot; The nine-month tape-out cycle — typically 2-3 years for comparable chips — is the headline number. For enterprise technology leaders, this suggests AI-accelerated R&amp;D cycles across every hardware category are coming faster than traditional analyst forecasts assume.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">venturebeat.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#4338ca;background:#e0e7ff;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Product</span>
+  <br/>
+  <a href="https://www.anthropic.com/news/introducing-claude-tag" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Claude Joins Slack as a Tagged Coworker — Anthropic Launches &quot;Claude Tag&quot;</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Anthropic launched Claude Tag, a Slack-native workflow that lets teams @-mention Claude directly in any channel. Claude reads conversation context, breaks work into stages, retains memory across channels, connects to tools and codebases, and runs background jobs — functioning more like an asynchronous colleague than a chatbot. This lowers the agentic AI adoption bar to near-zero for teams already on Slack, but also kills a category of &quot;AI for Slack&quot; point-solutions overnight; if you&#x27;re evaluating one of those vendors, pause.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">anthropic.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#be185d;background:#fce7f3;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Security</span>
+  <br/>
+  <a href="https://openai.com/index/daybreak-securing-the-world/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">OpenAI Expands Daybreak — GPT-5.5-Cyber, &quot;Patch the Planet,&quot; and 28 Security Partners</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">OpenAI expanded its Daybreak cybersecurity platform with GPT-5.5-Cyber for verified defenders, a partner program integrating 28 firms including CrowdStrike, Palo Alto Networks, and Wiz, and &quot;Patch the Planet&quot; — an initiative with Trail of Bits targeting 30+ open-source projects including cURL, Go, and Python. The expansion landed the same day Five Eyes intelligence agencies warned AI-assisted offensive attacks are &quot;months, not years&quot; away. If your security stack includes any of those 28 partners, expect AI-accelerated patch workflows embedded in your existing tools within months.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">openai.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#4338ca;background:#e0e7ff;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Product</span>
+  <br/>
+  <a href="https://cursor.com/origin" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Cursor Launches &quot;Origin&quot; — An Agent-Native GitHub Rival Built for the Agentic Era</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Cursor unveiled Origin at its Compile keynote — a git hosting platform built from scratch for AI agents, not human developers, handling ~22 commits/second per repo and 296,000 clones/hour. GitHub processed roughly 275 million AI agent commits per week in May 2026 and experienced 9 outages, falling below its 99.9% enterprise SLA. The SpaceX acquisition of Cursor for $60B raises a model-neutrality question enterprise devs should scrutinize carefully before migrating repos.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">cursor.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#6d28d9;background:#ede9fe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Research</span>
+  <br/>
+  <a href="https://pandaily.com/bytedance-doubao-2-1-seedance-2-5-jun2026" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">ByteDance Drops Four Models in One Keynote — Including 30-Second Native AI Video</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">ByteDance launched Seedance 2.5 at its Volcano Engine conference — a video model generating full 30-second native clips in a single pass, doubling the typical 10-15 second ceiling of current tools, alongside new language, image, and audio models. Four frontier models in one keynote signals ByteDance is competing at full-stack AI, not just TikTok. For marketing and media teams, 30-second native AI video changes production workflows; for AI strategists, ByteDance&#x27;s output rate is a useful benchmark for how fast Chinese labs are shipping.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">pandaily.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#be185d;background:#fce7f3;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Security</span>
+  <br/>
+  <a href="https://www.tldrnewsletter.com/tldr-infosec" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Meta Pauses Keystroke-Tracking AI Program After Internal Data Leak</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Meta paused its &quot;Model Capability Initiative&quot; — a mandatory internal AI training program that tracked employee keystrokes — after discovering sensitive employee data was accessible company-wide due to a misconfiguration. That this happened at Meta, a company with significant ML security expertise, should raise eyebrows. Any enterprise deploying AI tools that collect employee interaction data should treat this as a red-flag audit prompt and review access controls immediately.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">tldrnewsletter.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#be185d;background:#fce7f3;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Security</span>
+  <br/>
+  <a href="https://www.tldrnewsletter.com/tldr-infosec" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Tata Electronics Hit by Ransomware — Apple and Tesla Trade Secrets Allegedly Leaked</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">The World Leaks ransomware group published more than 200,000 files allegedly from Tata Electronics, a major supplier to both Apple and Tesla, including product specs, technical details, and employee records. Supply chain is the new attack surface — even if your own systems are locked down, a tier-2 supplier breach can expose your product roadmap. If you have manufacturing partnerships in India or Southeast Asia, review your supplier security attestation requirements now.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">tldrnewsletter.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#4338ca;background:#e0e7ff;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Product</span>
+  <br/>
+  <a href="https://taaft.co" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Gemini 3.5 Flash Gets Computer-Use Capability — Google Brings Agents to the Desktop</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Google updated Gemini 3.5 Flash with the ability to control computers directly — browsing, clicking, and operating applications autonomously, matching capabilities from Anthropic&#x27;s Computer Use and OpenAI&#x27;s Operator. The critical detail: this landed in Flash, Google&#x27;s fastest and cheapest Gemini tier, not a flagship model. Enterprises evaluating RPA vendors should now run direct cost-per-task comparisons against Gemini Flash — the economics may have just shifted dramatically.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">taaft.co</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://x.com/ElevenLabs/status/2069111326987673761" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">ElevenLabs Launches &quot;Ads Engine&quot; — Auto-Translates Top Ads Into 50+ Languages</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">ElevenLabs launched its Ads Engine, which automatically translates high-performing video ads into 50+ languages while preserving voice, tone, and lip-sync fidelity — targeting Google and Meta ad workflows directly. Global ad localization typically costs tens of thousands per campaign and takes weeks. CMOs should be pressure-testing this against their current localization vendor costs immediately; this is a direct budget line item on the chopping block.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">x.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://mindstream.news" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">AI Lawyer Wins Its First Court Case — But Humans Still Had to Wear the Wig</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">An AI law firm won its first real courtroom trial, with the AI system handling case preparation, argumentation strategy, and document work — while human lawyers remained present to fulfill jurisdictional requirements. This &quot;human in the wig&quot; model is exactly how regulated AI deployments will scale across professional services: AI does the cognitive work, a licensed human provides the accountability interface. Legal departments take note — the cost curve for outside counsel just started moving in a new direction.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">mindstream.news</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#b45309;background:#fef3c7;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Policy</span>
+  <br/>
+  <a href="https://www.techtimes.com/articles/318900/20260624/openai-daybreak-expands-patch-pipeline-five-eyes-warns-ai-attacks-are-months-away.htm" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Five Eyes Alliance Warns: AI-Assisted Cyberattacks Are &quot;Months Away, Not Years&quot;</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">The Five Eyes intelligence alliance issued a joint statement warning that frontier AI models will transform offensive cyber capabilities within &quot;months, not years,&quot; urging organizations to accelerate patch cycles, limit unnecessary system access, and strengthen identity controls. The Canadian Centre for Cyber Security separately warned that &quot;AI-driven exploitation may significantly outpace vendors&#x27; capacity to publish corrective measures.&quot; When all five major Western intelligence agencies issue a joint warning on the same timeline, CISOs should treat it as a regulatory pre-signal — compliance frameworks will follow.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">techtimes.com</span>
+</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Big Picture card -->
+        <tr><td bgcolor="#ffffff" style="padding:10px 40px 24px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td width="4" bgcolor="#3ddc97" style="width:4px;font-size:1px;">&nbsp;</td>
+              <td bgcolor="#f0f7ff" style="padding:20px 24px;">
+                <span style="font-size:11px;font-weight:bold;color:#3ddc97;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE BIG PICTURE</span>
+                <br/><br/>
+                <p style="margin:0 0 10px 0;font-size:15px;color:#0a0f1c;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Three separate headlines today tell the same story if you squint: OpenAI is building its own chips, Cursor is building its own git infrastructure, and Anthropic is embedding Claude directly into your Slack channels. What we&#x27;re watching is a simultaneous vertical integration race across every layer of the enterprise technology stack — and the companies that win won&#x27;t be the ones with the best model, they&#x27;ll be the ones whose model is most deeply woven into the plumbing their customers can&#x27;t easily replace. For enterprise buyers, this creates a strategic paradox worth naming out loud: the integrations that make AI most *useful* also create the deepest *lock-in*. The time to negotiate data portability, model-neutrality clauses, and exit rights is before you let Claude answer your Slack pings — not after.</p>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Resources section -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px 24px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:30px 0 0 0;">
+  <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">WORTH BOOKMARKING</span>
+  <br/>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#3ddc97;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+</td></tr>
+            <tr><td style="height:12px;font-size:1px;">&nbsp;</td></tr>
+            <tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">OpenAI × Broadcom Jalapeño Technical Announcement &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">Skip the press summaries and read the primary source on Jalapeño&#x27;s architecture, performance claims, and deployment roadmap; it&#x27;s the clearest window into how OpenAI plans to own the full inference stack.</span>
+    </td>
+  </tr></table>
+</td></tr><tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/broadcom-and-openai-unveil-custom-built-jalapeno-inference-processor" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">Tom&#x27;s Hardware Deep Dive: Jalapeño ASIC Architecture &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">The most technically detailed public breakdown of what Jalapeño actually is and isn&#x27;t — essential reading for anyone briefing their infrastructure team.</span>
+    </td>
+  </tr></table>
+</td></tr><tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://www.youtube.com/watch?v=VojDzHaciKQ" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">Cursor&#x27;s Compile Keynote (Full Video) &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">Watch the full arc of Cursor&#x27;s vertical integration strategy — editor, agents, frontier model, git hosting — laid out in one sitting; particularly useful for CTOs evaluating the Cursor-vs-GitHub decision.</span>
+    </td>
+  </tr></table>
+</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Divider -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Podcast CTA -->
+        <tr><td bgcolor="#ffffff" style="padding:24px 40px 30px 40px;text-align:center;">
+          <p style="margin:0 0 16px 0;font-size:14px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            Prefer to listen? Today&#8217;s briefing is also a podcast.
+          </p>
+          <table cellpadding="0" cellspacing="0" border="0" align="center">
+            <tr>
+              <td align="center" bgcolor="#3ddc97" style="border-radius:6px;">
+                <a href="https://podcast.ambient-advantage.ai" target="_blank" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:bold;color:#ffffff;text-decoration:none;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Listen to Today&#8217;s Episode &rarr;</a>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Footer -->
+        <tr><td bgcolor="#f0f2f5" style="padding:24px 40px 30px 40px;text-align:center;">
+          <p style="margin:0 0 6px 0;font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            Curated by Chiel Hendriks &middot; PwC Canada
+          </p>
+          <p style="margin:0 0 6px 0;font-size:13px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <a href="https://ambient-advantage.ai" style="color:#3ddc97;text-decoration:none;">ambient-advantage.ai</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://www.linkedin.com/in/chielhendriks/" style="color:#3ddc97;text-decoration:none;">LinkedIn</a>
+          </p>
+          
+          <p style="margin:10px 0 0 0;font-size:12px;color:#9ca3af;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            &copy; 2026 Ambient Advantage
+          </p>
+        </td></tr>
+
+      </table>
+      <!-- /Email container -->
+
+    </td></tr>
+  </table>
+  <!-- /Outer wrapper -->
+
+
+  </div>
+</article>
+
+<div class="container">
+  <div class="article-nav">
+    <a href="/2026-06-24.html">
+      <div class="label">← Previous briefing</div>
+      <div class="title">Fable 5 Ban Fallout, Five Eyes Cyber Warning, and Sakana's Multi-Model Hedge</div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="container frow">
+    <div>© 2026 Ambient Advantage · Curated by Chiel Hendriks</div>
+    <div><a href="https://ambient-advantage.ai" style="color:var(--accent);text-decoration:none">ambient-advantage.ai</a></div>
+  </div>
+</footer>
+
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="https://podcast.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5z"/></svg>
+    <span>Podcast</span>
+  </a>
+  <a href="/" class="active">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+    <span>Briefing</span>
+  </a>
+  <a href="https://take.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+    <span>Take</span>
+  </a>
+  <a href="https://build.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+    <span>Build</span>
+  </a>
+  <a href="https://ambient-advantage.ai/about">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>About</span>
+  </a>
+</nav>
+
+</body>
+</html>
