@@ -1,5 +1,211 @@
 [
  {
+  "date": "2026-06-26",
+  "category": "Policy",
+  "title": "White House Puts GPT-5.6 on a Government Leash — First-Ever Pre-Release Restriction on a U.S. AI Model",
+  "url": "https://www.axios.com/2026/06/25/trump-administration-openai-gpt-model-release",
+  "snippet": "The Trump administration has asked OpenAI to limit GPT-5.6's release to government-approved partners only, marking the first time the U.S. has preemptively gated an American AI model before launch. The request came from the Office of the National Cyber Director and OSTP under an executive order giving cybersecurity teams 30 days to evaluate advanced models. Altman told employees this is \"not our preferred long-term model\" — but for enterprise procurement teams, the signal is clear: frontier model availability is now contingent on national security review, and your deployment timelines just got harder to predict.",
+  "source": "axios.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Policy",
+   "Regulation",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "category": "Security",
+  "title": "Anthropic Accuses Alibaba of the Largest Known AI Distillation Attack — 28.8 Million Claude Interactions",
+  "url": "https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html",
+  "snippet": "In a letter to the U.S. Senate Banking Committee, Anthropic alleges Alibaba's Qwen AI lab orchestrated 28.8 million exchanges with Claude via 25,000 fake accounts between April and June 2026, targeting agentic reasoning, software engineering, and long-horizon capabilities. Senators Hagerty and Kim are moving to amend defense legislation to sanction entities conducting such campaigns. Any enterprise relying on frontier APIs should understand that the capabilities you're paying for are being systematically siphoned at industrial scale — this is a documented, escalating threat to the value of your AI stack.",
+  "source": "cnbc.com",
+  "companies": [
+   "Alibaba",
+   "Anthropic"
+  ],
+  "themes": [
+   "Policy",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "category": "Infrastructure",
+  "title": "OpenAI and Broadcom Unveil \"Jalapeño\" — OpenAI's First Custom Inference Chip, Built in Nine Months",
+  "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+  "snippet": "OpenAI unveiled Jalapeño, its first custom AI inference accelerator, co-developed with Broadcom from design to tape-out in just nine months — potentially the fastest ASIC development cycle in high-performance semiconductors — with OpenAI's own models used to accelerate the chip design process. Early testing shows performance per watt substantially better than current state-of-the-art. For enterprise buyers evaluating OpenAI's long-term viability as a vendor, this is the first credible sign the company can fix its unit economics and close the structural cost gap with Google's TPUs and Amazon's Trainium.",
+  "source": "openai.com",
+  "companies": [
+   "Broadcom",
+   "OpenAI"
+  ],
+  "themes": [
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "category": "Agentic",
+  "title": "Claude Lands in Slack — Anthropic's Agentic Play Goes Deep Into the Enterprise Workflow",
+  "url": "https://slack.com/blog/news/powering-agentic-collaboration",
+  "snippet": "Anthropic's Claude for Slack enables teams to collaborate with Claude through @mentions in channels, with access to web search, data connections, and full workspace context via Slack's Real-Time Search API. Anthropic's own product team is already generating 65% of its code through the tagging system. This is not an AI sidebar — it's a participant in group chat, and dozens of Slack AI middleware startups just had their market eaten. The question for enterprise leaders is no longer \"should we explore AI in our workflows?\" but \"which AI vendor do we want reading our most sensitive internal conversations?\"",
+  "source": "slack.com",
+  "companies": [
+   "Anthropic",
+   "Salesforce"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "category": "Agentic",
+  "title": "Gemini 3.5 Flash Gets Native Computer Use — Google's \"One Model\" Agentic Bet",
+  "url": "https://www.techtimes.com/articles/319071/20260625/gemini-computer-use-baked-gemini-35-flash-screen-control-now-pairs-search-maps.htm",
+  "snippet": "Google baked computer use — the ability for an AI agent to see screens, click, type, and navigate software — directly into Gemini 3.5 Flash, combining it with native Search and Maps grounding in a single model call. The pricing: $1.50 per million input tokens versus GPT-5.5's $5, and $9 versus $30 per million output tokens. For enterprises building agentic workloads at volume, that's roughly one-third the cost for comparable capabilities — the TCO math is hard to ignore, and it puts serious competitive pressure on every other agentic platform to justify their premium.",
+  "source": "techtimes.com",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Infrastructure & Compute",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "category": "Security",
+  "title": "OpenAI Codex CLI Bug Was Silently Killing Developer SSDs at 640 TB/Year",
+  "url": "https://www.techtimes.com/articles/318876/20260622/openai-codex-cli-bug-silently-writes-640-tb-year-your-ssd-no-patch.htm",
+  "snippet": "An unpatched bug in OpenAI's Codex CLI was silently writing data at 640 terabytes per year through a TRACE-level SQLite logger — more than the entire rated lifetime endurance of a typical consumer SSD. Three fixes have been merged, reducing write volume by ~85%, but for developers on modern laptops with soldered NVMe storage, endurance loss is permanent. Any enterprise deploying AI coding agents at scale should be auditing disk I/O and system resource consumption — the \"AI tax\" on hardware is real, measurable, and until now, invisible.",
+  "source": "techtimes.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "category": "Enterprise",
+  "title": "Figma Goes Full AI Creative Studio — Animation, Shaders, and Agentic Workflows in One Release",
+  "url": "https://www.youtube.com/watch?v=2ZCc4k_IV5w",
+  "snippet": "Figma launched a full animation timeline (eliminating After Effects round-trips), a plain-language shader and plugin builder powered by an AI agent, and Weave's agentic workflows — all integrated natively. The agent can build plugins from natural language descriptions without code. For enterprise design and marketing teams, this is the consolidation moment: the gap between concept and shippable asset collapses further, the headcount math for creative production changes again, and creative tool vendors who haven't made this agentic leap face an existential question.",
+  "source": "youtube.com",
+  "companies": [
+   "Figma"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "category": "Funding",
+  "title": "Adobe Acquires Topaz Labs — Folds Best-in-Class AI Video Enhancement Into Firefly",
+  "url": "https://news.adobe.com/news/2026/06/adobe-to-acquire-topaz-labs",
+  "snippet": "Adobe is acquiring Topaz Labs, whose AI-powered video upscaling, noise reduction, and sharpening tools are widely regarded as the best in the industry among filmmakers and video professionals. Topaz's models will be folded into Adobe's Firefly AI platform. For enterprise media and content teams evaluating whether to standardize on Adobe's Creative Cloud ecosystem, this acquisition makes the platform case substantially stronger — Adobe is assembling a vertically integrated AI creative stack that is pulling clear of the competition.",
+  "source": "news.adobe.com",
+  "companies": [
+   "Adobe",
+   "Topaz Labs"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Funding & Valuations"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "category": "Enterprise",
+  "title": "Google Fires Engineer Who Built Viral Open-Source Workspace CLI — A Case Study in Corporate AI Immune Response",
+  "url": "https://x.com/JPoehnelt/status/2069482265953087602",
+  "snippet": "Former Google engineer Justin Poehnelt says he was fired for creating the Google Workspace CLI, an open-source tool that lets humans and AI agents control Gmail, Drive, Calendar, Docs, and Sheets from a single command line. The tool hit #1 on Hacker News and gained thousands of GitHub stars. This is precisely the kind of MCP-compatible agentic interface enterprises need — watch for it to proliferate in open-source regardless of Google's position, and watch competitors use it to enable richer Claude and GPT integrations with Workspace.",
+  "source": "x.com",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Open Source",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "category": "Policy",
+  "title": "Mythos-Class AI Cyber Capabilities Put the U.S. on Red Alert — The New Regulatory Normal",
+  "url": "https://www.cnn.com/2026/06/25/tech/openai-limit-release-white-house",
+  "snippet": "The GPT-5.6 restriction followed an export control order on Anthropic after its Mythos model reportedly cracked NSA-grade systems in hours during evaluation — a demonstration of offensive cybersecurity capability that directly triggered government intervention. Anthropic has also implemented safeguards limiting Claude's effectiveness for requests targeting frontier LLM development, including pretraining pipelines and ML accelerator design. A clear pattern is crystallizing: frontier AI models with advanced cyber capabilities are being treated like dual-use technology subject to export-control-style review. Enterprise CISOs should expect that access to the most capable models will increasingly require compliance certification or government-approved partnership status.",
+  "source": "cnn.com",
+  "companies": [
+   "Anthropic",
+   "OpenAI"
+  ],
+  "themes": [
+   "Policy",
+   "Regulation",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "category": "Research",
+  "title": "Hassabis Says AGI Is \"Almost Here\" — Google DeepMind CEO Raises the Timeline Stakes",
+  "url": "https://mail.theresanaiforthat.com",
+  "snippet": "Google DeepMind CEO Demis Hassabis stated AGI is \"almost here,\" one of the most direct timeline claims from a major lab leader to date, converging with Altman's projection that 2026 will see \"systems that can figure out novel insights\" and 2027 may see real-world robots. When multiple frontier lab CEOs begin converging on near-term AGI timelines in public statements, the board-level conversation shifts from \"when should we start?\" to \"are we already behind?\" The 3-5 year digital transformation roadmap is now dangerously misaligned with the pace of the technology.",
+  "source": "mail.theresanaiforthat.com",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Research",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "category": "Security",
+  "title": "OpenAI Launches AI-Powered Bug Bounty for the Open Internet",
+  "url": "https://mindstream.news",
+  "snippet": "OpenAI announced a new initiative deploying its AI systems to proactively hunt for bugs and security vulnerabilities across widely-used open-source software and internet infrastructure — targeting the \"group project\" problem where critical dependencies are under-resourced and over-relied upon. This is a significant reframing of AI's security role from threat vector to proactive defender, and it positions OpenAI as a responsible infrastructure player at a moment when regulatory goodwill matters more than ever.",
+  "source": "mindstream.news",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Open Source",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "category": "Resources",
+  "title": "Nathan Lambert's Farewell to Ai2",
+  "url": "https://www.interconnects.ai/p/farewell-ai2",
+  "snippet": "A rare, honest insider account of what happens when AI research consolidates into closed labs; Lambert's observations on the broken \"social contract\" are the most important long-read in AI governance this month.",
+  "source": "interconnects.ai",
+  "companies": [
+   "Ai2",
+   "Anthropic"
+  ],
+  "themes": [
+   "Open Source",
+   "Research",
+   "Talent & Workforce"
+  ]
+ },
+ {
   "date": "2026-06-25",
   "category": "Infrastructure",
   "title": "OpenAI & Broadcom Unveil \"Jalapeño\" — First Custom Inference Chip Built in Nine Months",

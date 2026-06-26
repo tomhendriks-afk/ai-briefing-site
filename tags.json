@@ -1,20 +1,20 @@
 {
- "generated": "2026-06-25",
+ "generated": "2026-06-26",
  "companies": [
   {
    "tag": "Anthropic",
-   "count": 229,
-   "last_seen": "2026-06-25"
+   "count": 233,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "OpenAI",
-   "count": 219,
-   "last_seen": "2026-06-25"
+   "count": 224,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Google",
-   "count": 121,
-   "last_seen": "2026-06-25"
+   "count": 124,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Microsoft",
@@ -97,14 +97,14 @@
    "last_seen": "2026-05-05"
   },
   {
+   "tag": "Salesforce",
+   "count": 7,
+   "last_seen": "2026-06-26"
+  },
+  {
    "tag": "Accenture",
    "count": 6,
    "last_seen": "2026-06-18"
-  },
-  {
-   "tag": "Salesforce",
-   "count": 6,
-   "last_seen": "2026-06-01"
   },
   {
    "tag": "Tesla",
@@ -132,6 +132,11 @@
    "last_seen": "2026-06-19"
   },
   {
+   "tag": "Broadcom",
+   "count": 4,
+   "last_seen": "2026-06-26"
+  },
+  {
    "tag": "Palantir",
    "count": 4,
    "last_seen": "2026-05-12"
@@ -147,9 +152,9 @@
    "last_seen": "2026-05-20"
   },
   {
-   "tag": "Broadcom",
+   "tag": "Adobe",
    "count": 3,
-   "last_seen": "2026-06-25"
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Scale AI",
@@ -162,9 +167,9 @@
    "last_seen": "2026-06-23"
   },
   {
-   "tag": "Adobe",
+   "tag": "Alibaba",
    "count": 2,
-   "last_seen": "2026-06-19"
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "ClickUp",
@@ -195,6 +200,11 @@
    "tag": "Deloitte",
    "count": 2,
    "last_seen": "2026-04-27"
+  },
+  {
+   "tag": "Figma",
+   "count": 2,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Goldman Sachs",
@@ -262,9 +272,9 @@
    "last_seen": "2026-06-18"
   },
   {
-   "tag": "Alibaba",
+   "tag": "Ai2",
    "count": 1,
-   "last_seen": "2026-04-24"
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Allbirds",
@@ -310,11 +320,6 @@
    "tag": "DIOSynVax",
    "count": 1,
    "last_seen": "2026-06-08"
-  },
-  {
-   "tag": "Figma",
-   "count": 1,
-   "last_seen": "2026-06-10"
   },
   {
    "tag": "Figure",
@@ -397,6 +402,11 @@
    "last_seen": "2026-06-25"
   },
   {
+   "tag": "Topaz Labs",
+   "count": 1,
+   "last_seen": "2026-06-26"
+  },
+  {
    "tag": "University of Cambridge",
    "count": 1,
    "last_seen": "2026-06-08"
@@ -430,33 +440,38 @@
  "themes": [
   {
    "tag": "Enterprise Adoption",
-   "count": 456,
-   "last_seen": "2026-06-25"
+   "count": 460,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Agentic AI",
-   "count": 253,
-   "last_seen": "2026-06-25"
+   "count": 257,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Research",
-   "count": 155,
-   "last_seen": "2026-06-25"
+   "count": 157,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Coding & Dev Tools",
-   "count": 148,
-   "last_seen": "2026-06-25"
-  },
-  {
-   "tag": "Funding & Valuations",
-   "count": 131,
-   "last_seen": "2026-06-23"
+   "count": 149,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Infrastructure & Compute",
-   "count": 131,
-   "last_seen": "2026-06-25"
+   "count": 133,
+   "last_seen": "2026-06-26"
+  },
+  {
+   "tag": "Funding & Valuations",
+   "count": 132,
+   "last_seen": "2026-06-26"
+  },
+  {
+   "tag": "Policy",
+   "count": 110,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Governance",
@@ -464,14 +479,9 @@
    "last_seen": "2026-06-23"
   },
   {
-   "tag": "Policy",
-   "count": 107,
-   "last_seen": "2026-06-25"
-  },
-  {
    "tag": "Security",
-   "count": 93,
-   "last_seen": "2026-06-25"
+   "count": 98,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Data",
@@ -480,18 +490,18 @@
   },
   {
    "tag": "Regulation",
-   "count": 85,
-   "last_seen": "2026-06-24"
+   "count": 87,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Talent & Workforce",
-   "count": 80,
-   "last_seen": "2026-06-24"
+   "count": 82,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Models & Releases",
-   "count": 79,
-   "last_seen": "2026-06-25"
+   "count": 80,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Financial Services",
@@ -500,8 +510,8 @@
   },
   {
    "tag": "Safety",
-   "count": 54,
-   "last_seen": "2026-06-24"
+   "count": 55,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Voice & Multimodal",
@@ -515,8 +525,8 @@
   },
   {
    "tag": "Open Source",
-   "count": 37,
-   "last_seen": "2026-06-25"
+   "count": 40,
+   "last_seen": "2026-06-26"
   },
   {
    "tag": "Healthcare",
