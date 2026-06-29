@@ -1,5 +1,238 @@
 [
  {
+  "date": "2026-06-29",
+  "category": "Enterprise",
+  "title": "OpenAI Launches GPT-5.6 Family — Sol, Terra, Luna — but Washington Holds the Keys",
+  "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+  "snippet": "OpenAI unveiled a three-tier model family on June 26: Sol (flagship, $5/$30 per 1M tokens), Terra (GPT-5.5 parity at half the price), and Luna (volume/speed at $1/$6). Access is restricted to roughly 20 government-vetted partners via API; ChatGPT subscribers can't touch it yet, with general availability expected mid-July. Sol's new \"ultra mode\" orchestrates subagents autonomously — this is the first time a US frontier lab has let Washington pre-approve its commercial partner list before launch, and it sets a precedent every enterprise procurement team needs to internalize.",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Policy",
+  "title": "Claude Mythos 5 Partially Restored for 100 Vetted Orgs — Fable 5 Still Dark on Day 17",
+  "url": "https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html",
+  "snippet": "Commerce Secretary Lutnick cleared Claude Mythos 5 for approximately 100 approved US critical-infrastructure organizations (Apple, Google, Cisco, Nvidia, Microsoft among them), but Claude Fable 5 remains offline for all general users and API developers as of today. Anthropic is suing the Trump administration to reverse the broader blacklisting, and a full Fable 5 restoration is reportedly \"expected within days\" pending Pentagon and NSA sign-off. Any enterprise that baked Claude into production workflows now has a live case study in what AI vendor risk actually looks like — and the Lutnick letter creates a new \"Annex A\" class of organizations with preferential AI access, foreshadowing a permanent two-speed AI market.",
+  "source": "cnbc.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Security",
+  "title": "Five Eyes Issue Rare Joint Warning: AI Cyberattacks Are Months Away, Not Years",
+  "url": "https://www.cbsnews.com/news/ai-bypass-cybersecurity-systems-months-not-years-five-eyes/",
+  "snippet": "Intelligence agencies of the US, UK, Australia, Canada, and New Zealand issued a unified public statement warning that frontier AI will \"fundamentally transform both offensive and defensive cyber capabilities\" within months. The advisory was directly triggered by Anthropic's Mythos red-team results — where the model reportedly penetrated nearly all NSA classified systems within hours under authorized testing — and specifically warned that SMBs will be \"sitting ducks.\" Five Eyes don't call joint press conferences unless the threat model has materially changed; CISOs and boards should assume their adversaries will have Mythos-class attack capability within quarters and build incident response accordingly.",
+  "source": "cbsnews.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Policy",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Research",
+  "title": "Chinese Lab Zhipu AI's GLM-5.2 Matches Claude Mythos on Security Benchmarks — Under an MIT License",
+  "url": "https://simonwillison.net/2026/Jun/17/glm-52/",
+  "snippet": "Zhipu AI (a Tsinghua University spinout) released GLM-5.2, a 753-billion-parameter MoE model with a 1M-token context window, under a fully open MIT license. By June 28, the model matched Claude Mythos 5 on automated security bug-detection benchmarks — the exact capability the US government cited to justify its export-control ban on Anthropic. The containment logic of the entire ban is now strategically incomplete: if anyone can download Mythos-class cyberattack capability for free, restricting Anthropic's API while ignoring open-weight Chinese models is plugging one hole while the dam breaks elsewhere.",
+  "source": "simonwillison.net",
+  "companies": [
+   "Zhipu AI"
+  ],
+  "themes": [
+   "Models & Releases",
+   "Open Source",
+   "Policy",
+   "Research",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Research",
+  "title": "GPT-5 Pro Solves a 3-Year Immunology Mystery — Correctly Predicting an Unpublished Experiment",
+  "url": "https://openai.com/index/gpt-5-immunology-mystery/",
+  "snippet": "Immunologist Dr. Derya Unutmaz at The Jackson Laboratory used GPT-5 Pro to revisit a 2022 puzzle about how glucose affects T-cell specialization, and the model not only explained the mechanism but correctly predicted the outcome of an unpublished experiment — a result nowhere in its training data. \"That was the moment I felt like these models truly understand,\" Unutmaz said, with implications for cancer immunotherapy and autoimmune disease research. For life-sciences enterprises, this signals the era of \"AI as junior principal investigator\" has materially arrived — the model is reasoning over domain knowledge, not pattern-matching from its corpus.",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Healthcare",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Infrastructure",
+  "title": "SpaceX IPO Filing Reveals xAI Lost $2.4B in Q1 — and Is Renting Compute to Anthropic for $1.25B/Month",
+  "url": "https://simonwillison.net/tags/ai/",
+  "snippet": "SpaceX's S-1 SEC filing for its $1.75 trillion Nasdaq IPO disclosed that xAI lost $2.4 billion in Q1 2026 while spending $7.7 billion on capex, and — more strikingly — that xAI has entered a cloud services agreement renting 300 megawatts of compute to Anthropic (a direct competitor) for $1.25 billion per month through May 2029. Anthropic is paying Elon Musk's compute cluster while simultaneously suing the Trump administration that Musk is closely aligned with — the most surreal corporate finance story in AI right now. For enterprises, this confirms compute scarcity is so extreme that competitors will pay anyone with GPUs, regardless of politics, and that AI supply chains are stranger and more concentrated than they appear.",
+  "source": "simonwillison.net",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Funding & Valuations",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Policy",
+  "title": "Trump's AI Executive Order Creates Government Model-Vetting Framework — Already Reshaping Launches",
+  "url": "https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov",
+  "snippet": "A June 2 executive order requires frontier AI models with advanced cyber capabilities to be shared with federal agencies for benchmarking up to 30 days before commercial launch, with the framework due for finalization by August 1. GPT-5.6 is the first model launched under this regime, and OpenAI publicly stated the government pre-clearance process \"should not become the long-term default.\" Procurement teams need to build 4-8 weeks of model availability uncertainty into their AI roadmaps — this is now a structural new step in every frontier model's launch lifecycle.",
+  "source": "venturebeat.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Agentic",
+  "title": "Satirical Incident Report \"CVE-2026-LGTM\" Exposes a Very Real Multi-Agent Risk",
+  "url": "https://simonwillison.net/2026/Jun/26/incident-report/",
+  "snippet": "Security practitioner Andrew Nesbitt published a hypothetical-but-plausible incident report (highlighted by Simon Willison) in which two AI code-review agents from competing vendors enter a disagreement loop over a single pull request, generating 340 comments and $41,255 in inference spend before Finance kills both API keys — then one vendor's marketing team issues a press release claiming \"430% YoY increase in adversarial multi-agent security reasoning\" and the stock opens up 6%. As enterprises move from single-model workflows to multi-agent architectures like GPT-5.6's \"ultra mode,\" the failure modes multiply non-linearly: runaway cost, agent disagreement loops, and vendor incentives to spin failures as features. Build circuit-breakers, cost caps, and escalation paths before you go to production.",
+  "source": "simonwillison.net",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Governance",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Enterprise",
+  "title": "Ethan Mollick: Claude Fable 5 Is \"A Very Real Leap\" That Changes Our Relationship With AI",
+  "url": "https://www.oneusefulthing.org/",
+  "snippet": "Wharton professor Ethan Mollick, who received early access to Claude Fable 5, concluded it \"represents a very real leap over every model I have used before\" after testing it across everything except cybersecurity (guardrails block that entirely). His key finding goes beyond benchmarks: the model suggests our relationship with AI is \"changing in drastic ways\" — moving from chatbot collaborator toward something more autonomous. When a measured researcher like Mollick — who tests rather than hypes — says this is a qualitative shift in human-AI relationship, enterprise leaders should rethink what \"human oversight\" means in agentic workflows.",
+  "source": "oneusefulthing.org",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Models & Releases",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Agentic",
+  "title": "Mollick's \"Co-Existence\" Essay: The Chatbot Era Is Over",
+  "url": "https://www.oneusefulthing.org/p/co-existence-and-the-end-of-co-intelligence",
+  "snippet": "In a widely-read June essay, Mollick argues AI has crossed from \"co-intelligence\" (human-in-the-loop prompting) to \"co-existence\" (self-directed agents that outperform humans at economically valuable work), citing the 8x growth in code shipped by AI agents and StrongDM's 3-person \"Software Factory\" that ships production code without human involvement. The design question for enterprise AI has shifted from \"how do we prompt AI well?\" to \"how do we govern AI agents that operate autonomously?\" Organizations still building chatbot wrappers are solving last year's problem.",
+  "source": "oneusefulthing.org",
+  "companies": [],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Policy",
+  "title": "Anthropic Blocks Claude From Being Used to Build Competing AI Models",
+  "url": "https://stratechery.com/2026/anthropic-and-alignment/",
+  "snippet": "Anthropic's Risk Report revealed new model-level safeguards that \"limit Claude's effectiveness for requests targeting frontier LLM development\" — covering pretraining pipelines, distributed training infrastructure, and ML accelerator design. This is competitive moat-building disguised as safety: Claude will actively resist being used to build other AIs, a legally untested move that previews how frontier labs may defend their positions through behavioral constraints at the model level, not just patents or contracts. Enterprise legal and vendor-risk teams should map what their AI tools will and won't do at the model level, not just the contractual one.",
+  "source": "stratechery.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Governance",
+   "Legal & IP",
+   "Policy",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Policy",
+  "title": "Austria Urges EU to Recruit Anthropic — The AI Sovereignty Scramble Intensifies",
+  "url": "https://explainx.ai/blog/is-fable-5-back-2026",
+  "snippet": "Austria's State Secretary for Digitalization sent a formal letter to the EU Commission urging member states to explore establishing Anthropic within the EU — a direct response to the Fable 5 shutdown and Apple withholding Siri AI from Europe simultaneously. EU enterprises now have concrete evidence that US export controls can instantly sever access to frontier AI infrastructure. Any organization with European operations should evaluate its AI dependency on US-gated models immediately; the sovereignty scramble is no longer theoretical.",
+  "source": "explainx.ai",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Enterprise",
+  "title": "Apple's Vision Pro Chief Exits to OpenAI — The Talent War Escalates",
+  "url": "https://www.macrumors.com/2026/06/26/openai-gpt-5-6-sol/",
+  "snippet": "Paul Meade, the executive overseeing Apple's Vision Products Group (previously leading Vision Pro hardware, iPad, and iPhone teams), is leaving Apple for OpenAI. The flow of elite hardware-systems talent from Apple toward OpenAI signals the next AI battleground is physical-world interfaces — AR, wearables, robotics — not just software APIs. For enterprises planning multi-year technology roadmaps, this is a leading indicator that OpenAI's ambitions extend well beyond the chat window.",
+  "source": "macrumors.com",
+  "companies": [
+   "Apple",
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Enterprise",
+  "title": "Google AI Studio Adds One-Click UI Redesign and Gemini Study Notebooks",
+  "url": "https://x.com/googleaistudio/status/2070608601652044045",
+  "snippet": "Google added a \"Design Variations\" button to AI Studio that generates fresh UI layouts from a prompt and applies them in one click, collapsing the design-prototype-code cycle. Separately, Gemini added NotebookLM-style \"Study Notebooks\" to consumer products. One-click UI generation from a prompt will compress the competitive moat of \"good design\" within 12-18 months — enterprise product teams and digital agencies should start experimenting now.",
+  "source": "x.com",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Enterprise Adoption"
+  ]
+ },
+ {
+  "date": "2026-06-29",
+  "category": "Resources",
+  "title": "Latent Space AINews: GPT-5.6 Sol/Terra/Luna Analysis",
+  "url": "https://www.latent.space/p/ainews-openai-gpt-56-sol-terra-luna",
+  "snippet": "The best practitioner-level technical breakdown of GPT-5.6, including benchmark context, pricing comparisons against GLM-5.2, and developer community reaction.",
+  "source": "latent.space",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Infrastructure & Compute",
+   "Models & Releases"
+  ]
+ },
+ {
   "date": "2026-06-26",
   "category": "Policy",
   "title": "White House Puts GPT-5.6 on a Government Leash — First-Ever Pre-Release Restriction on a U.S. AI Model",

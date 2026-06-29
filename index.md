@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [GPT-5.6's Government-Gated Launch, Claude Fable Still Dark, and Five Eyes Sound the AI Alarm](https://briefing.ambient-advantage.ai/2026-06-29.html) — Monday · June 29, 2026 · This edition covers fifteen stories across enterprise, policy, security, research, and infrastructure.
 - [White House Gates GPT-5.6, Alibaba's Massive Distillation Attack, and OpenAI's Custom Chip](https://briefing.ambient-advantage.ai/2026-06-26.html) — Friday · June 26, 2026 · This edition covers twelve stories across policy, security, infrastructure, agentic AI, and enterprise. The throughline: the era of frictionless access to frontier AI is ending.
 - [OpenAI's Jalapeño Chip, Anthropic's Claude Tag for Slack, and Cursor's Agent-Native Git Platform](https://briefing.ambient-advantage.ai/2026-06-25.html) — Thursday · June 25, 2026 · This edition covers twelve stories across infrastructure, agentic AI, security, research, and enterprise. The throughline: owning the model is table stakes now. Owning the workflow is the real game. Let's get into it.
 - [Fable 5 Ban Fallout, Five Eyes Cyber Warning, and Sakana's Multi-Model Hedge](https://briefing.ambient-advantage.ai/2026-06-24.html) — Wednesday · June 24, 2026 · The throughline today is resilience — or the lack of it. The organisations that treated AI as a single API call from a single vendor are scrambling; the ones building for optionality are pulling ahead. Here's what matters.
