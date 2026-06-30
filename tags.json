@@ -1,25 +1,25 @@
 {
- "generated": "2026-06-29",
+ "generated": "2026-06-30",
  "companies": [
   {
    "tag": "Anthropic",
-   "count": 238,
-   "last_seen": "2026-06-29"
+   "count": 242,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "OpenAI",
-   "count": 231,
-   "last_seen": "2026-06-29"
+   "count": 236,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Google",
-   "count": 125,
-   "last_seen": "2026-06-29"
+   "count": 128,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Microsoft",
-   "count": 86,
-   "last_seen": "2026-06-25"
+   "count": 87,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Amazon",
@@ -28,28 +28,28 @@
   },
   {
    "tag": "Meta",
-   "count": 42,
-   "last_seen": "2026-06-19"
+   "count": 44,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Nvidia",
-   "count": 38,
-   "last_seen": "2026-06-04"
+   "count": 42,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "xAI",
-   "count": 23,
-   "last_seen": "2026-06-19"
+   "count": 25,
+   "last_seen": "2026-06-30"
+  },
+  {
+   "tag": "Cursor",
+   "count": 20,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Apple",
    "count": 19,
    "last_seen": "2026-06-29"
-  },
-  {
-   "tag": "Cursor",
-   "count": 18,
-   "last_seen": "2026-06-25"
   },
   {
    "tag": "X",
@@ -60,6 +60,11 @@
    "tag": "Cerebras",
    "count": 11,
    "last_seen": "2026-06-01"
+  },
+  {
+   "tag": "SpaceX",
+   "count": 11,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "PwC",
@@ -75,11 +80,6 @@
    "tag": "McKinsey",
    "count": 9,
    "last_seen": "2026-06-18"
-  },
-  {
-   "tag": "SpaceX",
-   "count": 9,
-   "last_seen": "2026-06-25"
   },
   {
    "tag": "Mistral",
@@ -117,6 +117,11 @@
    "last_seen": "2026-06-18"
   },
   {
+   "tag": "Broadcom",
+   "count": 5,
+   "last_seen": "2026-06-30"
+  },
+  {
    "tag": "ElevenLabs",
    "count": 5,
    "last_seen": "2026-06-25"
@@ -130,11 +135,6 @@
    "tag": "Anysphere",
    "count": 4,
    "last_seen": "2026-06-19"
-  },
-  {
-   "tag": "Broadcom",
-   "count": 4,
-   "last_seen": "2026-06-26"
   },
   {
    "tag": "Palantir",
@@ -175,6 +175,11 @@
    "tag": "Alibaba",
    "count": 2,
    "last_seen": "2026-06-26"
+  },
+  {
+   "tag": "Cisco",
+   "count": 2,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "ClickUp",
@@ -307,11 +312,6 @@
    "last_seen": "2026-06-23"
   },
   {
-   "tag": "Cisco",
-   "count": 1,
-   "last_seen": "2026-06-23"
-  },
-  {
    "tag": "Cornell Tech",
    "count": 1,
    "last_seen": "2026-06-22"
@@ -440,28 +440,28 @@
  "themes": [
   {
    "tag": "Enterprise Adoption",
-   "count": 467,
-   "last_seen": "2026-06-29"
+   "count": 473,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Agentic AI",
-   "count": 259,
-   "last_seen": "2026-06-29"
+   "count": 261,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Research",
-   "count": 160,
-   "last_seen": "2026-06-29"
+   "count": 164,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Coding & Dev Tools",
-   "count": 150,
-   "last_seen": "2026-06-29"
+   "count": 151,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Infrastructure & Compute",
-   "count": 135,
-   "last_seen": "2026-06-29"
+   "count": 139,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Funding & Valuations",
@@ -470,8 +470,8 @@
   },
   {
    "tag": "Policy",
-   "count": 116,
-   "last_seen": "2026-06-29"
+   "count": 120,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Governance",
@@ -480,13 +480,13 @@
   },
   {
    "tag": "Security",
-   "count": 101,
-   "last_seen": "2026-06-29"
+   "count": 103,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Regulation",
-   "count": 90,
-   "last_seen": "2026-06-29"
+   "count": 91,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Data",
@@ -495,13 +495,13 @@
   },
   {
    "tag": "Models & Releases",
-   "count": 84,
-   "last_seen": "2026-06-29"
+   "count": 88,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Talent & Workforce",
-   "count": 83,
-   "last_seen": "2026-06-29"
+   "count": 84,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Financial Services",
@@ -510,8 +510,8 @@
   },
   {
    "tag": "Safety",
-   "count": 56,
-   "last_seen": "2026-06-29"
+   "count": 58,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Voice & Multimodal",
@@ -545,8 +545,8 @@
   },
   {
    "tag": "Robotics",
-   "count": 7,
-   "last_seen": "2026-06-03"
+   "count": 9,
+   "last_seen": "2026-06-30"
   },
   {
    "tag": "Interpretability",

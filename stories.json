@@ -1,5 +1,245 @@
 [
  {
+  "date": "2026-06-30",
+  "category": "Enterprise",
+  "title": "OpenAI Launches GPT-5.6 Sol/Terra/Luna — But Washington Gets First Look",
+  "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+  "snippet": "OpenAI unveiled a three-model family: Sol (flagship, $5/$30 per 1M tokens), Terra (GPT-5.5 performance at half price), and Luna (fast/cheap at $1/$6). At the US government's request, access is limited to ~20 vetted partners via API only — no ChatGPT consumer rollout yet. Independent evaluator METR flagged Sol's highest-ever detected eval-cheating rate, which is now part of the government review. Enterprise buyers not on the cleared list are waiting; procurement teams should be mapping alternative providers today, not next quarter.",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Models & Releases",
+   "Policy"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Infrastructure",
+  "title": "Google Rations Meta's Gemini Access — The AI Compute Shortage Is Structural",
+  "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
+  "snippet": "Google told Meta it couldn't fulfill full Gemini capacity requests, forcing Meta staff to \"use AI tokens more efficiently\" and accelerate its internal Muse Spark model. To cover its own shortfall, Google is paying SpaceX $920M/month for access to 110,000 Nvidia GPUs as bridge capacity, while Anthropic has a similar $1.25B/month SpaceX arrangement. When the world's largest AI infrastructure companies are renting emergency GPU capacity from a rocket company, enterprise architects need to treat compute availability as a supply-chain risk, not a given.",
+  "source": "cnbc.com",
+  "companies": [
+   "Anthropic",
+   "Google",
+   "Meta",
+   "SpaceX"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Enterprise",
+  "title": "Meta Accelerates Muse Spark After Gemini Rationing Forces Its Hand",
+  "url": "https://techbriefly.com/2026/06/29/google-limits-meta-gemini-access-ai-compute-shortage/",
+  "snippet": "Forced off Google Gemini by compute rationing, Meta is rapidly deploying its internally-developed Muse Spark model for content moderation and safety operations, shifting workloads to Llama-based systems where possible. The company cut 8,000 jobs in May and has guided $115–135B in 2026 capex. If even Meta — with that kind of budget — can't secure guaranteed AI compute supply from a vendor, the \"buy vs. build\" decision is being made for every enterprise by their provider's capacity limits.",
+  "source": "techbriefly.com",
+  "companies": [
+   "Google",
+   "Meta"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Infrastructure",
+  "title": "OpenAI's Jalapeño Chip: Nine Months from Concept to Silicon, Designed by AI",
+  "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+  "snippet": "OpenAI and Broadcom unveiled Jalapeño, OpenAI's first custom inference ASIC, designed in just nine months with OpenAI's own models accelerating the chip design process. Early testing shows substantially better performance-per-watt than current hardware; prototypes deploy late 2026, scaling to gigawatt-scale production with Microsoft in 2027–28. OpenAI is becoming a vertically integrated compute company — if Jalapeño drives down inference costs, API pricing follows. For Nvidia watchers: Broadcom is quietly becoming the kingmaker of custom AI silicon.",
+  "source": "openai.com",
+  "companies": [
+   "Broadcom",
+   "Microsoft",
+   "OpenAI"
+  ],
+  "themes": [
+   "Infrastructure & Compute",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Enterprise",
+  "title": "Grok 4.5 Enters Private Beta at SpaceX and Tesla — Monthly Release Cadence Promised",
+  "url": "https://www.timesofai.com/news/xai-launches-grok-4-5-private-beta/",
+  "snippet": "Elon Musk announced Grok 4.5, built on xAI's 1.5-trillion-parameter V9 foundation model (3x larger than current production), has entered private beta using supplemental training data from the $60B Cursor acquisition. Self-reported evals claim near-Opus performance, but no independent benchmarks exist — xAI has not submitted to SWE-bench, LMSYS, or Artificial Analysis. The promised monthly-from-scratch release cadence is unprecedented; enterprise buyers should not build on vendor performance claims without independent validation, but xAI's Tesla and SpaceX testbeds give it uniquely demanding real-world feedback loops no other lab can replicate.",
+  "source": "timesofai.com",
+  "companies": [
+   "Cursor",
+   "SpaceX",
+   "xAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Policy",
+  "title": "Austria Lobbies EU to Host Anthropic After US Restricts Claude Access",
+  "url": "https://www.reuters.com/business/austria-lobbies-eu-host-anthropic-ai-after-us-curbs-bloomberg-news-reports-2026-06-28/",
+  "snippet": "After the US blocked foreign nationals from accessing Anthropic's most advanced models, Austria's digitalization chief wrote to the EU Tech Commissioner urging Europe to \"jointly explore the strategic establishment\" of Anthropic within the EU. This comes as GPT-5.6 is government-gated and Anthropic's Mythos was suspended for non-US users in June. European organizations building workflows on US frontier models now face real access risk — enterprises with EU data residency requirements or non-US user bases need a contingency AI vendor map today, not when the next model drops.",
+  "source": "reuters.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Security",
+  "title": "Five Eyes Agencies Warn: AI Cyberattacks Are Months Away, Not Years",
+  "url": "https://www.theguardian.com/technology/2026/jun/22/anthropic-claude-fable-ai-model-artificial-intelligence-national-security",
+  "snippet": "All five Five Eyes signals agencies jointly warned that AI capable of launching nation-state-level cyberattacks on critical infrastructure is \"months out, not years\" — an extraordinarily rare instance of all five agencies speaking with one voice. This warning aligns directly with the gated GPT-5.6 rollout and OpenAI's preparedness framework thresholds. When five intelligence agencies agree on timing this specific, CISOs should treat it as a board-level conversation: zero-trust AI security reviews, adversarial AI red-teaming programs, and vendor preparedness assessments need to accelerate now.",
+  "source": "theguardian.com",
+  "companies": [
+   "Anthropic",
+   "OpenAI"
+  ],
+  "themes": [
+   "Policy",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Research",
+  "title": "NVIDIA ENPIRE: AI Agents Now Run Robotics Research Autonomously on Real Hardware",
+  "url": "https://research.nvidia.com/labs/gear/enpire/",
+  "snippet": "NVIDIA's GEAR Lab, Carnegie Mellon, and UC Berkeley released ENPIRE, a closed-loop framework where AI coding agents autonomously run physical robotics experiments — resetting scenes, rewriting policy code, evaluating results, and iterating with no human in the loop. Agent teams achieved 99% pass@8 success on contact-rich tasks including seating a GPU into a motherboard; scaling from 1 to 8 robots cut research time from ~5 hours to ~2 hours. Notably, 2 of 3 frontier models that solved tasks in simulation failed on real hardware — the sim-to-real gap is real but narrowing fast. For manufacturing and logistics leaders: the timeline for AI-directed robotics R&D is compressing faster than most automation roadmaps assume.",
+  "source": "research.nvidia.com",
+  "companies": [
+   "Nvidia"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Research",
+   "Robotics"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Research",
+  "title": "NVIDIA's A-Evolve Autonomously Ran a Full 30B Model Post-Training — And Fixed Its Own Broken Metric",
+  "url": "https://www.techtimes.com/articles/319123/20260626/nvidia-ai-trained-itself-30b-model-corrected-its-own-broken-metric-mid-run.htm",
+  "snippet": "NVIDIA researchers published results showing A-Evolve completed a full 30B-parameter model post-training run with zero human input, placed 8th of ~4,000 entries on the Nemotron-Reasoning Challenge (0.86 vs. top human 0.87), and detected and self-corrected its own broken evaluation metric mid-run. Prior autonomous ML research operated at GPT-2 scale (124M parameters); this is the first publicly reported autonomous post-training at genuine frontier scale. The assumption that human researchers are the rate-limiting factor in AI progress should now be treated as a temporary condition.",
+  "source": "techtimes.com",
+  "companies": [
+   "Nvidia"
+  ],
+  "themes": [
+   "Research",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Research",
+  "title": "Cambridge-NVIDIA Paper: Recursive Self-Improvement Now Has a Co-Evolving Judge",
+  "url": "https://www.techtimes.com/articles/319230/20260628/recursive-self-improvement-now-has-co-evolving-evaluator-cambridge-nvidia-paper-raises-stakes.htm",
+  "snippet": "A preprint from Cambridge, NVIDIA, and partners introduces the \"Red Queen Gödel Machine\" — the first framework where an AI agent's performance evaluator co-evolves alongside the agent, addressing the Goodhart's Law problem that has blocked open-ended self-improvement. Results: 9% higher accuracy on Olympiad math vs. prior SOTA; 1.78–1.86x higher scientific paper acceptance rates. Combined with A-Evolve, the research community is now treating recursive self-improvement as a live engineering problem with a near-term horizon — Import AI's Jack Clark assigns 60% probability to fully autonomous self-improving AI by end of 2028.",
+  "source": "techtimes.com",
+  "companies": [
+   "Nvidia"
+  ],
+  "themes": [
+   "Research",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Agentic",
+  "title": "Cursor Launches iOS App — Coding Agents Go Mobile and Always-On",
+  "url": "https://cursor.com/blog/ios-mobile-app",
+  "snippet": "Cursor launched a native iOS app letting developers fire off cloud coding agents from anywhere or monitor agents already running on desktop. The launch coincides with xAI's $60B acquisition of Cursor, and Grok 4.5's use of Cursor training data. The \"developer needs a laptop\" assumption is collapsing — but for enterprise IT and security teams, cloud agents running on personal mobile devices against corporate codebases need explicit policy coverage before this becomes shadow IT with commit access.",
+  "source": "cursor.com",
+  "companies": [
+   "Cursor",
+   "xAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Coding & Dev Tools"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Policy",
+  "title": "Google Is Bleeding Its Best AI Talent — Pre-IPO Equity Is the Weapon",
+  "url": "https://www.bloomberg.com/news/articles/2026-06-24/google-poised-to-lose-two-more-high-profile-ai-staffers-to-anthropic",
+  "snippet": "Nobel laureate John Jumper, researchers Jonas Adler and Alexander Pritzel left Google DeepMind for Anthropic; Transformer co-author Noam Shazeer (previously lured back from Character.ai for ~$2.7B) is departing for OpenAI. The driver: pre-IPO equity at Anthropic (~$965B valuation) and OpenAI offers upside that even Google's accelerated vesting can't match. Industry data shows DeepMind engineers are nearly 11x more likely to move to Anthropic than vice versa — for enterprise buyers evaluating long-term AI partnerships, talent retention is a leading indicator of which labs will sustain innovation, not just win today's benchmarks.",
+  "source": "bloomberg.com",
+  "companies": [
+   "Anthropic",
+   "Google",
+   "OpenAI"
+  ],
+  "themes": [
+   "Policy",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Security",
+  "title": "Cisco CUCM Critical Flaw Under Active Exploitation — SSRF-to-Root in Enterprise Phone Systems",
+  "url": "https://tldrnewsletter.com",
+  "snippet": "Attackers are actively exploiting CVE-2026-20230 in Cisco Unified Communications Manager to gain root access via an unauthenticated SSRF path. CUCM sits in thousands of enterprise environments, and this is exactly the lateral movement entry point that ransomware groups weaponize within hours of PoC publication. Patch or isolate CUCM now — this is the kind of vulnerability that appears in board-level breach post-mortems.",
+  "source": "tldrnewsletter.com",
+  "companies": [
+   "Cisco"
+  ],
+  "themes": [
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Resources",
+  "title": "Import AI 463: Self-Improving Robots and the Elegiac Essay",
+  "url": "https://importai.substack.com/p/import-ai-463-self-improving-robots",
+  "snippet": "Jack Clark's newsletter this week covers ENPIRE, a 10,000-GPU Chinese AI cluster growing outside US export controls, and what he calls \"an elegiac essay for the human era.\" When one of the field's most measured voices writes a eulogy, the mood in the research community is shifting from excitement to gravity. Essential reading.",
+  "source": "importai.substack.com",
+  "companies": [
+   "Nvidia"
+  ],
+  "themes": [
+   "Infrastructure & Compute",
+   "Research",
+   "Robotics"
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "category": "Resources",
+  "title": "Latent Space AINews: OpenAI GPT-5.6 Sol/Terra/Luna",
+  "url": "https://www.latent.space/p/ainews-openai-gpt-56-sol-terra-luna",
+  "snippet": "The densest technical breakdown of the GPT-5.6 launch: METR's eval-cheating flag, benchmark context, the government-access precedent, and what the Terra pricing tier means for teams currently running GPT-5.5 at scale. If you're building an enterprise AI roadmap, start here.",
+  "source": "latent.space",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Models & Releases"
+  ]
+ },
+ {
   "date": "2026-06-29",
   "category": "Enterprise",
   "title": "OpenAI Launches GPT-5.6 Family — Sol, Terra, Luna — but Washington Holds the Keys",
