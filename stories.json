@@ -1,5 +1,207 @@
 [
  {
+  "date": "2026-07-01",
+  "category": "Agentic",
+  "title": "Claude Sonnet 5 Launches as the Default — Near-Opus Agentic Performance at 40% Lower Cost",
+  "url": "https://www.anthropic.com/news/claude-sonnet-5",
+  "snippet": "Anthropic made Sonnet 5 the default model across Free, Pro, Max, Team, Enterprise, GitHub Copilot, and AWS Bedrock, delivering 63.2% on agentic coding benchmarks versus Opus 4.8's 69.2% — at introductory pricing of $2/$10 per million tokens through August 31. Zapier confirmed it completes two-part Salesforce + email workflows end-to-end where prior Sonnet versions stalled. For enterprise teams running multi-step automation: this is the moment agentic AI goes from flagship luxury to production default — but watch the revised tokenizer (1.0–1.35x expansion) before assuming cost savings at scale.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic",
+   "Zapier"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-07-01",
+  "category": "Policy",
+  "title": "GPT-5.6 Sol Launches in Government-Gated Preview — Frontier Intelligence, Restricted Access",
+  "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+  "snippet": "OpenAI released GPT-5.6 as a three-tier family — Sol ($5/$30), Terra ($2.50/$15), Luna ($1/$6) — but under a Trump executive order requiring federal benchmarking before broad release, limiting access to roughly 20 government-vetted organizations via API only. Sol introduces \"ultra mode\" with multi-agent subagents and ships on Cerebras hardware in July at up to 750 tokens/second. The era of frontier models launching directly to the public may be ending — and for enterprise buyers, \"trusted partner\" status is now a procurement variable, not a nice-to-have.",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Models & Releases",
+   "Policy"
+  ]
+ },
+ {
+  "date": "2026-07-01",
+  "category": "Infrastructure",
+  "title": "Etched Exits Stealth — $800M Raised, $1B+ in Orders, Working Inference Chip on TSMC N4P",
+  "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
+  "snippet": "Etched came out of stealth with a working AI inference chip, $800M raised at a $5B valuation, and over $1B in signed customer contracts — backed by Peter Thiel, Jane Street, Geoffrey Hinton, and Andrej Karpathy. The company claims 20x throughput over Nvidia H100s using fixed-function attention circuits, with gigawatt-scale ambitions by 2027. If independent benchmarks confirm the claims when production racks ship this summer, the inference infrastructure conversation shifts from \"which GPU\" to \"do we need GPUs at all.\"",
+  "source": "techcrunch.com",
+  "companies": [
+   "Etched",
+   "Nvidia"
+  ],
+  "themes": [
+   "Funding & Valuations",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-07-01",
+  "category": "Infrastructure",
+  "title": "DeepSeek Open-Sources DSpark — 60–85% Faster Inference, No New Hardware Required",
+  "url": "https://venturebeat.com/orchestration/deepseek-open-sources-dspark-a-new-framework-to-speed-up-llm-inference-by-up-to-85",
+  "snippet": "DeepSeek released DSpark under MIT license, a speculative decoding framework that makes existing models generate 60–85% faster per user without retraining or new chips, using a confidence-scheduled draft-and-verify approach. It works on DeepSeek-V4, Alibaba's Qwen, and Google's Gemma families. Motley Fool flagged this directly undercuts Nvidia's strategy of selling dedicated decode racks — for any enterprise running open-weight models, this is an immediate operational cost win delivered as a software update.",
+  "source": "venturebeat.com",
+  "companies": [
+   "DeepSeek",
+   "Nvidia"
+  ],
+  "themes": [
+   "Infrastructure & Compute",
+   "Open Source"
+  ]
+ },
+ {
+  "date": "2026-07-01",
+  "category": "Agentic",
+  "title": "Devin Fusion — Multi-Model Agentic Harness Cuts Coding Costs 35%",
+  "url": "https://cognition.com/blog/devin-fusion",
+  "snippet": "Cognition released Devin Fusion, a dual-agent architecture that dynamically routes between a frontier \"main agent\" and a cheaper \"sidekick\" model mid-session based on task difficulty, cutting costs 35% versus Opus 4.8 alone while maintaining frontier-level performance. Internally, 88% of Cognition's merged pull requests were handled entirely by the automated router. The implication for enterprise AI teams is sharp: frontier model cost is now a design variable, not a fixed overhead — and the published \"sidekick\" pattern is available for any agent builder to adopt.",
+  "source": "cognition.com",
+  "companies": [
+   "Cognition"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Coding & Dev Tools"
+  ]
+ },
+ {
+  "date": "2026-07-01",
+  "category": "Enterprise",
+  "title": "Anthropic Launches Claude Science — Every AI Result Traced to Its Code and Data",
+  "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+  "snippet": "Anthropic shipped Claude Science, a dedicated research workbench where every output is traceable back to the underlying code and data that produced it — full provenance, not just citations. This directly targets the \"black box\" blocker that has kept AI out of regulated R&D in pharma, life sciences, and engineering. For enterprise buyers who need to defend AI-generated results to regulators or internal governance boards, this is the first purpose-built tool that treats auditability as a core feature rather than an afterthought.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Governance",
+   "Healthcare"
+  ]
+ },
+ {
+  "date": "2026-07-01",
+  "category": "Policy",
+  "title": "Austria Lobbies EU to Host Anthropic After US Blocks Foreign Access to Top Models",
+  "url": "https://www.reuters.com/business/austria-lobbies-eu-host-anthropic-ai-after-us-curbs-bloomberg-news-reports-2026-06-28/",
+  "snippet": "Following US suspension of foreign access to Anthropic's most advanced models, Austria's State Secretary for Digitalization formally urged the EU to explore hosting Anthropic within Europe — the first concrete sovereign AI move triggered by US export restrictions on allied nations. Anthropic remains in a standoff with the US Department of War over safety guardrails around surveillance and autonomous weapons. European enterprises relying on cutting-edge Claude models now face real continuity risk, and AI procurement in regulated European industries carries a sovereign risk dimension that didn't exist six months ago.",
+  "source": "reuters.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-07-01",
+  "category": "Agentic",
+  "title": "Cursor Launches iOS App — Always-On Cloud Agents Now Controllable From Your Pocket",
+  "url": "https://cursor.com/blog/ios-mobile-app",
+  "snippet": "Cursor shipped a native iOS app enabling developers to launch, supervise, and steer cloud coding agents from their iPhones with real-time Live Activity notifications, as the company reportedly moves toward a SpaceX/xAI acquisition closing in Q3 2026. The launch tweet hit 2.3 million views within hours. For CTOs: when a developer can deploy code changes via autonomous agent from their phone, your approval workflows, audit logs, and rollback protocols all need updating — mobile-first agent oversight is arriving faster than most enterprise IT policies anticipated.",
+  "source": "cursor.com",
+  "companies": [
+   "Anysphere",
+   "xAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Coding & Dev Tools"
+  ]
+ },
+ {
+  "date": "2026-07-01",
+  "category": "Enterprise",
+  "title": "Google Ships Nano Banana 2 Lite and Omni Flash — Creative AI Enters the Developer API",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite",
+  "snippet": "Google released two Gemini-family models: Nano Banana 2 Lite (faster, personalized image generation, free to US users) and Omni Flash (AI video generation and editing now open to developers via API). Omni Flash entering the developer tier means programmatic video workflows are now viable within existing Google Cloud contracts. For marketing, content, and media teams evaluating AI video tools, this is the moment to assess whether Google's integrated stack beats standalone video-AI vendors on cost and compliance.",
+  "source": "blog.google",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Models & Releases",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-07-01",
+  "category": "Research",
+  "title": "Meta Brain2Qwerty v2 — Non-Invasive Brain-to-Text Hits 61% Accuracy in Nature Neuroscience",
+  "url": "https://facebookresearch.github.io/brain2qwerty/",
+  "snippet": "Meta published Brain2Qwerty v2, a non-invasive brain-to-text system using MEG headsets that achieves 61% accuracy — the best published result for non-surgical brain-computer interfaces — trained on 22,000 sentences across 10 participants. Accuracy improves log-linearly with data volume, suggesting non-invasive approaches could converge with surgical implant performance purely through scale. Early-stage but directionally significant for accessibility, healthcare, and industrial hands-free interface applications — medtech and accessibility-focused enterprise teams should track the scaling curve.",
+  "source": "facebookresearch.github.io",
+  "companies": [
+   "Meta"
+  ],
+  "themes": [
+   "Healthcare",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-07-01",
+  "category": "Security",
+  "title": "Open-Weight AI Models Are Becoming Cybersecurity's Wild Card",
+  "url": "https://mindstream.news",
+  "snippet": "Flashpoint's 2026 Global Threat Intelligence Report documents a 1,500% surge in AI-related threats, with attackers transitioning from generative AI to autonomous agents capable of executing end-to-end attacks without human intervention — and 3.3 billion compromised credentials now in circulation. Open-weight models, freely downloadable with no safety guardrails, are the primary enabler. The same models that reduce enterprise AI costs are simultaneously lowering the bar for threat actors — security teams that haven't updated their threat models to include AI-assisted autonomous attack pipelines are already behind.",
+  "source": "mindstream.news",
+  "companies": [],
+  "themes": [
+   "Open Source",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-07-01",
+  "category": "Enterprise",
+  "title": "Google Losing Best AI Talent to Anthropic and OpenAI — Pre-IPO Equity the Culprit",
+  "url": "https://www.businessinsider.com/google-suddenly-losing-ai-talent-anthropic-openai-pre-ipo-equity-2026-6",
+  "snippet": "Business Insider reports accelerating attrition of Google's top AI researchers to Anthropic and OpenAI, driven by pre-IPO equity packages that Google's public stock structure simply cannot match. This talent concentration at the startup labs will compound into research output advantages over 12–18 months. If you're building on Google's model stack, assess the continuity of its capability roadmap; if you're evaluating model providers, expect Anthropic and OpenAI to maintain their edge longer than previous cycles suggested.",
+  "source": "businessinsider.com",
+  "companies": [
+   "Anthropic",
+   "Google",
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-07-01",
+  "category": "Research",
+  "title": "NVIDIA ENPIRE — Self-Improving Robots via Agentic Feedback Loops in the Physical World",
+  "url": "https://importai.substack.com/p/import-ai-463-self-improving-robots",
+  "snippet": "NVIDIA researchers published ENPIRE, a framework that brings the autonomous self-improvement loops used in software coding agents to physical robotics — auto-reset, iterative policy refinement, multi-robot evaluation, and physical deployment in a closed loop. Jack Clark frames it as a preview of how a superintelligent system might instantiate itself physically. For enterprise teams in warehouse automation and industrial robotics: the architectural pattern of autonomous physical feedback loops is the thing to track as it moves from research to production over the next 12–24 months.",
+  "source": "importai.substack.com",
+  "companies": [
+   "Nvidia"
+  ],
+  "themes": [
+   "Research",
+   "Robotics"
+  ]
+ },
+ {
   "date": "2026-06-30",
   "category": "Enterprise",
   "title": "OpenAI Launches GPT-5.6 Sol/Terra/Luna — But Washington Gets First Look",

@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-07-01",
+    "headline": "Claude Sonnet 5 Goes Default, GPT-5.6 Gets Government-Gated, and Etched Exits Stealth",
+    "snippet": "This edition covers thirteen stories across model launches, inference breakthroughs, geopolitical access restrictions, and a brain-computer interface that just hit 61% accuracy without surgery.",
+    "read_time": 8
+  },
+  {
     "date": "2026-06-30",
     "headline": "GPT-5.6's Government-Gated Launch, Google Rations Meta's AI Compute, and OpenAI Goes Full-Stack on Silicon",
     "snippet": "This edition covers thirteen stories across enterprise, infrastructure, research, security, and policy.",

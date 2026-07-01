@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Claude Sonnet 5 Goes Default, GPT-5.6 Gets Government-Gated, and Etched Exits Stealth](https://briefing.ambient-advantage.ai/2026-07-01.html) — Wednesday · July 1, 2026 · This edition covers thirteen stories across model launches, inference breakthroughs, geopolitical access restrictions, and a brain-computer interface that just hit 61% accuracy without surgery.
 - [GPT-5.6's Government-Gated Launch, Google Rations Meta's AI Compute, and OpenAI Goes Full-Stack on Silicon](https://briefing.ambient-advantage.ai/2026-06-30.html) — Tuesday · June 30, 2026 · This edition covers thirteen stories across enterprise, infrastructure, research, security, and policy.
 - [GPT-5.6's Government-Gated Launch, Claude Fable Still Dark, and Five Eyes Sound the AI Alarm](https://briefing.ambient-advantage.ai/2026-06-29.html) — Monday · June 29, 2026 · This edition covers fifteen stories across enterprise, policy, security, research, and infrastructure.
 - [White House Gates GPT-5.6, Alibaba's Massive Distillation Attack, and OpenAI's Custom Chip](https://briefing.ambient-advantage.ai/2026-06-26.html) — Friday · June 26, 2026 · This edition covers twelve stories across policy, security, infrastructure, agentic AI, and enterprise. The throughline: the era of frictionless access to frontier AI is ending.

@@ -1,20 +1,20 @@
 {
- "generated": "2026-06-30",
+ "generated": "2026-07-01",
  "companies": [
   {
    "tag": "Anthropic",
-   "count": 242,
-   "last_seen": "2026-06-30"
+   "count": 246,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "OpenAI",
-   "count": 236,
-   "last_seen": "2026-06-30"
+   "count": 238,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Google",
-   "count": 128,
-   "last_seen": "2026-06-30"
+   "count": 130,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Microsoft",
@@ -28,18 +28,18 @@
   },
   {
    "tag": "Meta",
-   "count": 44,
-   "last_seen": "2026-06-30"
+   "count": 45,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Nvidia",
-   "count": 42,
-   "last_seen": "2026-06-30"
+   "count": 45,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "xAI",
-   "count": 25,
-   "last_seen": "2026-06-30"
+   "count": 26,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Cursor",
@@ -67,14 +67,14 @@
    "last_seen": "2026-06-30"
   },
   {
+   "tag": "DeepSeek",
+   "count": 10,
+   "last_seen": "2026-07-01"
+  },
+  {
    "tag": "PwC",
    "count": 10,
    "last_seen": "2026-05-12"
-  },
-  {
-   "tag": "DeepSeek",
-   "count": 9,
-   "last_seen": "2026-06-18"
   },
   {
    "tag": "McKinsey",
@@ -117,6 +117,11 @@
    "last_seen": "2026-06-18"
   },
   {
+   "tag": "Anysphere",
+   "count": 5,
+   "last_seen": "2026-07-01"
+  },
+  {
    "tag": "Broadcom",
    "count": 5,
    "last_seen": "2026-06-30"
@@ -130,11 +135,6 @@
    "tag": "AMD",
    "count": 4,
    "last_seen": "2026-06-04"
-  },
-  {
-   "tag": "Anysphere",
-   "count": 4,
-   "last_seen": "2026-06-19"
   },
   {
    "tag": "Palantir",
@@ -312,6 +312,11 @@
    "last_seen": "2026-06-23"
   },
   {
+   "tag": "Cognition",
+   "count": 1,
+   "last_seen": "2026-07-01"
+  },
+  {
    "tag": "Cornell Tech",
    "count": 1,
    "last_seen": "2026-06-22"
@@ -320,6 +325,11 @@
    "tag": "DIOSynVax",
    "count": 1,
    "last_seen": "2026-06-08"
+  },
+  {
+   "tag": "Etched",
+   "count": 1,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Figure",
@@ -432,6 +442,11 @@
    "last_seen": "2026-06-19"
   },
   {
+   "tag": "Zapier",
+   "count": 1,
+   "last_seen": "2026-07-01"
+  },
+  {
    "tag": "iRhythm",
    "count": 1,
    "last_seen": "2026-06-17"
@@ -440,53 +455,58 @@
  "themes": [
   {
    "tag": "Enterprise Adoption",
-   "count": 473,
-   "last_seen": "2026-06-30"
+   "count": 477,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Agentic AI",
-   "count": 261,
-   "last_seen": "2026-06-30"
+   "count": 264,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Research",
-   "count": 164,
-   "last_seen": "2026-06-30"
+   "count": 166,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Coding & Dev Tools",
-   "count": 151,
-   "last_seen": "2026-06-30"
+   "count": 153,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Infrastructure & Compute",
-   "count": 139,
-   "last_seen": "2026-06-30"
+   "count": 141,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Funding & Valuations",
-   "count": 133,
-   "last_seen": "2026-06-29"
+   "count": 134,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Policy",
-   "count": 120,
-   "last_seen": "2026-06-30"
+   "count": 122,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Governance",
-   "count": 110,
-   "last_seen": "2026-06-29"
+   "count": 111,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Security",
-   "count": 103,
-   "last_seen": "2026-06-30"
+   "count": 104,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Regulation",
+   "count": 92,
+   "last_seen": "2026-07-01"
+  },
+  {
+   "tag": "Models & Releases",
    "count": 91,
-   "last_seen": "2026-06-30"
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Data",
@@ -494,14 +514,9 @@
    "last_seen": "2026-06-18"
   },
   {
-   "tag": "Models & Releases",
-   "count": 88,
-   "last_seen": "2026-06-30"
-  },
-  {
    "tag": "Talent & Workforce",
-   "count": 84,
-   "last_seen": "2026-06-30"
+   "count": 85,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Financial Services",
@@ -515,8 +530,8 @@
   },
   {
    "tag": "Voice & Multimodal",
-   "count": 47,
-   "last_seen": "2026-06-25"
+   "count": 48,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Compliance",
@@ -525,13 +540,13 @@
   },
   {
    "tag": "Open Source",
-   "count": 41,
-   "last_seen": "2026-06-29"
+   "count": 43,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Healthcare",
-   "count": 33,
-   "last_seen": "2026-06-29"
+   "count": 35,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Canada",
@@ -545,8 +560,8 @@
   },
   {
    "tag": "Robotics",
-   "count": 9,
-   "last_seen": "2026-06-30"
+   "count": 10,
+   "last_seen": "2026-07-01"
   },
   {
    "tag": "Interpretability",
