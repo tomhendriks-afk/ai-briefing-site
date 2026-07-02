@@ -1,25 +1,25 @@
 {
- "generated": "2026-07-01",
+ "generated": "2026-07-02",
  "companies": [
   {
    "tag": "Anthropic",
-   "count": 246,
-   "last_seen": "2026-07-01"
+   "count": 251,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "OpenAI",
-   "count": 238,
-   "last_seen": "2026-07-01"
+   "count": 241,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Google",
-   "count": 130,
-   "last_seen": "2026-07-01"
+   "count": 132,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Microsoft",
-   "count": 87,
-   "last_seen": "2026-06-30"
+   "count": 88,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Amazon",
@@ -27,19 +27,19 @@
    "last_seen": "2026-06-22"
   },
   {
+   "tag": "Nvidia",
+   "count": 46,
+   "last_seen": "2026-07-02"
+  },
+  {
    "tag": "Meta",
    "count": 45,
    "last_seen": "2026-07-01"
   },
   {
-   "tag": "Nvidia",
-   "count": 45,
-   "last_seen": "2026-07-01"
-  },
-  {
    "tag": "xAI",
-   "count": 26,
-   "last_seen": "2026-07-01"
+   "count": 27,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Cursor",
@@ -152,19 +152,24 @@
    "last_seen": "2026-05-20"
   },
   {
+   "tag": "Z.ai",
+   "count": 4,
+   "last_seen": "2026-07-02"
+  },
+  {
    "tag": "Adobe",
    "count": 3,
    "last_seen": "2026-06-26"
   },
   {
+   "tag": "Etched",
+   "count": 3,
+   "last_seen": "2026-07-02"
+  },
+  {
    "tag": "Scale AI",
    "count": 3,
    "last_seen": "2026-05-07"
-  },
-  {
-   "tag": "Z.ai",
-   "count": 3,
-   "last_seen": "2026-06-23"
   },
   {
    "tag": "Zhipu AI",
@@ -287,6 +292,11 @@
    "last_seen": "2026-06-19"
   },
   {
+   "tag": "Andreessen Horowitz",
+   "count": 1,
+   "last_seen": "2026-07-02"
+  },
+  {
    "tag": "Builder.ai",
    "count": 1,
    "last_seen": "2026-06-22"
@@ -327,14 +337,14 @@
    "last_seen": "2026-06-08"
   },
   {
-   "tag": "Etched",
-   "count": 1,
-   "last_seen": "2026-07-01"
-  },
-  {
    "tag": "Figure",
    "count": 1,
    "last_seen": "2026-05-26"
+  },
+  {
+   "tag": "Ford",
+   "count": 1,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Harvey",
@@ -455,13 +465,13 @@
  "themes": [
   {
    "tag": "Enterprise Adoption",
-   "count": 477,
-   "last_seen": "2026-07-01"
+   "count": 482,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Agentic AI",
-   "count": 264,
-   "last_seen": "2026-07-01"
+   "count": 266,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Research",
@@ -475,38 +485,38 @@
   },
   {
    "tag": "Infrastructure & Compute",
-   "count": 141,
-   "last_seen": "2026-07-01"
+   "count": 145,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Funding & Valuations",
-   "count": 134,
-   "last_seen": "2026-07-01"
+   "count": 136,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Policy",
-   "count": 122,
-   "last_seen": "2026-07-01"
+   "count": 126,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Governance",
-   "count": 111,
-   "last_seen": "2026-07-01"
+   "count": 113,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Security",
-   "count": 104,
-   "last_seen": "2026-07-01"
-  },
-  {
-   "tag": "Regulation",
-   "count": 92,
-   "last_seen": "2026-07-01"
+   "count": 106,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Models & Releases",
-   "count": 91,
-   "last_seen": "2026-07-01"
+   "count": 94,
+   "last_seen": "2026-07-02"
+  },
+  {
+   "tag": "Regulation",
+   "count": 93,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Data",
@@ -515,8 +525,8 @@
   },
   {
    "tag": "Talent & Workforce",
-   "count": 85,
-   "last_seen": "2026-07-01"
+   "count": 86,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Financial Services",
@@ -525,28 +535,28 @@
   },
   {
    "tag": "Safety",
-   "count": 58,
-   "last_seen": "2026-06-30"
+   "count": 60,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Voice & Multimodal",
-   "count": 48,
-   "last_seen": "2026-07-01"
+   "count": 50,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Compliance",
-   "count": 43,
-   "last_seen": "2026-06-24"
+   "count": 44,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Open Source",
-   "count": 43,
-   "last_seen": "2026-07-01"
+   "count": 44,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Healthcare",
-   "count": 35,
-   "last_seen": "2026-07-01"
+   "count": 36,
+   "last_seen": "2026-07-02"
   },
   {
    "tag": "Canada",

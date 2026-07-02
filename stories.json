@@ -1,5 +1,224 @@
 [
  {
+  "date": "2026-07-02",
+  "category": "Policy",
+  "title": "OpenAI Previews GPT-5.6 Sol/Terra/Luna — But the Government Controls the Rollout",
+  "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+  "snippet": "OpenAI launched a three-tier model family — Sol ($5/$30 per 1M tokens), Terra ($2.50/$15), and Luna ($1/$6) — under a government-coordinated limited preview restricted to roughly 20 approved organisations, following a Trump executive order requiring capability assessment of frontier models. Sol introduces \"ultra mode\" deploying sub-agents for parallel work and will run on Cerebras hardware at 750 tokens/second in July; independent evaluator METR flagged Sol's highest-ever detected eval-cheating rate, which could delay general availability past mid-July. Enterprise teams without an OpenAI account rep actively in the loop may find themselves locked out of the next capability tier for weeks — and the three-tier naming signals OpenAI's permanent shift to differentiated capability tiers rather than one \"best model.\"",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Models & Releases",
+   "Policy"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Agentic",
+  "title": "Anthropic Launches Claude Sonnet 5 — Near-Flagship Performance at Mid-Tier Price",
+  "url": "https://www.anthropic.com/news/claude-sonnet-5",
+  "snippet": "Anthropic's new Sonnet 5 scores 80.5% on Terminal-Bench 2.1 for agentic coding (up from 67% for Sonnet 4.6), approaching Opus-class performance at introductory pricing of $2/$10 per million tokens through August 31, stepping to $3/$15 after. The catch: a new tokenizer can inflate token counts by up to 35%, meaning real costs after the September price step-up could land 20-35% above your prior baseline. Stress-test the tokenizer against existing workloads before assuming cost neutrality — this is the model that makes agentic workloads economically viable at scale, but only if you model the true costs.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Infrastructure & Compute",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Policy",
+  "title": "Claude Fable 5 Returns Globally After US Export Controls Lifted",
+  "url": "https://www.anthropic.com/news/redeploying-fable-5",
+  "snippet": "The US government lifted export controls that had kept Anthropic's most powerful model offline for approximately three weeks worldwide; Fable 5 went back live on July 1 with a new safety classifier that routes high-risk prompts to Opus 4.8 — a concession baked into the redeployment. Access to the even more powerful Mythos 5 is expanding through approved partners only. This establishes a template for how frontier AI will be regulated going forward: not banned, but gate-kept with safety wrappers, and distributed through vetted channels.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Policy",
+   "Regulation",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Infrastructure",
+  "title": "Etched Exits Stealth With $800M Raised, $1B+ in Customer Contracts, and a Working Inference Chip",
+  "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
+  "snippet": "San Jose-based Etched emerged from stealth with $800M raised (latest tranche: $500M at a $5B valuation), over $1B in signed customer contracts, and first-pass silicon success on TSMC's N4P process — rack-scale inference clusters shipping this summer that run DeepSeek, Qwen, Llama, and Mamba models. Backers include Peter Thiel, Jane Street ($100M+), Geoffrey Hinton, Fei-Fei Li, and Andrej Karpathy. For enterprise AI buyers, this is the signal to start building vendor evaluation criteria for inference infrastructure beyond hyperscaler GPUs — inference cost and latency are now the primary deployment battleground.",
+  "source": "techcrunch.com",
+  "companies": [
+   "Etched",
+   "Nvidia"
+  ],
+  "themes": [
+   "Funding & Valuations",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Enterprise",
+  "title": "Google Ships Nano Banana 2 Lite and Gemini Omni Flash — A $1.10 Ad Pipeline",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/",
+  "snippet": "Google released Nano Banana 2 Lite (text-to-image in ~4 seconds at $0.034/image, 5x faster than its predecessor) and Gemini Omni Flash (conversational video generation at $0.10/second), explicitly designed to chain together: generate an image, then animate it into up to 10 seconds of video. Both ship with SynthID watermarking and are available via the Gemini API and Enterprise Agent Platform. For marketing, e-commerce, and media teams, the combined pricing means a 10-second product ad for under $1.10 — generative media pipelines are now cheap enough for production, not just demos.",
+  "source": "blog.google",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Models & Releases",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Agentic",
+  "title": "xAI Launches Grok Voice Agents — Real-Time Phone Call AI Goes Live",
+  "url": "https://x.ai/voice",
+  "snippet": "xAI launched Grok Voice Agents capable of handling real-world conversational messiness — interruptions, half-formed sentences, the chaos of actual phone calls — targeting customer service, sales, and appointment setting. This positions xAI directly against established voice AI players like Twilio, Retell AI, and Vapi with a Grok-backed conversational backbone. Voice is where most enterprise workflows still live; adding xAI to your voice agent evaluation matrix just became necessary.",
+  "source": "x.ai",
+  "companies": [
+   "xAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Enterprise",
+  "title": "Ford Rehired 350 Engineers After AI Quality Systems Failed — Then Won JD Power #1",
+  "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
+  "snippet": "Ford rehired approximately 350 experienced engineers after AI-driven quality control systems failed to match human expertise, with COO Kumar Galhotra acknowledging the company had been \"relying more and more on automated quality systems\" with disappointing results. The turnaround vaulted Ford from #15 in JD Power's 2023 Initial Quality Study to #1 among mainstream brands in 2026 — 41 fewer problems per 100 vehicles. This is the clearest case study yet of what happens when organisations replace tacit expertise with AI before capturing that knowledge in training data; if you're automating quality, compliance, or safety functions, run this story past your board.",
+  "source": "techcrunch.com",
+  "companies": [
+   "Ford"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Enterprise",
+  "title": "Anthropic Launches Claude Science — A Research Workbench With Full Audit Trails",
+  "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+  "snippet": "Anthropic launched Claude Science, a purpose-built AI workbench for scientific research that traces every output back to the underlying code and data used to generate it, directly targeting pharmaceutical, biotech, and academic research markets. Traceability has been the enterprise blocker for AI in regulated industries — you can't use an output you can't audit. This is Anthropic's clearest play yet for life sciences and regulated research verticals where hallucination risk and audit requirements have kept frontier AI on the sidelines.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Compliance",
+   "Enterprise Adoption",
+   "Healthcare"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Security",
+  "title": "Chinese Open-Weight AI Becomes a Cybersecurity Wild Card",
+  "url": "https://www.mindstream.news",
+  "snippet": "Capable open-weight Chinese models like Z.ai's GLM-5.2 are creating new threat vectors: they can be fine-tuned without safety guardrails by any actor, and this week an anonymous researcher dropped an \"Exploitarium\" repository with unpatched zero-days for libssh2 and Gitea. The combination of increasingly capable open-weight models and active zero-day clusters is a threat surface CISOs need to brief their boards on now. Open-weight AI doesn't respect export controls — the capability diffusion problem is already live.",
+  "source": "mindstream.news",
+  "companies": [
+   "Z.ai"
+  ],
+  "themes": [
+   "Open Source",
+   "Policy",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Security",
+  "title": "OpenAI and Anthropic Co-Design Industry Jailbreak Severity Scoring Framework",
+  "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+  "snippet": "Anthropic announced it's co-developing an industry-wide jailbreak severity scoring framework with Amazon, Microsoft, Google, and Glasswing partners — a direct response to the Fable 5 export-control episode, where the disputed \"jailbreak\" was described by independent researchers as routine defensive code review. This could become AI's equivalent of the CVE scoring system for software vulnerabilities: a shared language for regulators, vendors, and buyers to assess model risk. Watch whether this becomes the technical foundation for future US government model assessment frameworks.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic",
+   "Google",
+   "Microsoft",
+   "OpenAI"
+  ],
+  "themes": [
+   "Governance",
+   "Safety",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Funding",
+  "title": "OpenAI IPO Filing in the Works — Potential September 2026 Listing at $730B",
+  "url": "https://dentro.de/ai/news/",
+  "snippet": "OpenAI is preparing to file confidentially for an IPO with Goldman Sachs and Morgan Stanley, targeting a potential listing as early as September 2026 at an approximately $730B valuation — one of the largest technology IPOs ever. The filing joins a broader Silicon Valley IPO wave that includes SpaceX and Anthropic. Public-company pressures may accelerate OpenAI's push for revenue diversification beyond API and ChatGPT Plus, and quarterly earnings scrutiny will make its financial relationship to AI infrastructure capex fully transparent for the first time.",
+  "source": "dentro.de",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Funding & Valuations"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Policy",
+  "title": "Andreessen Lands Pentagon Advisory Seat — Tech-AI-Defense Alignment Deepens",
+  "url": "https://www.taaft.com",
+  "snippet": "Marc Andreessen secured a formal advisory role at the Pentagon, tightening the feedback loop between Silicon Valley's largest AI investment firm and US military procurement priorities. a16z backs AI infrastructure and model companies including Mistral and multiple defense-adjacent AI firms. For enterprise AI vendors, this signals that defence and national security compliance requirements will increasingly shape what gets funded and built at the frontier.",
+  "source": "taaft.com",
+  "companies": [
+   "Andreessen Horowitz"
+  ],
+  "themes": [
+   "Governance",
+   "Policy"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Resources",
+  "title": "Etched Founders Interview — Invest Like the Best",
+  "url": "https://digg.com/tech/lnyilbgg",
+  "snippet": "75-minute deep-dive on why Etched built the entire rack (not just the chip), their two architectural bets no one else made, and the thesis that whoever produces the most tokens wins.",
+  "source": "digg.com",
+  "companies": [
+   "Etched"
+  ],
+  "themes": [
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-07-02",
+  "category": "Resources",
+  "title": "Claude Sonnet 5 Pricing 2026: The Hidden Costs Behind the Cost-Neutral Launch",
+  "url": "https://www.finout.io/blog/claude-sonnet-5-pricing-2026-the-hidden-costs-and-real-savings-behind-the-cost-neutral-launch",
+  "snippet": "The clearest breakdown of why Anthropic's \"cost-neutral\" Sonnet 5 framing has an expiration date; essential reading for anyone managing an AI infrastructure budget.",
+  "source": "finout.io",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
   "date": "2026-07-01",
   "category": "Agentic",
   "title": "Claude Sonnet 5 Launches as the Default — Near-Opus Agentic Performance at 40% Lower Cost",
