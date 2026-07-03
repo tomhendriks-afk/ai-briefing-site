@@ -1,5 +1,225 @@
 [
  {
+  "date": "2026-07-03",
+  "category": "Policy",
+  "title": "Claude Fable 5 Returns Globally After 18-Day Export Control Freeze",
+  "url": "https://www.anthropic.com/news/redeploying-fable-5",
+  "snippet": "After U.S. export controls yanked Fable 5 offline on June 12 — triggered when Amazon researchers found a method to bypass its safety controls for exploit code generation — Anthropic has restored global access as of July 1 with a new automated safety classifier that routes risky prompts to fallback Opus 4.8. Five newsletters covered this story, the strongest consensus signal of the week. Every enterprise with Fable 5 in production needs to re-evaluate deployment timelines: the new routing layer may affect latency on edge-case prompts, and the precedent that a frontier model can vanish on 90 minutes' notice makes continuity planning for AI-dependent workflows non-optional.",
+  "source": "anthropic.com",
+  "companies": [
+   "Amazon",
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Governance",
+   "Policy",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Enterprise",
+  "title": "Anthropic Launches Claude Sonnet 5: Near-Opus Performance at Half the Price",
+  "url": "https://www.anthropic.com/news/claude-sonnet-5",
+  "snippet": "Sonnet 5 launched June 30 as Anthropic's new default model, hitting 63.2% on SWE-bench Pro (versus 69.2% for Opus 4.8) and matching Opus on Humanity's Last Exam with tools — at introductory API pricing of $2/$10 per million input/output tokens through August 31. It ships with a 1-million-token context window, adaptive thinking on by default, and autonomous planning with browser and terminal tool use. Enterprises running Opus 4.8 for coding and agentic workflows should benchmark immediately — the 40–60% cost reduction could materially change unit economics, but the tokenizer change (1.0–1.35x expansion) means headline per-token prices can be misleading.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Enterprise Adoption",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Policy",
+  "title": "OpenAI Previews GPT-5.6 Sol/Terra/Luna — But Only ~20 Government-Vetted Orgs Get Access",
+  "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+  "snippet": "OpenAI unveiled a three-tier model family — Sol (flagship, $5/$30 per million tokens), Terra (2x cheaper than GPT-5.5), and Luna ($1/$6) — but access is locked to approximately 20 government-vetted organizations following a Trump executive order requiring frontier capability assessments. Sol introduces \"ultra mode\" using sub-agents for complex work, and will run on Cerebras at up to 750 tokens/second in July. Enterprise teams should not design production pipelines around Sol availability until broad GA is independently confirmed — mid-July is the earliest realistic date, and OpenAI's reported discussions about giving the U.S. government a 5% ownership stake add a layer of political complexity.",
+  "source": "openai.com",
+  "companies": [
+   "Cerebras",
+   "OpenAI"
+  ],
+  "themes": [
+   "Governance",
+   "Models & Releases",
+   "Policy"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Infrastructure",
+  "title": "Meta Announces \"Meta Compute\" Cloud: A Fourth Hyperscaler Enters the GPU Market",
+  "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/",
+  "snippet": "Bloomberg reported Meta is building a public cloud infrastructure business to sell GPU capacity and hosted Llama models to outside customers, its first direct foray into competing with AWS, Azure, and Google Cloud. Meta has committed $125–145B in 2026 AI infrastructure capex (nearly double 2025), and shares jumped more than 10% on the news. For enterprise architects: don't lock in long-term GPU contracts before Meta Compute pricing is public — a fourth hyperscaler with potentially 20–30% lower GPU pricing would be a structural shift, though adopting Llama on Meta Compute means entering Meta's orbit.",
+  "source": "techcrunch.com",
+  "companies": [
+   "Meta"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Infrastructure",
+  "title": "Etched Emerges with $5B Valuation, $1B in AI Inference Chip Contracts",
+  "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
+  "snippet": "AI chip startup Etched came out of stealth with working TSMC-manufactured silicon, $800M raised (including a $500M round at $5B post-money), and over $1B in signed customer contracts for purpose-built transformer inference clusters. Investors include Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Peter Thiel, and Stanley Druckenmiller; first rack-scale systems ship this summer. Inference cost is the dominant constraint on deploying AI at enterprise scale — Etched's thesis that purpose-built silicon beats general-purpose GPUs on throughput/watt is now backed by real contracts, though performance claims remain self-reported.",
+  "source": "techcrunch.com",
+  "companies": [
+   "Etched",
+   "TSMC"
+  ],
+  "themes": [
+   "Funding & Valuations",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Agentic",
+  "title": "Grok Gets Real Phone Calls: xAI Launches Voice Agents for Live Conversations",
+  "url": "https://x.ai/voice",
+  "snippet": "xAI launched Grok Voice Agents capable of making and handling real phone calls, managing interruptions, half-remembered sentences, and the messy dynamics of live human conversation — placing xAI in direct competition with OpenAI and Google's voice platforms. This is aimed squarely at customer service and outbound calling use cases. Any business with high-volume call operations should now be running a structured voice-agent pilot; the \"wait for the tech to mature\" window is closing fast, and BPO providers should be modeling the revenue impact.",
+  "source": "x.ai",
+  "companies": [
+   "xAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Policy",
+  "title": "Sam Altman Proposes an \"IAEA for AI\" — Global Governance Forum",
+  "url": "https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/",
+  "snippet": "In a Financial Times op-ed, Altman proposed a U.S.-led international forum for AI safety standards, impartial capability analysis, and technology sharing with participating nations — citing aviation safety, global finance, and the IAEA as models. The proposal comes as OpenAI simultaneously discusses a 5% equity stake for the Trump administration and GPT-5.6 remains in government review. For enterprise leaders: the emerging regulatory landscape is moving toward capability-based classification of AI models, which will create tiered access regimes — engage your legal and compliance teams now on what \"covered frontier model\" designations will mean for your AI procurement.",
+  "source": "fortune.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Governance",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Security",
+  "title": "Attackers Are Hijacking Exposed AI Inference Endpoints for Offensive Cyber Operations",
+  "url": "https://tldrnewsletter.com/",
+  "snippet": "Threat actors are abusing misconfigured Ollama and LiteLLM instances — exposed inference endpoints often lacking authentication — to run autonomous offensive pentesting and other malicious operations. A parallel incident saw 81 million Azure CLI login attempts in 14 days targeting 64 organizations, compromising 78 accounts via deprecated ROPC OAuth flows. Any enterprise running self-hosted LLM inference must audit endpoint exposure and authentication coverage immediately — attackers have industrialized this attack surface.",
+  "source": "tldrnewsletter.com",
+  "companies": [
+   "Microsoft"
+  ],
+  "themes": [
+   "Infrastructure & Compute",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Research",
+  "title": "Jack Clark: Anthropic's 8x Code Merge Increase Signals \"Prosaic Recursive Self-Improvement\"",
+  "url": "https://jack-clark.net/",
+  "snippet": "Jack Clark, who recently left Anthropic's policy team, published data showing an 8x increase in code merged into Anthropic's codebase in 2026 versus 2021–2024, which he interprets as evidence that AI is already accelerating the productivity of the AI lab itself. He estimates a 60% probability that fully autonomous AI self-improvement occurs by end of 2028. If AI is compounding its own development speed at the world's leading safety lab, the gap between AI-native firms and laggards will widen faster than most enterprise roadmaps account for.",
+  "source": "jack-clark.net",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Enterprise",
+  "title": "Ford Reverses AI-Only Engineering Experiment, Brings Back Human Engineers",
+  "url": "https://mindstream.news",
+  "snippet": "Ford reportedly reversed a pilot using AI as the primary engineering resource after it \"missed the mark\" on key deliverables, bringing back human engineers. The story arrives alongside the Fed Chair predicting AI will add jobs and Bezos forecasting AI-driven labor shortages via his \"dream-build loop\" thesis. This is a useful corrective for enterprise leaders: AI augmentation of engineering teams is well-evidenced; wholesale replacement of engineering judgment is not — at least not yet.",
+  "source": "mindstream.news",
+  "companies": [
+   "Ford"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Enterprise",
+  "title": "Anthropic Economic Index: Claude Usage Concentrated in Coding and Management Workflows",
+  "url": "https://thezvi.substack.com/p/ai-175-the-fable-continues",
+  "snippet": "Anthropic's June 2026 Economic Index report reveals Claude usage is heavily concentrated in software development and management/knowledge work, with peak usage outside standard office hours (and nobody innovating at lunch). The ROI case for enterprise AI investment is strongest and most proven in coding and management workflows — these are the beachheads to nail before expanding to more speculative use cases. The off-peak usage distribution also has implications for compute capacity planning.",
+  "source": "thezvi.substack.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Governance",
+   "Policy"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Enterprise",
+  "title": "Gemini Spark Arrives on Mac; Google Tests Flash Upgrade on LM Arena",
+  "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-spark-update/",
+  "snippet": "Google launched Gemini Spark on Mac, bringing its AI assistant to the desktop and closing a gap with ChatGPT and Claude's native Mac apps. Separately, Google is testing a new Gemini Flash upgrade on LM Arena, using the arena as a real-time product testing ground — a faster feedback loop than traditional beta programs. For enterprise procurement teams evaluating AI tooling for Mac-heavy workforces: the AI desktop war is now genuinely three-way.",
+  "source": "blog.google",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Resources",
+  "title": "What's New in Claude Sonnet 5 — Simon Willison",
+  "url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/",
+  "snippet": "The fastest way to understand what actually changed technically in Sonnet 5 — context window, tokenizer, default thinking behavior — versus the marketing copy. Essential reading before you switch production workloads.",
+  "source": "simonwillison.net",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-07-03",
+  "category": "Resources",
+  "title": "Previewing GPT-5.6 Sol, Terra and Luna — Latent Space",
+  "url": "https://www.latent.space/p/ainews-openai-gpt-56-sol-terra-luna",
+  "snippet": "The most detailed technical and market-structure analysis of the GPT-5.6 family, including pricing comparisons vs. Anthropic and the sub-agent \"ultra mode\" implications for production agent pipelines.",
+  "source": "latent.space",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Models & Releases"
+  ]
+ },
+ {
   "date": "2026-07-02",
   "category": "Policy",
   "title": "OpenAI Previews GPT-5.6 Sol/Terra/Luna — But the Government Controls the Rollout",
