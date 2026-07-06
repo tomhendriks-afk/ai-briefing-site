@@ -1,30 +1,30 @@
 {
- "generated": "2026-07-03",
+ "generated": "2026-07-06",
  "companies": [
   {
    "tag": "Anthropic",
-   "count": 256,
-   "last_seen": "2026-07-03"
+   "count": 264,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "OpenAI",
-   "count": 244,
-   "last_seen": "2026-07-03"
+   "count": 245,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Google",
-   "count": 133,
-   "last_seen": "2026-07-03"
+   "count": 135,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Microsoft",
-   "count": 89,
-   "last_seen": "2026-07-03"
+   "count": 90,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Amazon",
-   "count": 47,
-   "last_seen": "2026-07-03"
+   "count": 48,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Meta",
@@ -38,8 +38,8 @@
   },
   {
    "tag": "xAI",
-   "count": 28,
-   "last_seen": "2026-07-03"
+   "count": 29,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Cursor",
@@ -82,6 +82,11 @@
    "last_seen": "2026-06-18"
   },
   {
+   "tag": "Tesla",
+   "count": 8,
+   "last_seen": "2026-07-06"
+  },
+  {
    "tag": "Mistral",
    "count": 7,
    "last_seen": "2026-06-03"
@@ -102,17 +107,12 @@
    "last_seen": "2026-06-26"
   },
   {
-   "tag": "Accenture",
-   "count": 6,
-   "last_seen": "2026-06-18"
-  },
-  {
-   "tag": "Tesla",
-   "count": 6,
-   "last_seen": "2026-06-25"
-  },
-  {
    "tag": "Uber",
+   "count": 7,
+   "last_seen": "2026-07-06"
+  },
+  {
+   "tag": "Accenture",
    "count": 6,
    "last_seen": "2026-06-18"
   },
@@ -152,6 +152,11 @@
    "last_seen": "2026-06-22"
   },
   {
+   "tag": "Scale AI",
+   "count": 4,
+   "last_seen": "2026-07-06"
+  },
+  {
    "tag": "ServiceNow",
    "count": 4,
    "last_seen": "2026-05-20"
@@ -167,9 +172,9 @@
    "last_seen": "2026-06-26"
   },
   {
-   "tag": "Scale AI",
+   "tag": "Samsung",
    "count": 3,
-   "last_seen": "2026-05-07"
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Zhipu AI",
@@ -260,11 +265,6 @@
    "tag": "Sakana AI",
    "count": 2,
    "last_seen": "2026-06-24"
-  },
-  {
-   "tag": "Samsung",
-   "count": 2,
-   "last_seen": "2026-05-19"
   },
   {
    "tag": "Snowflake",
@@ -465,28 +465,28 @@
  "themes": [
   {
    "tag": "Enterprise Adoption",
-   "count": 489,
-   "last_seen": "2026-07-03"
+   "count": 494,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Agentic AI",
-   "count": 268,
-   "last_seen": "2026-07-03"
+   "count": 270,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Research",
-   "count": 167,
-   "last_seen": "2026-07-03"
+   "count": 169,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Coding & Dev Tools",
-   "count": 156,
-   "last_seen": "2026-07-03"
+   "count": 158,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Infrastructure & Compute",
-   "count": 148,
-   "last_seen": "2026-07-03"
+   "count": 150,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Funding & Valuations",
@@ -495,28 +495,28 @@
   },
   {
    "tag": "Policy",
-   "count": 130,
-   "last_seen": "2026-07-03"
+   "count": 132,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Governance",
-   "count": 117,
-   "last_seen": "2026-07-03"
+   "count": 120,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Security",
-   "count": 107,
-   "last_seen": "2026-07-03"
+   "count": 108,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Models & Releases",
-   "count": 99,
-   "last_seen": "2026-07-03"
+   "count": 102,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Regulation",
-   "count": 94,
-   "last_seen": "2026-07-03"
+   "count": 96,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Data",
@@ -525,8 +525,13 @@
   },
   {
    "tag": "Talent & Workforce",
-   "count": 87,
-   "last_seen": "2026-07-03"
+   "count": 88,
+   "last_seen": "2026-07-06"
+  },
+  {
+   "tag": "Safety",
+   "count": 63,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Financial Services",
@@ -534,19 +539,14 @@
    "last_seen": "2026-06-24"
   },
   {
-   "tag": "Safety",
-   "count": 61,
-   "last_seen": "2026-07-03"
-  },
-  {
    "tag": "Voice & Multimodal",
-   "count": 51,
-   "last_seen": "2026-07-03"
+   "count": 53,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Compliance",
-   "count": 44,
-   "last_seen": "2026-07-02"
+   "count": 45,
+   "last_seen": "2026-07-06"
   },
   {
    "tag": "Open Source",

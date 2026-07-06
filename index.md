@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Fable 5 Doubles Labor Automation Scores, Sonnet 5 Goes Agentic, and Enterprise AI Spending Hits the Wall](https://briefing.ambient-advantage.ai/2026-07-06.html) — Monday · July 6, 2026 · This edition covers twelve stories across research, enterprise, policy, security, and infrastructure. The throughline: frontier models are crossing economically meaningful thresholds for labor automation, but the business model (usage-based token...
 - [Fable 5 Returns After Export Control Freeze, Sonnet 5 Launches, and Meta Enters Cloud](https://briefing.ambient-advantage.ai/2026-07-03.html) — Friday · July 3, 2026 · This edition covers twelve stories across policy, enterprise, infrastructure, security, and agentic AI.
 - [GPT-5.6's Government-Gated Launch, Claude Sonnet 5, and Etched's $5B Inference Chip Bet](https://briefing.ambient-advantage.ai/2026-07-02.html) — Thursday · July 2, 2026 · This edition covers twelve stories across models, policy, enterprise, and infrastructure. The throughline: capability is converging, but access, cost, and governance are diverging — and that divergence is where the real enterprise strategy decisions...
 - [Claude Sonnet 5 Goes Default, GPT-5.6 Gets Government-Gated, and Etched Exits Stealth](https://briefing.ambient-advantage.ai/2026-07-01.html) — Wednesday · July 1, 2026 · This edition covers thirteen stories across model launches, inference breakthroughs, geopolitical access restrictions, and a brain-computer interface that just hit 61% accuracy without surgery.

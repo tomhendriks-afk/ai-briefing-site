@@ -1,5 +1,208 @@
 [
  {
+  "date": "2026-07-06",
+  "category": "Research",
+  "title": "Claude Fable 5 Scores 16.1% on Remote Labor Index — Roughly Double the Next-Best Model",
+  "url": "https://safe.ai/blog/significant-increase-in-digital-labor-automation",
+  "snippet": "CAIS and Scale AI's updated Remote Labor Index shows Fable 5 completing 16.1% of real freelance-style projects at professional standard — roughly double Opus 4.8 (8.3%) and nearly quadruple GPT-5.5 (6.3%). Eight months ago, the best model scored 2.5%; the frontier has more than quadrupled since. This is not a synthetic benchmark — it tests whether a paying client would actually accept the output. A quadrupling in eight months is the most grounded signal yet that workforce and procurement planning timelines need compressing.",
+  "source": "safe.ai",
+  "companies": [
+   "Anthropic",
+   "Scale AI"
+  ],
+  "themes": [
+   "Research",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-07-06",
+  "category": "Agentic",
+  "title": "Claude Sonnet 5 Launches as Anthropic's Most Agentic Mid-Tier Model",
+  "url": "https://www.anthropic.com/news/claude-sonnet-5",
+  "snippet": "Anthropic's new Sonnet 5 is now the default for Free and Pro plans, scoring 80.5% on Terminal-bench 2.1 agentic coding (up from 67% for Sonnet 4.6) with a 1M-token context window, adaptive thinking on by default, and real-time cybersecurity safeguards. Introductory pricing of $2/$10 per million input/output tokens runs through August 31, but beware: a new tokenizer produces ~30% more tokens for the same text. Enterprise teams running Claude Code or production agent pipelines should retest immediately — agentic capability is no longer a premium-tier feature.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Coding & Dev Tools",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-07-06",
+  "category": "Enterprise",
+  "title": "Tesla Caps Employee AI Spending at $200/Week — With a Conspicuous xAI Exemption",
+  "url": "https://electrek.co/2026/07/02/tesla-caps-employee-ai-spending-200-week/",
+  "snippet": "Tesla imposed a $200/week per-employee cap on third-party AI tool spending after some engineers ran up thousands in weekly token bills, but explicitly exempted Elon Musk's xAI products. Four sources say Tesla employees prefer Anthropic's Claude over Grok. Tesla joins Uber (which burned its entire 2026 AI budget by April), Meta, Amazon, and Walmart in introducing spending controls this year. Every enterprise AI buyer needs a formal cost governance framework now; the xAI carve-out also raises vendor-neutrality questions that any internal AI steering committee should surface.",
+  "source": "electrek.co",
+  "companies": [
+   "Anthropic",
+   "Tesla",
+   "xAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Governance"
+  ]
+ },
+ {
+  "date": "2026-07-06",
+  "category": "Policy",
+  "title": "Sam Altman Proposes US-Led International AI Safety Forum Modeled on the IAEA",
+  "url": "https://cryptobriefing.com/altman-us-led-global-ai-safety-forum/",
+  "snippet": "In a Financial Times op-ed timed to follow the G7 summit, Altman called for a US-led international body to set global AI safety standards, explicitly citing the IAEA as a model — with government representatives and independent technical experts governing labs. Separately, OpenAI has proposed offering the Trump administration a 5% equity stake in the company. Enterprise compliance teams should track this closely: if voluntary international standards coalesce, they will eventually shape procurement requirements, export controls, and audit obligations — and a partially government-owned OpenAI changes the competitive calculus for the entire industry.",
+  "source": "cryptobriefing.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Policy",
+   "Regulation",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-07-06",
+  "category": "Infrastructure",
+  "title": "Anthropic in Early Talks With Samsung to Manufacture Its First Custom AI Chip at 2nm",
+  "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
+  "snippet": "Anthropic has begun early-stage work on its first custom AI chip and is evaluating Samsung's 2nm process and advanced packaging, after hiring Clive Chan from OpenAI's chip team in June. Samsung is already an Anthropic investor via the $65B round alongside SK Hynix and Micron. Every major AI lab — OpenAI, Google, Amazon, Meta — now has a custom silicon strategy; the economics of renting Nvidia GPUs simply no longer work at the inference volumes these companies are hitting.",
+  "source": "techcrunch.com",
+  "companies": [
+   "Anthropic",
+   "Samsung"
+  ],
+  "themes": [
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-07-06",
+  "category": "Enterprise",
+  "title": "Google Launches Nano Banana 2 Lite and Gemini Omni Flash — Image-to-Video for Developers",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/",
+  "snippet": "Google released its fastest image model (generating images in ~4 seconds at $0.034 each) alongside Gemini Omni Flash for conversational video generation at $0.10/second, both in public developer preview with SynthID watermarking. The two can be chained: generate a cheap image draft, then animate it. Marketing, e-commerce, and product teams can now run high-volume visual iteration at costs that were unthinkable 18 months ago.",
+  "source": "blog.google",
+  "companies": [
+   "Google"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Models & Releases",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-07-06",
+  "category": "Security",
+  "title": "AI Voice Clone Scam Costs Poway Father His $18K Life Savings",
+  "url": "https://fox5sandiego.com/news/local-news/poway-man-scammed-ai-voice",
+  "snippet": "Scammers combined personal data scraping, social engineering, and an AI voice clone of a man's daughter to extract $18,000 — voice cloning now requires as little as 3 seconds of source audio. This is no longer a consumer-only threat: corporate executives, finance approvers, and anyone who can authorize wire transfers are high-value targets for the same playbook at scale. Organizations should establish voice authentication protocols and \"safe word\" verification for any out-of-band financial instruction received by phone.",
+  "source": "fox5sandiego.com",
+  "companies": [],
+  "themes": [
+   "Security",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-07-06",
+  "category": "Enterprise",
+  "title": "Claude Science Launches — A Research Workbench That Traces Every Result to Its Code and Data",
+  "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+  "snippet": "Anthropic launched a dedicated AI workbench for researchers that traces every result back to the underlying code and data, directly addressing the reproducibility and auditability gap that has blocked AI deployment in regulated environments. Enterprises in pharma, finance, and legal should evaluate this as a path to deploying AI in workflows currently off-limits due to explainability requirements.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Compliance",
+   "Enterprise Adoption",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-07-06",
+  "category": "Policy",
+  "title": "Claude Fable 5 Restored After US Government Lifted Export Controls",
+  "url": "https://www.theneurondaily.com/p/build-something-real-with-fable",
+  "snippet": "The US government lifted export controls on Fable 5 and Mythos 5, with Anthropic restoring global access starting July 1 after weeks of restrictions under the June 2 Executive Order framework. GPT-5.6 variants remain government-gated for ~20 authorized organizations. Government-triggered model shutdowns are now a proven enterprise risk — any organization with mission-critical workflows on frontier models needs a continuity plan covering model unavailability.",
+  "source": "theneurondaily.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-07-06",
+  "category": "Agentic",
+  "title": "Anthropic Ships Claude Apps Gateway and Managed Agents With Scheduled Runs",
+  "url": "https://releasebot.io/updates/anthropic/claude",
+  "snippet": "Anthropic launched the Claude Apps Gateway for AWS and Google Cloud (SSO, role-based access, per-user cost tracking, spend caps) alongside managed agents that can now run on cron schedules with secure CLI tool access via vault-stored credentials. Claude is also generally available on Microsoft Foundry with Azure-native billing and a US data zone option. This is the enterprise plumbing that makes Claude Code deployable at scale — and scheduled agents with authenticated system access eliminate the most painful scaffolding overhead for production automation.",
+  "source": "releasebot.io",
+  "companies": [
+   "Amazon",
+   "Anthropic",
+   "Google",
+   "Microsoft"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Coding & Dev Tools",
+   "Enterprise Adoption",
+   "Governance"
+  ]
+ },
+ {
+  "date": "2026-07-06",
+  "category": "Enterprise",
+  "title": "Enterprise AI Cost Governance Is Becoming the New Cloud FinOps",
+  "url": "https://www.beri.net/article/enterprise-ai-spending-caps-tesla-uber-token-hunger-games-cost-governance-2026",
+  "snippet": "Ramp's AI Index shows the median US firm spends $11.38/employee/month on AI, but the top 1% averages $7,449 — a 654:1 gap. The word \"tokens\" appeared in 129 earnings calls in Q2 2026, up from 57 the prior quarter. The playbook every CFO needs now: rolling quarterly allocations, per-user caps tiered by AI intensity, automated alerts at 75–90% of cap, and routing simple tasks to cheaper models.",
+  "source": "beri.net",
+  "companies": [
+   "Tesla",
+   "Uber"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Governance"
+  ]
+ },
+ {
+  "date": "2026-07-06",
+  "category": "Infrastructure",
+  "title": "Nuclear Reactor Activated Live on Stage — AI's Energy Bet Goes Theatrical",
+  "url": "https://taaft.co",
+  "snippet": "A nuclear reactor was activated live on stage at a major AI industry event this week, dramatizing the sector's pivot toward dedicated energy infrastructure as AI data centers outgrow traditional grid capacity. The AI infrastructure story is now an energy story — enterprises planning large-scale deployments need to factor energy availability into site selection and vendor evaluation; labs that control their own power supply will have a structural cost advantage.",
+  "source": "taaft.co",
+  "companies": [],
+  "themes": [
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-07-06",
+  "category": "Resources",
+  "title": "Anthropic Claude Sonnet 5 System Card",
+  "url": "https://www.anthropic.com/claude/sonnet",
+  "snippet": "Deep-dive on safety assessments, agentic capability benchmarks, and tokenizer behavior changes — required reading before migrating production Claude Code workflows to Sonnet 5.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Models & Releases",
+   "Safety"
+  ]
+ },
+ {
   "date": "2026-07-03",
   "category": "Policy",
   "title": "Claude Fable 5 Returns Globally After 18-Day Export Control Freeze",

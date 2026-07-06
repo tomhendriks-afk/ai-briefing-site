@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Fable 5 Doubles Labor Automation Scores, Sonnet 5 Goes Agentic, and Enterprise AI Spending Hits the Wall — Daily Briefing · Ambient Advantage</title>
+<meta name="description" content="This edition covers twelve stories across research, enterprise, policy, security, and infrastructure. The throughline: frontier models are crossing economically" />
+<link rel="alternate" type="text/markdown" href="2026-07-06.md" />
+<link rel="alternate" type="application/json" href="/briefings.json" title="Daily briefings (JSON)" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://ambient-advantage.ai/#chiel",
+      "name": "Chiel Hendriks",
+      "jobTitle": "Managing Director, Cloud, Data & AI",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "PwC Canada"
+      },
+      "url": "https://ambient-advantage.ai",
+      "sameAs": [
+        "https://www.linkedin.com/in/chielhendriks/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ambient-advantage.ai/#org",
+      "name": "Ambient Advantage",
+      "url": "https://ambient-advantage.ai",
+      "founder": {
+        "@id": "https://ambient-advantage.ai/#chiel"
+      },
+      "description": "Daily AI news briefing, podcast, and opinion column from Chiel Hendriks."
+    },
+    {
+      "@type": "NewsArticle",
+      "headline": "Fable 5 Doubles Labor Automation Scores, Sonnet 5 Goes Agentic, and Enterprise AI Spending Hits the Wall",
+      "datePublished": "2026-07-06",
+      "dateModified": "2026-07-06",
+      "author": {
+        "@id": "https://ambient-advantage.ai/#chiel"
+      },
+      "publisher": {
+        "@id": "https://ambient-advantage.ai/#org"
+      },
+      "mainEntityOfPage": "https://briefing.ambient-advantage.ai/2026-07-06.html",
+      "description": "This edition covers twelve stories across research, enterprise, policy, security, and infrastructure. The throughline: frontier models are crossing economically meaningful thresholds for labor automation, but the business model (usage-based token..."
+    }
+  ]
+}
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://briefing.ambient-advantage.ai/2026-07-06.html" />
+<meta property="og:title" content="Fable 5 Doubles Labor Automation Scores, Sonnet 5 Goes Agentic, and Enterprise AI Spending Hits the Wall" />
+<meta property="og:description" content="This edition covers twelve stories across research, enterprise, policy, security, and infrastructure. The throughline: frontier models are crossing economically" />
+<meta property="og:image" content="https://podcast.ambient-advantage.ai/og-image.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-0:#05070d;--bg-1:#0a0f1c;--bg-2:#0f1628;
+    --line:rgba(120,170,255,.14);--text:#e8eefc;--mute:#8a97b4;
+    --accent:#3ddc97;--accent-2:#7af0bd;
+    --glow:0 0 40px rgba(61,220,151,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg-0);color:var(--text);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:1180px;margin:0 auto;padding:0 28px}
+
+  nav.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(5,7,13,.6);border-bottom:1px solid var(--line)}
+  nav.top .row{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .logo{font-family:'Space Grotesk';font-weight:700;letter-spacing:.02em;font-size:18px;display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none}
+  .logo .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:var(--glow)}
+  .nav-links{display:flex;gap:32px;font-size:14px;color:var(--mute)}
+  .nav-links a{color:var(--mute);text-decoration:none}
+  .nav-links a:hover{color:var(--text);text-decoration:none}
+  .nav-links a.active{color:var(--text);border-bottom:2px solid var(--accent);padding-bottom:2px}
+  .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(61,220,151,.12),rgba(61,220,151,.02));text-decoration:none;transition:border-color .2s}
+  .nav-cta:hover{border-color:var(--accent);text-decoration:none}
+
+  .article-header{padding:80px 0 40px;position:relative}
+  .article-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(61,220,151,.1),transparent 60%);pointer-events:none}
+  .article-header .inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
+  .back-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-size:13px;color:var(--mute);letter-spacing:.05em;margin-bottom:28px;text-decoration:none;transition:color .2s}
+  .back-link:hover{color:var(--accent);text-decoration:none}
+  .article-meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--mute);font-family:'Space Grotesk';margin-bottom:18px;flex-wrap:wrap}
+  .article-meta .tag{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(61,220,151,.1);color:var(--accent-2);border:1px solid rgba(61,220,151,.2)}
+  .article-header h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(30px,4.5vw,48px);line-height:1.12;margin:0;letter-spacing:-.02em}
+
+  .article-body{max-width:780px;margin:0 auto;padding:40px 0 80px}
+  .article-body p{font-size:17px;line-height:1.8;color:var(--text);margin:0 0 24px}
+  .article-body h1,.article-body h2{font-family:'Space Grotesk';font-size:26px;margin:48px 0 16px;letter-spacing:-.01em;color:var(--text)}
+  .article-body h3{font-family:'Space Grotesk';font-size:20px;margin:36px 0 12px;color:var(--text)}
+  .article-body a{color:var(--accent)}
+  .article-body blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(61,220,151,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}
+  .article-body ul,.article-body ol{padding-left:24px;margin:0 0 24px}
+  .article-body li{font-size:17px;line-height:1.8;margin-bottom:8px}
+  .article-body img{max-width:100%;border-radius:12px}
+  .article-body hr{border:none;border-top:1px solid var(--line);margin:40px 0}
+  .article-body table{width:100%;border-collapse:collapse;margin:24px 0}
+  .article-body th,.article-body td{padding:10px 14px;border:1px solid var(--line);font-size:15px;text-align:left}
+  .article-body th{background:var(--bg-1);font-family:'Space Grotesk'}
+
+  .article-nav{max-width:780px;margin:0 auto;padding:0 0 60px;display:flex;gap:18px}
+  .article-nav a{flex:1;display:block;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .2s,transform .2s;text-decoration:none}
+  .article-nav a:hover{border-color:rgba(61,220,151,.35);transform:translateY(-1px);text-decoration:none}
+  .article-nav .label{font-size:11px;color:var(--mute);font-family:'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+  .article-nav .title{font-family:'Space Grotesk';font-size:15px;color:var(--text);line-height:1.3}
+
+  footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:13px}
+  footer .frow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+
+  .mobile-nav{display:none}
+
+  @media (max-width:800px){
+    .nav-links{display:none}
+    .nav-cta{display:none}
+    .article-header{padding:60px 0 30px}
+    .article-nav{flex-direction:column}
+    body{padding-bottom:72px}
+    .mobile-nav{
+      display:flex;
+      position:fixed;bottom:0;left:0;right:0;z-index:50;
+      justify-content:space-around;align-items:center;
+      padding:10px 0 max(10px,env(safe-area-inset-bottom));
+      background:rgba(5,7,13,.92);
+      backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+      border-top:1px solid var(--line);
+    }
+    .mobile-nav a{
+      display:flex;flex-direction:column;align-items:center;gap:4px;
+      text-decoration:none;padding:4px 10px;
+      -webkit-tap-highlight-color:transparent;
+    }
+    .mobile-nav a svg{
+      width:24px;height:24px;stroke-width:1.5;
+      stroke:var(--mute);fill:none;
+      transition:stroke .2s;
+    }
+    .mobile-nav a span{
+      font-size:11px;font-family:'Space Grotesk',system-ui;
+      letter-spacing:.03em;color:var(--mute);
+      transition:color .2s;
+    }
+    .mobile-nav a.active svg{stroke:var(--accent);stroke-width:2}
+    .mobile-nav a.active span{color:var(--accent);font-weight:600}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="container row">
+    <a href="https://ambient-advantage.ai" class="logo"><span class="dot"></span>Ambient Advantage</a>
+    <div class="nav-links">
+      <a href="https://podcast.ambient-advantage.ai">Podcast</a>
+      <a href="/" class="active">Daily Briefing</a>
+      <a href="https://take.ambient-advantage.ai">Chiel's Take</a>
+      <a href="https://build.ambient-advantage.ai">Build Log</a>
+      <a href="https://ambient-advantage.ai/about">About</a>
+    </div>
+    <a class="nav-cta" href="/#subscribe">Subscribe</a>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <div class="inner">
+      <a href="/" class="back-link">← Back to all briefings</a>
+      <div class="article-meta">
+        <span class="tag">Daily Briefing</span>
+        <span>Monday · July 6, 2026</span>
+        <span>·</span>
+        <span>7 min read</span>
+      </div>
+      <h1>Fable 5 Doubles Labor Automation Scores, Sonnet 5 Goes Agentic, and Enterprise AI Spending Hits the Wall</h1>
+    </div>
+  </div>
+</header>
+
+<article class="container">
+  <div class="article-body">
+    
+
+
+
+  <!-- Preheader (hidden) -->
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">
+    This edition covers twelve stories across research, enterprise, policy, security, and infrastructure. The throughline: frontier models are crossing ec
+    &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+  </div>
+
+  <!-- Outer wrapper -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f0f2f5">
+    <tr><td align="center" style="padding:20px 10px;">
+
+      <!-- Email container -->
+      <table role="presentation" class="email-container" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width:600px;margin:0 auto;">
+
+        <!-- Accent bar -->
+        <tr><td bgcolor="#3ddc97" style="height:4px;font-size:1px;line-height:1px;">&nbsp;</td></tr>
+
+        <!-- Header -->
+        <tr><td bgcolor="#ffffff" style="padding:28px 40px 20px 40px;text-align:center;">
+          <span style="font-size:22px;font-weight:bold;color:#0a0f1c;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <span style="color:#3ddc97;">&bull;</span> Ambient Advantage
+          </span>
+          <br/>
+          <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin:14px auto 10px auto;"><tr><td style="width:60px;height:1px;background:#e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+          <span style="font-size:11px;color:#3ddc97;letter-spacing:2.5px;text-transform:uppercase;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE DAILY BRIEFING</span>
+          <br/>
+          <span style="font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Monday, July 6, 2026 &middot; 7 min read</span>
+        </td></tr>
+
+        <!-- Header bottom border -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Lead section -->
+        <tr><td bgcolor="#ffffff" style="padding:30px 40px 10px 40px;">
+          <!-- Pull quote -->
+          <p style="margin:0 0 20px 0;font-size:20px;font-style:italic;color:#0a0f1c;text-align:center;line-height:1.5;font-family:Georgia,'Times New Roman',Times,serif;">
+            &ldquo;AI agents just got dramatically better at real work — and enterprises are simultaneously slamming the brakes on how much they&#x27;re willing to spend on them. That tension is the story of the week.&rdquo;
+          </p>
+          <!-- Intro paragraphs -->
+          <p style="margin:0 0 14px 0;font-size:15px;color:#1a1a2e;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">This edition covers twelve stories across research, enterprise, policy, security, and infrastructure. The throughline: frontier models are crossing economically meaningful thresholds for labor automation, but the business model (usage-based token pricing with no guardrails) is creating budget chaos from Tesla to Uber to Walmart. The companies that win the next phase aren&#x27;t the ones deploying the most AI — they&#x27;re the ones who&#x27;ve built the governance layer to deploy it at scale without the surprise write-down. Let&#x27;s get into it.</p>
+        </td></tr>
+
+        <!-- Divider -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Stories section -->
+        <tr><td bgcolor="#ffffff" style="padding:10px 40px 10px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:30px 0 0 0;">
+  <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">TODAY&#x27;S STORIES</span>
+  <br/>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#3ddc97;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+</td></tr>
+            <tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#6d28d9;background:#ede9fe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Research</span>
+  <br/>
+  <a href="https://safe.ai/blog/significant-increase-in-digital-labor-automation" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Claude Fable 5 Scores 16.1% on Remote Labor Index — Roughly Double the Next-Best Model</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">CAIS and Scale AI&#x27;s updated Remote Labor Index shows Fable 5 completing 16.1% of real freelance-style projects at professional standard — roughly double Opus 4.8 (8.3%) and nearly quadruple GPT-5.5 (6.3%). Eight months ago, the best model scored 2.5%; the frontier has more than quadrupled since. This is not a synthetic benchmark — it tests whether a paying client would actually accept the output. A quadrupling in eight months is the most grounded signal yet that workforce and procurement planning timelines need compressing.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">safe.ai</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#4338ca;background:#e0e7ff;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Product</span>
+  <br/>
+  <a href="https://www.anthropic.com/news/claude-sonnet-5" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Claude Sonnet 5 Launches as Anthropic&#x27;s Most Agentic Mid-Tier Model</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Anthropic&#x27;s new Sonnet 5 is now the default for Free and Pro plans, scoring 80.5% on Terminal-bench 2.1 agentic coding (up from 67% for Sonnet 4.6) with a 1M-token context window, adaptive thinking on by default, and real-time cybersecurity safeguards. Introductory pricing of $2/$10 per million input/output tokens runs through August 31, but beware: a new tokenizer produces ~30% more tokens for the same text. Enterprise teams running Claude Code or production agent pipelines should retest immediately — agentic capability is no longer a premium-tier feature.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">anthropic.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://electrek.co/2026/07/02/tesla-caps-employee-ai-spending-200-week/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Tesla Caps Employee AI Spending at $200/Week — With a Conspicuous xAI Exemption</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Tesla imposed a $200/week per-employee cap on third-party AI tool spending after some engineers ran up thousands in weekly token bills, but explicitly exempted Elon Musk&#x27;s xAI products. Four sources say Tesla employees prefer Anthropic&#x27;s Claude over Grok. Tesla joins Uber (which burned its entire 2026 AI budget by April), Meta, Amazon, and Walmart in introducing spending controls this year. Every enterprise AI buyer needs a formal cost governance framework now; the xAI carve-out also raises vendor-neutrality questions that any internal AI steering committee should surface.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">electrek.co</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#b45309;background:#fef3c7;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Policy</span>
+  <br/>
+  <a href="https://cryptobriefing.com/altman-us-led-global-ai-safety-forum/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Sam Altman Proposes US-Led International AI Safety Forum Modeled on the IAEA</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">In a Financial Times op-ed timed to follow the G7 summit, Altman called for a US-led international body to set global AI safety standards, explicitly citing the IAEA as a model — with government representatives and independent technical experts governing labs. Separately, OpenAI has proposed offering the Trump administration a 5% equity stake in the company. Enterprise compliance teams should track this closely: if voluntary international standards coalesce, they will eventually shape procurement requirements, export controls, and audit obligations — and a partially government-owned OpenAI changes the competitive calculus for the entire industry.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">cryptobriefing.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#475569;background:#e2e8f0;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Infrastructure</span>
+  <br/>
+  <a href="https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Anthropic in Early Talks With Samsung to Manufacture Its First Custom AI Chip at 2nm</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Anthropic has begun early-stage work on its first custom AI chip and is evaluating Samsung&#x27;s 2nm process and advanced packaging, after hiring Clive Chan from OpenAI&#x27;s chip team in June. Samsung is already an Anthropic investor via the $65B round alongside SK Hynix and Micron. Every major AI lab — OpenAI, Google, Amazon, Meta — now has a custom silicon strategy; the economics of renting Nvidia GPUs simply no longer work at the inference volumes these companies are hitting.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">techcrunch.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Google Launches Nano Banana 2 Lite and Gemini Omni Flash — Image-to-Video for Developers</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Google released its fastest image model (generating images in ~4 seconds at $0.034 each) alongside Gemini Omni Flash for conversational video generation at $0.10/second, both in public developer preview with SynthID watermarking. The two can be chained: generate a cheap image draft, then animate it. Marketing, e-commerce, and product teams can now run high-volume visual iteration at costs that were unthinkable 18 months ago.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">blog.google</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#be185d;background:#fce7f3;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Security</span>
+  <br/>
+  <a href="https://fox5sandiego.com/news/local-news/poway-man-scammed-ai-voice" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">AI Voice Clone Scam Costs Poway Father His $18K Life Savings</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Scammers combined personal data scraping, social engineering, and an AI voice clone of a man&#x27;s daughter to extract $18,000 — voice cloning now requires as little as 3 seconds of source audio. This is no longer a consumer-only threat: corporate executives, finance approvers, and anyone who can authorize wire transfers are high-value targets for the same playbook at scale. Organizations should establish voice authentication protocols and &quot;safe word&quot; verification for any out-of-band financial instruction received by phone.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">fox5sandiego.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://www.anthropic.com/news/claude-science-ai-workbench" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Claude Science Launches — A Research Workbench That Traces Every Result to Its Code and Data</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Anthropic launched a dedicated AI workbench for researchers that traces every result back to the underlying code and data, directly addressing the reproducibility and auditability gap that has blocked AI deployment in regulated environments. Enterprises in pharma, finance, and legal should evaluate this as a path to deploying AI in workflows currently off-limits due to explainability requirements.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">anthropic.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#b45309;background:#fef3c7;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Policy</span>
+  <br/>
+  <a href="https://www.theneurondaily.com/p/build-something-real-with-fable" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Claude Fable 5 Restored After US Government Lifted Export Controls</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">The US government lifted export controls on Fable 5 and Mythos 5, with Anthropic restoring global access starting July 1 after weeks of restrictions under the June 2 Executive Order framework. GPT-5.6 variants remain government-gated for ~20 authorized organizations. Government-triggered model shutdowns are now a proven enterprise risk — any organization with mission-critical workflows on frontier models needs a continuity plan covering model unavailability.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">theneurondaily.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#4338ca;background:#e0e7ff;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Product</span>
+  <br/>
+  <a href="https://releasebot.io/updates/anthropic/claude" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Anthropic Ships Claude Apps Gateway and Managed Agents With Scheduled Runs</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Anthropic launched the Claude Apps Gateway for AWS and Google Cloud (SSO, role-based access, per-user cost tracking, spend caps) alongside managed agents that can now run on cron schedules with secure CLI tool access via vault-stored credentials. Claude is also generally available on Microsoft Foundry with Azure-native billing and a US data zone option. This is the enterprise plumbing that makes Claude Code deployable at scale — and scheduled agents with authenticated system access eliminate the most painful scaffolding overhead for production automation.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">releasebot.io</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://www.beri.net/article/enterprise-ai-spending-caps-tesla-uber-token-hunger-games-cost-governance-2026" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Enterprise AI Cost Governance Is Becoming the New Cloud FinOps</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Ramp&#x27;s AI Index shows the median US firm spends $11.38/employee/month on AI, but the top 1% averages $7,449 — a 654:1 gap. The word &quot;tokens&quot; appeared in 129 earnings calls in Q2 2026, up from 57 the prior quarter. The playbook every CFO needs now: rolling quarterly allocations, per-user caps tiered by AI intensity, automated alerts at 75–90% of cap, and routing simple tasks to cheaper models.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">beri.net</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#475569;background:#e2e8f0;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Infrastructure</span>
+  <br/>
+  <a href="https://taaft.co" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Nuclear Reactor Activated Live on Stage — AI&#x27;s Energy Bet Goes Theatrical</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">A nuclear reactor was activated live on stage at a major AI industry event this week, dramatizing the sector&#x27;s pivot toward dedicated energy infrastructure as AI data centers outgrow traditional grid capacity. The AI infrastructure story is now an energy story — enterprises planning large-scale deployments need to factor energy availability into site selection and vendor evaluation; labs that control their own power supply will have a structural cost advantage.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">taaft.co</span>
+</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Big Picture card -->
+        <tr><td bgcolor="#ffffff" style="padding:10px 40px 24px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td width="4" bgcolor="#3ddc97" style="width:4px;font-size:1px;">&nbsp;</td>
+              <td bgcolor="#f0f7ff" style="padding:20px 24px;">
+                <span style="font-size:11px;font-weight:bold;color:#3ddc97;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE BIG PICTURE</span>
+                <br/><br/>
+                <p style="margin:0 0 10px 0;font-size:15px;color:#0a0f1c;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">The week&#x27;s defining paradox: AI agents are getting dramatically better at real work (Fable 5 quadrupled the Remote Labor Index in eight months; Sonnet 5 makes agentic capability the free-tier default) while enterprises are simultaneously slamming the brakes on AI spend (Tesla, Uber, Meta, Walmart all capping token bills). These aren&#x27;t contradictions — they&#x27;re the same story read from two different ledgers. The productivity gains are real, but usage-based pricing means they arrive with an invoice nobody budgeted for. Anthropic shipping the Claude Apps Gateway with spend caps and SSO in the same week as Sonnet 5 is not a coincidence. The lab that solves enterprise governance wins the enterprise, full stop. If your organization doesn&#x27;t have a FinOps-style framework for AI tokens today, you&#x27;re one enthusiastic engineering team away from your own Uber moment — burning through the annual budget by April.</p>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Resources section -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px 24px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:30px 0 0 0;">
+  <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">WORTH BOOKMARKING</span>
+  <br/>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#3ddc97;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+</td></tr>
+            <tr><td style="height:12px;font-size:1px;">&nbsp;</td></tr>
+            <tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://safe.ai/blog/significant-increase-in-digital-labor-automation" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">A Significant Increase in Digital Labor Automation — CAIS Blog &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">The primary source for the Remote Labor Index results; essential reading for anyone benchmarking AI against real economic value creation rather than synthetic evals.</span>
+    </td>
+  </tr></table>
+</td></tr><tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://www.anthropic.com/claude/sonnet" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">Anthropic Claude Sonnet 5 System Card &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">Deep-dive on safety assessments, agentic capability benchmarks, and tokenizer behavior changes — required reading before migrating production Claude Code workflows to Sonnet 5.</span>
+    </td>
+  </tr></table>
+</td></tr><tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://www.beri.net/article/enterprise-ai-spending-caps-tesla-uber-token-hunger-games-cost-governance-2026" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">Tokenmaxxing Is Dead: Why Tesla Capped AI at $200/Week — THE D*AI*LY BRIEF &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">The best synthesis of the enterprise AI cost governance reckoning, with a practical FinOps playbook including tiered cap structures and alerting thresholds.</span>
+    </td>
+  </tr></table>
+</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Divider -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Podcast CTA -->
+        <tr><td bgcolor="#ffffff" style="padding:24px 40px 30px 40px;text-align:center;">
+          <p style="margin:0 0 16px 0;font-size:14px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            Prefer to listen? Today&#8217;s briefing is also a podcast.
+          </p>
+          <table cellpadding="0" cellspacing="0" border="0" align="center">
+            <tr>
+              <td align="center" bgcolor="#3ddc97" style="border-radius:6px;">
+                <a href="https://podcast.ambient-advantage.ai" target="_blank" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:bold;color:#ffffff;text-decoration:none;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Listen to Today&#8217;s Episode &rarr;</a>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Footer -->
+        <tr><td bgcolor="#f0f2f5" style="padding:24px 40px 30px 40px;text-align:center;">
+          <p style="margin:0 0 6px 0;font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            Curated by Chiel Hendriks &middot; PwC Canada
+          </p>
+          <p style="margin:0 0 6px 0;font-size:13px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <a href="https://ambient-advantage.ai" style="color:#3ddc97;text-decoration:none;">ambient-advantage.ai</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://www.linkedin.com/in/chielhendriks/" style="color:#3ddc97;text-decoration:none;">LinkedIn</a>
+          </p>
+          
+          <p style="margin:10px 0 0 0;font-size:12px;color:#9ca3af;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            &copy; 2026 Ambient Advantage
+          </p>
+        </td></tr>
+
+      </table>
+      <!-- /Email container -->
+
+    </td></tr>
+  </table>
+  <!-- /Outer wrapper -->
+
+
+  </div>
+</article>
+
+<div class="container">
+  <div class="article-nav">
+    <a href="/2026-07-03.html">
+      <div class="label">← Previous briefing</div>
+      <div class="title">Fable 5 Returns After Export Control Freeze, Sonnet 5 Launches, and Meta Enters Cloud</div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="container frow">
+    <div>© 2026 Ambient Advantage · Curated by Chiel Hendriks</div>
+    <div><a href="https://ambient-advantage.ai" style="color:var(--accent);text-decoration:none">ambient-advantage.ai</a></div>
+  </div>
+</footer>
+
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="https://podcast.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5z"/></svg>
+    <span>Podcast</span>
+  </a>
+  <a href="/" class="active">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+    <span>Briefing</span>
+  </a>
+  <a href="https://take.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+    <span>Take</span>
+  </a>
+  <a href="https://build.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+    <span>Build</span>
+  </a>
+  <a href="https://ambient-advantage.ai/about">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>About</span>
+  </a>
+</nav>
+
+</body>
+</html>
