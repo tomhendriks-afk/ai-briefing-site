@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-07-07",
+    "headline": "Claude's Hidden &quot;J-Space,&quot; Autonomous AI Ransomware, and GPT-5.6's Government Gate",
+    "snippet": "This edition covers fourteen stories across research, security, enterprise, policy, and infrastructure. The throughline: the gap between &quot;a capability exists&quot; and &quot;that capability is exploited&quot; has collapsed from years to weeks.",
+    "read_time": 8
+  },
+  {
     "date": "2026-07-06",
     "headline": "Fable 5 Doubles Labor Automation Scores, Sonnet 5 Goes Agentic, and Enterprise AI Spending Hits the Wall",
     "snippet": "This edition covers twelve stories across research, enterprise, policy, security, and infrastructure. The throughline: frontier models are crossing economically meaningful thresholds for labor automation, but the business model (usage-based token...",

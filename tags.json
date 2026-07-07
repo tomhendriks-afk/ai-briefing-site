@@ -1,20 +1,20 @@
 {
- "generated": "2026-07-06",
+ "generated": "2026-07-07",
  "companies": [
   {
    "tag": "Anthropic",
-   "count": 264,
-   "last_seen": "2026-07-06"
+   "count": 266,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "OpenAI",
-   "count": 245,
-   "last_seen": "2026-07-06"
+   "count": 246,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Google",
-   "count": 135,
-   "last_seen": "2026-07-06"
+   "count": 137,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Microsoft",
@@ -28,13 +28,13 @@
   },
   {
    "tag": "Meta",
-   "count": 46,
-   "last_seen": "2026-07-03"
+   "count": 47,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Nvidia",
-   "count": 46,
-   "last_seen": "2026-07-02"
+   "count": 47,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "xAI",
@@ -53,8 +53,8 @@
   },
   {
    "tag": "Cerebras",
-   "count": 12,
-   "last_seen": "2026-07-03"
+   "count": 13,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "X",
@@ -117,6 +117,11 @@
    "last_seen": "2026-06-18"
   },
   {
+   "tag": "AMD",
+   "count": 5,
+   "last_seen": "2026-07-07"
+  },
+  {
    "tag": "Anysphere",
    "count": 5,
    "last_seen": "2026-07-01"
@@ -130,11 +135,6 @@
    "tag": "ElevenLabs",
    "count": 5,
    "last_seen": "2026-06-25"
-  },
-  {
-   "tag": "AMD",
-   "count": 4,
-   "last_seen": "2026-06-04"
   },
   {
    "tag": "Etched",
@@ -172,6 +172,11 @@
    "last_seen": "2026-06-26"
   },
   {
+   "tag": "Cloudflare",
+   "count": 3,
+   "last_seen": "2026-07-07"
+  },
+  {
    "tag": "Samsung",
    "count": 3,
    "last_seen": "2026-07-06"
@@ -187,6 +192,11 @@
    "last_seen": "2026-06-26"
   },
   {
+   "tag": "ByteDance",
+   "count": 2,
+   "last_seen": "2026-07-07"
+  },
+  {
    "tag": "Cisco",
    "count": 2,
    "last_seen": "2026-06-30"
@@ -195,11 +205,6 @@
    "tag": "ClickUp",
    "count": 2,
    "last_seen": "2026-06-10"
-  },
-  {
-   "tag": "Cloudflare",
-   "count": 2,
-   "last_seen": "2026-06-22"
   },
   {
    "tag": "Cohere",
@@ -312,11 +317,6 @@
    "last_seen": "2026-06-22"
   },
   {
-   "tag": "ByteDance",
-   "count": 1,
-   "last_seen": "2026-06-25"
-  },
-  {
    "tag": "CATL",
    "count": 1,
    "last_seen": "2026-06-18"
@@ -337,6 +337,11 @@
    "last_seen": "2026-07-01"
   },
   {
+   "tag": "Common Room",
+   "count": 1,
+   "last_seen": "2026-07-07"
+  },
+  {
    "tag": "Cornell Tech",
    "count": 1,
    "last_seen": "2026-06-22"
@@ -345,6 +350,11 @@
    "tag": "DIOSynVax",
    "count": 1,
    "last_seen": "2026-06-08"
+  },
+  {
+   "tag": "Fable",
+   "count": 1,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Figure",
@@ -387,6 +397,11 @@
    "last_seen": "2026-06-16"
   },
   {
+   "tag": "Reddit",
+   "count": 1,
+   "last_seen": "2026-07-07"
+  },
+  {
    "tag": "Replit",
    "count": 1,
    "last_seen": "2026-06-19"
@@ -415,6 +430,11 @@
    "tag": "Splunk",
    "count": 1,
    "last_seen": "2026-06-16"
+  },
+  {
+   "tag": "Sysdig",
+   "count": 1,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Tata Electronics",
@@ -457,6 +477,11 @@
    "last_seen": "2026-07-01"
   },
   {
+   "tag": "Zoom",
+   "count": 1,
+   "last_seen": "2026-07-07"
+  },
+  {
    "tag": "iRhythm",
    "count": 1,
    "last_seen": "2026-06-17"
@@ -465,28 +490,28 @@
  "themes": [
   {
    "tag": "Enterprise Adoption",
-   "count": 494,
-   "last_seen": "2026-07-06"
+   "count": 499,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Agentic AI",
-   "count": 270,
-   "last_seen": "2026-07-06"
+   "count": 273,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Research",
-   "count": 169,
-   "last_seen": "2026-07-06"
+   "count": 173,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Coding & Dev Tools",
-   "count": 158,
-   "last_seen": "2026-07-06"
+   "count": 159,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Infrastructure & Compute",
-   "count": 150,
-   "last_seen": "2026-07-06"
+   "count": 152,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Funding & Valuations",
@@ -495,23 +520,23 @@
   },
   {
    "tag": "Policy",
-   "count": 132,
-   "last_seen": "2026-07-06"
+   "count": 136,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Governance",
-   "count": 120,
-   "last_seen": "2026-07-06"
+   "count": 121,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Security",
-   "count": 108,
-   "last_seen": "2026-07-06"
+   "count": 109,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Models & Releases",
-   "count": 102,
-   "last_seen": "2026-07-06"
+   "count": 104,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Regulation",
@@ -520,8 +545,8 @@
   },
   {
    "tag": "Data",
-   "count": 89,
-   "last_seen": "2026-06-18"
+   "count": 90,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Talent & Workforce",
@@ -530,8 +555,8 @@
   },
   {
    "tag": "Safety",
-   "count": 63,
-   "last_seen": "2026-07-06"
+   "count": 65,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Financial Services",
@@ -540,8 +565,8 @@
   },
   {
    "tag": "Voice & Multimodal",
-   "count": 53,
-   "last_seen": "2026-07-06"
+   "count": 54,
+   "last_seen": "2026-07-07"
   },
   {
    "tag": "Compliance",
@@ -575,8 +600,8 @@
   },
   {
    "tag": "Interpretability",
-   "count": 1,
-   "last_seen": "2026-05-08"
+   "count": 3,
+   "last_seen": "2026-07-07"
   }
  ]
 }
