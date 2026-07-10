@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GPT-5.6's Four-Agent Architecture, Agentjacking Hits 2,388 Orgs, and China's Nvidia-Free GLM-5.2 — Daily Briefing · Ambient Advantage</title>
+<meta name="description" content="This edition covers twelve stories across agentic AI, enterprise launches, security, policy, and infrastructure." />
+<link rel="alternate" type="text/markdown" href="2026-07-10.md" />
+<link rel="alternate" type="application/json" href="/briefings.json" title="Daily briefings (JSON)" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://ambient-advantage.ai/#chiel",
+      "name": "Chiel Hendriks",
+      "jobTitle": "Managing Director, Cloud, Data & AI",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "PwC Canada"
+      },
+      "url": "https://ambient-advantage.ai",
+      "sameAs": [
+        "https://www.linkedin.com/in/chielhendriks/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ambient-advantage.ai/#org",
+      "name": "Ambient Advantage",
+      "url": "https://ambient-advantage.ai",
+      "founder": {
+        "@id": "https://ambient-advantage.ai/#chiel"
+      },
+      "description": "Daily AI news briefing, podcast, and opinion column from Chiel Hendriks."
+    },
+    {
+      "@type": "NewsArticle",
+      "headline": "GPT-5.6's Four-Agent Architecture, Agentjacking Hits 2,388 Orgs, and China's Nvidia-Free GLM-5.2",
+      "datePublished": "2026-07-10",
+      "dateModified": "2026-07-10",
+      "author": {
+        "@id": "https://ambient-advantage.ai/#chiel"
+      },
+      "publisher": {
+        "@id": "https://ambient-advantage.ai/#org"
+      },
+      "mainEntityOfPage": "https://briefing.ambient-advantage.ai/2026-07-10.html",
+      "description": "This edition covers twelve stories across agentic AI, enterprise launches, security, policy, and infrastructure."
+    }
+  ]
+}
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://briefing.ambient-advantage.ai/2026-07-10.html" />
+<meta property="og:title" content="GPT-5.6's Four-Agent Architecture, Agentjacking Hits 2,388 Orgs, and China's Nvidia-Free GLM-5.2" />
+<meta property="og:description" content="This edition covers twelve stories across agentic AI, enterprise launches, security, policy, and infrastructure." />
+<meta property="og:image" content="https://podcast.ambient-advantage.ai/og-image.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-0:#05070d;--bg-1:#0a0f1c;--bg-2:#0f1628;
+    --line:rgba(120,170,255,.14);--text:#e8eefc;--mute:#8a97b4;
+    --accent:#3ddc97;--accent-2:#7af0bd;
+    --glow:0 0 40px rgba(61,220,151,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg-0);color:var(--text);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:1180px;margin:0 auto;padding:0 28px}
+
+  nav.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(5,7,13,.6);border-bottom:1px solid var(--line)}
+  nav.top .row{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .logo{font-family:'Space Grotesk';font-weight:700;letter-spacing:.02em;font-size:18px;display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none}
+  .logo .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:var(--glow)}
+  .nav-links{display:flex;gap:32px;font-size:14px;color:var(--mute)}
+  .nav-links a{color:var(--mute);text-decoration:none}
+  .nav-links a:hover{color:var(--text);text-decoration:none}
+  .nav-links a.active{color:var(--text);border-bottom:2px solid var(--accent);padding-bottom:2px}
+  .nav-cta{border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13px;color:var(--text);background:linear-gradient(180deg,rgba(61,220,151,.12),rgba(61,220,151,.02));text-decoration:none;transition:border-color .2s}
+  .nav-cta:hover{border-color:var(--accent);text-decoration:none}
+
+  .article-header{padding:80px 0 40px;position:relative}
+  .article-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(61,220,151,.1),transparent 60%);pointer-events:none}
+  .article-header .inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
+  .back-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-size:13px;color:var(--mute);letter-spacing:.05em;margin-bottom:28px;text-decoration:none;transition:color .2s}
+  .back-link:hover{color:var(--accent);text-decoration:none}
+  .article-meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--mute);font-family:'Space Grotesk';margin-bottom:18px;flex-wrap:wrap}
+  .article-meta .tag{padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(61,220,151,.1);color:var(--accent-2);border:1px solid rgba(61,220,151,.2)}
+  .article-header h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(30px,4.5vw,48px);line-height:1.12;margin:0;letter-spacing:-.02em}
+
+  .article-body{max-width:780px;margin:0 auto;padding:40px 0 80px}
+  .article-body p{font-size:17px;line-height:1.8;color:var(--text);margin:0 0 24px}
+  .article-body h1,.article-body h2{font-family:'Space Grotesk';font-size:26px;margin:48px 0 16px;letter-spacing:-.01em;color:var(--text)}
+  .article-body h3{font-family:'Space Grotesk';font-size:20px;margin:36px 0 12px;color:var(--text)}
+  .article-body a{color:var(--accent)}
+  .article-body blockquote{border-left:3px solid var(--accent);margin:28px 0;padding:16px 24px;background:rgba(61,220,151,.04);border-radius:0 12px 12px 0;font-style:italic;color:var(--mute)}
+  .article-body ul,.article-body ol{padding-left:24px;margin:0 0 24px}
+  .article-body li{font-size:17px;line-height:1.8;margin-bottom:8px}
+  .article-body img{max-width:100%;border-radius:12px}
+  .article-body hr{border:none;border-top:1px solid var(--line);margin:40px 0}
+  .article-body table{width:100%;border-collapse:collapse;margin:24px 0}
+  .article-body th,.article-body td{padding:10px 14px;border:1px solid var(--line);font-size:15px;text-align:left}
+  .article-body th{background:var(--bg-1);font-family:'Space Grotesk'}
+
+  .article-nav{max-width:780px;margin:0 auto;padding:0 0 60px;display:flex;gap:18px}
+  .article-nav a{flex:1;display:block;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .2s,transform .2s;text-decoration:none}
+  .article-nav a:hover{border-color:rgba(61,220,151,.35);transform:translateY(-1px);text-decoration:none}
+  .article-nav .label{font-size:11px;color:var(--mute);font-family:'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+  .article-nav .title{font-family:'Space Grotesk';font-size:15px;color:var(--text);line-height:1.3}
+
+  footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:13px}
+  footer .frow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+
+  .mobile-nav{display:none}
+
+  @media (max-width:800px){
+    .nav-links{display:none}
+    .nav-cta{display:none}
+    .article-header{padding:60px 0 30px}
+    .article-nav{flex-direction:column}
+    body{padding-bottom:72px}
+    .mobile-nav{
+      display:flex;
+      position:fixed;bottom:0;left:0;right:0;z-index:50;
+      justify-content:space-around;align-items:center;
+      padding:10px 0 max(10px,env(safe-area-inset-bottom));
+      background:rgba(5,7,13,.92);
+      backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+      border-top:1px solid var(--line);
+    }
+    .mobile-nav a{
+      display:flex;flex-direction:column;align-items:center;gap:4px;
+      text-decoration:none;padding:4px 10px;
+      -webkit-tap-highlight-color:transparent;
+    }
+    .mobile-nav a svg{
+      width:24px;height:24px;stroke-width:1.5;
+      stroke:var(--mute);fill:none;
+      transition:stroke .2s;
+    }
+    .mobile-nav a span{
+      font-size:11px;font-family:'Space Grotesk',system-ui;
+      letter-spacing:.03em;color:var(--mute);
+      transition:color .2s;
+    }
+    .mobile-nav a.active svg{stroke:var(--accent);stroke-width:2}
+    .mobile-nav a.active span{color:var(--accent);font-weight:600}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="container row">
+    <a href="https://ambient-advantage.ai" class="logo"><span class="dot"></span>Ambient Advantage</a>
+    <div class="nav-links">
+      <a href="https://podcast.ambient-advantage.ai">Podcast</a>
+      <a href="/" class="active">Daily Briefing</a>
+      <a href="https://take.ambient-advantage.ai">Chiel's Take</a>
+      <a href="https://build.ambient-advantage.ai">Build Log</a>
+      <a href="https://ambient-advantage.ai/about">About</a>
+    </div>
+    <a class="nav-cta" href="/#subscribe">Subscribe</a>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <div class="inner">
+      <a href="/" class="back-link">← Back to all briefings</a>
+      <div class="article-meta">
+        <span class="tag">Daily Briefing</span>
+        <span>Friday · July 10, 2026</span>
+        <span>·</span>
+        <span>8 min read</span>
+      </div>
+      <h1>GPT-5.6's Four-Agent Architecture, Agentjacking Hits 2,388 Orgs, and China's Nvidia-Free GLM-5.2</h1>
+    </div>
+  </div>
+</header>
+
+<article class="container">
+  <div class="article-body">
+    
+
+
+
+  <!-- Preheader (hidden) -->
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">
+    This edition covers twelve stories across agentic AI, enterprise launches, security, policy, and infrastructure. The throughline: the AI capability ra
+    &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+  </div>
+
+  <!-- Outer wrapper -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f0f2f5">
+    <tr><td align="center" style="padding:20px 10px;">
+
+      <!-- Email container -->
+      <table role="presentation" class="email-container" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width:600px;margin:0 auto;">
+
+        <!-- Accent bar -->
+        <tr><td bgcolor="#3ddc97" style="height:4px;font-size:1px;line-height:1px;">&nbsp;</td></tr>
+
+        <!-- Header -->
+        <tr><td bgcolor="#ffffff" style="padding:28px 40px 20px 40px;text-align:center;">
+          <span style="font-size:22px;font-weight:bold;color:#0a0f1c;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <span style="color:#3ddc97;">&bull;</span> Ambient Advantage
+          </span>
+          <br/>
+          <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin:14px auto 10px auto;"><tr><td style="width:60px;height:1px;background:#e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+          <span style="font-size:11px;color:#3ddc97;letter-spacing:2.5px;text-transform:uppercase;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE DAILY BRIEFING</span>
+          <br/>
+          <span style="font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Friday, July 10, 2026 &middot; 7 min read</span>
+        </td></tr>
+
+        <!-- Header bottom border -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Lead section -->
+        <tr><td bgcolor="#ffffff" style="padding:30px 40px 10px 40px;">
+          <!-- Pull quote -->
+          <p style="margin:0 0 20px 0;font-size:20px;font-style:italic;color:#0a0f1c;text-align:center;line-height:1.5;font-family:Georgia,'Times New Roman',Times,serif;">
+            &ldquo;The ground shifted under enterprise AI this week — not once, but from every direction at once. OpenAI shipped a four-agent model family, the US government demonstrated it can shut off frontier model access overnight, and a Chinese lab proved it can match near-frontier quality on zero Nvidia silicon. Meanwhile, a new attack class called &quot;agentjacking&quot; revealed that the data your AI coding agents read is now an attack surface, and a 15-year-old Linux kernel bug threatens every containerised inference workload you run.&rdquo;
+          </p>
+          <!-- Intro paragraphs -->
+          <p style="margin:0 0 14px 0;font-size:15px;color:#1a1a2e;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">This edition covers twelve stories across agentic AI, enterprise launches, security, policy, and infrastructure. The throughline: the AI capability race is converging, but the infrastructure dependencies, security gaps, and geopolitical tripwires underneath it are diverging fast. The executives who win in this environment are the ones asking not &quot;which model is best?&quot; but &quot;which dependencies can I afford to lose at midnight on a Friday?&quot; Let&#x27;s get into it.</p>
+        </td></tr>
+
+        <!-- Divider -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Stories section -->
+        <tr><td bgcolor="#ffffff" style="padding:10px 40px 10px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:30px 0 0 0;">
+  <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">TODAY&#x27;S STORIES</span>
+  <br/>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#3ddc97;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+</td></tr>
+            <tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#4338ca;background:#e0e7ff;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Product</span>
+  <br/>
+  <a href="https://openai.com/index/gpt-5-6/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">GPT-5.6 (Sol, Terra, Luna) Goes Live — Four-Agent Architecture Debuts</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">OpenAI launched GPT-5.6 as a family of three models — Sol, Terra, and Luna — now available to all users after weeks of government-gated preview. Hard problems are routed to four concurrent agents rather than one; early testers describe Sol as &quot;not smarter than Fable but so much more reliable that you would not want to use anything else.&quot; Reliability at scale is often more valuable than raw intelligence — enterprises building agentic workflows should test Sol&#x27;s consistency on long-horizon tasks before committing to an architecture.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">openai.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://openai.com/chatgpt-work/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">ChatGPT Work Launches — OpenAI&#x27;s Purpose-Built Enterprise App</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Alongside GPT-5.6, OpenAI shipped ChatGPT Work, a dedicated app that cleanly separates personal and professional contexts for organisations on Enterprise or Teams plans. This is OpenAI packaging model access into vertical-specific products — a move that raises the competitive bar for Microsoft Copilot and Google Workspace AI. IT and procurement teams should evaluate whether this changes their productivity-stack consolidation calculus.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">openai.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://openai.com/blog/introducing-gptlive" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">GPT-Live Brings Full-Duplex Voice — Delegates Hard Tasks Mid-Conversation</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">OpenAI&#x27;s GPT-Live model listens and speaks simultaneously, handling interruptions naturally; when a question requires deeper reasoning or web search, it silently delegates to GPT-5.5 behind the scenes and brings the result back without breaking conversational flow. Simon Willison, who had weeks of preview access, called it &quot;very impressive.&quot; Full-duplex voice with asynchronous task delegation is the architecture that makes AI viable in call centres, field support, and real-time customer service — enterprises with voice-heavy workflows should pilot immediately.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">openai.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#be185d;background:#fce7f3;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Security</span>
+  <br/>
+  <a href="https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Agentjacking: Fake Sentry Errors Hijack AI Coding Agents at 2,388 Organisations</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Tenet Threat Labs demonstrated a new attack class that hijacks AI coding agents into running attacker-controlled code, triggered by a single fake error report and invisible to every security control — 2,388 organisations were found exposed, from Fortune 100 enterprises to solo developers. The core problem: an agent can&#x27;t reliably distinguish data it reads from an instruction to act. Every enterprise running Claude Code, Cursor, GitHub Copilot, or Devin with error-monitoring integrations is potentially in scope — security teams must treat agent tool integrations as a new perimeter.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">tenetsecurity.ai</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#6d28d9;background:#ede9fe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Research</span>
+  <br/>
+  <a href="https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">GLM-5.2 From Z.ai — China&#x27;s Near-Frontier Model on Zero Nvidia Silicon</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Z.ai, on the US Entity List since January 2025, trained GLM-5.2 on roughly 100,000 Huawei Ascend 910B processors with no Nvidia hardware at any stage — and Nathan Lambert calls it &quot;a step-change for open agents,&quot; with coding and agentic capabilities near leading US models at roughly a sixth of the cost. Two independent security evaluations found it on par with top US models on cybersecurity benchmarks, though researchers flagged potential illegal distillation of GPT-5.5 and Opus 4.8. US chip export controls have demonstrably failed to prevent near-frontier model quality — but distillation allegations and data-sovereignty concerns make enterprise adoption a compliance question, not just a performance one.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">interconnects.ai</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#b45309;background:#fef3c7;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Policy</span>
+  <br/>
+  <a href="https://innfactory.ai/en/blog/gpt-5-6-fable-5-government-access-restrictions/" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">US Export Controls on Claude Fable 5 / GPT-5.6 — The Full Arc</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Within two weeks in June, the US government pulled both Anthropic&#x27;s Claude Fable 5 and OpenAI&#x27;s GPT-5.6 from general access under export control directives. The Claude ban was lifted June 30; Anthropic also disclosed to the Senate Banking Committee the largest known distillation attack — roughly 25,000 fraudulent accounts and 28.8 million exchanges targeting agentic reasoning, with operators affiliated with Alibaba Qwen. This established a precedent: frontier AI models are now treated as export-controlled dual-use technology. Enterprises with international teams should stress-test their AI contingency plans — a provider shutdown can happen with less than 24 hours&#x27; notice.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">innfactory.ai</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#be185d;background:#fce7f3;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Security</span>
+  <br/>
+  <a href="https://www.axios.com/2026/07/07/varonis-google-ai-agent-chatbot-security" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">&quot;Rogue Agent&quot; Flaw in Google Dialogflow CX — One Bot Hijacks an Entire GCP Project</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Varonis researchers found that a single compromised chatbot on Google&#x27;s Dialogflow CX platform could silently monitor conversations, impersonate the bot, and interfere with other AI chatbots running in the same Google Cloud project — all triggered by one `dialogflow.playbooks.update` permission. This is the enterprise agentic security nightmare made real: one misconfigured permission in a shared cloud project can surveil every conversation across the deployment. Organisations running chatbots on shared GCP infrastructure should audit agent permissions immediately and move to least-privilege identity per agent.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">axios.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#475569;background:#e2e8f0;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Infrastructure</span>
+  <br/>
+  <a href="https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Anthropic Signs 20-Year, $19B Data Centre Lease — 401 MW in Kentucky</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">TeraWulf announced a 20-year lease with Anthropic at its Justified Data campus in Hawesville, Kentucky, generating roughly $19B in contracted revenue across about 401 MW of critical IT load, with first capacity in late 2027. This follows Anthropic&#x27;s confidential IPO filing and signals infrastructure lock-in at a generational scale. Enterprise customers evaluating multi-year AI platform partnerships should treat commitments like this as a proxy for vendor staying power.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">investors.terawulf.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://www.businessinsider.com/xai-rebrand-spacexai-new-logo-x-handle-spacex-2026-7" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">xAI Becomes SpaceXAI — Grok 4.5 Launches, Co-Trained with Cursor</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Elon Musk&#x27;s AI lab rebranded as SpaceXAI, merging xAI, Grok, and X under a single brand alongside the space business, while simultaneously launching Grok 4.5 as its strongest model for coding and agentic tasks — notably co-trained in partnership with Cursor, the AI-native IDE. The Grok-Cursor co-training deal is the operationally significant detail: it signals SpaceXAI is building tight IDE-level integrations to compete for developer wallet share against GitHub Copilot and Claude Code. Enterprise dev-tools buyers should add Grok 4.5 to their benchmark suite.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">businessinsider.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#1d4ed8;background:#dbeafe;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Enterprise</span>
+  <br/>
+  <a href="https://ai.meta.com/blog/introducing-muse" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Meta Muse Spark 1.1 — Six Billion Users About to Get Native Generative Imagery</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Meta&#x27;s Superintelligence Labs released Muse Spark 1.1 alongside Muse Image and Muse Video, with benchmarks placing the image model above Google and Microsoft offerings; the models are slated for integration across Instagram and WhatsApp. When six billion people get a native image generator in the apps they use daily, the demand curve for branded AI content tools shifts overnight. Marketing and creative teams should model how Muse-generated content will flood their organic channels — and what that means for authenticity and brand differentiation.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">ai.meta.com</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;border-bottom:1px solid #e5e7eb;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#be185d;background:#fce7f3;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Security</span>
+  <br/>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43499" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">GhostLock: 15-Year-Old Linux Kernel Bug Enables Root Access and Container Escape</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">GhostLock (CVE-2026-43499) is a stack-based use-after-free in the Linux kernel&#x27;s rtmutex path, present for 15 years, enabling full root privilege escalation and container escape — particularly dangerous for multi-tenant Kubernetes and cloud-native AI inference environments. AI inference infrastructure almost universally runs on containerised Linux; a container escape means a compromised workload can reach the host and adjacent workloads. Platform and infra teams should treat this as P0: check your distro&#x27;s advisory and patch before the week is out.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">nvd.nist.gov</span>
+</td></tr><tr><td style="padding:18px 0 18px 0;">
+  <span style="display:inline-block;font-size:11px;font-weight:bold;color:#be185d;background:#fce7f3;padding:3px 10px;border-radius:12px;letter-spacing:0.5px;mso-line-height-rule:exactly;">Security</span>
+  <br/>
+  <a href="https://konghq.com/blog/enterprise/ai-agent-platforms-hacked-whats-missing" style="color:#0a0f1c;text-decoration:none;font-size:16px;font-weight:bold;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.4;" target="_blank">Langflow RCE and Dify Multi-Tenant Breaches Hit Production Agent Platforms</a>
+  <br/>
+  <span style="font-size:14px;color:#6b7280;line-height:1.5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Two of the most widely used AI agent platforms were compromised within the same week: Langflow disclosed a critical unauthenticated remote code execution flaw, and Dify — powering over one million applications — revealed four vulnerabilities exposing private conversations and internal APIs across tenant boundaries. Multi-tenancy isolation in AI agent platforms is not mature. If your organisation uses any low-code agent builder, run it on isolated infrastructure with no access to production data stores until this class of vulnerability is addressed.</span>
+  <br/>
+  <span style="font-size:12px;color:#9ca3af;font-style:italic;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">konghq.com</span>
+</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Big Picture card -->
+        <tr><td bgcolor="#ffffff" style="padding:10px 40px 24px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td width="4" bgcolor="#3ddc97" style="width:4px;font-size:1px;">&nbsp;</td>
+              <td bgcolor="#f0f7ff" style="padding:20px 24px;">
+                <span style="font-size:11px;font-weight:bold;color:#3ddc97;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">THE BIG PICTURE</span>
+                <br/><br/>
+                <p style="margin:0 0 10px 0;font-size:15px;color:#0a0f1c;line-height:1.7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">This week&#x27;s stories share a single spine: AI infrastructure is hardening in every direction simultaneously — but every layer of hardening reveals a new fragility underneath. Anthropic is signing 20-year leases. OpenAI is shipping four-agent orchestration. China is training near-frontier models on zero Nvidia silicon. And yet: the US government can shut off model access in 24 hours, a single Dialogflow permission can surveil an entire GCP project, and a fake Sentry error can hijack your AI coding agent. The enterprise executive who was optimising for &quot;best model&quot; needs to reframe urgently. The question is no longer which model wins benchmarks — it&#x27;s which infrastructure dependencies you can afford to have pulled out from under you at midnight. Model-agnostic architectures, sovereign deployment options, and agent security hygiene are no longer nice-to-haves. They are the new table stakes.</p>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Resources section -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px 24px 40px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:30px 0 0 0;">
+  <span style="font-size:11px;font-weight:bold;color:#0a0f1c;letter-spacing:2px;text-transform:uppercase;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">WORTH BOOKMARKING</span>
+  <br/>
+  <table cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;"><tr><td style="width:40px;height:2px;background:#3ddc97;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+</td></tr>
+            <tr><td style="height:12px;font-size:1px;">&nbsp;</td></tr>
+            <tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">GLM-5.2 Is the Step Change for Open Agents — Nathan Lambert / Interconnects &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">The most technically rigorous analysis of why GLM-5.2&#x27;s emergence on Huawei silicon is structurally significant for the open-agent ecosystem, not just a benchmark story.</span>
+    </td>
+  </tr></table>
+</td></tr><tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">The Twilight of the Chatbots — Ethan Mollick / One Useful Thing &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">The clearest articulation of the chatbot-to-agent transition yet: domain expertise now predicts success with AI tools more reliably than prompt cleverness — with direct implications for workforce planning and training investment.</span>
+    </td>
+  </tr></table>
+</td></tr><tr><td style="padding:6px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="background:#f8f9fb;padding:16px 20px;border-radius:8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+      <a href="https://innfactory.ai/en/blog/gpt-5-6-fable-5-government-access-restrictions/" style="color:#0a0f1c;text-decoration:none;font-size:14px;font-weight:bold;" target="_blank">GPT-5.6 &amp; Claude Fable: Why the Newest AI Models Aren&#x27;t Available to Everyone &rarr;</a>
+      <br/>
+      <span style="font-size:13px;color:#6b7280;">The most complete single-document timeline of the US government export control episode — essential reading for any enterprise AI risk function.</span>
+    </td>
+  </tr></table>
+</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Divider -->
+        <tr><td bgcolor="#ffffff" style="padding:0 40px;"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-bottom:1px solid #e5e7eb;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+        <!-- Podcast CTA -->
+        <tr><td bgcolor="#ffffff" style="padding:24px 40px 30px 40px;text-align:center;">
+          <p style="margin:0 0 16px 0;font-size:14px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            Prefer to listen? Today&#8217;s briefing is also a podcast.
+          </p>
+          <table cellpadding="0" cellspacing="0" border="0" align="center">
+            <tr>
+              <td align="center" bgcolor="#3ddc97" style="border-radius:6px;">
+                <a href="https://podcast.ambient-advantage.ai" target="_blank" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:bold;color:#ffffff;text-decoration:none;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">Listen to Today&#8217;s Episode &rarr;</a>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Footer -->
+        <tr><td bgcolor="#f0f2f5" style="padding:24px 40px 30px 40px;text-align:center;">
+          <p style="margin:0 0 6px 0;font-size:13px;color:#6b7280;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            Curated by Chiel Hendriks &middot; PwC Canada
+          </p>
+          <p style="margin:0 0 6px 0;font-size:13px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            <a href="https://ambient-advantage.ai" style="color:#3ddc97;text-decoration:none;">ambient-advantage.ai</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://www.linkedin.com/in/chielhendriks/" style="color:#3ddc97;text-decoration:none;">LinkedIn</a>
+          </p>
+          
+          <p style="margin:10px 0 0 0;font-size:12px;color:#9ca3af;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+            &copy; 2026 Ambient Advantage
+          </p>
+        </td></tr>
+
+      </table>
+      <!-- /Email container -->
+
+    </td></tr>
+  </table>
+  <!-- /Outer wrapper -->
+
+
+  </div>
+</article>
+
+<div class="container">
+  <div class="article-nav">
+    <a href="/2026-07-09.html">
+      <div class="label">← Previous briefing</div>
+      <div class="title">Claude's Hidden Workspace, First Agentic Ransomware, and GPT-5.6 Goes Public</div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="container frow">
+    <div>© 2026 Ambient Advantage · Curated by Chiel Hendriks</div>
+    <div><a href="https://ambient-advantage.ai" style="color:var(--accent);text-decoration:none">ambient-advantage.ai</a></div>
+  </div>
+</footer>
+
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="https://podcast.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5z"/></svg>
+    <span>Podcast</span>
+  </a>
+  <a href="/" class="active">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+    <span>Briefing</span>
+  </a>
+  <a href="https://take.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+    <span>Take</span>
+  </a>
+  <a href="https://build.ambient-advantage.ai">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+    <span>Build</span>
+  </a>
+  <a href="https://ambient-advantage.ai/about">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>About</span>
+  </a>
+</nav>
+
+</body>
+</html>

@@ -1,5 +1,217 @@
 [
  {
+  "date": "2026-07-10",
+  "category": "Agentic",
+  "title": "GPT-5.6 (Sol, Terra, Luna) Goes Live — Four-Agent Architecture Debuts",
+  "url": "https://openai.com/index/gpt-5-6/",
+  "snippet": "OpenAI launched GPT-5.6 as a family of three models — Sol, Terra, and Luna — now available to all users after weeks of government-gated preview. Hard problems are routed to four concurrent agents rather than one; early testers describe Sol as \"not smarter than Fable but so much more reliable that you would not want to use anything else.\" Reliability at scale is often more valuable than raw intelligence — enterprises building agentic workflows should test Sol's consistency on long-horizon tasks before committing to an architecture.",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-07-10",
+  "category": "Enterprise",
+  "title": "ChatGPT Work Launches — OpenAI's Purpose-Built Enterprise App",
+  "url": "https://openai.com/chatgpt-work/",
+  "snippet": "Alongside GPT-5.6, OpenAI shipped ChatGPT Work, a dedicated app that cleanly separates personal and professional contexts for organisations on Enterprise or Teams plans. This is OpenAI packaging model access into vertical-specific products — a move that raises the competitive bar for Microsoft Copilot and Google Workspace AI. IT and procurement teams should evaluate whether this changes their productivity-stack consolidation calculus.",
+  "source": "openai.com",
+  "companies": [
+   "Google",
+   "Microsoft",
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-07-10",
+  "category": "Enterprise",
+  "title": "GPT-Live Brings Full-Duplex Voice — Delegates Hard Tasks Mid-Conversation",
+  "url": "https://openai.com/blog/introducing-gptlive",
+  "snippet": "OpenAI's GPT-Live model listens and speaks simultaneously, handling interruptions naturally; when a question requires deeper reasoning or web search, it silently delegates to GPT-5.5 behind the scenes and brings the result back without breaking conversational flow. Simon Willison, who had weeks of preview access, called it \"very impressive.\" Full-duplex voice with asynchronous task delegation is the architecture that makes AI viable in call centres, field support, and real-time customer service — enterprises with voice-heavy workflows should pilot immediately.",
+  "source": "openai.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-07-10",
+  "category": "Security",
+  "title": "Agentjacking: Fake Sentry Errors Hijack AI Coding Agents at 2,388 Organisations",
+  "url": "https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/",
+  "snippet": "Tenet Threat Labs demonstrated a new attack class that hijacks AI coding agents into running attacker-controlled code, triggered by a single fake error report and invisible to every security control — 2,388 organisations were found exposed, from Fortune 100 enterprises to solo developers. The core problem: an agent can't reliably distinguish data it reads from an instruction to act. Every enterprise running Claude Code, Cursor, GitHub Copilot, or Devin with error-monitoring integrations is potentially in scope — security teams must treat agent tool integrations as a new perimeter.",
+  "source": "tenetsecurity.ai",
+  "companies": [
+   "Tenet Security"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Coding & Dev Tools",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-07-10",
+  "category": "Research",
+  "title": "GLM-5.2 From Z.ai — China's Near-Frontier Model on Zero Nvidia Silicon",
+  "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+  "snippet": "Z.ai, on the US Entity List since January 2025, trained GLM-5.2 on roughly 100,000 Huawei Ascend 910B processors with no Nvidia hardware at any stage — and Nathan Lambert calls it \"a step-change for open agents,\" with coding and agentic capabilities near leading US models at roughly a sixth of the cost. Two independent security evaluations found it on par with top US models on cybersecurity benchmarks, though researchers flagged potential illegal distillation of GPT-5.5 and Opus 4.8. US chip export controls have demonstrably failed to prevent near-frontier model quality — but distillation allegations and data-sovereignty concerns make enterprise adoption a compliance question, not just a performance one.",
+  "source": "interconnects.ai",
+  "companies": [
+   "Huawei",
+   "Z.ai"
+  ],
+  "themes": [
+   "Infrastructure & Compute",
+   "Open Source",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-07-10",
+  "category": "Policy",
+  "title": "US Export Controls on Claude Fable 5 / GPT-5.6 — The Full Arc",
+  "url": "https://innfactory.ai/en/blog/gpt-5-6-fable-5-government-access-restrictions/",
+  "snippet": "Within two weeks in June, the US government pulled both Anthropic's Claude Fable 5 and OpenAI's GPT-5.6 from general access under export control directives. The Claude ban was lifted June 30; Anthropic also disclosed to the Senate Banking Committee the largest known distillation attack — roughly 25,000 fraudulent accounts and 28.8 million exchanges targeting agentic reasoning, with operators affiliated with Alibaba Qwen. This established a precedent: frontier AI models are now treated as export-controlled dual-use technology. Enterprises with international teams should stress-test their AI contingency plans — a provider shutdown can happen with less than 24 hours' notice.",
+  "source": "innfactory.ai",
+  "companies": [
+   "Anthropic",
+   "OpenAI"
+  ],
+  "themes": [
+   "Governance",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-07-10",
+  "category": "Security",
+  "title": "\"Rogue Agent\" Flaw in Google Dialogflow CX — One Bot Hijacks an Entire GCP Project",
+  "url": "https://www.axios.com/2026/07/07/varonis-google-ai-agent-chatbot-security",
+  "snippet": "Varonis researchers found that a single compromised chatbot on Google's Dialogflow CX platform could silently monitor conversations, impersonate the bot, and interfere with other AI chatbots running in the same Google Cloud project — all triggered by one `dialogflow.playbooks.update` permission. This is the enterprise agentic security nightmare made real: one misconfigured permission in a shared cloud project can surveil every conversation across the deployment. Organisations running chatbots on shared GCP infrastructure should audit agent permissions immediately and move to least-privilege identity per agent.",
+  "source": "axios.com",
+  "companies": [
+   "Google",
+   "Varonis"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-07-10",
+  "category": "Infrastructure",
+  "title": "Anthropic Signs 20-Year, $19B Data Centre Lease — 401 MW in Kentucky",
+  "url": "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus",
+  "snippet": "TeraWulf announced a 20-year lease with Anthropic at its Justified Data campus in Hawesville, Kentucky, generating roughly $19B in contracted revenue across about 401 MW of critical IT load, with first capacity in late 2027. This follows Anthropic's confidential IPO filing and signals infrastructure lock-in at a generational scale. Enterprise customers evaluating multi-year AI platform partnerships should treat commitments like this as a proxy for vendor staying power.",
+  "source": "investors.terawulf.com",
+  "companies": [
+   "Anthropic",
+   "TeraWulf"
+  ],
+  "themes": [
+   "Funding & Valuations",
+   "Infrastructure & Compute"
+  ]
+ },
+ {
+  "date": "2026-07-10",
+  "category": "Enterprise",
+  "title": "xAI Becomes SpaceXAI — Grok 4.5 Launches, Co-Trained with Cursor",
+  "url": "https://www.businessinsider.com/xai-rebrand-spacexai-new-logo-x-handle-spacex-2026-7",
+  "snippet": "Elon Musk's AI lab rebranded as SpaceXAI, merging xAI, Grok, and X under a single brand alongside the space business, while simultaneously launching Grok 4.5 as its strongest model for coding and agentic tasks — notably co-trained in partnership with Cursor, the AI-native IDE. The Grok-Cursor co-training deal is the operationally significant detail: it signals SpaceXAI is building tight IDE-level integrations to compete for developer wallet share against GitHub Copilot and Claude Code. Enterprise dev-tools buyers should add Grok 4.5 to their benchmark suite.",
+  "source": "businessinsider.com",
+  "companies": [
+   "Cursor",
+   "xAI"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Enterprise Adoption",
+   "Models & Releases"
+  ]
+ },
+ {
+  "date": "2026-07-10",
+  "category": "Enterprise",
+  "title": "Meta Muse Spark 1.1 — Six Billion Users About to Get Native Generative Imagery",
+  "url": "https://ai.meta.com/blog/introducing-muse",
+  "snippet": "Meta's Superintelligence Labs released Muse Spark 1.1 alongside Muse Image and Muse Video, with benchmarks placing the image model above Google and Microsoft offerings; the models are slated for integration across Instagram and WhatsApp. When six billion people get a native image generator in the apps they use daily, the demand curve for branded AI content tools shifts overnight. Marketing and creative teams should model how Muse-generated content will flood their organic channels — and what that means for authenticity and brand differentiation.",
+  "source": "ai.meta.com",
+  "companies": [
+   "Meta"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Models & Releases",
+   "Voice & Multimodal"
+  ]
+ },
+ {
+  "date": "2026-07-10",
+  "category": "Security",
+  "title": "GhostLock: 15-Year-Old Linux Kernel Bug Enables Root Access and Container Escape",
+  "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43499",
+  "snippet": "GhostLock (CVE-2026-43499) is a stack-based use-after-free in the Linux kernel's rtmutex path, present for 15 years, enabling full root privilege escalation and container escape — particularly dangerous for multi-tenant Kubernetes and cloud-native AI inference environments. AI inference infrastructure almost universally runs on containerised Linux; a container escape means a compromised workload can reach the host and adjacent workloads. Platform and infra teams should treat this as P0: check your distro's advisory and patch before the week is out.",
+  "source": "nvd.nist.gov",
+  "companies": [],
+  "themes": [
+   "Infrastructure & Compute",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-07-10",
+  "category": "Security",
+  "title": "Langflow RCE and Dify Multi-Tenant Breaches Hit Production Agent Platforms",
+  "url": "https://konghq.com/blog/enterprise/ai-agent-platforms-hacked-whats-missing",
+  "snippet": "Two of the most widely used AI agent platforms were compromised within the same week: Langflow disclosed a critical unauthenticated remote code execution flaw, and Dify — powering over one million applications — revealed four vulnerabilities exposing private conversations and internal APIs across tenant boundaries. Multi-tenancy isolation in AI agent platforms is not mature. If your organisation uses any low-code agent builder, run it on isolated infrastructure with no access to production data stores until this class of vulnerability is addressed.",
+  "source": "konghq.com",
+  "companies": [
+   "Dify",
+   "Langflow"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-07-10",
+  "category": "Resources",
+  "title": "The Twilight of the Chatbots — Ethan Mollick / One Useful Thing",
+  "url": "https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots",
+  "snippet": "The clearest articulation of the chatbot-to-agent transition yet: domain expertise now predicts success with AI tools more reliably than prompt cleverness — with direct implications for workforce planning and training investment.",
+  "source": "oneusefulthing.org",
+  "companies": [
+   "Anthropic",
+   "OpenAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Talent & Workforce"
+  ]
+ },
+ {
   "date": "2026-07-09",
   "category": "Research",
   "title": "Anthropic Discovers Claude's Hidden Internal Workspace — \"J-Space\"",
