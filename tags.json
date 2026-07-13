@@ -1,15 +1,15 @@
 {
- "generated": "2026-07-10",
+ "generated": "2026-07-13",
  "companies": [
   {
    "tag": "Anthropic",
-   "count": 279,
-   "last_seen": "2026-07-10"
+   "count": 284,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "OpenAI",
-   "count": 256,
-   "last_seen": "2026-07-10"
+   "count": 263,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Google",
@@ -18,13 +18,13 @@
   },
   {
    "tag": "Microsoft",
-   "count": 92,
-   "last_seen": "2026-07-10"
+   "count": 93,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Meta",
-   "count": 51,
-   "last_seen": "2026-07-10"
+   "count": 52,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Nvidia",
@@ -48,8 +48,8 @@
   },
   {
    "tag": "Apple",
-   "count": 19,
-   "last_seen": "2026-06-29"
+   "count": 20,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Cerebras",
@@ -367,6 +367,11 @@
    "last_seen": "2026-07-10"
   },
   {
+   "tag": "DroidUp",
+   "count": 1,
+   "last_seen": "2026-07-13"
+  },
+  {
    "tag": "Fable",
    "count": 1,
    "last_seen": "2026-07-07"
@@ -520,23 +525,23 @@
  "themes": [
   {
    "tag": "Enterprise Adoption",
-   "count": 515,
-   "last_seen": "2026-07-10"
+   "count": 520,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Agentic AI",
-   "count": 287,
-   "last_seen": "2026-07-10"
+   "count": 290,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Research",
-   "count": 178,
-   "last_seen": "2026-07-10"
+   "count": 180,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Coding & Dev Tools",
-   "count": 165,
-   "last_seen": "2026-07-10"
+   "count": 167,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Infrastructure & Compute",
@@ -544,49 +549,49 @@
    "last_seen": "2026-07-10"
   },
   {
+   "tag": "Policy",
+   "count": 145,
+   "last_seen": "2026-07-13"
+  },
+  {
    "tag": "Funding & Valuations",
    "count": 141,
    "last_seen": "2026-07-10"
   },
   {
-   "tag": "Policy",
-   "count": 141,
-   "last_seen": "2026-07-10"
-  },
-  {
    "tag": "Governance",
-   "count": 125,
-   "last_seen": "2026-07-10"
+   "count": 129,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Security",
-   "count": 117,
-   "last_seen": "2026-07-10"
+   "count": 118,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Models & Releases",
-   "count": 111,
-   "last_seen": "2026-07-10"
+   "count": 113,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Regulation",
-   "count": 99,
-   "last_seen": "2026-07-10"
+   "count": 100,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Data",
-   "count": 92,
-   "last_seen": "2026-07-09"
+   "count": 93,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Talent & Workforce",
-   "count": 90,
-   "last_seen": "2026-07-10"
+   "count": 92,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Safety",
-   "count": 67,
-   "last_seen": "2026-07-09"
+   "count": 68,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Financial Services",
@@ -600,8 +605,8 @@
   },
   {
    "tag": "Compliance",
-   "count": 45,
-   "last_seen": "2026-07-06"
+   "count": 46,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Open Source",
@@ -610,8 +615,8 @@
   },
   {
    "tag": "Healthcare",
-   "count": 36,
-   "last_seen": "2026-07-02"
+   "count": 37,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Canada",
@@ -620,13 +625,13 @@
   },
   {
    "tag": "Legal & IP",
-   "count": 17,
-   "last_seen": "2026-06-29"
+   "count": 18,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Robotics",
-   "count": 10,
-   "last_seen": "2026-07-01"
+   "count": 11,
+   "last_seen": "2026-07-13"
   },
   {
    "tag": "Interpretability",

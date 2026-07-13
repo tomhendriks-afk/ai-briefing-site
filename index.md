@@ -4,6 +4,7 @@
 
 ## Briefings
 
+- [Apple Sues OpenAI, GPT-5.6 Goes GA with Government Pre-Clearance, and ChatGPT Work Launches](https://briefing.ambient-advantage.ai/2026-07-13.html) — Monday · July 13, 2026 · This edition covers twelve stories across enterprise, policy, agentic AI, and research. The throughline: frontier AI is no longer just a technology procurement decision — it's a legal, geopolitical, and organizational design challenge.
 - [GPT-5.6's Four-Agent Architecture, Agentjacking Hits 2,388 Orgs, and China's Nvidia-Free GLM-5.2](https://briefing.ambient-advantage.ai/2026-07-10.html) — Friday · July 10, 2026 · This edition covers twelve stories across agentic AI, enterprise launches, security, policy, and infrastructure.
 - [Claude's Hidden Workspace, First Agentic Ransomware, and GPT-5.6 Goes Public](https://briefing.ambient-advantage.ai/2026-07-09.html) — Thursday · July 9, 2026 · This edition covers twelve stories across research, security, enterprise, infrastructure, and policy. The throughline: AI systems now plan, adapt, and act autonomously — whether they're working for you or against you.
 - [Agentic Ransomware Arrives, Anthropic's J-Space Breakthrough, and DeepSeek Designs Its Own Chip](https://briefing.ambient-advantage.ai/2026-07-08.html) — Wednesday · July 8, 2026 · This edition covers twelve stories across security, research, infrastructure, and enterprise strategy. The throughline: agentic capability is accelerating faster than the defense infrastructure around it.

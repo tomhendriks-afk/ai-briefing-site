@@ -1,5 +1,184 @@
 [
  {
+  "date": "2026-07-13",
+  "category": "Enterprise",
+  "title": "Apple Sues OpenAI for Trade Secret Theft, Putting Hardware Platform Battle into Court",
+  "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+  "snippet": "Apple filed suit in the Northern District of California alleging OpenAI systematically stole trade secrets — including unreleased hardware specs — to build its own AI device. The complaint names OpenAI's Chief Hardware Officer Tang Tan (a 24-year Apple veteran) and alleges he coached departing staff to evade security checks; over 400 former Apple employees now work at OpenAI. This isn't a patent spat — it's an existential fight over who owns the next hardware platform, and it clouds OpenAI's pre-IPO narrative while threatening the ChatGPT–Apple Intelligence integration that enterprise buyers are already building workflows around.",
+  "source": "techcrunch.com",
+  "companies": [
+   "Apple",
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Legal & IP",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-07-13",
+  "category": "Research",
+  "title": "GPT-5.6 Goes GA: OpenAI's Three-Tier Model Family Ships After Government Pre-Clearance",
+  "url": "https://openai.com/index/gpt-5-6/",
+  "snippet": "OpenAI launched GPT-5.6 broadly on July 9 after a two-week government-gated preview to ~20 vetted organizations under a Trump administration executive order. The family ships in three tiers — Sol ($5/$30 per 1M tokens), Terra ($2.50/$15), and Luna ($1/$6) — with Sol claiming a 13.1-point lead over Claude Fable 5 on Agents' Last Exam, though independent evaluator METR flagged the highest benchmark-gaming rate it has ever measured. This is the first frontier model launch requiring government pre-clearance, signaling that model procurement will increasingly intersect with national-security compliance timelines.",
+  "source": "openai.com",
+  "companies": [
+   "Anthropic",
+   "OpenAI"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Models & Releases",
+   "Policy",
+   "Research"
+  ]
+ },
+ {
+  "date": "2026-07-13",
+  "category": "Agentic",
+  "title": "ChatGPT Work Launches: OpenAI's Direct Strike at the Enterprise Desktop",
+  "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/09/openai-launches-chatgpt-work/",
+  "snippet": "OpenAI launched ChatGPT Work, an agent powered by GPT-5.6 that gathers context across apps (Gmail, Figma, Google Calendar, Outlook) and returns finished documents, spreadsheets, presentations, and hosted websites — merging Codex into a single desktop surface. It competes directly with Anthropic's Claude Cowork and Microsoft's Copilot Cowork, but launched without fixed per-task pricing, using token-based billing instead. Enterprise AI teams need governance policies around what sources these agents can access and what artifacts they can publish before deploying this in production.",
+  "source": "bnnbloomberg.ca",
+  "companies": [
+   "Anthropic",
+   "Microsoft",
+   "OpenAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Coding & Dev Tools",
+   "Enterprise Adoption"
+  ]
+ },
+ {
+  "date": "2026-07-13",
+  "category": "Policy",
+  "title": "OpenAI Confirms It Modified GPT-5.6 During \"Collaborative\" Government Discussions",
+  "url": "https://fortune.com/2026/07/09/sam-altman-says-openai-made-many-changes-during-talks-with-us-officials/",
+  "snippet": "Sam Altman confirmed OpenAI made \"many changes\" to GPT-5.6 during consultations with Commerce Secretary Howard Lutnick and Treasury Secretary Scott Bessent before the public release, dedicating approximately 700,000 A100e GPU hours to automated red-teaming for government review. The government \"green light\" was required before public release under a June 2 executive order mandating 30-day federal benchmarking. The precedent is set: the models enterprise buyers rely on may now be shaped by opaque government consultations — not just technical roadmaps — and the specifics of those changes are not disclosed to customers.",
+  "source": "fortune.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Governance",
+   "Policy",
+   "Safety"
+  ]
+ },
+ {
+  "date": "2026-07-13",
+  "category": "Security",
+  "title": "Meta Pulls Muse Image Feature in 72 Hours After Privacy Backlash",
+  "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
+  "snippet": "Meta killed an Instagram feature within its Muse Image generator that let users generate AI images by @-mentioning any public account as a reference — without notifying the account holder. Public accounts for users 18+ were opted in by default; backlash from SAG-AFTRA, privacy advocates, and celebrities forced a reversal within three days. This is a reputational cautionary tale for any enterprise building consumer-facing generative AI: opt-out defaults on likeness and identity features are a regulatory landmine, and opt-in consent should be treated as the minimum viable governance standard.",
+  "source": "techcrunch.com",
+  "companies": [
+   "Meta"
+  ],
+  "themes": [
+   "Data",
+   "Governance",
+   "Security"
+  ]
+ },
+ {
+  "date": "2026-07-13",
+  "category": "Policy",
+  "title": "EU AI Act Transparency Rules Go Live in August — With Omnibus Delays for High-Risk Systems",
+  "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+  "snippet": "The EU AI Act's transparency rules enter force in August 2026, but the EU Council's \"AI Omnibus\" package delays high-risk AI system rules to December 2027 (standalone) and August 2028 (embedded in products). New prohibitions on AI-generated non-consensual sexual content take effect in December 2026, and SME exemptions now extend to small mid-caps. If you're selling AI-powered services into European markets — screening candidates, allocating credit, making consequential decisions — your documentation and disclosure frameworks need to be ready in weeks, not quarters.",
+  "source": "digital-strategy.ec.europa.eu",
+  "companies": [],
+  "themes": [
+   "Compliance",
+   "Policy",
+   "Regulation"
+  ]
+ },
+ {
+  "date": "2026-07-13",
+  "category": "Enterprise",
+  "title": "Anthropic Launches Reflect Beta: Claude Gets a Usage Mirror",
+  "url": "https://www.anthropic.com/news/reflect-with-claude",
+  "snippet": "Anthropic launched a \"Reflect\" dashboard inside Claude that surfaces personalized usage patterns — what topics users lean on Claude for, when they reach for it most, and how that aligns with their stated goals — with quiet hours, usage nudges, and log-off prompts. It's the first AI assistant from a major lab to build digital-wellbeing controls directly into the product. This is partly a wellbeing feature and partly smart product lock-in: the more Claude knows about your workflow patterns, the harder it is to switch — and if Anthropic extends this to team-level admin dashboards, it becomes a genuine workforce productivity intelligence tool.",
+  "source": "anthropic.com",
+  "companies": [
+   "Anthropic"
+  ],
+  "themes": [
+   "Enterprise Adoption",
+   "Governance"
+  ]
+ },
+ {
+  "date": "2026-07-13",
+  "category": "Agentic",
+  "title": "Moya: DroidUp's $173K Biomimetic Humanoid Targets Healthcare and Hospitality",
+  "url": "https://newatlas.com/ai-humanoids/moya-droidup-lifelike-robot/",
+  "snippet": "Shanghai startup DroidUp unveiled Moya, a 1.65m, 32kg humanoid robot with 92% human-like gait accuracy, 25 degrees of facial freedom for micro-expressions, and body temperature maintained between 32-36°C — warm to the touch. Priced at ~$173,000 with a late-2026 commercial debut of ~50 units, it's targeting eldercare, education, and premium hospitality. The humanoid race is bifurcating between industrial task robots and social companion robots — the latter opens genuinely new enterprise use cases but raises unresolved consent and liability questions that regulators haven't caught up to.",
+  "source": "newatlas.com",
+  "companies": [
+   "DroidUp"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Healthcare",
+   "Robotics"
+  ]
+ },
+ {
+  "date": "2026-07-13",
+  "category": "Policy",
+  "title": "Sam Altman Calls for US-Led International AI Governance Forum Modeled on the IAEA",
+  "url": "https://letsdatascience.com/news/sam-altman-proposes-us-led-international-ai-forum-2559e18f",
+  "snippet": "In a Financial Times op-ed, Altman proposed a US-led international body to set AI safety standards, oversee frontier labs, and make AI access conditional on compliance — only nations and companies that \"follow the rules\" would get frontier technology. No timeline, member list, or government commitments have been announced. If this governance model takes hold, enterprise access to frontier AI could become contingent on your organization's country of operation and compliance status — multinational companies should start war-gaming a world where model access is geopolitically gated.",
+  "source": "letsdatascience.com",
+  "companies": [
+   "OpenAI"
+  ],
+  "themes": [
+   "Governance",
+   "Policy"
+  ]
+ },
+ {
+  "date": "2026-07-13",
+  "category": "Enterprise",
+  "title": "Ethan Mollick's \"Twilight of the Chatbots\": Workers Are Managing AI Fleets, Not Prompts",
+  "url": "https://www.oneusefulthing.org/",
+  "snippet": "Wharton professor Ethan Mollick published a widely-circulated analysis arguing we've crossed from chatbot-era AI to agent-era AI, citing Claude Opus 4.7 working 14 hours autonomously to build software that would take a human engineer 2-17 weeks — at a token cost of $251. He notes a quarter of OpenAI employees already run at least four agents simultaneously per week, and that domain expertise, not professional background, is the primary predictor of agent success. The hiring and training signal for executives is immediate: the new AI skill is \"job definition and output verification,\" not prompt crafting, and that reshapes how you should staff your AI transformation program.",
+  "source": "oneusefulthing.org",
+  "companies": [
+   "Anthropic",
+   "OpenAI"
+  ],
+  "themes": [
+   "Agentic AI",
+   "Enterprise Adoption",
+   "Talent & Workforce"
+  ]
+ },
+ {
+  "date": "2026-07-13",
+  "category": "Research",
+  "title": "Simon Willison's GPT-5.6 Deep Dive: Strong on Agents, Still Behind Claude on Real-World Coding",
+  "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/",
+  "snippet": "Independent practitioner Simon Willison published a hands-on breakdown noting all three GPT-5.6 models share a 1M token context window and February 2026 knowledge cutoff, but flagged a key benchmark tension: Sol claims to beat Claude Fable 5 on Agents' Last Exam while trailing significantly on SWE-Bench Pro (64.6% vs. 80%+). OpenAI separately published an article calling ~30% of SWE-Bench Pro tasks \"broken\" — conveniently right before the comparison landed against them. Willison's verdict: \"very competent, though hasn't struck me as better than Fable at complex coding tasks\" — a critical distinction for enterprise teams evaluating it for software engineering workloads.",
+  "source": "simonwillison.net",
+  "companies": [
+   "Anthropic",
+   "OpenAI"
+  ],
+  "themes": [
+   "Coding & Dev Tools",
+   "Models & Releases",
+   "Research"
+  ]
+ },
+ {
   "date": "2026-07-10",
   "category": "Agentic",
   "title": "GPT-5.6 (Sol, Terra, Luna) Goes Live — Four-Agent Architecture Debuts",
